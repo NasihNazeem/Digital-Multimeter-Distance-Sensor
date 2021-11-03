@@ -1,7 +1,0 @@
--- Library declarations
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-
--- Entity declaration, no ports for a tb
-entity Voltmeter_tb is
-end Voltmeter_tb
