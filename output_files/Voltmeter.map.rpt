@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Voltmeter
-Tue Nov 02 21:22:08 2021
+Tue Nov 02 22:27:35 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -38,7 +38,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Tue Nov 02 21:22:08 2021           ;
+; Analysis & Synthesis Status        ; Failed - Tue Nov 02 22:27:35 2021           ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; Voltmeter                                   ;
 ; Top-level Entity Name              ; Voltmeter                                   ;
@@ -165,10 +165,14 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Nov 02 21:21:49 2021
+    Info: Processing started: Tue Nov 02 22:27:20 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab3 -c Voltmeter
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 3 design units, including 1 entities, in source file sevensegment.vhd
+    Info (12022): Found design unit 1: HexArrays File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/SevenSegment.vhd Line: 6
+    Info (12022): Found design unit 2: SevenSegment-Behavioral File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/SevenSegment.vhd Line: 22
+    Info (12023): Found entity 1: SevenSegment File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/SevenSegment.vhd Line: 16
 Info (12021): Found 1 design units, including 1 entities, in source file adc_conversion.v
     Info (12023): Found entity 1: ADC_Conversion File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/ADC_Conversion.v Line: 34
 Info (12021): Found 1 design units, including 1 entities, in source file adc_qsys/synthesis/adc_qsys.v
@@ -197,11 +201,11 @@ Info (12021): Found 4 design units, including 4 entities, in source file adc_qsy
     Info (12023): Found entity 3: adc_qsys_altpll_sys_altpll_oc92 File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/adc_qsys_altpll_sys.v Line: 130
     Info (12023): Found entity 4: adc_qsys_altpll_sys File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/adc_qsys_altpll_sys.v Line: 217
 Info (12021): Found 2 design units, including 1 entities, in source file voltmeter.vhd
-    Info (12022): Found design unit 1: Voltmeter-Behavioral File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 15
-    Info (12023): Found entity 1: Voltmeter File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 5
+    Info (12022): Found design unit 1: Voltmeter-Behavioral File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 16
+    Info (12023): Found entity 1: Voltmeter File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file voltmeter_tb.vhd
-    Info (12022): Found design unit 1: Voltmeter_tb-tb File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter_tb.vhd Line: 10
-    Info (12023): Found entity 1: Voltmeter_tb File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter_tb.vhd Line: 6
+    Info (12022): Found design unit 1: Voltmeter_tb-tb File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter_tb.vhd Line: 11
+    Info (12023): Found entity 1: Voltmeter_tb File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter_tb.vhd Line: 7
 Warning (12090): Entity "mux" obtained from "mux.vhd" instead of from Quartus Prime megafunction library File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/mux.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file mux.vhd
     Info (12022): Found design unit 1: mux-Behavioral File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/mux.vhd Line: 13
@@ -209,141 +213,13 @@ Info (12021): Found 2 design units, including 1 entities, in source file mux.vhd
 Info (12021): Found 2 design units, including 1 entities, in source file mux_tb.vhd
     Info (12022): Found design unit 1: mux_tb-tb File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/mux_tb.vhd Line: 10
     Info (12023): Found entity 1: mux_tb File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/mux_tb.vhd Line: 6
-Info (12127): Elaborating entity "Voltmeter" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at voltmeter.vhd(21): object "busy" assigned a value but never read File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 21
-Info (12128): Elaborating entity "mux" for hierarchy "mux:multiplexer" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 95
-Warning (12125): Using design file averager.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: averager-rtl File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/averager.vhd Line: 15
-    Info (12023): Found entity 1: averager File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/averager.vhd Line: 6
-Info (12128): Elaborating entity "averager" for hierarchy "averager:ave" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 103
-Warning (12125): Using design file registers.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: registers-rtl File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/registers.vhd Line: 17
-    Info (12023): Found entity 1: registers File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/registers.vhd Line: 4
-Info (12128): Elaborating entity "registers" for hierarchy "registers:sync1" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 112
-Info (12128): Elaborating entity "registers" for hierarchy "registers:sync3" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 132
-Warning (12125): Using design file sevensegment.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: SevenSegment-Behavioral File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/sevensegment.vhd Line: 11
-    Info (12023): Found entity 1: SevenSegment File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/sevensegment.vhd Line: 5
-Info (12128): Elaborating entity "SevenSegment" for hierarchy "SevenSegment:SevenSegment_ins" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 152
-Warning (12125): Using design file sevensegment_decoder.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: SevenSegment_decoder-Behavioral File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/sevensegment_decoder.vhd Line: 13
-    Info (12023): Found entity 1: SevenSegment_decoder File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/sevensegment_decoder.vhd Line: 5
-Info (12128): Elaborating entity "SevenSegment_decoder" for hierarchy "SevenSegment:SevenSegment_ins|SevenSegment_decoder:decoder0" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/sevensegment.vhd Line: 24
-Warning (12125): Using design file binary_bcd.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: binary_bcd-behavior File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 19
-    Info (12023): Found entity 1: binary_bcd File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 8
-Info (12128): Elaborating entity "binary_bcd" for hierarchy "binary_bcd:binary_bcd_ins" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 180
-Warning (10036): Verilog HDL or VHDL warning at binary_bcd.vhd(22): object "counter" assigned a value but never read File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 22
-Warning (10492): VHDL Process Statement warning at binary_bcd.vhd(50): signal "binary" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 50
-Warning (10492): VHDL Process Statement warning at binary_bcd.vhd(53): signal "bcd_signal" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 53
-Warning (10492): VHDL Process Statement warning at binary_bcd.vhd(54): signal "bcd_signal" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 54
-Warning (10492): VHDL Process Statement warning at binary_bcd.vhd(59): signal "bcd_signal" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 59
-Warning (10492): VHDL Process Statement warning at binary_bcd.vhd(60): signal "bcd_signal" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 60
-Warning (10492): VHDL Process Statement warning at binary_bcd.vhd(65): signal "bcd_signal" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 65
-Warning (10492): VHDL Process Statement warning at binary_bcd.vhd(66): signal "bcd_signal" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 66
-Warning (10492): VHDL Process Statement warning at binary_bcd.vhd(71): signal "bcd_signal" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 71
-Warning (10492): VHDL Process Statement warning at binary_bcd.vhd(72): signal "bcd_signal" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 72
-Warning (10492): VHDL Process Statement warning at binary_bcd.vhd(77): signal "bcd_signal" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 77
-Warning (10492): VHDL Process Statement warning at binary_bcd.vhd(80): signal "counter_2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 80
-Warning (10492): VHDL Process Statement warning at binary_bcd.vhd(81): signal "bcd_signal" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 81
-Warning (10492): VHDL Process Statement warning at binary_bcd.vhd(86): signal "counter_2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 86
-Warning (10631): VHDL Process Statement warning at binary_bcd.vhd(39): inferring latch(es) for signal or variable "bcd", which holds its previous value in one or more paths through the process File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Warning (10631): VHDL Process Statement warning at binary_bcd.vhd(39): inferring latch(es) for signal or variable "bcd_signal", which holds its previous value in one or more paths through the process File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Warning (10631): VHDL Process Statement warning at binary_bcd.vhd(39): inferring latch(es) for signal or variable "counter_2", which holds its previous value in one or more paths through the process File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Warning (10631): VHDL Process Statement warning at binary_bcd.vhd(39): inferring latch(es) for signal or variable "busy", which holds its previous value in one or more paths through the process File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Warning (10631): VHDL Process Statement warning at binary_bcd.vhd(39): inferring latch(es) for signal or variable "nextstate", which holds its previous value in one or more paths through the process File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "busy" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "counter_2[0]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "counter_2[1]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "counter_2[2]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "counter_2[3]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "counter_2[4]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "counter_2[5]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "counter_2[6]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "counter_2[7]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "counter_2[8]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "counter_2[9]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "counter_2[10]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "counter_2[11]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "counter_2[12]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "counter_2[13]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "counter_2[14]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "counter_2[15]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "counter_2[16]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "counter_2[17]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "counter_2[18]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "counter_2[19]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "counter_2[20]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "counter_2[21]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "counter_2[22]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "counter_2[23]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "counter_2[24]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "counter_2[25]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "counter_2[26]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "counter_2[27]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "counter_2[28]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "counter_2[29]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "counter_2[30]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "counter_2[31]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "bcd_signal[0]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "bcd_signal[1]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "bcd_signal[2]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "bcd_signal[3]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "bcd_signal[4]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "bcd_signal[5]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "bcd_signal[6]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "bcd_signal[7]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "bcd_signal[8]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "bcd_signal[9]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "bcd_signal[10]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "bcd_signal[11]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "bcd_signal[12]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "bcd_signal[13]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "bcd_signal[14]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "bcd_signal[15]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "bcd_signal[16]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "bcd_signal[17]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "bcd_signal[18]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "bcd_signal[19]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "bcd_signal[20]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "bcd_signal[21]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "bcd_signal[22]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "bcd_signal[23]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "bcd_signal[24]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "bcd_signal[25]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "bcd_signal[26]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "bcd_signal[27]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "bcd_signal[28]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "bcd[0]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "bcd[1]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "bcd[2]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "bcd[3]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "bcd[4]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "bcd[5]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "bcd[6]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "bcd[7]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "bcd[8]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "bcd[9]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "bcd[10]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "bcd[11]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "bcd[12]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "bcd[13]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "bcd[14]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "bcd[15]" at binary_bcd.vhd(39) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 39
-Info (10041): Inferred latch for "nextstate.s6" at binary_bcd.vhd(41) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 41
-Info (10041): Inferred latch for "nextstate.S5" at binary_bcd.vhd(41) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 41
-Info (10041): Inferred latch for "nextstate.S4" at binary_bcd.vhd(41) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 41
-Info (10041): Inferred latch for "nextstate.S3" at binary_bcd.vhd(41) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 41
-Info (10041): Inferred latch for "nextstate.S2" at binary_bcd.vhd(41) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 41
-Info (10041): Inferred latch for "nextstate.S1" at binary_bcd.vhd(41) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 41
-Info (10041): Inferred latch for "nextstate.S0" at binary_bcd.vhd(41) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 41
-Error (12006): Node instance "ADC_Conversion_ins" instantiates undefined entity "test_DE10_Lite". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 168
+Error (10465): VHDL error at voltmeter.vhd(160): name "ADC_Conversion_ins" cannot be used because it is already used for a previously declared item File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 160
 Info (144001): Generated suppressed messages file D:/Documents/School/University/Third Year/ENEL 453/Lab 3/output_files/Voltmeter.map.smsg
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 27 warnings
-    Error: Peak virtual memory: 4770 megabytes
-    Error: Processing ended: Tue Nov 02 21:22:08 2021
-    Error: Elapsed time: 00:00:19
-    Error: Total CPU time (on all processors): 00:00:44
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 2 warnings
+    Error: Peak virtual memory: 4767 megabytes
+    Error: Processing ended: Tue Nov 02 22:27:35 2021
+    Error: Elapsed time: 00:00:15
+    Error: Total CPU time (on all processors): 00:00:38
 
 
 +------------------------------------------+
