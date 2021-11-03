@@ -1,0 +1,85 @@
+{D:/Documents/School/University/Third Year/ENEL 453/Lab 3/Simulation/test_ADC.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Documents/School/University/Third Year/ENEL 453/Lab 3/Simulation/test_ADC.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity test_DE10_Lite
+-- Compiling architecture behavior of test_DE10_Lite
+
+} {} {}} {D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter_tb.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter_tb.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Voltmeter_tb
+-- Compiling architecture tb of Voltmeter_tb
+
+} {} {}} {D:/Documents/School/University/Third Year/ENEL 453/Lab 3/mux_tb.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Documents/School/University/Third Year/ENEL 453/Lab 3/mux_tb.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux_tb
+-- Compiling architecture tb of mux_tb
+
+} {} {}} {D:/Documents/School/University/Third Year/ENEL 453/Lab 3/SevenSegment.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Documents/School/University/Third Year/ENEL 453/Lab 3/SevenSegment.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity SevenSegment
+-- Compiling architecture Behavioral of SevenSegment
+
+} {} {}} {D:/Documents/School/University/Third Year/ENEL 453/Lab 3/registers.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Documents/School/University/Third Year/ENEL 453/Lab 3/registers.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity registers
+-- Compiling architecture rtl of registers
+
+} {} {}} {D:/Documents/School/University/Third Year/ENEL 453/Lab 3/Simulation/tb_ADC.vhd} {2 {vcom -work work -2002 -explicit -stats=none {D:/Documents/School/University/Third Year/ENEL 453/Lab 3/Simulation/tb_ADC.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity tb_DE10_Lite
+-- Compiling architecture Behavioral of tb_DE10_Lite
+** Warning: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/Simulation/tb_ADC.vhd(10): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+
+} {} {}} {D:/Documents/School/University/Third Year/ENEL 453/Lab 3/SevenSegment_decoder.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Documents/School/University/Third Year/ENEL 453/Lab 3/SevenSegment_decoder.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity SevenSegment_decoder
+-- Compiling architecture Behavioral of SevenSegment_decoder
+
+} {} {}} {D:/Documents/School/University/Third Year/ENEL 453/Lab 3/averager.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Documents/School/University/Third Year/ENEL 453/Lab 3/averager.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity averager
+-- Compiling architecture rtl of averager
+
+} {} {}} {D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity Voltmeter
+-- Compiling architecture Behavioral of Voltmeter
+
+} {} {}} {D:/Documents/School/University/Third Year/ENEL 453/Lab 3/mux.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Documents/School/University/Third Year/ENEL 453/Lab 3/mux.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux
+-- Compiling architecture Behavioral of mux
+
+} {} {}}
