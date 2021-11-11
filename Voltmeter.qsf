@@ -352,6 +352,7 @@ set_location_assignment PIN_F16 -to ARDUINO_RESET_N
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_location_assignment PIN_C11 -to Selecter
+set_global_assignment -name VHDL_FILE voltage2distance.vhd
 set_global_assignment -name VHDL_FILE SevenSegment_decoder.vhd
 set_global_assignment -name VHDL_FILE registers.vhd
 set_global_assignment -name VHDL_FILE binary_bcd.vhd

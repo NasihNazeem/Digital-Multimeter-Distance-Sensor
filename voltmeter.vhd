@@ -19,24 +19,31 @@ Signal A :   STD_LOGIC_VECTOR (3 downto 0):= (others=>'0');
 Signal Num_Hex : NumHexType := (others => (others => '0'));   
 Signal DP_in:   STD_LOGIC_VECTOR (5 downto 0);
 Signal ADC_read,rsp_data,q_outputs_1,q_outputs_2 : STD_LOGIC_VECTOR (11 downto 0);
-Signal voltage: STD_LOGIC_VECTOR (12 downto 0);
+Signal mult_output: STD_LOGIC_VECTOR (12 downto 0);
 Signal busy: STD_LOGIC;
 signal response_valid_out_i1,response_valid_out_i2,response_valid_out_i3 : STD_LOGIC_VECTOR(0 downto 0);
 Signal bcd: STD_LOGIC_VECTOR(15 DOWNTO 0);
 Signal Q_temp1 : std_logic_vector(11 downto 0);
-
+Signal v2d_distance_output : std_logic_vector(12 downto 0);
 --Mux signals
-Signal mux_output: std_logic_vector(11 downto 0);
+Signal mux_output: std_logic_vector(12 downto 0);
 
 -- Mux component
 Component mux is
-	port( AVG : in std_logic_vector(11 downto 0);
-			RAW : in std_logic_vector(11 downto 0);
+	port( mux_voltage : in std_logic_vector(12 downto 0);
+			mux_distance : in std_logic_vector(12 downto 0);
 			Selecter	 : in std_logic;
-			Y	 : out std_logic_vector(11 downto 0)
+			Y	 : out std_logic_vector(12 downto 0)
 		 );
 end Component;
-		 
+
+Component voltage2distance is
+	PORT(
+      clk            :  IN    STD_LOGIC;                                
+      reset          :  IN    STD_LOGIC;                                
+      voltage        :  IN    STD_LOGIC_VECTOR(12 DOWNTO 0);                           
+      distance       :  OUT   STD_LOGIC_VECTOR(12 DOWNTO 0));
+end Component;
 
 Component SevenSegment is
     Port( Num_Hex																 : in  NumHexType;
@@ -91,16 +98,26 @@ begin
    Num_Hex(3) <= bcd(15 downto 12);
    Num_Hex(4) <= "1111";  -- blank this display
    Num_Hex(5) <= "1111";  -- blank this display   
-   DP_in    <= "001000";-- position of the decimal point in the display
-
+	DP_in <= "001000" when Selecter = '1' else 
+				"000100";
+				
+				
 -- Mux instantiation
 multiplexer: mux
 				 port map(
-							 AVG => Q_temp1,
-							 RAW => q_outputs_2,
+							 mux_voltage => mult_output,
+							 mux_distance => v2d_distance_output,
 							 Selecter   => Selecter,
 							 Y	  => mux_output
 							);
+							
+V2D : voltage2distance
+				port map(
+							clk => clk,
+							reset => reset,
+							voltage => mult_output,
+							distance => v2d_distance_output
+							);							
 							
 ave :    averager
          port map(
@@ -167,14 +184,14 @@ LEDR(9 downto 0) <=Q_temp1(11 downto 2); -- gives visual display of upper binary
 -- in line below, can change the scaling factor (i.e. 2500), to calibrate the voltage reading to a reference voltmeter
 
 -- Added mux_output, before it was Q_temp1
-voltage <= std_logic_vector(resize(unsigned(mux_output)*2500*2/4096,voltage'length)); -- Converting ADC_read a 12 bit binary to voltage readable numbers
+mult_output <= std_logic_vector(resize(unsigned(Q_temp1)*2500*2/4096,mult_output'length)); -- Converting ADC_read a 12 bit binary to voltage readable numbers
 
 binary_bcd_ins: binary_bcd                               
    PORT MAP(
       clk      => clk,                          
       reset    => reset,                                 
       ena      => '1',                           
-      binary   => voltage,    
+      binary   => mux_output,    
       busy     => busy,                         
       bcd      => bcd         
       );
@@ -211,8 +228,8 @@ end Behavioral;
 --
 ---- Mux component
 --Component mux is
---	port( AVG : in std_logic_vector(11 downto 0);
---			RAW : in std_logic_vector(11 downto 0);
+--	port( mux_voltage : in std_logic_vector(11 downto 0);
+--			mux_distance : in std_logic_vector(11 downto 0);
 --			Selecter	 : in std_logic;
 --			Y	 : out std_logic_vector(11 downto 0)
 --		 );
@@ -277,8 +294,8 @@ end Behavioral;
 ---- Mux instantiation
 --multiplexer: mux
 --				 port map(
---							 AVG => Q_temp1,
---							 RAW => q_outputs_2,
+--							 mux_voltage => Q_temp1,
+--							 mux_distance => q_outputs_2,
 --							 Selecter   => Selecter,
 --							 Y	  => mux_output
 --							);

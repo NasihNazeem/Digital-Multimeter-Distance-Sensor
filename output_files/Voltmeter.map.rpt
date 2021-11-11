@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Voltmeter
-Thu Nov 11 03:22:10 2021
+Thu Nov 11 10:27:42 2021
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Thu Nov 11 03:22:10 2021           ;
+; Analysis & Synthesis Status        ; Failed - Thu Nov 11 10:27:42 2021           ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Voltmeter                                   ;
 ; Top-level Entity Name              ; Voltmeter                                   ;
@@ -164,10 +164,13 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu Nov 11 03:22:02 2021
+    Info: Processing started: Thu Nov 11 10:27:34 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab3 -c Voltmeter
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file voltage2distance.vhd
+    Info (12022): Found design unit 1: voltage2distance-behavior File: H:/Github/NasihNazeem/ENEL-453-Labs/voltage2distance.vhd Line: 32
+    Info (12023): Found entity 1: voltage2distance File: H:/Github/NasihNazeem/ENEL-453-Labs/voltage2distance.vhd Line: 24
 Info (12021): Found 2 design units, including 1 entities, in source file sevensegment_decoder.vhd
     Info (12022): Found design unit 1: SevenSegment_decoder-Behavioral File: H:/Github/NasihNazeem/ENEL-453-Labs/SevenSegment_decoder.vhd Line: 13
     Info (12023): Found entity 1: SevenSegment_decoder File: H:/Github/NasihNazeem/ENEL-453-Labs/SevenSegment_decoder.vhd Line: 5
@@ -226,13 +229,14 @@ Info (12021): Found 2 design units, including 1 entities, in source file mux_tb.
     Info (12023): Found entity 1: mux_tb File: H:/Github/NasihNazeem/ENEL-453-Labs/mux_tb.vhd Line: 6
 Info (12127): Elaborating entity "Voltmeter" for the top level hierarchy
 Warning (10036): Verilog HDL or VHDL warning at voltmeter.vhd(23): object "busy" assigned a value but never read File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 23
-Info (12128): Elaborating entity "mux" for hierarchy "mux:multiplexer" File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 97
-Info (12128): Elaborating entity "averager" for hierarchy "averager:ave" File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 105
-Info (12128): Elaborating entity "registers" for hierarchy "registers:sync1" File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 114
-Info (12128): Elaborating entity "registers" for hierarchy "registers:sync3" File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 134
-Info (12128): Elaborating entity "SevenSegment" for hierarchy "SevenSegment:SevenSegment_ins" File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 154
+Info (12128): Elaborating entity "mux" for hierarchy "mux:multiplexer" File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 106
+Info (12128): Elaborating entity "voltage2distance" for hierarchy "voltage2distance:V2D" File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 114
+Info (12128): Elaborating entity "averager" for hierarchy "averager:ave" File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 122
+Info (12128): Elaborating entity "registers" for hierarchy "registers:sync1" File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 131
+Info (12128): Elaborating entity "registers" for hierarchy "registers:sync3" File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 151
+Info (12128): Elaborating entity "SevenSegment" for hierarchy "SevenSegment:SevenSegment_ins" File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 171
 Info (12128): Elaborating entity "SevenSegment_decoder" for hierarchy "SevenSegment:SevenSegment_ins|SevenSegment_decoder:\Behavioral_Decoder:0:DECODERx" File: H:/Github/NasihNazeem/ENEL-453-Labs/SevenSegment.vhd Line: 36
-Info (12128): Elaborating entity "binary_bcd" for hierarchy "binary_bcd:binary_bcd_ins" File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 172
+Info (12128): Elaborating entity "binary_bcd" for hierarchy "binary_bcd:binary_bcd_ins" File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 189
 Warning (10036): Verilog HDL or VHDL warning at binary_bcd.vhd(22): object "counter" assigned a value but never read File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 22
 Warning (10492): VHDL Process Statement warning at binary_bcd.vhd(55): signal "binary" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 55
 Warning (10492): VHDL Process Statement warning at binary_bcd.vhd(58): signal "bcd_signal" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 58
@@ -337,11 +341,11 @@ Info (10041): Inferred latch for "nextstate.S3" at binary_bcd.vhd(46) File: H:/G
 Info (10041): Inferred latch for "nextstate.S2" at binary_bcd.vhd(46) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 46
 Info (10041): Inferred latch for "nextstate.S1" at binary_bcd.vhd(46) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 46
 Info (10041): Inferred latch for "nextstate.S0" at binary_bcd.vhd(46) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 46
-Error (12006): Node instance "ADC_Conversion_ins" instantiates undefined entity "test_DE10_Lite". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 160
+Error (12006): Node instance "ADC_Conversion_ins" instantiates undefined entity "test_DE10_Lite". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 177
 Info (144001): Generated suppressed messages file H:/Github/NasihNazeem/ENEL-453-Labs/output_files/Voltmeter.map.smsg
 Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 22 warnings
-    Error: Peak virtual memory: 4780 megabytes
-    Error: Processing ended: Thu Nov 11 03:22:10 2021
+    Error: Peak virtual memory: 4789 megabytes
+    Error: Processing ended: Thu Nov 11 10:27:42 2021
     Error: Elapsed time: 00:00:08
     Error: Total CPU time (on all processors): 00:00:15
 

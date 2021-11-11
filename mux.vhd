@@ -2,10 +2,10 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 entity mux is
-	port( AVG : in std_logic_vector(11 downto 0);
-			RAW : in std_logic_vector(11 downto 0);
+	port( mux_voltage : in std_logic_vector(12 downto 0);
+			mux_distance : in std_logic_vector(12 downto 0);
 			Selecter	 : in std_logic;
-			Y	 : out std_logic_vector(11 downto 0)
+			Y	 : out std_logic_vector(12 downto 0)
 		 );
 		 
 end mux;
@@ -13,12 +13,12 @@ end mux;
 architecture Behavioral of mux is
 
 begin
-	process(Selecter, AVG, RAW)
+	process(Selecter, mux_voltage, mux_distance)
 	begin
 		if Selecter = '0' then
-			Y <= RAW;
+			Y <= mux_distance;
 		else
-			Y <= AVG;
+			Y <= mux_voltage;
 		end if;
 	end process;
 	

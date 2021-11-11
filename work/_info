@@ -22,9 +22,9 @@ VB8:2CDW`BR7l1OCmU>8;70
 !s100 SD0FhjE;VVh:AY`^Mm8L61
 Z7 OV;C;10.5b;63
 32
-Z8 !s110 1636626138
+Z8 !s110 1636651697
 !i10b 1
-Z9 !s108 1636626138.000000
+Z9 !s108 1636651697.000000
 Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|H:/Github/NasihNazeem/ENEL-453-Labs/averager.vhd|
 Z11 !s107 H:/Github/NasihNazeem/ENEL-453-Labs/averager.vhd|
 !i113 1
@@ -105,50 +105,50 @@ VlSMe;:_I>AXBOD_BVchE>3
 !s100 9U5@?FbCVkoG@Vj<>DTz92
 R7
 32
-R8
+Z23 !s110 1636651698
 !i10b 1
-R9
-Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|H:/Github/NasihNazeem/ENEL-453-Labs/SevenSegment.vhd|
-Z24 !s107 H:/Github/NasihNazeem/ENEL-453-Labs/SevenSegment.vhd|
+Z24 !s108 1636651698.000000
+Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|H:/Github/NasihNazeem/ENEL-453-Labs/SevenSegment.vhd|
+Z26 !s107 H:/Github/NasihNazeem/ENEL-453-Labs/SevenSegment.vhd|
 !i113 1
 R12
 R13
 Emux
-Z25 w1636620823
+Z27 w1636651236
 R2
 R3
 R4
-Z26 8H:/Github/NasihNazeem/ENEL-453-Labs/mux.vhd
-Z27 FH:/Github/NasihNazeem/ENEL-453-Labs/mux.vhd
+Z28 8H:/Github/NasihNazeem/ENEL-453-Labs/mux.vhd
+Z29 FH:/Github/NasihNazeem/ENEL-453-Labs/mux.vhd
 l0
 L4
-VIaiVWXCGPS6CCCYh4gJHQ0
-!s100 36PJIAD[B3DW<^fO[CnC?2
+VUF5?B:zL@l8?LAL@Jk9SS0
+!s100 MJ2=:BO25a7Z2kDWhNM8G0
 R7
 32
-R8
+R23
 !i10b 1
-R9
-Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|H:/Github/NasihNazeem/ENEL-453-Labs/mux.vhd|
-Z29 !s107 H:/Github/NasihNazeem/ENEL-453-Labs/mux.vhd|
+R24
+Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|H:/Github/NasihNazeem/ENEL-453-Labs/mux.vhd|
+Z31 !s107 H:/Github/NasihNazeem/ENEL-453-Labs/mux.vhd|
 !i113 1
 R12
 R13
 Abehavioral
 R2
 R3
-DEx4 work 3 mux 0 22 IaiVWXCGPS6CCCYh4gJHQ0
+DEx4 work 3 mux 0 22 UF5?B:zL@l8?LAL@Jk9SS0
 l15
 L13
-VK:cIJb:F>ozgc_izR3@@50
-!s100 [68Xk0=BaiONEN72jEWB`1
+Vfze3O2?^gaAo86?kLJg>22
+!s100 T^Ef?=]Ze`jHH<iW3fLXb2
 R7
 32
-R8
+R23
 !i10b 1
-R9
-R28
-R29
+R24
+R30
+R31
 !i113 1
 R12
 R13
@@ -157,19 +157,19 @@ R0
 R2
 R3
 R4
-Z30 8H:/Github/NasihNazeem/ENEL-453-Labs/registers.vhd
-Z31 FH:/Github/NasihNazeem/ENEL-453-Labs/registers.vhd
+Z32 8H:/Github/NasihNazeem/ENEL-453-Labs/registers.vhd
+Z33 FH:/Github/NasihNazeem/ENEL-453-Labs/registers.vhd
 l0
 L4
 Voi=cDXg^hG:lDnFXRmWGZ3
 !s100 QTc_J_@loN^G6JbG4TBe_1
 R7
 32
-R8
+R23
 !i10b 1
-R9
-Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|H:/Github/NasihNazeem/ENEL-453-Labs/registers.vhd|
-Z33 !s107 H:/Github/NasihNazeem/ENEL-453-Labs/registers.vhd|
+R24
+Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|H:/Github/NasihNazeem/ENEL-453-Labs/registers.vhd|
+Z35 !s107 H:/Github/NasihNazeem/ENEL-453-Labs/registers.vhd|
 !i113 1
 R12
 R13
@@ -183,11 +183,11 @@ ViaPaaR2<Cc8]O4YRD^8`g0
 !s100 Ol2>SZTYjSoP=WBX1X:3f3
 R7
 32
-R8
+R23
 !i10b 1
-R9
-R32
-R33
+R24
+R34
+R35
 !i113 1
 R12
 R13
@@ -205,11 +205,11 @@ VPJ1T6Jm;g>o_Z9ZkBcHGi0
 !s100 7WXiea[V2580ZcBo^<ODh2
 R7
 32
-R8
-!i10b 1
-R9
 R23
+!i10b 1
 R24
+R25
+R26
 !i113 1
 R12
 R13
@@ -224,32 +224,32 @@ VeP;Q__VThakmK1WFZ<bMb2
 !s100 @USIgVG:[;S^cNY`^MCJD0
 R7
 32
-R8
-!i10b 1
-R9
 R23
+!i10b 1
 R24
+R25
+R26
 !i113 1
 R12
 R13
 Esevensegment_decoder
-R25
+Z36 w1636620823
 R2
 R3
 R4
-Z34 8H:/Github/NasihNazeem/ENEL-453-Labs/SevenSegment_decoder.vhd
-Z35 FH:/Github/NasihNazeem/ENEL-453-Labs/SevenSegment_decoder.vhd
+Z37 8H:/Github/NasihNazeem/ENEL-453-Labs/SevenSegment_decoder.vhd
+Z38 FH:/Github/NasihNazeem/ENEL-453-Labs/SevenSegment_decoder.vhd
 l0
 L5
 VVlW=l2M0eeEbg:dCz4:;@0
 !s100 nVLN]dm0afJ4i1K[@D_Do2
 R7
 32
-R8
+Z39 !s110 1636651699
 !i10b 1
-R9
-Z36 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|H:/Github/NasihNazeem/ENEL-453-Labs/SevenSegment_decoder.vhd|
-Z37 !s107 H:/Github/NasihNazeem/ENEL-453-Labs/SevenSegment_decoder.vhd|
+Z40 !s108 1636651699.000000
+Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|H:/Github/NasihNazeem/ENEL-453-Labs/SevenSegment_decoder.vhd|
+Z42 !s107 H:/Github/NasihNazeem/ENEL-453-Labs/SevenSegment_decoder.vhd|
 !i113 1
 R12
 R13
@@ -263,11 +263,11 @@ VC?9QIg:<Nc@7LA^50J:Ca0
 !s100 G[]U9WTmdjCPQ770:^Jn=3
 R7
 32
-R8
+R39
 !i10b 1
-R9
-R36
-R37
+R40
+R41
+R42
 !i113 1
 R12
 R13
@@ -276,60 +276,101 @@ R0
 R2
 R3
 R4
-Z38 8H:/Github/NasihNazeem/ENEL-453-Labs/Simulation/test_ADC.vhd
-Z39 FH:/Github/NasihNazeem/ENEL-453-Labs/Simulation/test_ADC.vhd
+Z43 8H:/Github/NasihNazeem/ENEL-453-Labs/Simulation/test_ADC.vhd
+Z44 FH:/Github/NasihNazeem/ENEL-453-Labs/Simulation/test_ADC.vhd
 l0
 L6
 VV@Q5GZFH]EZ[NWnbbL5E<1
 !s100 72N:e;ZbWmel4[3]E_PHT0
 R7
 32
-Z40 !s110 1636626139
+R39
 !i10b 1
-Z41 !s108 1636626139.000000
-Z42 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|H:/Github/NasihNazeem/ENEL-453-Labs/Simulation/test_ADC.vhd|
-Z43 !s107 H:/Github/NasihNazeem/ENEL-453-Labs/Simulation/test_ADC.vhd|
+R40
+Z45 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|H:/Github/NasihNazeem/ENEL-453-Labs/Simulation/test_ADC.vhd|
+Z46 !s107 H:/Github/NasihNazeem/ENEL-453-Labs/Simulation/test_ADC.vhd|
 !i113 1
 R12
 R13
 Abehavior
 R2
 R3
-Z44 DEx4 work 14 test_de10_lite 0 22 V@Q5GZFH]EZ[NWnbbL5E<1
+DEx4 work 14 test_de10_lite 0 22 V@Q5GZFH]EZ[NWnbbL5E<1
 l15
 L12
-Z45 VA8<BNdU5n;R9o1]o8No]E3
-Z46 !s100 FeHTfnb>k6a0V3LN0cg8b1
+VA8<BNdU5n;R9o1]o8No]E3
+!s100 FeHTfnb>k6a0V3LN0cg8b1
 R7
 32
-R40
+R39
 !i10b 1
-R41
-R42
-R43
+R40
+R45
+R46
+!i113 1
+R12
+R13
+Evoltage2distance
+Z47 w1636651631
+R1
+R2
+R3
+R4
+Z48 8H:\Github\NasihNazeem\ENEL-453-Labs\voltage2distance.vhd
+Z49 FH:\Github\NasihNazeem\ENEL-453-Labs\voltage2distance.vhd
+l0
+L24
+VfL]0H:>Wh9PbQDnGnld?c2
+!s100 >O^l<??9^SUPcE>=h0gaY3
+R7
+32
+R39
+!i10b 1
+R40
+Z50 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|H:\Github\NasihNazeem\ENEL-453-Labs\voltage2distance.vhd|
+Z51 !s107 H:\Github\NasihNazeem\ENEL-453-Labs\voltage2distance.vhd|
+!i113 1
+R12
+R13
+Abehavior
+R1
+R2
+R3
+Z52 DEx4 work 16 voltage2distance 0 22 fL]0H:>Wh9PbQDnGnld?c2
+Z53 l4143
+L32
+Z54 V8[1n9[m1cD2ged5^O5z6z3
+Z55 !s100 GjKPL5;e>lB5zkog_@IKn1
+R7
+32
+R39
+!i10b 1
+R40
+R50
+R51
 !i113 1
 R12
 R13
 Evoltmeter
-Z47 w1636625268
+Z56 w1636651474
 R15
 R1
 R2
 R3
 R4
-Z48 8H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd
-Z49 FH:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd
+Z57 8H:\Github\NasihNazeem\ENEL-453-Labs\voltmeter.vhd
+Z58 FH:\Github\NasihNazeem\ENEL-453-Labs\voltmeter.vhd
 l0
 L6
 VRc`YG773I8a6z@c2QcXVJ1
 !s100 SNi]lf2^O[;6N:ECWDR]63
 R7
 32
-R40
+R39
 !i10b 1
-R41
-Z50 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd|
-Z51 !s107 H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd|
+R40
+Z59 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|H:\Github\NasihNazeem\ENEL-453-Labs\voltmeter.vhd|
+Z60 !s107 H:\Github\NasihNazeem\ENEL-453-Labs\voltmeter.vhd|
 !i113 1
 R12
 R13
@@ -339,39 +380,39 @@ R1
 R2
 R3
 DEx4 work 9 voltmeter 0 22 Rc`YG773I8a6z@c2QcXVJ1
-l87
+l94
 L16
-VJd3nRPY`49d5:Ufd7BnSE3
-!s100 RzX4R6XlY6k`nQ9C30<[`2
+VCokJ1]A]l03cfjT9Bd<?00
+!s100 3;@boUjLVXfk`bmUCVM4R3
 R7
 32
-R40
+R39
 !i10b 1
-R41
-R50
-R51
+R40
+R59
+R60
 !i113 1
 R12
 R13
 Evoltmeter_tb
-Z52 w1636624892
+Z61 w1636624892
 R15
 R2
 R3
 R4
-Z53 8H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter_tb.vhd
-Z54 FH:/Github/NasihNazeem/ENEL-453-Labs/voltmeter_tb.vhd
+Z62 8H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter_tb.vhd
+Z63 FH:/Github/NasihNazeem/ENEL-453-Labs/voltmeter_tb.vhd
 l0
 L7
 VlhA9]5?7Lm8kc>OkaBEfP1
 !s100 ZjLSJKYJ9Kc;cM4AZ_?7F2
 R7
 32
-R40
+R39
 !i10b 1
-R41
-Z55 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter_tb.vhd|
-Z56 !s107 H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter_tb.vhd|
+R40
+Z64 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter_tb.vhd|
+Z65 !s107 H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter_tb.vhd|
 !i113 1
 R12
 R13
@@ -386,11 +427,11 @@ VRJCBG<oC_S2V5mlL5D49U2
 !s100 iiA94l[2__RziE^Mz@I`V3
 R7
 32
-R40
+R39
 !i10b 1
-R41
-R55
-R56
+R40
+R64
+R65
 !i113 1
 R12
 R13
