@@ -1,12 +1,4 @@
-H:/Github/NasihNazeem/ENEL-453-Labs/SevenSegment.vhd {1 {vcom -work work -2002 -explicit -stats=none H:/Github/NasihNazeem/ENEL-453-Labs/SevenSegment.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity SevenSegment
--- Compiling architecture Behavioral of SevenSegment
-
-} {} {}} H:/Github/NasihNazeem/ENEL-453-Labs/registers.vhd {1 {vcom -work work -2002 -explicit -stats=none H:/Github/NasihNazeem/ENEL-453-Labs/registers.vhd
+H:/Github/NasihNazeem/ENEL-453-Labs/registers.vhd {1 {vcom -work work -2002 -explicit -stats=none H:/Github/NasihNazeem/ENEL-453-Labs/registers.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -14,22 +6,15 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity registers
 -- Compiling architecture rtl of registers
 
-} {} {}} H:/Github/NasihNazeem/ENEL-453-Labs/SevenSegment_decoder.vhd {1 {vcom -work work -2002 -explicit -stats=none H:/Github/NasihNazeem/ENEL-453-Labs/SevenSegment_decoder.vhd
+} {} {}} H:/Github/NasihNazeem/ENEL-453-Labs/SevenSegment.vhd {1 {vcom -work work -2002 -explicit -stats=none H:/Github/NasihNazeem/ENEL-453-Labs/SevenSegment.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity SevenSegment_decoder
--- Compiling architecture Behavioral of SevenSegment_decoder
-
-} {} {}} H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd {1 {vcom -work work -2002 -explicit -stats=none H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity binary_bcd
--- Compiling architecture behavior of binary_bcd
+-- Compiling package HexArrays
+-- Loading package HexArrays
+-- Compiling entity SevenSegment
+-- Compiling architecture Behavioral of SevenSegment
 
 } {} {}} H:/Github/NasihNazeem/ENEL-453-Labs/averager.vhd {1 {vcom -work work -2002 -explicit -stats=none H:/Github/NasihNazeem/ENEL-453-Labs/averager.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
@@ -40,6 +25,33 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity averager
 -- Compiling architecture rtl of averager
 
+} {} {}} H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd {1 {vcom -work work -2002 -explicit -stats=none H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity binary_bcd
+-- Compiling architecture behavior of binary_bcd
+
+} {} {}} H:/Github/NasihNazeem/ENEL-453-Labs/SevenSegment_decoder.vhd {1 {vcom -work work -2002 -explicit -stats=none H:/Github/NasihNazeem/ENEL-453-Labs/SevenSegment_decoder.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity SevenSegment_decoder
+-- Compiling architecture Behavioral of SevenSegment_decoder
+
+} {} {}} H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd {1 {vcom -work work -2002 -explicit -stats=none H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package HexArrays
+-- Compiling entity Voltmeter
+-- Compiling architecture Behavioral of Voltmeter
+
 } {} {}} H:/Github/NasihNazeem/ENEL-453-Labs/mux.vhd {1 {vcom -work work -2002 -explicit -stats=none H:/Github/NasihNazeem/ENEL-453-Labs/mux.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
@@ -48,6 +60,15 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity mux
 -- Compiling architecture Behavioral of mux
 
+} {} {}} H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package HexArrays
+-- Compiling entity Voltmeter_tb
+-- Compiling architecture tb of Voltmeter_tb
+
 } {} {}} H:/Github/NasihNazeem/ENEL-453-Labs/Simulation/test_ADC.vhd {1 {vcom -work work -2002 -explicit -stats=none H:/Github/NasihNazeem/ENEL-453-Labs/Simulation/test_ADC.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
@@ -55,13 +76,5 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Loading package std_logic_1164
 -- Compiling entity test_DE10_Lite
 -- Compiling architecture behavior of test_DE10_Lite
-
-} {} {}} H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter_tb.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity Voltmeter_tb
--- Compiling architecture tb of Voltmeter_tb
 
 } {} {}}
