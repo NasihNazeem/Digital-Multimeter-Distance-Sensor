@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Voltmeter
-Thu Nov 11 15:54:32 2021
+Thu Nov 11 16:02:41 2021
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -100,13 +100,13 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Nov 11 15:54:32 2021       ;
+; Analysis & Synthesis Status        ; Successful - Thu Nov 11 16:02:41 2021       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Voltmeter                                   ;
 ; Top-level Entity Name              ; Voltmeter                                   ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 1,913                                       ;
-;     Total combinational functions  ; 1,623                                       ;
+; Total logic elements               ; 2,498                                       ;
+;     Total combinational functions  ; 2,208                                       ;
 ;     Dedicated logic registers      ; 404                                         ;
 ; Total registers                    ; 404                                         ;
 ; Total pins                         ; 61                                          ;
@@ -294,39 +294,39 @@ refer to the applicable agreement for further details.
 +------------------------------------------------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------+----------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                                                                                                                 ;
-+---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+
-; Resource                                    ; Usage                                                                                                                         ;
-+---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+
-; Estimated Total logic elements              ; 1,913                                                                                                                         ;
-;                                             ;                                                                                                                               ;
-; Total combinational functions               ; 1623                                                                                                                          ;
-; Logic element usage by number of LUT inputs ;                                                                                                                               ;
-;     -- 4 input functions                    ; 1041                                                                                                                          ;
-;     -- 3 input functions                    ; 413                                                                                                                           ;
-;     -- <=2 input functions                  ; 169                                                                                                                           ;
-;                                             ;                                                                                                                               ;
-; Logic elements by mode                      ;                                                                                                                               ;
-;     -- normal mode                          ; 1335                                                                                                                          ;
-;     -- arithmetic mode                      ; 288                                                                                                                           ;
-;                                             ;                                                                                                                               ;
-; Total registers                             ; 404                                                                                                                           ;
-;     -- Dedicated logic registers            ; 404                                                                                                                           ;
-;     -- I/O registers                        ; 0                                                                                                                             ;
-;                                             ;                                                                                                                               ;
-; I/O pins                                    ; 61                                                                                                                            ;
-;                                             ;                                                                                                                               ;
-; Embedded Multiplier 9-bit elements          ; 0                                                                                                                             ;
-;                                             ;                                                                                                                               ;
-; Total PLLs                                  ; 1                                                                                                                             ;
-;     -- PLLs                                 ; 1                                                                                                                             ;
-;                                             ;                                                                                                                               ;
-; Maximum fan-out node                        ; lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_arg:auto_generated|op_1~6 ;
-; Maximum fan-out                             ; 333                                                                                                                           ;
-; Total fan-out                               ; 7366                                                                                                                          ;
-; Average fan-out                             ; 3.42                                                                                                                          ;
-+---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                                                                                                  ;
++---------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
+; Resource                                    ; Usage                                                                                                                          ;
++---------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
+; Estimated Total logic elements              ; 2,498                                                                                                                          ;
+;                                             ;                                                                                                                                ;
+; Total combinational functions               ; 2208                                                                                                                           ;
+; Logic element usage by number of LUT inputs ;                                                                                                                                ;
+;     -- 4 input functions                    ; 1650                                                                                                                           ;
+;     -- 3 input functions                    ; 394                                                                                                                            ;
+;     -- <=2 input functions                  ; 164                                                                                                                            ;
+;                                             ;                                                                                                                                ;
+; Logic elements by mode                      ;                                                                                                                                ;
+;     -- normal mode                          ; 1920                                                                                                                           ;
+;     -- arithmetic mode                      ; 288                                                                                                                            ;
+;                                             ;                                                                                                                                ;
+; Total registers                             ; 404                                                                                                                            ;
+;     -- Dedicated logic registers            ; 404                                                                                                                            ;
+;     -- I/O registers                        ; 0                                                                                                                              ;
+;                                             ;                                                                                                                                ;
+; I/O pins                                    ; 61                                                                                                                             ;
+;                                             ;                                                                                                                                ;
+; Embedded Multiplier 9-bit elements          ; 0                                                                                                                              ;
+;                                             ;                                                                                                                                ;
+; Total PLLs                                  ; 1                                                                                                                              ;
+;     -- PLLs                                 ; 1                                                                                                                              ;
+;                                             ;                                                                                                                                ;
+; Maximum fan-out node                        ; lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_arg:auto_generated|op_1~16 ;
+; Maximum fan-out                             ; 558                                                                                                                            ;
+; Total fan-out                               ; 9739                                                                                                                           ;
+; Average fan-out                             ; 3.56                                                                                                                           ;
++---------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -334,7 +334,7 @@ refer to the applicable agreement for further details.
 +------------------------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------+--------------+
 ; Compilation Hierarchy Node                                                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                                                                                                                                                                          ; Entity Name                            ; Library Name ;
 +------------------------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------+--------------+
-; |Voltmeter                                                                   ; 1623 (7)            ; 404 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 61   ; 0            ; 0          ; |Voltmeter                                                                                                                                                                                                                                   ; Voltmeter                              ; work         ;
+; |Voltmeter                                                                   ; 2208 (7)            ; 404 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 61   ; 0            ; 0          ; |Voltmeter                                                                                                                                                                                                                                   ; Voltmeter                              ; work         ;
 ;    |ADC_Conversion:ADC_Conversion_ins|                                       ; 54 (5)              ; 90 (29)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|ADC_Conversion:ADC_Conversion_ins                                                                                                                                                                                                 ; ADC_Conversion                         ; work         ;
 ;       |adc_qsys:u0|                                                          ; 49 (0)              ; 61 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0                                                                                                                                                                                     ; adc_qsys                               ; adc_qsys     ;
 ;          |adc_qsys_altpll_sys:altpll_sys|                                    ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_altpll_sys:altpll_sys                                                                                                                                                      ; adc_qsys_altpll_sys                    ; adc_qsys     ;
@@ -355,7 +355,7 @@ refer to the applicable agreement for further details.
 ;       |SevenSegment_decoder:\Behavioral_Decoder:2:DECODERx|                  ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|SevenSegment:SevenSegment_ins|SevenSegment_decoder:\Behavioral_Decoder:2:DECODERx                                                                                                                                                 ; SevenSegment_decoder                   ; work         ;
 ;       |SevenSegment_decoder:\Behavioral_Decoder:3:DECODERx|                  ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|SevenSegment:SevenSegment_ins|SevenSegment_decoder:\Behavioral_Decoder:3:DECODERx                                                                                                                                                 ; SevenSegment_decoder                   ; work         ;
 ;    |averager:ave|                                                            ; 206 (206)           ; 204 (204)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|averager:ave                                                                                                                                                                                                                      ; averager                               ; work         ;
-;    |binary_bcd:binary_bcd_ins|                                               ; 150 (150)           ; 84 (84)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|binary_bcd:binary_bcd_ins                                                                                                                                                                                                         ; binary_bcd                             ; work         ;
+;    |binary_bcd:binary_bcd_ins|                                               ; 149 (149)           ; 84 (84)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|binary_bcd:binary_bcd_ins                                                                                                                                                                                                         ; binary_bcd                             ; work         ;
 ;    |flag_mux:flag_multiplexer|                                               ; 12 (12)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|flag_mux:flag_multiplexer                                                                                                                                                                                                         ; flag_mux                               ; work         ;
 ;    |lpm_mult:Mult0|                                                          ; 57 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|lpm_mult:Mult0                                                                                                                                                                                                                    ; lpm_mult                               ; work         ;
 ;       |multcore:mult_core|                                                   ; 57 (29)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|lpm_mult:Mult0|multcore:mult_core                                                                                                                                                                                                 ; multcore                               ; work         ;
@@ -369,7 +369,7 @@ refer to the applicable agreement for further details.
 ;    |registers:sync2|                                                         ; 0 (0)               ; 12 (12)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|registers:sync2                                                                                                                                                                                                                   ; registers                              ; work         ;
 ;    |registers:sync3|                                                         ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|registers:sync3                                                                                                                                                                                                                   ; registers                              ; work         ;
 ;    |registers:sync4|                                                         ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|registers:sync4                                                                                                                                                                                                                   ; registers                              ; work         ;
-;    |voltage2distance:V2D|                                                    ; 1109 (1109)         ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|voltage2distance:V2D                                                                                                                                                                                                              ; voltage2distance                       ; work         ;
+;    |voltage2distance:V2D|                                                    ; 1695 (1695)         ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|voltage2distance:V2D                                                                                                                                                                                                              ; voltage2distance                       ; work         ;
 +------------------------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -575,11 +575,11 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
 ; Total registers                              ; 404   ;
-; Number of registers using Synchronous Clear  ; 31    ;
-; Number of registers using Synchronous Load   ; 15    ;
+; Number of registers using Synchronous Clear  ; 32    ;
+; Number of registers using Synchronous Load   ; 16    ;
 ; Number of registers using Asynchronous Clear ; 365   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 332   ;
+; Number of registers using Clock Enable       ; 333   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -605,10 +605,10 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Voltmeter|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|int_timer[5] ;
 ; 7:1                ; 4 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Voltmeter|binary_bcd:binary_bcd_ins|bcd_signal[13]                                                                                                                                                 ;
-; 7:1                ; 11 bits   ; 44 LEs        ; 22 LEs               ; 22 LEs                 ; Yes        ; |Voltmeter|binary_bcd:binary_bcd_ins|bcd_signal[6]                                                                                                                                                  ;
-; 9:1                ; 4 bits    ; 24 LEs        ; 8 LEs                ; 16 LEs                 ; Yes        ; |Voltmeter|binary_bcd:binary_bcd_ins|bcd_signal[20]                                                                                                                                                 ;
+; 7:1                ; 12 bits   ; 48 LEs        ; 24 LEs               ; 24 LEs                 ; Yes        ; |Voltmeter|binary_bcd:binary_bcd_ins|bcd_signal[7]                                                                                                                                                  ;
+; 9:1                ; 4 bits    ; 24 LEs        ; 8 LEs                ; 16 LEs                 ; Yes        ; |Voltmeter|binary_bcd:binary_bcd_ins|bcd_signal[17]                                                                                                                                                 ;
 ; 11:1               ; 4 bits    ; 28 LEs        ; 12 LEs               ; 16 LEs                 ; Yes        ; |Voltmeter|binary_bcd:binary_bcd_ins|bcd_signal[24]                                                                                                                                                 ;
-; 13:1               ; 4 bits    ; 32 LEs        ; 20 LEs               ; 12 LEs                 ; Yes        ; |Voltmeter|binary_bcd:binary_bcd_ins|bcd_signal[27]                                                                                                                                                 ;
+; 13:1               ; 4 bits    ; 32 LEs        ; 20 LEs               ; 12 LEs                 ; Yes        ; |Voltmeter|binary_bcd:binary_bcd_ins|bcd_signal[26]                                                                                                                                                 ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Voltmeter|Num_Hex[3][0]                                                                                                                                                                            ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
@@ -1428,27 +1428,27 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; boundary_port         ; 61                          ;
 ; cycloneiii_ff         ; 404                         ;
-;     CLR               ; 69                          ;
+;     CLR               ; 68                          ;
 ;     ENA               ; 36                          ;
 ;     ENA CLR           ; 265                         ;
 ;     ENA CLR SCLR      ; 16                          ;
-;     ENA CLR SCLR SLD  ; 15                          ;
+;     ENA CLR SCLR SLD  ; 16                          ;
 ;     plain             ; 3                           ;
-; cycloneiii_lcell_comb ; 1629                        ;
+; cycloneiii_lcell_comb ; 2214                        ;
 ;     arith             ; 288                         ;
 ;         2 data inputs ; 77                          ;
 ;         3 data inputs ; 211                         ;
-;     normal            ; 1341                        ;
+;     normal            ; 1926                        ;
 ;         0 data inputs ; 21                          ;
 ;         1 data inputs ; 14                          ;
-;         2 data inputs ; 63                          ;
-;         3 data inputs ; 202                         ;
-;         4 data inputs ; 1041                        ;
+;         2 data inputs ; 58                          ;
+;         3 data inputs ; 183                         ;
+;         4 data inputs ; 1650                        ;
 ; cycloneiii_pll        ; 1                           ;
 ; fiftyfivenm_adcblock  ; 1                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 15.10                       ;
-; Average LUT depth     ; 8.70                        ;
+; Max LUT depth         ; 15.30                       ;
+; Average LUT depth     ; 9.63                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1457,7 +1457,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:06     ;
+; Top            ; 00:00:13     ;
 +----------------+--------------+
 
 
@@ -1467,7 +1467,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu Nov 11 15:54:16 2021
+    Info: Processing started: Thu Nov 11 16:02:18 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab3 -c Voltmeter
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -1818,16 +1818,16 @@ Warning (20013): Ignored 149 assignments for entity "DE10_LITE" -- entity does n
 Info (144001): Generated suppressed messages file H:/Github/NasihNazeem/ENEL-453-Labs/output_files/Voltmeter.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1983 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 2568 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 58 output pins
-    Info (21061): Implemented 1920 logic cells
+    Info (21061): Implemented 2505 logic cells
     Info (21065): Implemented 1 PLLs
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 192 warnings
-    Info: Peak virtual memory: 4871 megabytes
-    Info: Processing ended: Thu Nov 11 15:54:32 2021
-    Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:23
+    Info: Peak virtual memory: 4877 megabytes
+    Info: Processing ended: Thu Nov 11 16:02:41 2021
+    Info: Elapsed time: 00:00:23
+    Info: Total CPU time (on all processors): 00:00:30
 
 
 +------------------------------------------+
