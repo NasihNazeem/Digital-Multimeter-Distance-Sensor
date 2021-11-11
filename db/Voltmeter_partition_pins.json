@@ -72,6 +72,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "HEX[3][7]",
+					"strict" : false
+				},
+				{
 					"name" : "HEX[2][0]",
 					"strict" : false
 				},
@@ -97,6 +101,10 @@
 				},
 				{
 					"name" : "HEX[2][6]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX[2][7]",
 					"strict" : false
 				},
 				{
@@ -156,15 +164,15 @@
 					"strict" : false
 				},
 				{
+					"name" : "Selecter",
+					"strict" : false
+				},
+				{
 					"name" : "clk",
 					"strict" : false
 				},
 				{
 					"name" : "reset",
-					"strict" : false
-				},
-				{
-					"name" : "Selecter",
 					"strict" : false
 				}
 			]

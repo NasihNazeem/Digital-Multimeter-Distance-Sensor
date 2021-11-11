@@ -52,7 +52,7 @@ Component SevenSegment is
 			);
 End Component ;
 
-Component test_DE10_Lite is
+Component ADC_Conversion is
     Port( MAX10_CLK1_50      : in STD_LOGIC;
           response_valid_out : out STD_LOGIC;
           ADC_out            : out STD_LOGIC_VECTOR (11 downto 0)
@@ -174,7 +174,7 @@ SevenSegment_ins: SevenSegment
                             DP_in   => DP_in
                           );
                                      
-ADC_Conversion_ins:  test_DE10_Lite  PORT MAP(      
+ADC_Conversion_ins:  ADC_Conversion  PORT MAP(      
                                      MAX10_CLK1_50       => clk,
                                      response_valid_out  => response_valid_out_i1(0),
                                      ADC_out             => ADC_read);
