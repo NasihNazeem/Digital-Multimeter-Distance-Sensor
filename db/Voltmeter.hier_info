@@ -74,6 +74,7 @@ HEX[0][6] <= SevenSegment:SevenSegment_ins.Hex[0][6]
 HEX[0][7] <= SevenSegment:SevenSegment_ins.Hex[0][7]
 Selecter => mux:multiplexer.Selecter
 Selecter => SevenSegment:SevenSegment_ins.DP_in[3]
+Selecter => Num_Hex.IN1
 Selecter => SevenSegment:SevenSegment_ins.DP_in[2]
 
 
