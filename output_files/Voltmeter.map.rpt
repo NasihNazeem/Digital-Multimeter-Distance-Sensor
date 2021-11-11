@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Voltmeter
-Thu Nov 11 03:07:57 2021
+Thu Nov 11 03:22:10 2021
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Thu Nov 11 03:07:57 2021           ;
+; Analysis & Synthesis Status        ; Failed - Thu Nov 11 03:22:10 2021           ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Voltmeter                                   ;
 ; Top-level Entity Name              ; Voltmeter                                   ;
@@ -164,7 +164,7 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu Nov 11 03:07:49 2021
+    Info: Processing started: Thu Nov 11 03:22:02 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab3 -c Voltmeter
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -175,8 +175,8 @@ Info (12021): Found 2 design units, including 1 entities, in source file registe
     Info (12022): Found design unit 1: registers-rtl File: H:/Github/NasihNazeem/ENEL-453-Labs/registers.vhd Line: 17
     Info (12023): Found entity 1: registers File: H:/Github/NasihNazeem/ENEL-453-Labs/registers.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file binary_bcd.vhd
-    Info (12022): Found design unit 1: binary_bcd-behavior File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 18
-    Info (12023): Found entity 1: binary_bcd File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 7
+    Info (12022): Found design unit 1: binary_bcd-behavior File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 19
+    Info (12023): Found entity 1: binary_bcd File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file averager.vhd
     Info (12022): Found design unit 1: averager-rtl File: H:/Github/NasihNazeem/ENEL-453-Labs/averager.vhd Line: 15
     Info (12023): Found entity 1: averager File: H:/Github/NasihNazeem/ENEL-453-Labs/averager.vhd Line: 6
@@ -233,15 +233,116 @@ Info (12128): Elaborating entity "registers" for hierarchy "registers:sync3" Fil
 Info (12128): Elaborating entity "SevenSegment" for hierarchy "SevenSegment:SevenSegment_ins" File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 154
 Info (12128): Elaborating entity "SevenSegment_decoder" for hierarchy "SevenSegment:SevenSegment_ins|SevenSegment_decoder:\Behavioral_Decoder:0:DECODERx" File: H:/Github/NasihNazeem/ENEL-453-Labs/SevenSegment.vhd Line: 36
 Info (12128): Elaborating entity "binary_bcd" for hierarchy "binary_bcd:binary_bcd_ins" File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 172
-Warning (10036): Verilog HDL or VHDL warning at binary_bcd.vhd(21): object "counter" assigned a value but never read File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 21
-Warning (10631): VHDL Process Statement warning at binary_bcd.vhd(104): inferring latch(es) for signal or variable "busy", which holds its previous value in one or more paths through the process File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 104
-Info (10041): Inferred latch for "busy" at binary_bcd.vhd(104) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 104
+Warning (10036): Verilog HDL or VHDL warning at binary_bcd.vhd(22): object "counter" assigned a value but never read File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 22
+Warning (10492): VHDL Process Statement warning at binary_bcd.vhd(55): signal "binary" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 55
+Warning (10492): VHDL Process Statement warning at binary_bcd.vhd(58): signal "bcd_signal" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 58
+Warning (10492): VHDL Process Statement warning at binary_bcd.vhd(59): signal "bcd_signal" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 59
+Warning (10492): VHDL Process Statement warning at binary_bcd.vhd(64): signal "bcd_signal" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 64
+Warning (10492): VHDL Process Statement warning at binary_bcd.vhd(65): signal "bcd_signal" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 65
+Warning (10492): VHDL Process Statement warning at binary_bcd.vhd(70): signal "bcd_signal" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 70
+Warning (10492): VHDL Process Statement warning at binary_bcd.vhd(71): signal "bcd_signal" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 71
+Warning (10492): VHDL Process Statement warning at binary_bcd.vhd(76): signal "bcd_signal" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 76
+Warning (10492): VHDL Process Statement warning at binary_bcd.vhd(77): signal "bcd_signal" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 77
+Warning (10492): VHDL Process Statement warning at binary_bcd.vhd(82): signal "bcd_signal" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 82
+Warning (10492): VHDL Process Statement warning at binary_bcd.vhd(85): signal "counter_2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 85
+Warning (10492): VHDL Process Statement warning at binary_bcd.vhd(86): signal "bcd_signal" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 86
+Warning (10492): VHDL Process Statement warning at binary_bcd.vhd(91): signal "counter_2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 91
+Warning (10631): VHDL Process Statement warning at binary_bcd.vhd(44): inferring latch(es) for signal or variable "bcd", which holds its previous value in one or more paths through the process File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Warning (10631): VHDL Process Statement warning at binary_bcd.vhd(44): inferring latch(es) for signal or variable "bcd_signal", which holds its previous value in one or more paths through the process File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Warning (10631): VHDL Process Statement warning at binary_bcd.vhd(44): inferring latch(es) for signal or variable "counter_2", which holds its previous value in one or more paths through the process File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Warning (10631): VHDL Process Statement warning at binary_bcd.vhd(44): inferring latch(es) for signal or variable "busy", which holds its previous value in one or more paths through the process File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Warning (10631): VHDL Process Statement warning at binary_bcd.vhd(44): inferring latch(es) for signal or variable "nextstate", which holds its previous value in one or more paths through the process File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "busy" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "counter_2[0]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "counter_2[1]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "counter_2[2]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "counter_2[3]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "counter_2[4]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "counter_2[5]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "counter_2[6]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "counter_2[7]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "counter_2[8]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "counter_2[9]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "counter_2[10]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "counter_2[11]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "counter_2[12]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "counter_2[13]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "counter_2[14]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "counter_2[15]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "counter_2[16]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "counter_2[17]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "counter_2[18]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "counter_2[19]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "counter_2[20]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "counter_2[21]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "counter_2[22]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "counter_2[23]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "counter_2[24]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "counter_2[25]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "counter_2[26]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "counter_2[27]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "counter_2[28]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "counter_2[29]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "counter_2[30]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "counter_2[31]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "bcd_signal[0]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "bcd_signal[1]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "bcd_signal[2]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "bcd_signal[3]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "bcd_signal[4]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "bcd_signal[5]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "bcd_signal[6]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "bcd_signal[7]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "bcd_signal[8]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "bcd_signal[9]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "bcd_signal[10]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "bcd_signal[11]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "bcd_signal[12]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "bcd_signal[13]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "bcd_signal[14]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "bcd_signal[15]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "bcd_signal[16]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "bcd_signal[17]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "bcd_signal[18]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "bcd_signal[19]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "bcd_signal[20]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "bcd_signal[21]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "bcd_signal[22]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "bcd_signal[23]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "bcd_signal[24]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "bcd_signal[25]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "bcd_signal[26]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "bcd_signal[27]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "bcd_signal[28]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "bcd[0]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "bcd[1]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "bcd[2]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "bcd[3]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "bcd[4]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "bcd[5]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "bcd[6]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "bcd[7]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "bcd[8]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "bcd[9]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "bcd[10]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "bcd[11]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "bcd[12]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "bcd[13]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "bcd[14]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "bcd[15]" at binary_bcd.vhd(44) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 44
+Info (10041): Inferred latch for "nextstate.s6" at binary_bcd.vhd(46) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 46
+Info (10041): Inferred latch for "nextstate.S5" at binary_bcd.vhd(46) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 46
+Info (10041): Inferred latch for "nextstate.S4" at binary_bcd.vhd(46) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 46
+Info (10041): Inferred latch for "nextstate.S3" at binary_bcd.vhd(46) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 46
+Info (10041): Inferred latch for "nextstate.S2" at binary_bcd.vhd(46) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 46
+Info (10041): Inferred latch for "nextstate.S1" at binary_bcd.vhd(46) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 46
+Info (10041): Inferred latch for "nextstate.S0" at binary_bcd.vhd(46) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 46
 Error (12006): Node instance "ADC_Conversion_ins" instantiates undefined entity "test_DE10_Lite". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 160
 Info (144001): Generated suppressed messages file H:/Github/NasihNazeem/ENEL-453-Labs/output_files/Voltmeter.map.smsg
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 5 warnings
-    Error: Peak virtual memory: 4783 megabytes
-    Error: Processing ended: Thu Nov 11 03:07:58 2021
-    Error: Elapsed time: 00:00:09
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 22 warnings
+    Error: Peak virtual memory: 4780 megabytes
+    Error: Processing ended: Thu Nov 11 03:22:10 2021
+    Error: Elapsed time: 00:00:08
     Error: Total CPU time (on all processors): 00:00:15
 
 
