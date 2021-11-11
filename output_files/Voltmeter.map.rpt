@@ -1,6 +1,6 @@
 Analysis & Synthesis report for Voltmeter
-Tue Nov 02 22:27:35 2021
-Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Thu Nov 11 02:18:25 2021
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
 ---------------------
@@ -18,9 +18,9 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2020  Intel Corporation. All rights reserved.
+Copyright (C) 2018  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and any partner logic 
+and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
@@ -30,16 +30,15 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details, at
-https://fpgasoftware.intel.com/eula.
+refer to the applicable agreement for further details.
 
 
 
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Tue Nov 02 22:27:35 2021           ;
-; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Analysis & Synthesis Status        ; Failed - Thu Nov 11 02:18:25 2021           ;
+; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Voltmeter                                   ;
 ; Top-level Entity Name              ; Voltmeter                                   ;
 ; Family                             ; MAX 10                                      ;
@@ -148,8 +147,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 12          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -164,67 +163,90 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Nov 02 22:27:20 2021
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Thu Nov 11 02:18:17 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab3 -c Voltmeter
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 3 design units, including 1 entities, in source file sevensegment.vhd
-    Info (12022): Found design unit 1: HexArrays File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/SevenSegment.vhd Line: 6
-    Info (12022): Found design unit 2: SevenSegment-Behavioral File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/SevenSegment.vhd Line: 22
-    Info (12023): Found entity 1: SevenSegment File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/SevenSegment.vhd Line: 16
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file sevensegment_decoder.vhd
+    Info (12022): Found design unit 1: SevenSegment_decoder-Behavioral File: H:/Github/NasihNazeem/ENEL-453-Labs/SevenSegment_decoder.vhd Line: 13
+    Info (12023): Found entity 1: SevenSegment_decoder File: H:/Github/NasihNazeem/ENEL-453-Labs/SevenSegment_decoder.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file registers.vhd
+    Info (12022): Found design unit 1: registers-rtl File: H:/Github/NasihNazeem/ENEL-453-Labs/registers.vhd Line: 17
+    Info (12023): Found entity 1: registers File: H:/Github/NasihNazeem/ENEL-453-Labs/registers.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file binary_bcd.vhd
+    Info (12022): Found design unit 1: binary_bcd-behavior File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 18
+    Info (12023): Found entity 1: binary_bcd File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file averager.vhd
+    Info (12022): Found design unit 1: averager-rtl File: H:/Github/NasihNazeem/ENEL-453-Labs/averager.vhd Line: 15
+    Info (12023): Found entity 1: averager File: H:/Github/NasihNazeem/ENEL-453-Labs/averager.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file sevensegment.vhd
+    Info (12022): Found design unit 1: SevenSegment-Behavioral File: H:/Github/NasihNazeem/ENEL-453-Labs/SevenSegment.vhd Line: 11
+    Info (12023): Found entity 1: SevenSegment File: H:/Github/NasihNazeem/ENEL-453-Labs/SevenSegment.vhd Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file adc_conversion.v
-    Info (12023): Found entity 1: ADC_Conversion File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/ADC_Conversion.v Line: 34
+    Info (12023): Found entity 1: ADC_Conversion File: H:/Github/NasihNazeem/ENEL-453-Labs/ADC_Conversion.v Line: 34
 Info (12021): Found 1 design units, including 1 entities, in source file adc_qsys/synthesis/adc_qsys.v
-    Info (12023): Found entity 1: adc_qsys File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/adc_qsys.v Line: 6
+    Info (12023): Found entity 1: adc_qsys File: H:/Github/NasihNazeem/ENEL-453-Labs/adc_qsys/synthesis/adc_qsys.v Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file adc_qsys/synthesis/submodules/altera_reset_controller.v
-    Info (12023): Found entity 1: altera_reset_controller File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/altera_reset_controller.v Line: 42
+    Info (12023): Found entity 1: altera_reset_controller File: H:/Github/NasihNazeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/altera_reset_controller.v Line: 42
 Info (12021): Found 1 design units, including 1 entities, in source file adc_qsys/synthesis/submodules/altera_reset_synchronizer.v
-    Info (12023): Found entity 1: altera_reset_synchronizer File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/altera_reset_synchronizer.v Line: 24
+    Info (12023): Found entity 1: altera_reset_synchronizer File: H:/Github/NasihNazeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/altera_reset_synchronizer.v Line: 24
 Info (12021): Found 1 design units, including 1 entities, in source file adc_qsys/synthesis/submodules/adc_qsys_modular_adc_0.v
-    Info (12023): Found entity 1: adc_qsys_modular_adc_0 File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/adc_qsys_modular_adc_0.v Line: 9
+    Info (12023): Found entity 1: adc_qsys_modular_adc_0 File: H:/Github/NasihNazeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/adc_qsys_modular_adc_0.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file adc_qsys/synthesis/submodules/altera_modular_adc_control.v
-    Info (12023): Found entity 1: altera_modular_adc_control File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/altera_modular_adc_control.v Line: 18
+    Info (12023): Found entity 1: altera_modular_adc_control File: H:/Github/NasihNazeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/altera_modular_adc_control.v Line: 18
 Info (12021): Found 1 design units, including 1 entities, in source file adc_qsys/synthesis/submodules/altera_modular_adc_control_avrg_fifo.v
-    Info (12023): Found entity 1: altera_modular_adc_control_avrg_fifo File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/altera_modular_adc_control_avrg_fifo.v Line: 53
+    Info (12023): Found entity 1: altera_modular_adc_control_avrg_fifo File: H:/Github/NasihNazeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/altera_modular_adc_control_avrg_fifo.v Line: 53
 Info (12021): Found 1 design units, including 1 entities, in source file adc_qsys/synthesis/submodules/altera_modular_adc_control_fsm.v
-    Info (12023): Found entity 1: altera_modular_adc_control_fsm File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/altera_modular_adc_control_fsm.v Line: 18
+    Info (12023): Found entity 1: altera_modular_adc_control_fsm File: H:/Github/NasihNazeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/altera_modular_adc_control_fsm.v Line: 18
 Info (12021): Found 1 design units, including 1 entities, in source file adc_qsys/synthesis/submodules/chsel_code_converter_sw_to_hw.v
-    Info (12023): Found entity 1: chsel_code_converter_sw_to_hw File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/chsel_code_converter_sw_to_hw.v Line: 32
+    Info (12023): Found entity 1: chsel_code_converter_sw_to_hw File: H:/Github/NasihNazeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/chsel_code_converter_sw_to_hw.v Line: 32
 Info (12021): Found 1 design units, including 1 entities, in source file adc_qsys/synthesis/submodules/fiftyfivenm_adcblock_primitive_wrapper.v
-    Info (12023): Found entity 1: fiftyfivenm_adcblock_primitive_wrapper File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/fiftyfivenm_adcblock_primitive_wrapper.v Line: 37
+    Info (12023): Found entity 1: fiftyfivenm_adcblock_primitive_wrapper File: H:/Github/NasihNazeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/fiftyfivenm_adcblock_primitive_wrapper.v Line: 37
 Info (12021): Found 1 design units, including 1 entities, in source file adc_qsys/synthesis/submodules/fiftyfivenm_adcblock_top_wrapper.v
-    Info (12023): Found entity 1: fiftyfivenm_adcblock_top_wrapper File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/fiftyfivenm_adcblock_top_wrapper.v Line: 31
+    Info (12023): Found entity 1: fiftyfivenm_adcblock_top_wrapper File: H:/Github/NasihNazeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/fiftyfivenm_adcblock_top_wrapper.v Line: 31
 Info (12021): Found 4 design units, including 4 entities, in source file adc_qsys/synthesis/submodules/adc_qsys_altpll_sys.v
-    Info (12023): Found entity 1: adc_qsys_altpll_sys_dffpipe_l2c File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/adc_qsys_altpll_sys.v Line: 37
-    Info (12023): Found entity 2: adc_qsys_altpll_sys_stdsync_sv6 File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/adc_qsys_altpll_sys.v Line: 98
-    Info (12023): Found entity 3: adc_qsys_altpll_sys_altpll_oc92 File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/adc_qsys_altpll_sys.v Line: 130
-    Info (12023): Found entity 4: adc_qsys_altpll_sys File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/adc_qsys_altpll_sys.v Line: 217
+    Info (12023): Found entity 1: adc_qsys_altpll_sys_dffpipe_l2c File: H:/Github/NasihNazeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/adc_qsys_altpll_sys.v Line: 37
+    Info (12023): Found entity 2: adc_qsys_altpll_sys_stdsync_sv6 File: H:/Github/NasihNazeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/adc_qsys_altpll_sys.v Line: 98
+    Info (12023): Found entity 3: adc_qsys_altpll_sys_altpll_oc92 File: H:/Github/NasihNazeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/adc_qsys_altpll_sys.v Line: 130
+    Info (12023): Found entity 4: adc_qsys_altpll_sys File: H:/Github/NasihNazeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/adc_qsys_altpll_sys.v Line: 217
 Info (12021): Found 2 design units, including 1 entities, in source file voltmeter.vhd
-    Info (12022): Found design unit 1: Voltmeter-Behavioral File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 16
-    Info (12023): Found entity 1: Voltmeter File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 6
+    Info (12022): Found design unit 1: Voltmeter-Behavioral File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 15
+    Info (12023): Found entity 1: Voltmeter File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file voltmeter_tb.vhd
-    Info (12022): Found design unit 1: Voltmeter_tb-tb File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter_tb.vhd Line: 11
-    Info (12023): Found entity 1: Voltmeter_tb File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter_tb.vhd Line: 7
-Warning (12090): Entity "mux" obtained from "mux.vhd" instead of from Quartus Prime megafunction library File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/mux.vhd Line: 4
+    Info (12022): Found design unit 1: Voltmeter_tb-tb File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter_tb.vhd Line: 10
+    Info (12023): Found entity 1: Voltmeter_tb File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter_tb.vhd Line: 6
+Warning (12090): Entity "mux" obtained from "mux.vhd" instead of from Quartus Prime megafunction library File: H:/Github/NasihNazeem/ENEL-453-Labs/mux.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file mux.vhd
-    Info (12022): Found design unit 1: mux-Behavioral File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/mux.vhd Line: 13
-    Info (12023): Found entity 1: mux File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/mux.vhd Line: 4
+    Info (12022): Found design unit 1: mux-Behavioral File: H:/Github/NasihNazeem/ENEL-453-Labs/mux.vhd Line: 13
+    Info (12023): Found entity 1: mux File: H:/Github/NasihNazeem/ENEL-453-Labs/mux.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file mux_tb.vhd
-    Info (12022): Found design unit 1: mux_tb-tb File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/mux_tb.vhd Line: 10
-    Info (12023): Found entity 1: mux_tb File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/mux_tb.vhd Line: 6
-Error (10465): VHDL error at voltmeter.vhd(160): name "ADC_Conversion_ins" cannot be used because it is already used for a previously declared item File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 160
-Info (144001): Generated suppressed messages file D:/Documents/School/University/Third Year/ENEL 453/Lab 3/output_files/Voltmeter.map.smsg
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 2 warnings
-    Error: Peak virtual memory: 4767 megabytes
-    Error: Processing ended: Tue Nov 02 22:27:35 2021
-    Error: Elapsed time: 00:00:15
-    Error: Total CPU time (on all processors): 00:00:38
+    Info (12022): Found design unit 1: mux_tb-tb File: H:/Github/NasihNazeem/ENEL-453-Labs/mux_tb.vhd Line: 10
+    Info (12023): Found entity 1: mux_tb File: H:/Github/NasihNazeem/ENEL-453-Labs/mux_tb.vhd Line: 6
+Info (12127): Elaborating entity "Voltmeter" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at voltmeter.vhd(21): object "busy" assigned a value but never read File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 21
+Info (12128): Elaborating entity "mux" for hierarchy "mux:multiplexer" File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 95
+Info (12128): Elaborating entity "averager" for hierarchy "averager:ave" File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 103
+Info (12128): Elaborating entity "registers" for hierarchy "registers:sync1" File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 112
+Info (12128): Elaborating entity "registers" for hierarchy "registers:sync3" File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 132
+Info (12128): Elaborating entity "SevenSegment" for hierarchy "SevenSegment:SevenSegment_ins" File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 152
+Info (12128): Elaborating entity "SevenSegment_decoder" for hierarchy "SevenSegment:SevenSegment_ins|SevenSegment_decoder:decoder0" File: H:/Github/NasihNazeem/ENEL-453-Labs/SevenSegment.vhd Line: 24
+Info (12128): Elaborating entity "binary_bcd" for hierarchy "binary_bcd:binary_bcd_ins" File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 180
+Warning (10036): Verilog HDL or VHDL warning at binary_bcd.vhd(21): object "counter" assigned a value but never read File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 21
+Warning (10631): VHDL Process Statement warning at binary_bcd.vhd(104): inferring latch(es) for signal or variable "busy", which holds its previous value in one or more paths through the process File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 104
+Info (10041): Inferred latch for "busy" at binary_bcd.vhd(104) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 104
+Error (12006): Node instance "ADC_Conversion_ins" instantiates undefined entity "test_DE10_Lite". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 168
+Info (144001): Generated suppressed messages file H:/Github/NasihNazeem/ENEL-453-Labs/output_files/Voltmeter.map.smsg
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 5 warnings
+    Error: Peak virtual memory: 4779 megabytes
+    Error: Processing ended: Thu Nov 11 02:18:25 2021
+    Error: Elapsed time: 00:00:08
+    Error: Total CPU time (on all processors): 00:00:15
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in D:/Documents/School/University/Third Year/ENEL 453/Lab 3/output_files/Voltmeter.map.smsg.
+The suppressed messages can be found in H:/Github/NasihNazeem/ENEL-453-Labs/output_files/Voltmeter.map.smsg.
 
 
