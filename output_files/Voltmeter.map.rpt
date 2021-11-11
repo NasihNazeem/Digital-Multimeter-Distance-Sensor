@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Voltmeter
-Thu Nov 11 14:11:19 2021
+Thu Nov 11 15:36:59 2021
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -99,13 +99,13 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Nov 11 14:11:19 2021       ;
+; Analysis & Synthesis Status        ; Successful - Thu Nov 11 15:36:59 2021       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Voltmeter                                   ;
 ; Top-level Entity Name              ; Voltmeter                                   ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 1,899                                       ;
-;     Total combinational functions  ; 1,609                                       ;
+; Total logic elements               ; 1,917                                       ;
+;     Total combinational functions  ; 1,627                                       ;
 ;     Dedicated logic registers      ; 404                                         ;
 ; Total registers                    ; 404                                         ;
 ; Total pins                         ; 61                                          ;
@@ -233,6 +233,7 @@ refer to the applicable agreement for further details.
 +------------------------------------------------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------+----------+
 ; File Name with User-Entered Path                                       ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                               ; Library  ;
 +------------------------------------------------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------+----------+
+; flag_mux.vhd                                                           ; yes             ; User VHDL File               ; H:/Github/NasihNazeem/ENEL-453-Labs/flag_mux.vhd                                                           ;          ;
 ; voltage2distance.vhd                                                   ; yes             ; User VHDL File               ; H:/Github/NasihNazeem/ENEL-453-Labs/voltage2distance.vhd                                                   ;          ;
 ; SevenSegment_decoder.vhd                                               ; yes             ; User VHDL File               ; H:/Github/NasihNazeem/ENEL-453-Labs/SevenSegment_decoder.vhd                                               ;          ;
 ; registers.vhd                                                          ; yes             ; User VHDL File               ; H:/Github/NasihNazeem/ENEL-453-Labs/registers.vhd                                                          ;          ;
@@ -297,16 +298,16 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                                                                         ;
 +---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+
-; Estimated Total logic elements              ; 1,899                                                                                                                         ;
+; Estimated Total logic elements              ; 1,917                                                                                                                         ;
 ;                                             ;                                                                                                                               ;
-; Total combinational functions               ; 1609                                                                                                                          ;
+; Total combinational functions               ; 1627                                                                                                                          ;
 ; Logic element usage by number of LUT inputs ;                                                                                                                               ;
-;     -- 4 input functions                    ; 1042                                                                                                                          ;
-;     -- 3 input functions                    ; 408                                                                                                                           ;
-;     -- <=2 input functions                  ; 159                                                                                                                           ;
+;     -- 4 input functions                    ; 1038                                                                                                                          ;
+;     -- 3 input functions                    ; 410                                                                                                                           ;
+;     -- <=2 input functions                  ; 179                                                                                                                           ;
 ;                                             ;                                                                                                                               ;
 ; Logic elements by mode                      ;                                                                                                                               ;
-;     -- normal mode                          ; 1321                                                                                                                          ;
+;     -- normal mode                          ; 1339                                                                                                                          ;
 ;     -- arithmetic mode                      ; 288                                                                                                                           ;
 ;                                             ;                                                                                                                               ;
 ; Total registers                             ; 404                                                                                                                           ;
@@ -321,9 +322,9 @@ refer to the applicable agreement for further details.
 ;     -- PLLs                                 ; 1                                                                                                                             ;
 ;                                             ;                                                                                                                               ;
 ; Maximum fan-out node                        ; lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_arg:auto_generated|op_1~6 ;
-; Maximum fan-out                             ; 334                                                                                                                           ;
-; Total fan-out                               ; 7335                                                                                                                          ;
-; Average fan-out                             ; 3.43                                                                                                                          ;
+; Maximum fan-out                             ; 335                                                                                                                           ;
+; Total fan-out                               ; 7365                                                                                                                          ;
+; Average fan-out                             ; 3.42                                                                                                                          ;
 +---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -332,7 +333,7 @@ refer to the applicable agreement for further details.
 +------------------------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------+--------------+
 ; Compilation Hierarchy Node                                                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                                                                                                                                                                          ; Entity Name                            ; Library Name ;
 +------------------------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------+--------------+
-; |Voltmeter                                                                   ; 1609 (1)            ; 404 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 61   ; 0            ; 0          ; |Voltmeter                                                                                                                                                                                                                                   ; Voltmeter                              ; work         ;
+; |Voltmeter                                                                   ; 1627 (1)            ; 404 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 61   ; 0            ; 0          ; |Voltmeter                                                                                                                                                                                                                                   ; Voltmeter                              ; work         ;
 ;    |ADC_Conversion:ADC_Conversion_ins|                                       ; 54 (5)              ; 90 (29)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|ADC_Conversion:ADC_Conversion_ins                                                                                                                                                                                                 ; ADC_Conversion                         ; work         ;
 ;       |adc_qsys:u0|                                                          ; 49 (0)              ; 61 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0                                                                                                                                                                                     ; adc_qsys                               ; adc_qsys     ;
 ;          |adc_qsys_altpll_sys:altpll_sys|                                    ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_altpll_sys:altpll_sys                                                                                                                                                      ; adc_qsys_altpll_sys                    ; adc_qsys     ;
@@ -354,6 +355,7 @@ refer to the applicable agreement for further details.
 ;       |SevenSegment_decoder:\Behavioral_Decoder:3:DECODERx|                  ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|SevenSegment:SevenSegment_ins|SevenSegment_decoder:\Behavioral_Decoder:3:DECODERx                                                                                                                                                 ; SevenSegment_decoder                   ; work         ;
 ;    |averager:ave|                                                            ; 206 (206)           ; 204 (204)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|averager:ave                                                                                                                                                                                                                      ; averager                               ; work         ;
 ;    |binary_bcd:binary_bcd_ins|                                               ; 150 (150)           ; 84 (84)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|binary_bcd:binary_bcd_ins                                                                                                                                                                                                         ; binary_bcd                             ; work         ;
+;    |flag_mux:flag_multiplexer|                                               ; 16 (16)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|flag_mux:flag_multiplexer                                                                                                                                                                                                         ; flag_mux                               ; work         ;
 ;    |lpm_mult:Mult0|                                                          ; 57 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|lpm_mult:Mult0                                                                                                                                                                                                                    ; lpm_mult                               ; work         ;
 ;       |multcore:mult_core|                                                   ; 57 (29)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|lpm_mult:Mult0|multcore:mult_core                                                                                                                                                                                                 ; multcore                               ; work         ;
 ;          |mpar_add:padder|                                                   ; 28 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder                                                                                                                                                                                 ; mpar_add                               ; work         ;
@@ -366,7 +368,7 @@ refer to the applicable agreement for further details.
 ;    |registers:sync2|                                                         ; 0 (0)               ; 12 (12)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|registers:sync2                                                                                                                                                                                                                   ; registers                              ; work         ;
 ;    |registers:sync3|                                                         ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|registers:sync3                                                                                                                                                                                                                   ; registers                              ; work         ;
 ;    |registers:sync4|                                                         ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|registers:sync4                                                                                                                                                                                                                   ; registers                              ; work         ;
-;    |voltage2distance:V2D|                                                    ; 1113 (1113)         ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|voltage2distance:V2D                                                                                                                                                                                                              ; voltage2distance                       ; work         ;
+;    |voltage2distance:V2D|                                                    ; 1115 (1115)         ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|voltage2distance:V2D                                                                                                                                                                                                              ; voltage2distance                       ; work         ;
 +------------------------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -589,12 +591,12 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                                                                                          ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Voltmeter|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|int_timer[0] ;
-; 7:1                ; 4 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Voltmeter|binary_bcd:binary_bcd_ins|bcd_signal[14]                                                                                                                                                 ;
-; 7:1                ; 11 bits   ; 44 LEs        ; 22 LEs               ; 22 LEs                 ; Yes        ; |Voltmeter|binary_bcd:binary_bcd_ins|bcd_signal[10]                                                                                                                                                 ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Voltmeter|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|int_timer[5] ;
+; 7:1                ; 4 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Voltmeter|binary_bcd:binary_bcd_ins|bcd_signal[13]                                                                                                                                                 ;
+; 7:1                ; 11 bits   ; 44 LEs        ; 22 LEs               ; 22 LEs                 ; Yes        ; |Voltmeter|binary_bcd:binary_bcd_ins|bcd_signal[6]                                                                                                                                                  ;
 ; 9:1                ; 4 bits    ; 24 LEs        ; 8 LEs                ; 16 LEs                 ; Yes        ; |Voltmeter|binary_bcd:binary_bcd_ins|bcd_signal[20]                                                                                                                                                 ;
 ; 11:1               ; 4 bits    ; 28 LEs        ; 12 LEs               ; 16 LEs                 ; Yes        ; |Voltmeter|binary_bcd:binary_bcd_ins|bcd_signal[24]                                                                                                                                                 ;
-; 13:1               ; 4 bits    ; 32 LEs        ; 20 LEs               ; 12 LEs                 ; Yes        ; |Voltmeter|binary_bcd:binary_bcd_ins|bcd_signal[28]                                                                                                                                                 ;
+; 13:1               ; 4 bits    ; 32 LEs        ; 20 LEs               ; 12 LEs                 ; Yes        ; |Voltmeter|binary_bcd:binary_bcd_ins|bcd_signal[27]                                                                                                                                                 ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -1419,21 +1421,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA CLR SCLR      ; 16                          ;
 ;     ENA CLR SCLR SLD  ; 15                          ;
 ;     plain             ; 3                           ;
-; cycloneiii_lcell_comb ; 1615                        ;
+; cycloneiii_lcell_comb ; 1633                        ;
 ;     arith             ; 288                         ;
 ;         2 data inputs ; 77                          ;
 ;         3 data inputs ; 211                         ;
-;     normal            ; 1327                        ;
+;     normal            ; 1345                        ;
 ;         0 data inputs ; 21                          ;
 ;         1 data inputs ; 14                          ;
-;         2 data inputs ; 53                          ;
-;         3 data inputs ; 197                         ;
-;         4 data inputs ; 1042                        ;
+;         2 data inputs ; 73                          ;
+;         3 data inputs ; 199                         ;
+;         4 data inputs ; 1038                        ;
 ; cycloneiii_pll        ; 1                           ;
 ; fiftyfivenm_adcblock  ; 1                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 15.10                       ;
-; Average LUT depth     ; 8.58                        ;
+; Max LUT depth         ; 15.30                       ;
+; Average LUT depth     ; 8.72                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1452,12 +1454,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu Nov 11 14:11:03 2021
+    Info: Processing started: Thu Nov 11 15:36:43 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab3 -c Voltmeter
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file flag_mux.vhd
+    Info (12022): Found design unit 1: flag_mux-Behavioral File: H:/Github/NasihNazeem/ENEL-453-Labs/flag_mux.vhd Line: 12
+    Info (12023): Found entity 1: flag_mux File: H:/Github/NasihNazeem/ENEL-453-Labs/flag_mux.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file voltage2distance.vhd
-    Info (12022): Found design unit 1: voltage2distance-behavior File: H:/Github/NasihNazeem/ENEL-453-Labs/voltage2distance.vhd Line: 32
+    Info (12022): Found design unit 1: voltage2distance-behavior File: H:/Github/NasihNazeem/ENEL-453-Labs/voltage2distance.vhd Line: 34
     Info (12023): Found entity 1: voltage2distance File: H:/Github/NasihNazeem/ENEL-453-Labs/voltage2distance.vhd Line: 24
 Info (12021): Found 2 design units, including 1 entities, in source file sevensegment_decoder.vhd
     Info (12022): Found design unit 1: SevenSegment_decoder-Behavioral File: H:/Github/NasihNazeem/ENEL-453-Labs/SevenSegment_decoder.vhd Line: 13
@@ -1517,14 +1522,15 @@ Info (12021): Found 2 design units, including 1 entities, in source file mux_tb.
     Info (12023): Found entity 1: mux_tb File: H:/Github/NasihNazeem/ENEL-453-Labs/mux_tb.vhd Line: 6
 Info (12127): Elaborating entity "Voltmeter" for the top level hierarchy
 Warning (10036): Verilog HDL or VHDL warning at voltmeter.vhd(23): object "busy" assigned a value but never read File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 23
-Info (12128): Elaborating entity "mux" for hierarchy "mux:multiplexer" File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 106
-Info (12128): Elaborating entity "voltage2distance" for hierarchy "voltage2distance:V2D" File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 114
-Info (12128): Elaborating entity "averager" for hierarchy "averager:ave" File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 122
-Info (12128): Elaborating entity "registers" for hierarchy "registers:sync1" File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 131
-Info (12128): Elaborating entity "registers" for hierarchy "registers:sync3" File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 151
-Info (12128): Elaborating entity "SevenSegment" for hierarchy "SevenSegment:SevenSegment_ins" File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 171
+Info (12128): Elaborating entity "mux" for hierarchy "mux:multiplexer" File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 118
+Info (12128): Elaborating entity "flag_mux" for hierarchy "flag_mux:flag_multiplexer" File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 126
+Info (12128): Elaborating entity "voltage2distance" for hierarchy "voltage2distance:V2D" File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 135
+Info (12128): Elaborating entity "averager" for hierarchy "averager:ave" File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 144
+Info (12128): Elaborating entity "registers" for hierarchy "registers:sync1" File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 153
+Info (12128): Elaborating entity "registers" for hierarchy "registers:sync3" File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 173
+Info (12128): Elaborating entity "SevenSegment" for hierarchy "SevenSegment:SevenSegment_ins" File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 193
 Info (12128): Elaborating entity "SevenSegment_decoder" for hierarchy "SevenSegment:SevenSegment_ins|SevenSegment_decoder:\Behavioral_Decoder:0:DECODERx" File: H:/Github/NasihNazeem/ENEL-453-Labs/SevenSegment.vhd Line: 36
-Info (12128): Elaborating entity "ADC_Conversion" for hierarchy "ADC_Conversion:ADC_Conversion_ins" File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 177
+Info (12128): Elaborating entity "ADC_Conversion" for hierarchy "ADC_Conversion:ADC_Conversion_ins" File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 199
 Warning (10036): Verilog HDL or VHDL warning at ADC_Conversion.v(98): object "cur_adc_ch" assigned a value but never read File: H:/Github/NasihNazeem/ENEL-453-Labs/ADC_Conversion.v Line: 98
 Warning (10036): Verilog HDL or VHDL warning at ADC_Conversion.v(99): object "adc_sample_data" assigned a value but never read File: H:/Github/NasihNazeem/ENEL-453-Labs/ADC_Conversion.v Line: 99
 Info (12128): Elaborating entity "adc_qsys" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0" File: H:/Github/NasihNazeem/ENEL-453-Labs/ADC_Conversion.v Line: 75
@@ -1579,7 +1585,7 @@ Info (12128): Elaborating entity "fiftyfivenm_adcblock_primitive_wrapper" for hi
 Info (12128): Elaborating entity "altera_reset_controller" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller" File: H:/Github/NasihNazeem/ENEL-453-Labs/adc_qsys/synthesis/adc_qsys.v Line: 134
 Info (12128): Elaborating entity "altera_reset_synchronizer" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1" File: H:/Github/NasihNazeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/altera_reset_controller.v Line: 208
 Info (12128): Elaborating entity "altera_reset_synchronizer" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_req_sync_uq1" File: H:/Github/NasihNazeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/altera_reset_controller.v Line: 220
-Info (12128): Elaborating entity "binary_bcd" for hierarchy "binary_bcd:binary_bcd_ins" File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 189
+Info (12128): Elaborating entity "binary_bcd" for hierarchy "binary_bcd:binary_bcd_ins" File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 211
 Warning (10036): Verilog HDL or VHDL warning at binary_bcd.vhd(22): object "counter" assigned a value but never read File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 22
 Warning (10631): VHDL Process Statement warning at binary_bcd.vhd(135): inferring latch(es) for signal or variable "busy", which holds its previous value in one or more paths through the process File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 135
 Info (10041): Inferred latch for "busy" at binary_bcd.vhd(135) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 135
@@ -1799,16 +1805,16 @@ Warning (20013): Ignored 149 assignments for entity "DE10_LITE" -- entity does n
 Info (144001): Generated suppressed messages file H:/Github/NasihNazeem/ENEL-453-Labs/output_files/Voltmeter.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1969 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1987 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 58 output pins
-    Info (21061): Implemented 1906 logic cells
+    Info (21061): Implemented 1924 logic cells
     Info (21065): Implemented 1 PLLs
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 192 warnings
-    Info: Peak virtual memory: 4874 megabytes
-    Info: Processing ended: Thu Nov 11 14:11:20 2021
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:23
+    Info: Peak virtual memory: 4870 megabytes
+    Info: Processing ended: Thu Nov 11 15:36:59 2021
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:24
 
 
 +------------------------------------------+

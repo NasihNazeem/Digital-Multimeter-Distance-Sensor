@@ -25,6 +25,9 @@ signal response_valid_out_i1,response_valid_out_i2,response_valid_out_i3 : STD_L
 Signal bcd: STD_LOGIC_VECTOR(15 DOWNTO 0);
 Signal Q_temp1 : std_logic_vector(11 downto 0);
 Signal v2d_distance_output : std_logic_vector(12 downto 0);
+Signal flag : std_logic;
+Signal bcd_new : STD_LOGIC_VECTOR(15 downto 0);
+Signal bcd_original : STD_LOGIC_VECTOR(15 downto 0);
 --Mux signals
 Signal mux_output: std_logic_vector(12 downto 0);
 
@@ -37,12 +40,21 @@ Component mux is
 		 );
 end Component;
 
+Component flag_mux is
+	port( bcd_orig : in std_logic_vector(15 downto 0);
+			flag_select	 : in std_logic;
+			bcd_new	 : out std_logic_vector(15 downto 0)
+		 );
+end Component;
+
 Component voltage2distance is
 	PORT(
       clk            :  IN    STD_LOGIC;                                
       reset          :  IN    STD_LOGIC;                                
       voltage        :  IN    STD_LOGIC_VECTOR(12 DOWNTO 0);                           
-      distance       :  OUT   STD_LOGIC_VECTOR(12 DOWNTO 0));
+      distance       :  OUT   STD_LOGIC_VECTOR(12 DOWNTO 0);
+		err_flag			:  OUT	STD_LOGIC
+		);
 end Component;
 
 Component SevenSegment is
@@ -92,10 +104,10 @@ Component averager is
   end Component;
 
 begin
-   Num_Hex(0) <= bcd(3  downto  0); 
-   Num_Hex(1) <= bcd(7  downto  4);
-   Num_Hex(2) <= bcd(11 downto  8);
-   Num_Hex(3) <= bcd(15 downto 12);
+   Num_Hex(0) <= bcd_new(3  downto  0); 
+   Num_Hex(1) <= bcd_new(7  downto  4);
+   Num_Hex(2) <= bcd_new(11 downto  8);
+   Num_Hex(3) <= bcd_new(15 downto 12);
    Num_Hex(4) <= "1111";  -- blank this display
    Num_Hex(5) <= "1111";  -- blank this display   
 	DP_in <= "001000" when Selecter = '1' else 
@@ -110,13 +122,23 @@ multiplexer: mux
 							 Selecter   => Selecter,
 							 Y	  => mux_output
 							);
+
+flag_multiplexer : flag_mux
+				port map(
+							bcd_orig => bcd_original,
+							flag_select => flag,
+							bcd_new => bcd_new
+							
+							
+							);
 							
 V2D : voltage2distance
 				port map(
 							clk => clk,
 							reset => reset,
 							voltage => mult_output,
-							distance => v2d_distance_output
+							distance => v2d_distance_output,
+							err_flag => flag
 							);							
 							
 ave :    averager
@@ -193,7 +215,7 @@ binary_bcd_ins: binary_bcd
       ena      => '1',                           
       binary   => mux_output,    
       busy     => busy,                         
-      bcd      => bcd         
+      bcd      => bcd_original         
       );
 end Behavioral;
 --library IEEE;

@@ -304,20 +304,6 @@ set_location_assignment PIN_F16 -to ARDUINO_RESET_N
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_location_assignment PIN_C11 -to Selecter
-set_global_assignment -name VHDL_FILE voltage2distance.vhd
-set_global_assignment -name VHDL_FILE SevenSegment_decoder.vhd
-set_global_assignment -name VHDL_FILE registers.vhd
-set_global_assignment -name VHDL_FILE binary_bcd.vhd
-set_global_assignment -name VHDL_FILE averager.vhd
-set_global_assignment -name VHDL_FILE SevenSegment.vhd
-set_global_assignment -name SOURCE_FILE DE10_LITE.qsf
-set_global_assignment -name VERILOG_FILE ADC_Conversion.v
-set_global_assignment -name SDC_FILE DE10_LITE.sdc
-set_global_assignment -name QIP_FILE adc_qsys/synthesis/adc_qsys.qip
-set_global_assignment -name VHDL_FILE voltmeter.vhd
-set_global_assignment -name VHDL_FILE voltmeter_tb.vhd
-set_global_assignment -name VHDL_FILE mux.vhd
-set_global_assignment -name VHDL_FILE mux_tb.vhd
 set_location_assignment PIN_C14 -to HEX[0][0]
 set_location_assignment PIN_E15 -to HEX[0][1]
 set_location_assignment PIN_C15 -to HEX[0][2]
@@ -366,4 +352,19 @@ set_location_assignment PIN_M20 -to HEX[5][4]
 set_location_assignment PIN_N19 -to HEX[5][5]
 set_location_assignment PIN_N20 -to HEX[5][6]
 set_location_assignment PIN_L19 -to HEX[5][7]
+set_global_assignment -name VHDL_FILE flag_mux.vhd
+set_global_assignment -name VHDL_FILE voltage2distance.vhd
+set_global_assignment -name VHDL_FILE SevenSegment_decoder.vhd
+set_global_assignment -name VHDL_FILE registers.vhd
+set_global_assignment -name VHDL_FILE binary_bcd.vhd
+set_global_assignment -name VHDL_FILE averager.vhd
+set_global_assignment -name VHDL_FILE SevenSegment.vhd
+set_global_assignment -name SOURCE_FILE DE10_LITE.qsf
+set_global_assignment -name VERILOG_FILE ADC_Conversion.v
+set_global_assignment -name SDC_FILE DE10_LITE.sdc
+set_global_assignment -name QIP_FILE adc_qsys/synthesis/adc_qsys.qip
+set_global_assignment -name VHDL_FILE voltmeter.vhd
+set_global_assignment -name VHDL_FILE voltmeter_tb.vhd
+set_global_assignment -name VHDL_FILE mux.vhd
+set_global_assignment -name VHDL_FILE mux_tb.vhd
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

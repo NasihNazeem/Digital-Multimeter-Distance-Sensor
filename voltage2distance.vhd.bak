@@ -26,9 +26,7 @@ ENTITY voltage2distance IS
       clk            :  IN    STD_LOGIC;                                
       reset          :  IN    STD_LOGIC;                                
       voltage        :  IN    STD_LOGIC_VECTOR(12 DOWNTO 0);                           
-      distance       :  OUT   STD_LOGIC_VECTOR(12 DOWNTO 0);
-		err_flag			:  OUT	STD_LOGIC
-		);
+      distance       :  OUT   STD_LOGIC_VECTOR(12 DOWNTO 0));  
 END voltage2distance;
 
 ARCHITECTURE behavior OF voltage2distance IS
@@ -418,7 +416,7 @@ constant v2d_LUT : array_1d := (
 (	3333	)	,
 (	3332	)	,
 (	3331	)	,
-(	3330	)	, -- Values from here and above should display an error
+(	3330	)	,
 (	3328	)	,
 (	3327	)	,
 (	3326	)	,
@@ -4146,16 +4144,7 @@ begin
    -- This is the only statement required. It looks up the converted value of 
 	-- the voltage input (in mV) in the v2d_LUT look-up table, and outputs the 
 	-- distance (in 10^-4 m) in std_logic_vector format.
+    	
    distance <= std_logic_vector(to_unsigned(v2d_LUT(to_integer(unsigned(voltage))),distance'length));
-	
-	
-	process(voltage)
-	begin
-		if(unsigned(voltage) <= 376) then
-			err_flag <= '1';
-		else
-			err_flag <= '0';
-		end if;
-	end process;
 
 end behavior;

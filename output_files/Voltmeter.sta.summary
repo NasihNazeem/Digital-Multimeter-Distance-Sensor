@@ -3,35 +3,35 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'clk'
-Slack : 5.217
+Slack : 4.917
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Setup 'ADC_Conversion_ins|u0|altpll_sys|sd1|pll7|clk[0]'
-Slack : 33.628
+Slack : 33.477
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'clk'
-Slack : 0.342
+Slack : 0.341
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'ADC_Conversion_ins|u0|altpll_sys|sd1|pll7|clk[0]'
-Slack : 0.348
+Slack : 0.347
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Recovery 'ADC_Conversion_ins|u0|altpll_sys|sd1|pll7|clk[0]'
-Slack : 37.888
+Slack : 37.821
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Removal 'ADC_Conversion_ins|u0|altpll_sys|sd1|pll7|clk[0]'
-Slack : 1.194
+Slack : 0.990
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
-Slack : 9.683
+Slack : 9.681
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ADC_Conversion_ins|u0|altpll_sys|sd1|pll7|clk[0]'
-Slack : 19.730
+Slack : 19.729
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ADC_Conversion_ins|u0|altpll_sys|sd1|pll7|clk[1]'
@@ -39,35 +39,35 @@ Slack : 244.575
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Setup 'clk'
-Slack : 6.420
+Slack : 6.024
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Setup 'ADC_Conversion_ins|u0|altpll_sys|sd1|pll7|clk[0]'
-Slack : 34.059
+Slack : 33.875
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'clk'
-Slack : 0.307
+Slack : 0.306
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'ADC_Conversion_ins|u0|altpll_sys|sd1|pll7|clk[0]'
-Slack : 0.312
+Slack : 0.311
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Recovery 'ADC_Conversion_ins|u0|altpll_sys|sd1|pll7|clk[0]'
-Slack : 38.029
+Slack : 37.970
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Removal 'ADC_Conversion_ins|u0|altpll_sys|sd1|pll7|clk[0]'
-Slack : 1.097
+Slack : 0.914
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
-Slack : 9.710
+Slack : 9.708
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ADC_Conversion_ins|u0|altpll_sys|sd1|pll7|clk[0]'
-Slack : 19.720
+Slack : 19.717
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ADC_Conversion_ins|u0|altpll_sys|sd1|pll7|clk[1]'
@@ -75,15 +75,15 @@ Slack : 244.631
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'clk'
-Slack : 13.507
+Slack : 13.303
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'ADC_Conversion_ins|u0|altpll_sys|sd1|pll7|clk[0]'
-Slack : 36.933
+Slack : 36.856
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'clk'
-Slack : 0.149
+Slack : 0.148
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'ADC_Conversion_ins|u0|altpll_sys|sd1|pll7|clk[0]'
@@ -91,19 +91,19 @@ Slack : 0.152
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Recovery 'ADC_Conversion_ins|u0|altpll_sys|sd1|pll7|clk[0]'
-Slack : 39.004
+Slack : 38.971
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Removal 'ADC_Conversion_ins|u0|altpll_sys|sd1|pll7|clk[0]'
-Slack : 0.507
+Slack : 0.432
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
-Slack : 9.463
+Slack : 9.462
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ADC_Conversion_ins|u0|altpll_sys|sd1|pll7|clk[0]'
-Slack : 19.776
+Slack : 19.777
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ADC_Conversion_ins|u0|altpll_sys|sd1|pll7|clk[1]'
