@@ -14,7 +14,7 @@ Z0 w1635565704
 Z1 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 88
+!i122 44
 Z4 dD:/Documents/School/University/Third Year/ENEL 453/Lab 3/Lab 3 Prelab Sim
 Z5 8D:/Documents/School/University/Third Year/ENEL 453/Lab 3/averager.vhd
 Z6 FD:/Documents/School/University/Third Year/ENEL 453/Lab 3/averager.vhd
@@ -24,9 +24,9 @@ VB8:2CDW`BR7l1OCmU>8;70
 !s100 SD0FhjE;VVh:AY`^Mm8L61
 Z7 OV;C;2020.1;71
 32
-Z8 !s110 1635914200
+Z8 !s110 1635909736
 !i10b 1
-Z9 !s108 1635914200.000000
+Z9 !s108 1635909736.000000
 Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/School/University/Third Year/ENEL 453/Lab 3/averager.vhd|
 Z11 !s107 D:/Documents/School/University/Third Year/ENEL 453/Lab 3/averager.vhd|
 !i113 1
@@ -37,7 +37,7 @@ R1
 R2
 R3
 DEx4 work 8 averager 0 22 B8:2CDW`BR7l1OCmU>8;70
-!i122 88
+!i122 44
 l21
 L15 73
 VG;7@I7_amaWiWHS^mKDW43
@@ -53,25 +53,25 @@ R11
 R12
 R13
 Ebinary_bcd
-Z14 w1635911422
+Z14 w1635909705
 R1
 R2
 R3
-!i122 89
+!i122 45
 R4
 Z15 8D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd
 Z16 FD:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd
 l0
-L7 1
-VKBJSdo]M]MKlXYkk5U:BU3
-!s100 12`DfAmV?YHAn2<Z7;<XI0
+L8 1
+Vo<z`d6o]a?hb2:1^mkKIJ0
+!s100 Ai7<aVU>PmVj]f3eOfUVA0
 R7
 32
-Z17 !s110 1635914201
+R8
 !i10b 1
-Z18 !s108 1635914201.000000
-Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd|
-Z20 !s107 D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd|
+R9
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd|
+Z18 !s107 D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd|
 !i113 1
 R12
 R13
@@ -79,63 +79,41 @@ Abehavior
 R1
 R2
 R3
-DEx4 work 10 binary_bcd 0 22 KBJSdo]M]MKlXYkk5U:BU3
-!i122 89
-l32
-L18 85
-V1e[UQeQ;?]iM2cdNTJda<0
-!s100 `>?YLDKimIO1Yd@5VbO[22
+DEx4 work 10 binary_bcd 0 22 o<z`d6o]a?hb2:1^mkKIJ0
+!i122 45
+l31
+L19 81
+Ve]7k3J6LHRdAfXF[eP7no0
+!s100 SB<WSA:i1zz6P_:NMQjW12
 R7
 32
+R8
+!i10b 1
+R9
 R17
-!i10b 1
 R18
-R19
-R20
-!i113 1
-R12
-R13
-Phexarrays
-R2
-R3
-!i122 93
-Z21 w1635911914
-R4
-Z22 8D:/Documents/School/University/Third Year/ENEL 453/Lab 3/SevenSegment.vhd
-Z23 FD:/Documents/School/University/Third Year/ENEL 453/Lab 3/SevenSegment.vhd
-l0
-L6 1
-V1ldVP9^A@i4DKHOhK0<^02
-!s100 jGGRWY4UeT:<HPAaBV0z33
-R7
-32
-Z24 !s110 1635914202
-!i10b 1
-Z25 !s108 1635914202.000000
-Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/School/University/Third Year/ENEL 453/Lab 3/SevenSegment.vhd|
-Z27 !s107 D:/Documents/School/University/Third Year/ENEL 453/Lab 3/SevenSegment.vhd|
 !i113 1
 R12
 R13
 Emux
-Z28 w1635565705
+Z19 w1635565705
 R2
 R3
-!i122 90
+!i122 46
 R4
-Z29 8D:/Documents/School/University/Third Year/ENEL 453/Lab 3/mux.vhd
-Z30 FD:/Documents/School/University/Third Year/ENEL 453/Lab 3/mux.vhd
+Z20 8D:/Documents/School/University/Third Year/ENEL 453/Lab 3/mux.vhd
+Z21 FD:/Documents/School/University/Third Year/ENEL 453/Lab 3/mux.vhd
 l0
 L4 1
 VIaiVWXCGPS6CCCYh4gJHQ0
 !s100 36PJIAD[B3DW<^fO[CnC?2
 R7
 32
-R17
+Z22 !s110 1635909737
 !i10b 1
-R18
-Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/School/University/Third Year/ENEL 453/Lab 3/mux.vhd|
-Z32 !s107 D:/Documents/School/University/Third Year/ENEL 453/Lab 3/mux.vhd|
+Z23 !s108 1635909737.000000
+Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/School/University/Third Year/ENEL 453/Lab 3/mux.vhd|
+Z25 !s107 D:/Documents/School/University/Third Year/ENEL 453/Lab 3/mux.vhd|
 !i113 1
 R12
 R13
@@ -143,40 +121,40 @@ Abehavioral
 R2
 R3
 DEx4 work 3 mux 0 22 IaiVWXCGPS6CCCYh4gJHQ0
-!i122 90
+!i122 46
 l15
 L13 13
 VK:cIJb:F>ozgc_izR3@@50
 !s100 [68Xk0=BaiONEN72jEWB`1
 R7
 32
-R17
+R22
 !i10b 1
-R18
-R31
-R32
+R23
+R24
+R25
 !i113 1
 R12
 R13
 Emux_tb
-R28
+R19
 R2
 R3
-!i122 91
+!i122 47
 R4
-Z33 8D:/Documents/School/University/Third Year/ENEL 453/Lab 3/mux_tb.vhd
-Z34 FD:/Documents/School/University/Third Year/ENEL 453/Lab 3/mux_tb.vhd
+Z26 8D:/Documents/School/University/Third Year/ENEL 453/Lab 3/mux_tb.vhd
+Z27 FD:/Documents/School/University/Third Year/ENEL 453/Lab 3/mux_tb.vhd
 l0
 L6 1
 VZmJRi<n780oPfGgGTERLh1
 !s100 Lm8I9LQBVol?dSHi5Mze42
 R7
 32
-R24
+R22
 !i10b 1
-R18
-Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/School/University/Third Year/ENEL 453/Lab 3/mux_tb.vhd|
-Z36 !s107 D:/Documents/School/University/Third Year/ENEL 453/Lab 3/mux_tb.vhd|
+R23
+Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/School/University/Third Year/ENEL 453/Lab 3/mux_tb.vhd|
+Z29 !s107 D:/Documents/School/University/Third Year/ENEL 453/Lab 3/mux_tb.vhd|
 !i113 1
 R12
 R13
@@ -184,40 +162,40 @@ Atb
 R2
 R3
 DEx4 work 6 mux_tb 0 22 ZmJRi<n780oPfGgGTERLh1
-!i122 91
+!i122 47
 l27
 L10 53
 V`4E`mL2GY@8A_IN7fOL8J3
 !s100 i_FF4J2PM`5k`kAlkQSH<1
 R7
 32
-R24
+R22
 !i10b 1
-R18
-R35
-R36
+R23
+R28
+R29
 !i113 1
 R12
 R13
 Eregisters
-Z37 w1635566091
+Z30 w1635566091
 R2
 R3
-!i122 92
+!i122 48
 R4
-Z38 8D:/Documents/School/University/Third Year/ENEL 453/Lab 3/registers.vhd
-Z39 FD:/Documents/School/University/Third Year/ENEL 453/Lab 3/registers.vhd
+Z31 8D:/Documents/School/University/Third Year/ENEL 453/Lab 3/registers.vhd
+Z32 FD:/Documents/School/University/Third Year/ENEL 453/Lab 3/registers.vhd
 l0
 L4 1
 Voi=cDXg^hG:lDnFXRmWGZ3
 !s100 QTc_J_@loN^G6JbG4TBe_1
 R7
 32
-R24
+Z33 !s110 1635909738
 !i10b 1
-R25
-Z40 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/School/University/Third Year/ENEL 453/Lab 3/registers.vhd|
-Z41 !s107 D:/Documents/School/University/Third Year/ENEL 453/Lab 3/registers.vhd|
+R23
+Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/School/University/Third Year/ENEL 453/Lab 3/registers.vhd|
+Z35 !s107 D:/Documents/School/University/Third Year/ENEL 453/Lab 3/registers.vhd|
 !i113 1
 R12
 R13
@@ -225,83 +203,81 @@ Artl
 R2
 R3
 DEx4 work 9 registers 0 22 oi=cDXg^hG:lDnFXRmWGZ3
-!i122 92
+!i122 48
 l18
 L17 15
 ViaPaaR2<Cc8]O4YRD^8`g0
 !s100 Ol2>SZTYjSoP=WBX1X:3f3
 R7
 32
-R24
+R33
 !i10b 1
-R25
-R40
-R41
+R23
+R34
+R35
 !i113 1
 R12
 R13
 Esevensegment
-R21
-Z42 DPx4 work 9 hexarrays 0 22 1ldVP9^A@i4DKHOhK0<^02
+R19
 R2
 R3
-!i122 93
+!i122 49
 R4
-R22
-R23
+Z36 8D:/Documents/School/University/Third Year/ENEL 453/Lab 3/SevenSegment.vhd
+Z37 FD:/Documents/School/University/Third Year/ENEL 453/Lab 3/SevenSegment.vhd
 l0
-L16 1
-V7izE>TUF;7UFJOgV8JO1]3
-!s100 Df]H`2UaGXak;3IzWn<0]1
+L5 1
+VFQL0l=JL^=MaiIUn`WdFb1
+!s100 FAQQnV:QmAocX2NB>i[z<3
 R7
 32
-R24
+R33
 !i10b 1
-R25
-R26
-R27
+Z38 !s108 1635909738.000000
+Z39 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/School/University/Third Year/ENEL 453/Lab 3/SevenSegment.vhd|
+Z40 !s107 D:/Documents/School/University/Third Year/ENEL 453/Lab 3/SevenSegment.vhd|
 !i113 1
 R12
 R13
 Abehavioral
-R42
 R2
 R3
-DEx4 work 12 sevensegment 0 22 7izE>TUF;7UFJOgV8JO1]3
-!i122 93
-l31
-L22 20
-V=ioLI06<ea`OM`:BWGTJ^3
-!s100 NNRJlae_jGnMFSKLU_3g72
+DEx4 work 12 sevensegment 0 22 FQL0l=JL^=MaiIUn`WdFb1
+!i122 49
+l20
+L11 44
+V2F^Fcf9gjzodgkg_]691i2
+!s100 RiGS?:ZGQAlZ5UmR<S:Kz0
 R7
 32
-R24
+R33
 !i10b 1
-R25
-R26
-R27
+R38
+R39
+R40
 !i113 1
 R12
 R13
 Esevensegment_decoder
-R28
+R19
 R2
 R3
-!i122 94
+!i122 50
 R4
-Z43 8D:/Documents/School/University/Third Year/ENEL 453/Lab 3/SevenSegment_decoder.vhd
-Z44 FD:/Documents/School/University/Third Year/ENEL 453/Lab 3/SevenSegment_decoder.vhd
+Z41 8D:/Documents/School/University/Third Year/ENEL 453/Lab 3/SevenSegment_decoder.vhd
+Z42 FD:/Documents/School/University/Third Year/ENEL 453/Lab 3/SevenSegment_decoder.vhd
 l0
 L5 1
 VVlW=l2M0eeEbg:dCz4:;@0
 !s100 nVLN]dm0afJ4i1K[@D_Do2
 R7
 32
-Z45 !s110 1635914203
+R33
 !i10b 1
-Z46 !s108 1635914203.000000
-Z47 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/School/University/Third Year/ENEL 453/Lab 3/SevenSegment_decoder.vhd|
-Z48 !s107 D:/Documents/School/University/Third Year/ENEL 453/Lab 3/SevenSegment_decoder.vhd|
+R38
+Z43 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/School/University/Third Year/ENEL 453/Lab 3/SevenSegment_decoder.vhd|
+Z44 !s107 D:/Documents/School/University/Third Year/ENEL 453/Lab 3/SevenSegment_decoder.vhd|
 !i113 1
 R12
 R13
@@ -309,41 +285,41 @@ Abehavioral
 R2
 R3
 DEx4 work 20 sevensegment_decoder 0 22 VlW=l2M0eeEbg:dCz4:;@0
-!i122 94
+!i122 50
 l14
 L13 29
 VC?9QIg:<Nc@7LA^50J:Ca0
 !s100 G[]U9WTmdjCPQ770:^Jn=3
 R7
 32
-R45
+R33
 !i10b 1
-R46
-R47
-R48
+R38
+R43
+R44
 !i113 1
 R12
 R13
 Etb_de10_lite
-Z49 w1635565722
+Z45 w1635565722
 R1
 R2
 R3
-!i122 97
+!i122 53
 R4
-Z50 8D:/Documents/School/University/Third Year/ENEL 453/Lab 3/Simulation/tb_ADC.vhd
-Z51 FD:/Documents/School/University/Third Year/ENEL 453/Lab 3/Simulation/tb_ADC.vhd
+Z46 8D:/Documents/School/University/Third Year/ENEL 453/Lab 3/Simulation/tb_ADC.vhd
+Z47 FD:/Documents/School/University/Third Year/ENEL 453/Lab 3/Simulation/tb_ADC.vhd
 l0
 L6 1
 VY5]65D9X8mPJOGE=9abzX2
 !s100 KkUeQ_Fa5[ZANn=i;=dOX1
 R7
 32
-Z52 !s110 1635914204
+Z48 !s110 1635909740
 !i10b 1
-Z53 !s108 1635914204.000000
-Z54 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/School/University/Third Year/ENEL 453/Lab 3/Simulation/tb_ADC.vhd|
-Z55 !s107 D:/Documents/School/University/Third Year/ENEL 453/Lab 3/Simulation/tb_ADC.vhd|
+Z49 !s108 1635909739.000000
+Z50 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/School/University/Third Year/ENEL 453/Lab 3/Simulation/tb_ADC.vhd|
+Z51 !s107 D:/Documents/School/University/Third Year/ENEL 453/Lab 3/Simulation/tb_ADC.vhd|
 !i113 1
 R12
 R13
@@ -352,147 +328,143 @@ R1
 R2
 R3
 DEx4 work 12 tb_de10_lite 0 22 Y5]65D9X8mPJOGE=9abzX2
-!i122 97
+!i122 53
 l23
 L9 32
 V=h4ER@b@CEj4L2DPQ8e`m3
 !s100 flNeMVWed_Qj52F]ENMcd0
 R7
 32
-R52
+R48
 !i10b 1
-R53
-R54
-R55
+R49
+R50
+R51
 !i113 1
 R12
 R13
 Etest_de10_lite
-R49
+R45
 R2
 R3
-!i122 98
+!i122 54
 R4
-Z56 8D:/Documents/School/University/Third Year/ENEL 453/Lab 3/Simulation/test_ADC.vhd
-Z57 FD:/Documents/School/University/Third Year/ENEL 453/Lab 3/Simulation/test_ADC.vhd
+Z52 8D:/Documents/School/University/Third Year/ENEL 453/Lab 3/Simulation/test_ADC.vhd
+Z53 FD:/Documents/School/University/Third Year/ENEL 453/Lab 3/Simulation/test_ADC.vhd
 l0
 L6 1
 VV@Q5GZFH]EZ[NWnbbL5E<1
 !s100 72N:e;ZbWmel4[3]E_PHT0
 R7
 32
-R52
+R48
 !i10b 1
-R53
-Z58 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/School/University/Third Year/ENEL 453/Lab 3/Simulation/test_ADC.vhd|
-Z59 !s107 D:/Documents/School/University/Third Year/ENEL 453/Lab 3/Simulation/test_ADC.vhd|
+Z54 !s108 1635909740.000000
+Z55 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/School/University/Third Year/ENEL 453/Lab 3/Simulation/test_ADC.vhd|
+Z56 !s107 D:/Documents/School/University/Third Year/ENEL 453/Lab 3/Simulation/test_ADC.vhd|
 !i113 1
 R12
 R13
 Abehavior
 R2
 R3
-Z60 DEx4 work 14 test_de10_lite 0 22 V@Q5GZFH]EZ[NWnbbL5E<1
-!i122 98
+Z57 DEx4 work 14 test_de10_lite 0 22 V@Q5GZFH]EZ[NWnbbL5E<1
+!i122 54
 l15
-Z61 L12 60
-Z62 VA8<BNdU5n;R9o1]o8No]E3
-Z63 !s100 FeHTfnb>k6a0V3LN0cg8b1
+Z58 L12 60
+Z59 VA8<BNdU5n;R9o1]o8No]E3
+Z60 !s100 FeHTfnb>k6a0V3LN0cg8b1
 R7
 32
-R52
+R48
 !i10b 1
-R53
-R58
-R59
+R54
+R55
+R56
 !i113 1
 R12
 R13
 Evoltmeter
-Z64 w1635914185
-R42
+R19
 R1
 R2
 R3
-!i122 95
+!i122 51
 R4
-Z65 8D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd
-Z66 FD:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd
+Z61 8D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd
+Z62 FD:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd
 l0
-L6 1
-V@MX7136Of`9zQJUCfCKS;2
-!s100 h[=4a5ZX>>d43ad]AK3U?1
+L5 1
+V5He]lLka[[4_TimO[R;gf0
+!s100 U_4aFIlz;kR?dMR2W9`;W1
 R7
 32
-R45
+Z63 !s110 1635909739
 !i10b 1
-R46
-Z67 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd|
-Z68 !s107 D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd|
+R38
+Z64 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd|
+Z65 !s107 D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd|
 !i113 1
 R12
 R13
 Abehavioral
-R42
 R1
 R2
 R3
-DEx4 work 9 voltmeter 0 22 @MX7136Of`9zQJUCfCKS;2
-!i122 95
-l87
-L16 166
-VofhQ0zH6@Z3]QadzEc5:=0
-!s100 _g8?3DzMiMj83;OH2m5J`1
+DEx4 work 9 voltmeter 0 22 5He]lLka[[4_TimO[R;gf0
+!i122 51
+l85
+L15 175
+VHa:EK1J0:Pah5[?LVX8m13
+!s100 A?2N4PddzgDIL<`E2SRAj3
 R7
 32
-R45
+R63
 !i10b 1
-R46
-R67
-R68
+R38
+R64
+R65
 !i113 1
 R12
 R13
 Evoltmeter_tb
-Z69 w1635912840
-R42
+R19
 R2
 R3
-!i122 96
+!i122 52
 R4
-Z70 8D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter_tb.vhd
-Z71 FD:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter_tb.vhd
+Z66 8D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter_tb.vhd
+Z67 FD:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter_tb.vhd
 l0
-L7 1
-VlhA9]5?7Lm8kc>OkaBEfP1
-!s100 ZjLSJKYJ9Kc;cM4AZ_?7F2
+L6 1
+VDW[O?RmXOP_SiK_HgL]i13
+!s100 m^2nb:We?iN7:_Hc0]PaS0
 R7
 32
-R45
+R63
 !i10b 1
-R46
-Z72 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter_tb.vhd|
-Z73 !s107 D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter_tb.vhd|
+R49
+Z68 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter_tb.vhd|
+Z69 !s107 D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter_tb.vhd|
 !i113 1
 R12
 R13
 Atb
-R42
 R2
 R3
-DEx4 work 12 voltmeter_tb 0 22 lhA9]5?7Lm8kc>OkaBEfP1
-!i122 96
-l35
-L11 79
-VHl60jE7Bf1Y16KWZ8Z;B^0
-!s100 KTTVg6h2LV0OEG?ARB;[S0
+DEx4 work 12 voltmeter_tb 0 22 DW[O?RmXOP_SiK_HgL]i13
+!i122 52
+l34
+L10 84
+Vi1bQ4b4iBzGKmzL5VKR0i3
+!s100 innZNFlV?7BQZS2F[Tak:3
 R7
 32
-R45
+R63
 !i10b 1
-R46
-R72
-R73
+R49
+R68
+R69
 !i113 1
 R12
 R13

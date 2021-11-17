@@ -1,7 +1,6 @@
 -- Library declarations
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-use work.HexArrays.all;
 
 -- Entity declaration, no ports for a tb
 entity Voltmeter_tb is
@@ -13,7 +12,7 @@ architecture tb of Voltmeter_tb is
 -- Signal declarations, type should match those in the main vhd file
 signal clk, reset : STD_LOGIC;
 signal LEDR : STD_LOGIC_VECTOR (9 downto 0);
-signal Hex: HexType;
+signal HEX0,HEX1,HEX2,HEX3,HEX4,HEX5 : STD_LOGIC_VECTOR (7 downto 0);
 
 -- For mux
 signal S_i 	 : std_logic;
@@ -24,11 +23,11 @@ constant reset_period : time := 30 ns;
 
 -- Component declarations, the ports should be the same as the entity ports in the main vhd file
 component Voltmeter is
-	port( clk 		: in STD_LOGIC;
-			reset    : in  STD_LOGIC;
-         LEDR     : out STD_LOGIC_VECTOR (9 downto 0);
-         Hex 		: out HexType;
-			Selecter : in STD_LOGIC-- No semicolon for last one
+	port( clk 									: in STD_LOGIC;
+			reset                         : in  STD_LOGIC;
+         LEDR                          : out STD_LOGIC_VECTOR (9 downto 0);
+         HEX0,HEX1,HEX2,HEX3,HEX4,HEX5 : out STD_LOGIC_VECTOR (7 downto 0);
+			Selecter									: in STD_LOGIC-- No semicolon for last one
 		 );
 end component;
 
@@ -39,7 +38,12 @@ begin
 	clk => clk,
 	reset => reset,
 	LEDR => LEDR,
-	Hex => Hex,
+	HEX0 => HEX0,
+	HEX1 => HEX1,
+	HEX2 => HEX2,
+	HEX3 => HEX3,
+	HEX4 => HEX4,
+	HEX5 => HEX5,
 	Selecter	  => S_i --No comma for last one
 	);
 
