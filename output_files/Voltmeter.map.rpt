@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Voltmeter
-Thu Nov 11 16:02:41 2021
+Wed Nov 17 17:05:35 2021
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -18,63 +18,62 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
  10. State Machine - |Voltmeter|binary_bcd:binary_bcd_ins|\bcd_process:nextstate
  11. State Machine - |Voltmeter|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|ctrl_state
  12. Registers Protected by Synthesis
- 13. Logic Cells Representing Combinational Loops
- 14. Registers Removed During Synthesis
- 15. Removed Registers Triggering Further Register Optimizations
- 16. General Register Statistics
- 17. Inverted Register Statistics
- 18. Multiplexer Restructuring Statistics (Restructuring Performed)
- 19. Source assignments for ADC_Conversion:ADC_Conversion_ins
- 20. Source assignments for ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_altpll_sys:altpll_sys
- 21. Source assignments for ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_altpll_sys:altpll_sys|adc_qsys_altpll_sys_stdsync_sv6:stdsync2|adc_qsys_altpll_sys_dffpipe_l2c:dffpipe3
- 22. Source assignments for ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_std_synchronizer:u_clk_dft_synchronizer
- 23. Source assignments for ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_std_synchronizer:u_eoc_synchronizer
- 24. Source assignments for ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram
- 25. Source assignments for ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1
- 26. Source assignments for ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_req_sync_uq1
- 27. Source assignments for ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller_001|altera_reset_synchronizer:alt_rst_sync_uq1
- 28. Source assignments for ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller_001|altera_reset_synchronizer:alt_rst_req_sync_uq1
- 29. Parameter Settings for User Entity Instance: registers:sync1
- 30. Parameter Settings for User Entity Instance: registers:sync2
- 31. Parameter Settings for User Entity Instance: registers:sync3
- 32. Parameter Settings for User Entity Instance: registers:sync4
- 33. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0
- 34. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal
- 35. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm
- 36. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_std_synchronizer:u_clk_dft_synchronizer
- 37. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_std_synchronizer:u_eoc_synchronizer
- 38. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component
- 39. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|fiftyfivenm_adcblock_top_wrapper:adc_inst
- 40. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|fiftyfivenm_adcblock_top_wrapper:adc_inst|chsel_code_converter_sw_to_hw:decoder
- 41. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|fiftyfivenm_adcblock_top_wrapper:adc_inst|fiftyfivenm_adcblock_primitive_wrapper:adcblock_instance
- 42. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller
- 43. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1
- 44. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_req_sync_uq1
- 45. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller_001
- 46. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller_001|altera_reset_synchronizer:alt_rst_sync_uq1
- 47. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller_001|altera_reset_synchronizer:alt_rst_req_sync_uq1
- 48. Parameter Settings for Inferred Entity Instance: lpm_mult:Mult0
- 49. scfifo Parameter Settings by Entity Instance
- 50. lpm_mult Parameter Settings by Entity Instance
- 51. Port Connectivity Checks: "binary_bcd:binary_bcd_ins"
- 52. Port Connectivity Checks: "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller_001"
- 53. Port Connectivity Checks: "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_req_sync_uq1"
- 54. Port Connectivity Checks: "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller"
- 55. Port Connectivity Checks: "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo"
- 56. Port Connectivity Checks: "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal"
- 57. Port Connectivity Checks: "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_altpll_sys:altpll_sys|adc_qsys_altpll_sys_altpll_oc92:sd1"
- 58. Port Connectivity Checks: "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_altpll_sys:altpll_sys"
- 59. Port Connectivity Checks: "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0"
- 60. Port Connectivity Checks: "ADC_Conversion:ADC_Conversion_ins"
- 61. Port Connectivity Checks: "SevenSegment:SevenSegment_ins"
- 62. Port Connectivity Checks: "registers:sync4"
- 63. Port Connectivity Checks: "registers:sync3"
- 64. Port Connectivity Checks: "registers:sync2"
- 65. Port Connectivity Checks: "registers:sync1"
- 66. Post-Synthesis Netlist Statistics for Top Partition
- 67. Elapsed Time Per Partition
- 68. Analysis & Synthesis Messages
- 69. Analysis & Synthesis Suppressed Messages
+ 13. Registers Removed During Synthesis
+ 14. Removed Registers Triggering Further Register Optimizations
+ 15. General Register Statistics
+ 16. Inverted Register Statistics
+ 17. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 18. Source assignments for ADC_Conversion:ADC_Conversion_ins
+ 19. Source assignments for ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_altpll_sys:altpll_sys
+ 20. Source assignments for ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_altpll_sys:altpll_sys|adc_qsys_altpll_sys_stdsync_sv6:stdsync2|adc_qsys_altpll_sys_dffpipe_l2c:dffpipe3
+ 21. Source assignments for ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_std_synchronizer:u_clk_dft_synchronizer
+ 22. Source assignments for ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_std_synchronizer:u_eoc_synchronizer
+ 23. Source assignments for ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram
+ 24. Source assignments for ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1
+ 25. Source assignments for ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_req_sync_uq1
+ 26. Source assignments for ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller_001|altera_reset_synchronizer:alt_rst_sync_uq1
+ 27. Source assignments for ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller_001|altera_reset_synchronizer:alt_rst_req_sync_uq1
+ 28. Parameter Settings for User Entity Instance: registers:sync1
+ 29. Parameter Settings for User Entity Instance: registers:sync2
+ 30. Parameter Settings for User Entity Instance: registers:sync3
+ 31. Parameter Settings for User Entity Instance: registers:sync4
+ 32. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0
+ 33. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal
+ 34. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm
+ 35. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_std_synchronizer:u_clk_dft_synchronizer
+ 36. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_std_synchronizer:u_eoc_synchronizer
+ 37. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component
+ 38. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|fiftyfivenm_adcblock_top_wrapper:adc_inst
+ 39. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|fiftyfivenm_adcblock_top_wrapper:adc_inst|chsel_code_converter_sw_to_hw:decoder
+ 40. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|fiftyfivenm_adcblock_top_wrapper:adc_inst|fiftyfivenm_adcblock_primitive_wrapper:adcblock_instance
+ 41. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller
+ 42. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1
+ 43. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_req_sync_uq1
+ 44. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller_001
+ 45. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller_001|altera_reset_synchronizer:alt_rst_sync_uq1
+ 46. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller_001|altera_reset_synchronizer:alt_rst_req_sync_uq1
+ 47. Parameter Settings for Inferred Entity Instance: lpm_mult:Mult0
+ 48. scfifo Parameter Settings by Entity Instance
+ 49. lpm_mult Parameter Settings by Entity Instance
+ 50. Port Connectivity Checks: "binary_bcd:binary_bcd_ins"
+ 51. Port Connectivity Checks: "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller_001"
+ 52. Port Connectivity Checks: "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_req_sync_uq1"
+ 53. Port Connectivity Checks: "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller"
+ 54. Port Connectivity Checks: "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo"
+ 55. Port Connectivity Checks: "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal"
+ 56. Port Connectivity Checks: "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_altpll_sys:altpll_sys|adc_qsys_altpll_sys_altpll_oc92:sd1"
+ 57. Port Connectivity Checks: "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_altpll_sys:altpll_sys"
+ 58. Port Connectivity Checks: "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0"
+ 59. Port Connectivity Checks: "ADC_Conversion:ADC_Conversion_ins"
+ 60. Port Connectivity Checks: "SevenSegment:SevenSegment_ins"
+ 61. Port Connectivity Checks: "registers:sync4"
+ 62. Port Connectivity Checks: "registers:sync3"
+ 63. Port Connectivity Checks: "registers:sync2"
+ 64. Port Connectivity Checks: "registers:sync1"
+ 65. Post-Synthesis Netlist Statistics for Top Partition
+ 66. Elapsed Time Per Partition
+ 67. Analysis & Synthesis Messages
+ 68. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -100,13 +99,13 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Nov 11 16:02:41 2021       ;
+; Analysis & Synthesis Status        ; Successful - Wed Nov 17 17:05:35 2021       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Voltmeter                                   ;
 ; Top-level Entity Name              ; Voltmeter                                   ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 2,498                                       ;
-;     Total combinational functions  ; 2,208                                       ;
+; Total logic elements               ; 2,491                                       ;
+;     Total combinational functions  ; 2,201                                       ;
 ;     Dedicated logic registers      ; 404                                         ;
 ; Total registers                    ; 404                                         ;
 ; Total pins                         ; 61                                          ;
@@ -299,16 +298,16 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                                                                          ;
 +---------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
-; Estimated Total logic elements              ; 2,498                                                                                                                          ;
+; Estimated Total logic elements              ; 2,491                                                                                                                          ;
 ;                                             ;                                                                                                                                ;
-; Total combinational functions               ; 2208                                                                                                                           ;
+; Total combinational functions               ; 2201                                                                                                                           ;
 ; Logic element usage by number of LUT inputs ;                                                                                                                                ;
-;     -- 4 input functions                    ; 1650                                                                                                                           ;
-;     -- 3 input functions                    ; 394                                                                                                                            ;
-;     -- <=2 input functions                  ; 164                                                                                                                            ;
+;     -- 4 input functions                    ; 1651                                                                                                                           ;
+;     -- 3 input functions                    ; 380                                                                                                                            ;
+;     -- <=2 input functions                  ; 170                                                                                                                            ;
 ;                                             ;                                                                                                                                ;
 ; Logic elements by mode                      ;                                                                                                                                ;
-;     -- normal mode                          ; 1920                                                                                                                           ;
+;     -- normal mode                          ; 1913                                                                                                                           ;
 ;     -- arithmetic mode                      ; 288                                                                                                                            ;
 ;                                             ;                                                                                                                                ;
 ; Total registers                             ; 404                                                                                                                            ;
@@ -323,8 +322,8 @@ refer to the applicable agreement for further details.
 ;     -- PLLs                                 ; 1                                                                                                                              ;
 ;                                             ;                                                                                                                                ;
 ; Maximum fan-out node                        ; lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_arg:auto_generated|op_1~16 ;
-; Maximum fan-out                             ; 558                                                                                                                            ;
-; Total fan-out                               ; 9739                                                                                                                           ;
+; Maximum fan-out                             ; 551                                                                                                                            ;
+; Total fan-out                               ; 9713                                                                                                                           ;
 ; Average fan-out                             ; 3.56                                                                                                                           ;
 +---------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
 
@@ -334,7 +333,7 @@ refer to the applicable agreement for further details.
 +------------------------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------+--------------+
 ; Compilation Hierarchy Node                                                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                                                                                                                                                                          ; Entity Name                            ; Library Name ;
 +------------------------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------+--------------+
-; |Voltmeter                                                                   ; 2208 (7)            ; 404 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 61   ; 0            ; 0          ; |Voltmeter                                                                                                                                                                                                                                   ; Voltmeter                              ; work         ;
+; |Voltmeter                                                                   ; 2201 (1)            ; 404 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 61   ; 0            ; 0          ; |Voltmeter                                                                                                                                                                                                                                   ; Voltmeter                              ; work         ;
 ;    |ADC_Conversion:ADC_Conversion_ins|                                       ; 54 (5)              ; 90 (29)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|ADC_Conversion:ADC_Conversion_ins                                                                                                                                                                                                 ; ADC_Conversion                         ; work         ;
 ;       |adc_qsys:u0|                                                          ; 49 (0)              ; 61 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0                                                                                                                                                                                     ; adc_qsys                               ; adc_qsys     ;
 ;          |adc_qsys_altpll_sys:altpll_sys|                                    ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_altpll_sys:altpll_sys                                                                                                                                                      ; adc_qsys_altpll_sys                    ; adc_qsys     ;
@@ -356,7 +355,7 @@ refer to the applicable agreement for further details.
 ;       |SevenSegment_decoder:\Behavioral_Decoder:3:DECODERx|                  ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|SevenSegment:SevenSegment_ins|SevenSegment_decoder:\Behavioral_Decoder:3:DECODERx                                                                                                                                                 ; SevenSegment_decoder                   ; work         ;
 ;    |averager:ave|                                                            ; 206 (206)           ; 204 (204)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|averager:ave                                                                                                                                                                                                                      ; averager                               ; work         ;
 ;    |binary_bcd:binary_bcd_ins|                                               ; 149 (149)           ; 84 (84)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|binary_bcd:binary_bcd_ins                                                                                                                                                                                                         ; binary_bcd                             ; work         ;
-;    |flag_mux:flag_multiplexer|                                               ; 12 (12)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|flag_mux:flag_multiplexer                                                                                                                                                                                                         ; flag_mux                               ; work         ;
+;    |flag_mux:flag_multiplexer|                                               ; 16 (16)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|flag_mux:flag_multiplexer                                                                                                                                                                                                         ; flag_mux                               ; work         ;
 ;    |lpm_mult:Mult0|                                                          ; 57 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|lpm_mult:Mult0                                                                                                                                                                                                                    ; lpm_mult                               ; work         ;
 ;       |multcore:mult_core|                                                   ; 57 (29)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|lpm_mult:Mult0|multcore:mult_core                                                                                                                                                                                                 ; multcore                               ; work         ;
 ;          |mpar_add:padder|                                                   ; 28 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder                                                                                                                                                                                 ; mpar_add                               ; work         ;
@@ -369,7 +368,7 @@ refer to the applicable agreement for further details.
 ;    |registers:sync2|                                                         ; 0 (0)               ; 12 (12)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|registers:sync2                                                                                                                                                                                                                   ; registers                              ; work         ;
 ;    |registers:sync3|                                                         ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|registers:sync3                                                                                                                                                                                                                   ; registers                              ; work         ;
 ;    |registers:sync4|                                                         ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|registers:sync4                                                                                                                                                                                                                   ; registers                              ; work         ;
-;    |voltage2distance:V2D|                                                    ; 1695 (1695)         ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|voltage2distance:V2D                                                                                                                                                                                                              ; voltage2distance                       ; work         ;
+;    |voltage2distance:V2D|                                                    ; 1690 (1690)         ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|voltage2distance:V2D                                                                                                                                                                                                              ; voltage2distance                       ; work         ;
 +------------------------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -477,17 +476,6 @@ Encoding Type:  One-Hot
 ; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_std_synchronizer:u_clk_dft_synchronizer|din_s1  ; yes                                                              ; yes                                        ;
 ; Total number of protected registers is 18                                                                                                                                                                                          ;                                                                  ;                                            ;
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------+
-
-
-+------------------------------------------------------------+
-; Logic Cells Representing Combinational Loops               ;
-+--------------------------------------------------------+---+
-; Logic Cell Name                                        ;   ;
-+--------------------------------------------------------+---+
-; Num_Hex[3][3]~0                                        ;   ;
-; Number of logic cells representing combinational loops ; 1 ;
-+--------------------------------------------------------+---+
-Note: All cells listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -609,7 +597,6 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 ; 9:1                ; 4 bits    ; 24 LEs        ; 8 LEs                ; 16 LEs                 ; Yes        ; |Voltmeter|binary_bcd:binary_bcd_ins|bcd_signal[17]                                                                                                                                                 ;
 ; 11:1               ; 4 bits    ; 28 LEs        ; 12 LEs               ; 16 LEs                 ; Yes        ; |Voltmeter|binary_bcd:binary_bcd_ins|bcd_signal[24]                                                                                                                                                 ;
 ; 13:1               ; 4 bits    ; 32 LEs        ; 20 LEs               ; 12 LEs                 ; Yes        ; |Voltmeter|binary_bcd:binary_bcd_ins|bcd_signal[26]                                                                                                                                                 ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Voltmeter|Num_Hex[3][0]                                                                                                                                                                            ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -1434,21 +1421,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA CLR SCLR      ; 16                          ;
 ;     ENA CLR SCLR SLD  ; 16                          ;
 ;     plain             ; 3                           ;
-; cycloneiii_lcell_comb ; 2214                        ;
+; cycloneiii_lcell_comb ; 2206                        ;
 ;     arith             ; 288                         ;
 ;         2 data inputs ; 77                          ;
 ;         3 data inputs ; 211                         ;
-;     normal            ; 1926                        ;
+;     normal            ; 1918                        ;
 ;         0 data inputs ; 21                          ;
-;         1 data inputs ; 14                          ;
-;         2 data inputs ; 58                          ;
-;         3 data inputs ; 183                         ;
-;         4 data inputs ; 1650                        ;
+;         1 data inputs ; 13                          ;
+;         2 data inputs ; 64                          ;
+;         3 data inputs ; 169                         ;
+;         4 data inputs ; 1651                        ;
 ; cycloneiii_pll        ; 1                           ;
 ; fiftyfivenm_adcblock  ; 1                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 15.30                       ;
-; Average LUT depth     ; 9.63                        ;
+; Average LUT depth     ; 9.62                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1467,7 +1454,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu Nov 11 16:02:18 2021
+    Info: Processing started: Wed Nov 17 17:05:07 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab3 -c Voltmeter
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -1535,15 +1522,15 @@ Info (12021): Found 2 design units, including 1 entities, in source file mux_tb.
     Info (12023): Found entity 1: mux_tb File: H:/Github/NasihNazeem/ENEL-453-Labs/mux_tb.vhd Line: 6
 Info (12127): Elaborating entity "Voltmeter" for the top level hierarchy
 Warning (10036): Verilog HDL or VHDL warning at voltmeter.vhd(23): object "busy" assigned a value but never read File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 23
-Info (12128): Elaborating entity "mux" for hierarchy "mux:multiplexer" File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 122
-Info (12128): Elaborating entity "flag_mux" for hierarchy "flag_mux:flag_multiplexer" File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 130
-Info (12128): Elaborating entity "voltage2distance" for hierarchy "voltage2distance:V2D" File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 139
-Info (12128): Elaborating entity "averager" for hierarchy "averager:ave" File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 148
-Info (12128): Elaborating entity "registers" for hierarchy "registers:sync1" File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 157
-Info (12128): Elaborating entity "registers" for hierarchy "registers:sync3" File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 177
-Info (12128): Elaborating entity "SevenSegment" for hierarchy "SevenSegment:SevenSegment_ins" File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 197
+Info (12128): Elaborating entity "mux" for hierarchy "mux:multiplexer" File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 124
+Info (12128): Elaborating entity "flag_mux" for hierarchy "flag_mux:flag_multiplexer" File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 132
+Info (12128): Elaborating entity "voltage2distance" for hierarchy "voltage2distance:V2D" File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 141
+Info (12128): Elaborating entity "averager" for hierarchy "averager:ave" File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 150
+Info (12128): Elaborating entity "registers" for hierarchy "registers:sync1" File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 159
+Info (12128): Elaborating entity "registers" for hierarchy "registers:sync3" File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 179
+Info (12128): Elaborating entity "SevenSegment" for hierarchy "SevenSegment:SevenSegment_ins" File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 199
 Info (12128): Elaborating entity "SevenSegment_decoder" for hierarchy "SevenSegment:SevenSegment_ins|SevenSegment_decoder:\Behavioral_Decoder:0:DECODERx" File: H:/Github/NasihNazeem/ENEL-453-Labs/SevenSegment.vhd Line: 36
-Info (12128): Elaborating entity "ADC_Conversion" for hierarchy "ADC_Conversion:ADC_Conversion_ins" File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 203
+Info (12128): Elaborating entity "ADC_Conversion" for hierarchy "ADC_Conversion:ADC_Conversion_ins" File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 205
 Warning (10036): Verilog HDL or VHDL warning at ADC_Conversion.v(98): object "cur_adc_ch" assigned a value but never read File: H:/Github/NasihNazeem/ENEL-453-Labs/ADC_Conversion.v Line: 98
 Warning (10036): Verilog HDL or VHDL warning at ADC_Conversion.v(99): object "adc_sample_data" assigned a value but never read File: H:/Github/NasihNazeem/ENEL-453-Labs/ADC_Conversion.v Line: 99
 Info (12128): Elaborating entity "adc_qsys" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0" File: H:/Github/NasihNazeem/ENEL-453-Labs/ADC_Conversion.v Line: 75
@@ -1598,7 +1585,7 @@ Info (12128): Elaborating entity "fiftyfivenm_adcblock_primitive_wrapper" for hi
 Info (12128): Elaborating entity "altera_reset_controller" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller" File: H:/Github/NasihNazeem/ENEL-453-Labs/adc_qsys/synthesis/adc_qsys.v Line: 134
 Info (12128): Elaborating entity "altera_reset_synchronizer" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1" File: H:/Github/NasihNazeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/altera_reset_controller.v Line: 208
 Info (12128): Elaborating entity "altera_reset_synchronizer" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_req_sync_uq1" File: H:/Github/NasihNazeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/altera_reset_controller.v Line: 220
-Info (12128): Elaborating entity "binary_bcd" for hierarchy "binary_bcd:binary_bcd_ins" File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 215
+Info (12128): Elaborating entity "binary_bcd" for hierarchy "binary_bcd:binary_bcd_ins" File: H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd Line: 217
 Warning (10036): Verilog HDL or VHDL warning at binary_bcd.vhd(22): object "counter" assigned a value but never read File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 22
 Warning (10631): VHDL Process Statement warning at binary_bcd.vhd(135): inferring latch(es) for signal or variable "busy", which holds its previous value in one or more paths through the process File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 135
 Info (10041): Inferred latch for "busy" at binary_bcd.vhd(135) File: H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd Line: 135
@@ -1818,16 +1805,16 @@ Warning (20013): Ignored 149 assignments for entity "DE10_LITE" -- entity does n
 Info (144001): Generated suppressed messages file H:/Github/NasihNazeem/ENEL-453-Labs/output_files/Voltmeter.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 2568 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 2561 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 58 output pins
-    Info (21061): Implemented 2505 logic cells
+    Info (21061): Implemented 2498 logic cells
     Info (21065): Implemented 1 PLLs
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 192 warnings
-    Info: Peak virtual memory: 4877 megabytes
-    Info: Processing ended: Thu Nov 11 16:02:41 2021
-    Info: Elapsed time: 00:00:23
-    Info: Total CPU time (on all processors): 00:00:30
+    Info: Peak virtual memory: 4876 megabytes
+    Info: Processing ended: Wed Nov 17 17:05:35 2021
+    Info: Elapsed time: 00:00:28
+    Info: Total CPU time (on all processors): 00:00:31
 
 
 +------------------------------------------+

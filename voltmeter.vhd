@@ -108,8 +108,10 @@ begin
    Num_Hex(1) <= bcd_new(7  downto  4);
    Num_Hex(2) <= bcd_new(11 downto  8);
 --   Num_Hex(3) <= bcd_new(15 downto 12);
-	Num_Hex(3) <= "1111" when (Selecter = '0' and Num_Hex(3) = "0000") else
-						bcd_new(15 downto 12);
+--	Num_Hex(3) <= "1111" when (Selecter = '0') else
+--						bcd_new(15 downto 12);
+	Num_Hex(3) <= bcd_new(15 downto 12) when (bcd_new(15 downto 12) /= "0000") else
+					  "1111";
    Num_Hex(4) <= "1111";  -- blank this display
    Num_Hex(5) <= "1111";  -- blank this display   
 	DP_in <= "001000" when Selecter = '1' else 

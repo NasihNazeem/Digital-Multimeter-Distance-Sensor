@@ -1,10 +1,10 @@
-/* Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition */
+/* Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition */
 JedecChain;
 	FileRevision(JESD32A);
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(10M50DAF484) Path("C:/Users/kool-/OneDrive/Documents/University/Third Year/ENEL 453/Lab 2/output_files/") File("Voltmeter.sof") MfrSpec(OpMask(1));
+		Device PartName(10M50DAF484) Path("H:/Github/NasihNazeem/ENEL-453-Labs/output_files/") File("Voltmeter.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 
