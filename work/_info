@@ -1,0 +1,394 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dH:/intelFPGA_lite/18.1
+Eaverager
+Z0 w1635914870
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 dH:/Github/NasihNazeem/ENEL-453-Labs
+Z5 8H:/Github/NasihNazeem/ENEL-453-Labs/averager.vhd
+Z6 FH:/Github/NasihNazeem/ENEL-453-Labs/averager.vhd
+l0
+L6
+VB8:2CDW`BR7l1OCmU>8;70
+!s100 SD0FhjE;VVh:AY`^Mm8L61
+Z7 OV;C;10.5b;63
+32
+Z8 !s110 1637219915
+!i10b 1
+Z9 !s108 1637219915.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|H:/Github/NasihNazeem/ENEL-453-Labs/averager.vhd|
+Z11 !s107 H:/Github/NasihNazeem/ENEL-453-Labs/averager.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Artl
+R1
+R2
+R3
+DEx4 work 8 averager 0 22 B8:2CDW`BR7l1OCmU>8;70
+l21
+L15
+VG;7@I7_amaWiWHS^mKDW43
+!s100 YnXhfMY^K8AFmglKzVX2T2
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Ebinary_bcd
+Z14 w1637219357
+R1
+R2
+R3
+R4
+Z15 8H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd
+Z16 FH:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd
+l0
+L7
+VKBJSdo]M]MKlXYkk5U:BU3
+!s100 12`DfAmV?YHAn2<Z7;<XI0
+R7
+32
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd|
+Z18 !s107 H:/Github/NasihNazeem/ENEL-453-Labs/binary_bcd.vhd|
+!i113 1
+R12
+R13
+Abehavior
+R1
+R2
+R3
+DEx4 work 10 binary_bcd 0 22 KBJSdo]M]MKlXYkk5U:BU3
+l32
+L18
+V1e[UQeQ;?]iM2cdNTJda<0
+!s100 `>?YLDKimIO1Yd@5VbO[22
+R7
+32
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Phexarrays
+R2
+R3
+Z19 w1637219515
+R4
+Z20 8H:/Github/NasihNazeem/ENEL-453-Labs/SevenSegment.vhd
+Z21 FH:/Github/NasihNazeem/ENEL-453-Labs/SevenSegment.vhd
+l0
+L5
+VlSMe;:_I>AXBOD_BVchE>3
+!s100 9U5@?FbCVkoG@Vj<>DTz92
+R7
+32
+R8
+!i10b 1
+R9
+Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|H:/Github/NasihNazeem/ENEL-453-Labs/SevenSegment.vhd|
+Z23 !s107 H:/Github/NasihNazeem/ENEL-453-Labs/SevenSegment.vhd|
+!i113 1
+R12
+R13
+Emux
+R14
+R2
+R3
+R4
+Z24 8H:/Github/NasihNazeem/ENEL-453-Labs/mux.vhd
+Z25 FH:/Github/NasihNazeem/ENEL-453-Labs/mux.vhd
+l0
+L4
+VIaiVWXCGPS6CCCYh4gJHQ0
+!s100 36PJIAD[B3DW<^fO[CnC?2
+R7
+32
+R8
+!i10b 1
+R9
+Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|H:/Github/NasihNazeem/ENEL-453-Labs/mux.vhd|
+Z27 !s107 H:/Github/NasihNazeem/ENEL-453-Labs/mux.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R2
+R3
+DEx4 work 3 mux 0 22 IaiVWXCGPS6CCCYh4gJHQ0
+l15
+L13
+VK:cIJb:F>ozgc_izR3@@50
+!s100 [68Xk0=BaiONEN72jEWB`1
+R7
+32
+R8
+!i10b 1
+R9
+R26
+R27
+!i113 1
+R12
+R13
+Eregisters
+R0
+R2
+R3
+R4
+Z28 8H:/Github/NasihNazeem/ENEL-453-Labs/registers.vhd
+Z29 FH:/Github/NasihNazeem/ENEL-453-Labs/registers.vhd
+l0
+L4
+Voi=cDXg^hG:lDnFXRmWGZ3
+!s100 QTc_J_@loN^G6JbG4TBe_1
+R7
+32
+R8
+!i10b 1
+R9
+Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|H:/Github/NasihNazeem/ENEL-453-Labs/registers.vhd|
+Z31 !s107 H:/Github/NasihNazeem/ENEL-453-Labs/registers.vhd|
+!i113 1
+R12
+R13
+Artl
+R2
+R3
+DEx4 work 9 registers 0 22 oi=cDXg^hG:lDnFXRmWGZ3
+l18
+L17
+ViaPaaR2<Cc8]O4YRD^8`g0
+!s100 Ol2>SZTYjSoP=WBX1X:3f3
+R7
+32
+R8
+!i10b 1
+R9
+R30
+R31
+!i113 1
+R12
+R13
+Esevensegment
+R19
+Z32 DPx4 work 9 hexarrays 0 22 lSMe;:_I>AXBOD_BVchE>3
+R2
+R3
+R4
+R20
+R21
+l0
+L15
+VPJ1T6Jm;g>o_Z9ZkBcHGi0
+!s100 7WXiea[V2580ZcBo^<ODh2
+R7
+32
+R8
+!i10b 1
+R9
+R22
+R23
+!i113 1
+R12
+R13
+Abehavioral
+R32
+R2
+R3
+DEx4 work 12 sevensegment 0 22 PJ1T6Jm;g>o_Z9ZkBcHGi0
+l30
+L21
+VeP;Q__VThakmK1WFZ<bMb2
+!s100 @USIgVG:[;S^cNY`^MCJD0
+R7
+32
+R8
+!i10b 1
+R9
+R22
+R23
+!i113 1
+R12
+R13
+Esevensegment_decoder
+R14
+R2
+R3
+R4
+Z33 8H:/Github/NasihNazeem/ENEL-453-Labs/SevenSegment_decoder.vhd
+Z34 FH:/Github/NasihNazeem/ENEL-453-Labs/SevenSegment_decoder.vhd
+l0
+L5
+VVlW=l2M0eeEbg:dCz4:;@0
+!s100 nVLN]dm0afJ4i1K[@D_Do2
+R7
+32
+R8
+!i10b 1
+R9
+Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|H:/Github/NasihNazeem/ENEL-453-Labs/SevenSegment_decoder.vhd|
+Z36 !s107 H:/Github/NasihNazeem/ENEL-453-Labs/SevenSegment_decoder.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R2
+R3
+DEx4 work 20 sevensegment_decoder 0 22 VlW=l2M0eeEbg:dCz4:;@0
+l14
+L13
+VC?9QIg:<Nc@7LA^50J:Ca0
+!s100 G[]U9WTmdjCPQ770:^Jn=3
+R7
+32
+R8
+!i10b 1
+R9
+R35
+R36
+!i113 1
+R12
+R13
+Etest_de10_lite
+R0
+R2
+R3
+R4
+Z37 8H:/Github/NasihNazeem/ENEL-453-Labs/Simulation/test_ADC.vhd
+Z38 FH:/Github/NasihNazeem/ENEL-453-Labs/Simulation/test_ADC.vhd
+l0
+L6
+VV@Q5GZFH]EZ[NWnbbL5E<1
+!s100 72N:e;ZbWmel4[3]E_PHT0
+R7
+32
+R8
+!i10b 1
+R9
+Z39 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|H:/Github/NasihNazeem/ENEL-453-Labs/Simulation/test_ADC.vhd|
+Z40 !s107 H:/Github/NasihNazeem/ENEL-453-Labs/Simulation/test_ADC.vhd|
+!i113 1
+R12
+R13
+Abehavior
+R2
+R3
+Z41 DEx4 work 14 test_de10_lite 0 22 V@Q5GZFH]EZ[NWnbbL5E<1
+l15
+L12
+Z42 VA8<BNdU5n;R9o1]o8No]E3
+Z43 !s100 FeHTfnb>k6a0V3LN0cg8b1
+R7
+32
+R8
+!i10b 1
+R9
+R39
+R40
+!i113 1
+R12
+R13
+Evoltmeter
+Z44 w1637219721
+R32
+R1
+R2
+R3
+R4
+Z45 8H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd
+Z46 FH:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd
+l0
+L6
+VRc`YG773I8a6z@c2QcXVJ1
+!s100 SNi]lf2^O[;6N:ECWDR]63
+R7
+32
+R8
+!i10b 1
+R9
+Z47 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd|
+Z48 !s107 H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R32
+R1
+R2
+R3
+DEx4 work 9 voltmeter 0 22 Rc`YG773I8a6z@c2QcXVJ1
+l87
+L16
+VJd3nRPY`49d5:Ufd7BnSE3
+!s100 RzX4R6XlY6k`nQ9C30<[`2
+R7
+32
+R8
+!i10b 1
+R9
+R47
+R48
+!i113 1
+R12
+R13
+Evoltmeter_tb
+Z49 w1637219887
+R32
+R2
+R3
+R4
+Z50 8H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter_tb.vhd
+Z51 FH:/Github/NasihNazeem/ENEL-453-Labs/voltmeter_tb.vhd
+l0
+L7
+VlhA9]5?7Lm8kc>OkaBEfP1
+!s100 ZjLSJKYJ9Kc;cM4AZ_?7F2
+R7
+32
+R8
+!i10b 1
+R9
+Z52 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter_tb.vhd|
+Z53 !s107 H:/Github/NasihNazeem/ENEL-453-Labs/voltmeter_tb.vhd|
+!i113 1
+R12
+R13
+Atb
+R32
+R2
+R3
+DEx4 work 12 voltmeter_tb 0 22 lhA9]5?7Lm8kc>OkaBEfP1
+l34
+L11
+VYLTYYYgdLhXm1LSF?8l;13
+!s100 KI^cTG7gHfj@WRd]2T2gm2
+R7
+32
+R8
+!i10b 1
+R9
+R52
+R53
+!i113 1
+R12
+R13
