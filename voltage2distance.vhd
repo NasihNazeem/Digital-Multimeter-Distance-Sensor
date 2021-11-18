@@ -4153,7 +4153,7 @@ begin
 	
 	process(voltage)
 	begin
-		if(unsigned(voltage) <= 376) then
+		if(unsigned(voltage) <= 414) then
 			err_flag <= '1';
 		else
 			err_flag <= '0';
