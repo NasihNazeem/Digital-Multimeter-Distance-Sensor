@@ -1,0 +1,85 @@
+# Compile of tb_wave_gen_solution.vhd was successful.
+# Compile of wave_gen.vhd was successful.
+# Compile of voltmeter.vhd was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.tb_wave_gen work.wave_gen
+# vsim -gui work.tb_wave_gen work.wave_gen 
+# Start time: 14:50:28 on Nov 20,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.tb_wave_gen(behavioral)
+# Loading ieee.numeric_std(body)
+# Loading work.wave_gen(behavioral)
+# ** Warning: (vsim-3473) Component instance "pwm : PWM_DAC" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_wave_gen/uut File: C:/Users/farhad.alishov/Desktop/Lab4_Renewed/wave_gen.vhd
+# ** Warning: (vsim-3473) Component instance "pwm : PWM_DAC" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /wave_gen File: C:/Users/farhad.alishov/Desktop/Lab4_Renewed/wave_gen.vhd
+add wave -position end  sim:/tb_wave_gen/reset
+add wave -position end  sim:/tb_wave_gen/clk
+add wave -position end  sim:/tb_wave_gen/PWM_OUT
+add wave -position end  sim:/tb_wave_gen/clk_1kHz_pulse
+add wave -position end  sim:/tb_wave_gen/buttontop
+add wave -position end  sim:/tb_wave_gen/buttonbottom
+add wave -position end  sim:/tb_wave_gen/freqoramp
+add wave -position end  sim:/tb_wave_gen/wave_switch
+add wave -position end  sim:/tb_wave_gen/clk_period
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /wave_gen
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /wave_gen
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /wave_gen
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_wave_gen/uut
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_wave_gen/uut
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_wave_gen/uut
+add wave -position end  sim:/wave_gen/clk
+add wave -position end  sim:/wave_gen/clk_1kHz_pulse
+add wave -position end  sim:/wave_gen/buttontop
+add wave -position end  sim:/wave_gen/buttonbottom
+add wave -position end  sim:/wave_gen/freqoramp
+add wave -position end  sim:/wave_gen/reset
+add wave -position end  sim:/wave_gen/wave_switch
+add wave -position end  sim:/wave_gen/PWM_OUT
+add wave -position end  sim:/wave_gen/CurrentState
+add wave -position end  sim:/wave_gen/NextState
+add wave -position end  sim:/wave_gen/pwm_out_i
+add wave -position end  sim:/wave_gen/count_direction
+add wave -position end  sim:/wave_gen/duty_cycle
+add wave -position end  sim:/wave_gen/counter
+add wave -position end  sim:/wave_gen/maxcounter
+add wave -position end  sim:/wave_gen/max_count
+add wave -position end  sim:/wave_gen/amp_max
+add wave -position end  sim:/wave_gen/maxAmplitude
+add wave -position end  sim:/wave_gen/minAmplitude
+add wave -position end  sim:/wave_gen/zero_count
+add wave -position end  sim:/wave_gen/up
+add wave -position end  sim:/wave_gen/down
+add wave -position end  sim:/wave_gen/saw
+add wave -position end  sim:/wave_gen/width
+restart
+# ** Warning: (vsim-3473) Component instance "pwm : PWM_DAC" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_wave_gen/uut File: C:/Users/farhad.alishov/Desktop/Lab4_Renewed/wave_gen.vhd
+# ** Warning: (vsim-3473) Component instance "pwm : PWM_DAC" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /wave_gen File: C:/Users/farhad.alishov/Desktop/Lab4_Renewed/wave_gen.vhd
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /wave_gen
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /wave_gen
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /wave_gen
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_wave_gen/uut
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_wave_gen/uut
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_wave_gen/uut
+# End time: 14:56:14 on Nov 20,2019, Elapsed time: 0:05:46
+# Errors: 0, Warnings: 16
