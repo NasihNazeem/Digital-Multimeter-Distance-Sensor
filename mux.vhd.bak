@@ -1,8 +1,0 @@
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-
-entity mux is
-	port( AVG : in std_logic_vector(12 downto 0);
-			RAW : in std_logic_vector(12 downto 0);
-			S	 : in std_logic_vector;
-			Y	 : out std_logic_vector(12 downto 0);
