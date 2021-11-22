@@ -11,12 +11,6 @@ CurrentState.S0 0 0 0
 CurrentState.S1 0 1 1 
 CurrentState.S2 1 0 1 
 
-State Machine - |Voltmeter|wave_gen:wavegen|CurrentState
-Name CurrentState.S2 CurrentState.S1 CurrentState.S0 
-CurrentState.S0 0 0 0 
-CurrentState.S1 0 1 1 
-CurrentState.S2 1 0 1 
-
 State Machine - |Voltmeter|binary_bcd:binary_bcd_ins|CurentState
 Name CurentState.s6 CurentState.S5 CurentState.S4 CurentState.S3 CurentState.S2 CurentState.S1 CurentState.S0 
 CurentState.S0 0 0 0 0 0 0 0 

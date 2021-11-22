@@ -10,15 +10,15 @@ entity Voltmeter is
            reset                         : in  STD_LOGIC;
            LEDR                          : out STD_LOGIC_VECTOR (9 downto 0);
            HEX0,HEX1,HEX2,HEX3,HEX4,HEX5 : out STD_LOGIC_VECTOR (7 downto 0);
-			  PWM_OUTPUT						  : out STD_LOGIC;
+--			  PWM_OUTPUT						  : out STD_LOGIC;
 			  buzzer								  : out STD_LOGIC;
 			  switch								  : in  STD_LOGIC;
 			  switch2							  : in  STD_LOGIC;
-			  switch_wave						  : in  STD_LOGIC_VECTOR (1 downto 0);
-			  switch_f_a						  : in  STD_LOGIC;
-			  switch_buzzer					  : in  STD_LOGIC;
-			  button1							  : in  STD_LOGIC;
-			  button2							  : in  STD_LOGIC
+--			  switch_wave						  : in  STD_LOGIC_VECTOR (1 downto 0);
+--			  switch_f_a						  : in  STD_LOGIC;
+			  switch_buzzer					  : in  STD_LOGIC
+--			  button1							  : in  STD_LOGIC;
+--			  button2							  : in  STD_LOGIC
           );
            
 end Voltmeter;
@@ -130,14 +130,14 @@ Component voltage2distance is
 		);  
 END Component;
 
-Component voltage2distance_small is
-	Port(
-      clk            :  IN    STD_LOGIC;                                
-      reset          :  IN    STD_LOGIC;                                
-      voltage        :  IN    STD_LOGIC_VECTOR(12 DOWNTO 0);                           
-      distance_small :  OUT   STD_LOGIC_VECTOR(12 DOWNTO 0)
-		);  
-END Component;
+--Component voltage2distance_small is
+--	Port(
+--      clk            :  IN    STD_LOGIC;                                
+--      reset          :  IN    STD_LOGIC;                                
+--      voltage        :  IN    STD_LOGIC_VECTOR(12 DOWNTO 0);                           
+--      distance_small :  OUT   STD_LOGIC_VECTOR(12 DOWNTO 0)
+--		);  
+--END Component;
 
 Component Error is
 	port(
@@ -200,65 +200,65 @@ Component freq_counter is
          );
 END Component;
 
-Component amp_counter is
-    PORT ( clk    			: in  STD_LOGIC;
-			  reset				: in  STD_LOGIC;
-			  enable				: in  STD_LOGIC;
-           button1  			: in  STD_LOGIC; 
-           button2			: in  STD_LOGIC;
---			  a_i  				: in  STD_LOGIC; 
---           a_d					: in  STD_LOGIC;
-           a_c			   	: out STD_LOGIC_VECTOR(8 downto 0)
-         );
-END Component;
+--Component amp_counter is
+--    PORT ( clk    			: in  STD_LOGIC;
+--			  reset				: in  STD_LOGIC;
+--			  enable				: in  STD_LOGIC;
+--           button1  			: in  STD_LOGIC; 
+--           button2			: in  STD_LOGIC;
+----			  a_i  				: in  STD_LOGIC; 
+----           a_d					: in  STD_LOGIC;
+--           a_c			   	: out STD_LOGIC_VECTOR(8 downto 0)
+--         );
+--END Component;
 
-Component inc_dec_mux IS
-	PORT (
-	f_button		:   in std_logic;
-	a_button    :   in std_logic;
-	s    			:   in std_logic;
-	f_i		   :   out std_logic;
-	f_d		   :   out std_logic;
-	a_i		   :   out std_logic;
-	a_d		   :   out std_logic
-	);
-END Component;
+--Component inc_dec_mux IS
+--	PORT (
+--	f_button		:   in std_logic;
+--	a_button    :   in std_logic;
+--	s    			:   in std_logic;
+--	f_i		   :   out std_logic;
+--	f_d		   :   out std_logic;
+--	a_i		   :   out std_logic;
+--	a_d		   :   out std_logic
+--	);
+--END Component;
 
-Component wave_gen is
-   Port    ( 
-				 clk							: in std_logic;
-				 clk_1kHz_pulse			: in std_logic;
-				 buttontop					: in std_logic;
-				 buttonbottom				: in std_logic;
-				 freqoramp					: in std_logic;
-				 reset						: in std_logic;
-             wave_switch				: in STD_LOGIC_VECTOR(1 downto 0);
-				 PWM_OUT						: out std_logic;
---				 freq_input					: in STD_LOGIC_VECTOR(8 downto 0);
-				 rect_input					: in STD_LOGIC_VECTOR(8 downto 0)
-           );
-END Component;
+--Component wave_gen is
+--   Port    ( 
+--				 clk							: in std_logic;
+--				 clk_1kHz_pulse			: in std_logic;
+--				 buttontop					: in std_logic;
+--				 buttonbottom				: in std_logic;
+--				 freqoramp					: in std_logic;
+--				 reset						: in std_logic;
+--             wave_switch				: in STD_LOGIC_VECTOR(1 downto 0);
+--				 PWM_OUT						: out std_logic;
+----				 freq_input					: in STD_LOGIC_VECTOR(8 downto 0);
+--				 rect_input					: in STD_LOGIC_VECTOR(8 downto 0)
+--           );
+--END Component;
 
 
-Component counterr is
-	 Generic (width : natural := 9);     
-    PORT ( clk    			: in  STD_LOGIC;
-			  enable				: in  STD_LOGIC;
-           up_en  			: in  STD_LOGIC; 
-           down_en			: in  STD_LOGIC;
-           output_wave   	: out STD_LOGIC_VECTOR(width-1 downto 0)
-         );
-END Component;
+--Component counterr is
+--	 Generic (width : natural := 9);     
+--    PORT ( clk    			: in  STD_LOGIC;
+--			  enable				: in  STD_LOGIC;
+--           up_en  			: in  STD_LOGIC; 
+--           down_en			: in  STD_LOGIC;
+--           output_wave   	: out STD_LOGIC_VECTOR(width-1 downto 0)
+--         );
+--END Component;
 
-Component counter2 is
-	 Generic (width : natural := 9);     
-    PORT ( clk    			: in  STD_LOGIC;
-			  enable				: in  STD_LOGIC;
-           up_en  			: in  STD_LOGIC; 
-           down_en			: in  STD_LOGIC;
-           output_wave   	: out STD_LOGIC_VECTOR(width-1 downto 0)
-         );
-END Component;
+--Component counter2 is
+--	 Generic (width : natural := 9);     
+--    PORT ( clk    			: in  STD_LOGIC;
+--			  enable				: in  STD_LOGIC;
+--           up_en  			: in  STD_LOGIC; 
+--           down_en			: in  STD_LOGIC;
+--           output_wave   	: out STD_LOGIC_VECTOR(width-1 downto 0)
+--         );
+--END Component;
 
 Component amp_buzzer is
    Port    ( 
@@ -269,9 +269,6 @@ Component amp_buzzer is
 				 amp_wave					: out std_logic
            );
 end Component;
-
-
-
 
 Component freq_buzz_gen is
    Port    ( 
@@ -304,37 +301,36 @@ Component MUX_BUZZER IS
 	);
 end Component;
 
-Component debounce1 IS
+--Component debounce1 IS
+--
+--  PORT(
+--    s3,pb1,pb2     : IN  STD_LOGIC;  --input clock
+--    clk						   : IN  STD_LOGIC;  --input signal to be debounced
+--    reset   					: IN  STD_LOGIC;  --reset
+--    si3,pbi1,pbi2  : OUT STD_LOGIC   --debounced signal
+--    );
+--END Component;
 
-  PORT(
-    s3,pb1,pb2     : IN  STD_LOGIC;  --input clock
-    clk						   : IN  STD_LOGIC;  --input signal to be debounced
-    reset   					: IN  STD_LOGIC;  --reset
-    si3,pbi1,pbi2  : OUT STD_LOGIC   --debounced signal
-    );
-END Component;
+--Component logic IS
+--
+--  PORT(
+--    clk						   : IN  STD_LOGIC;  
+--    reset   					: IN  STD_LOGIC;  --reset
+--    si3,pbi1,pbi2  : IN 	STD_LOGIC;
+--	 sqr_amp   					: OUT  STD_LOGIC_VECTOR(8 downto 0);
+--	 max_count   				: OUT  INTEGER
+--    );
+--END Component;
 
-Component logic IS
-
-  PORT(
-    clk						   : IN  STD_LOGIC;  
-    reset   					: IN  STD_LOGIC;  --reset
-    si3,pbi1,pbi2  : IN 	STD_LOGIC;
-	 sqr_amp   					: OUT  STD_LOGIC_VECTOR(8 downto 0);
-	 max_count   				: OUT  INTEGER
-    );
-END Component;
-
-Component clk_transformer is
-    PORT ( clk    	: in  STD_LOGIC; -- clock to be divided
-           reset  	: in  STD_LOGIC; -- active-high reset
-           max_count : in  integer; -- active-high enable
-           clk_x   	: out STD_LOGIC -- creates a positive pulse every time current_count hits zero
-                                   -- useful to enable another device, like to slow down a counter
-     --      value  : out STD_LOGIC_VECTOR(integer(ceil(log2(real(period)))) - 1 downto 0) -- outputs the current_count value, if needed
-         );
-END Component;
-
+--Component clk_transformer is
+--    PORT ( clk    	: in  STD_LOGIC; -- clock to be divided
+--           reset  	: in  STD_LOGIC; -- active-high reset
+--           max_count : in  integer; -- active-high enable
+--           clk_x   	: out STD_LOGIC -- creates a positive pulse every time current_count hits zero
+--                                   -- useful to enable another device, like to slow down a counter
+--     --      value  : out STD_LOGIC_VECTOR(integer(ceil(log2(real(period)))) - 1 downto 0) -- outputs the current_count value, if needed
+--         );
+--END Component;
 
 
 begin
@@ -463,13 +459,13 @@ voltage2distance_ins: voltage2distance
       distance  =>   Dist
 		);
 		
-voltage2distance_2_ins: voltage2distance_small 
-		port map(
-      clk       =>   clk,          
-      reset     =>   reset,    
-      voltage   =>   voltage,
-      distance_small  =>   Dist2
-		);
+--voltage2distance_2_ins: voltage2distance_small 
+--		port map(
+--      clk       =>   clk,          
+--      reset     =>   reset,    
+--      voltage   =>   voltage,
+--      distance_small  =>   Dist2
+--		);
 		
 Error_ins: Error
 		port map(
@@ -483,13 +479,13 @@ Error2_ins: Error_small
 		errorout2  =>	errorout2
 		);
 		
-MUX2TO1_2_ins: MUX2TO1
-      port map (
-		in1 		=>		Dist,
-		in2 		=> 	Dist2,
-		s 			=> 	switch2,
-		mux_out  => 	Mux_O_2
-		);			
+--MUX2TO1_2_ins: MUX2TO1
+--      port map (
+--		in1 		=>		Dist,
+--		in2 		=> 	Dist2,
+--		s 			=> 	switch2,
+--		mux_out  => 	Mux_O_2
+--		);			
 		
 MUX2TO1_Error_ins: MUX2TO1_Error
       port map (
@@ -530,18 +526,18 @@ Freq: freq_counter
 --         );
 			
 
-wavegen: wave_gen
-		port map (  clk					=>		clk,
-						clk_1kHz_pulse		=>		pulse2,
-						buttontop			=>		button1,
-						buttonbottom		=>		button2,
-						freqoramp			=>		switch_f_a,
-						reset					=>		reset,
-						wave_switch			=>		switch_wave,
-						PWM_OUT				=>		PWM_OUTPUT,
---						freq_input			=>		frequency,
-						rect_input			=>		rectinput
-           );
+--wavegen: wave_gen
+--		port map (  clk					=>		clk,
+--						clk_1kHz_pulse		=>		pulse2,
+--						buttontop			=>		button1,
+--						buttonbottom		=>		button2,
+--						freqoramp			=>		switch_f_a,
+--						reset					=>		reset,
+--						wave_switch			=>		switch_wave,
+--						PWM_OUT				=>		PWM_OUTPUT,
+----						freq_input			=>		frequency,
+--						rect_input			=>		rectinput
+--           );
 			  
 
 amp_buz: amp_buzzer
@@ -580,43 +576,42 @@ clk_div: clk_divider_buzz
 		clock_out 	=>		freq_clk
 		);		
 		
-deb: debounce1 
+--deb: debounce1 
+--
+--  PORT MAP(
+--
+--	 s3	=>		switch_f_a,
+--	 pb1	=>		button1,
+--	 pb2 	=>		button2,
+--    clk	=>		clk,
+--    reset  => 	reset,			
+--
+--	 si3	=>		si3,
+--	 pbi1	=>		pbi1,
+--	 pbi2 =>		pbi2
+--    );
+--
+--log: logic 
+--
+--  PORT MAP(
+--    clk		=>		clk,	   
+--    reset   =>		reset,
+----    si1		=>		open,
+----	 si2		=>		open,
+--	 si3		=>		si3,
+--	 pbi1		=>		pbi1,
+--	 pbi2  	=>		pbi2,
+--	 sqr_amp =>		rectinput,	
+--	 max_count	=>	F_MAX
+--    );
 
-  PORT MAP(
-
-	 s3	=>		switch_f_a,
-	 pb1	=>		button1,
-	 pb2 	=>		button2,
-    clk	=>		clk,
-    reset  => 	reset,			
-
-	 si3	=>		si3,
-	 pbi1	=>		pbi1,
-	 pbi2 =>		pbi2
-    );
-
-log: logic 
-
-  PORT MAP(
-    clk		=>		clk,	   
-    reset   =>		reset,
---    si1		=>		open,
---	 si2		=>		open,
-	 si3		=>		si3,
-	 pbi1		=>		pbi1,
-	 pbi2  	=>		pbi2,
-	 sqr_amp =>		rectinput,	
-	 max_count	=>	F_MAX
-    );
-
-trans: clk_transformer 
-    PORT MAP( 	clk    		=>		clk,
-					reset  		=>		reset,
-					max_count 	=>		F_MAX,
-					clk_x   		=>		pulse2
-
-         );
-
+--trans: clk_transformer 
+--    PORT MAP( 	clk    		=>		clk,
+--					reset  		=>		reset,
+--					max_count 	=>		F_MAX,
+--					clk_x   		=>		pulse2
+--
+--         );
 
 
 --freqcounter: counterr

@@ -22,9 +22,9 @@ architecture Behavioral of clk_divider_buzz is
   
 BEGIN
 
-	dis_freq_proc:	process(dis_freq) begin
-		n <= (to_integer(unsigned(dis_freq))*1000);
-		end process;
+--	dis_freq_proc:	process(dis_freq) begin
+--		n <= (to_integer(unsigned(dis_freq))*1000);
+--		end process;
 		
    count: process(clk) begin
      if (rising_edge(clk)) then 
