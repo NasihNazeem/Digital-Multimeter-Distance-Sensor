@@ -1,11 +1,11 @@
-Fitter Status : Successful - Mon Nov 22 10:26:34 2021
+Fitter Status : Successful - Thu Nov 25 15:36:48 2021
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : Voltmeter
 Top-level Entity Name : Voltmeter
 Family : MAX 10
 Device : 10M50DAF484C7G
 Timing Models : Final
-Total logic elements : 2,578 / 49,760 ( 5 % )
+Total logic elements : 2,574 / 49,760 ( 5 % )
     Total combinational functions : 2,415 / 49,760 ( 5 % )
     Dedicated logic registers : 502 / 49,760 ( 1 % )
 Total registers : 502

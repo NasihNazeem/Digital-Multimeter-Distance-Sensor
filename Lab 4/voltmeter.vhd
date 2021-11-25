@@ -286,7 +286,7 @@ down: downcounter
 						f_c		=>		5000
          );
 
-amp_buz: amp_buzzer
+buzzer_amplitude: amp_buzzer
    port map  ( 
 				 clk							=>		clk,
 				 clk_1kHz_pulse			=>		pulse,
@@ -295,7 +295,7 @@ amp_buz: amp_buzzer
 				 amp_wave					=>		amp_wa
            );
 			  
-freq_buzz: freq_buzz_gen
+buzzer_frequency: freq_buzz_gen
       port map (
 		clk 					=>		clk,
 		reset 				=> 	reset,
@@ -304,7 +304,7 @@ freq_buzz: freq_buzz_gen
 		);		
 		
 		
-MUX_BUZ: MUX_BUZZER
+buzzer_multiplexer: MUX_BUZZER
       port map (
 		in1 		=>		freq_wa,
 		in2 		=> 	amp_wa,

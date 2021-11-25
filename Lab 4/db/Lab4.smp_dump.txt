@@ -1,0 +1,58 @@
+
+State Machine - |Voltmeter|freq_buzz_gen:buzzer_frequency|CurrentState
+Name CurrentState.S2 CurrentState.S1 CurrentState.S0 
+CurrentState.S0 0 0 0 
+CurrentState.S1 0 1 1 
+CurrentState.S2 1 0 1 
+
+State Machine - |Voltmeter|amp_buzzer:buzzer_amplitude|CurrentState
+Name CurrentState.S2 CurrentState.S1 CurrentState.S0 
+CurrentState.S0 0 0 0 
+CurrentState.S1 0 1 1 
+CurrentState.S2 1 0 1 
+
+State Machine - |Voltmeter|binary_bcd:binary_bcd_ins|CurrentState
+Name CurrentState.s7 CurrentState.s6 CurrentState.S5 CurrentState.S4 CurrentState.S3 CurrentState.S2 CurrentState.S1 CurrentState.S0 
+CurrentState.S0 0 0 0 0 0 0 0 0 
+CurrentState.S1 0 0 0 0 0 0 1 1 
+CurrentState.S2 0 0 0 0 0 1 0 1 
+CurrentState.S3 0 0 0 0 1 0 0 1 
+CurrentState.S4 0 0 0 1 0 0 0 1 
+CurrentState.S5 0 0 1 0 0 0 0 1 
+CurrentState.s6 0 1 0 0 0 0 0 1 
+CurrentState.s7 1 0 0 0 0 0 0 1 
+
+State Machine - |Voltmeter|binary_bcd:binary_bcd_ins|\bcd_process:nextstate
+Name \bcd_process:nextstate.s7 \bcd_process:nextstate.s6 \bcd_process:nextstate.S5 \bcd_process:nextstate.S4 \bcd_process:nextstate.S3 \bcd_process:nextstate.S2 \bcd_process:nextstate.S1 \bcd_process:nextstate.S0 
+\bcd_process:nextstate.S0 0 0 0 0 0 0 0 0 
+\bcd_process:nextstate.S1 0 0 0 0 0 0 1 1 
+\bcd_process:nextstate.S2 0 0 0 0 0 1 0 1 
+\bcd_process:nextstate.S3 0 0 0 0 1 0 0 1 
+\bcd_process:nextstate.S4 0 0 0 1 0 0 0 1 
+\bcd_process:nextstate.S5 0 0 1 0 0 0 0 1 
+\bcd_process:nextstate.s6 0 1 0 0 0 0 0 1 
+\bcd_process:nextstate.s7 1 0 0 0 0 0 0 1 
+
+State Machine - |Voltmeter|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|ctrl_state
+Name ctrl_state.SYNC1 ctrl_state.AVRG_CNT ctrl_state.PUTRESP_PEND ctrl_state.WAIT_PEND_DLY1 ctrl_state.WAIT_PEND ctrl_state.PUTRESP_DLY3 ctrl_state.PUTRESP_DLY2 ctrl_state.PUTRESP_DLY1 ctrl_state.PUTRESP ctrl_state.CONV_DLY1 ctrl_state.CONV ctrl_state.PRE_CONV ctrl_state.GETCMD_W ctrl_state.GETCMD ctrl_state.WAIT ctrl_state.PWRUP_SOC ctrl_state.PWRUP_CH ctrl_state.PWRDWN_DONE ctrl_state.PWRDWN_TSEN ctrl_state.PWRDWN ctrl_state.IDLE 
+ctrl_state.IDLE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+ctrl_state.PWRDWN 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+ctrl_state.PWRDWN_TSEN 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+ctrl_state.PWRDWN_DONE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+ctrl_state.PWRUP_CH 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+ctrl_state.PWRUP_SOC 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+ctrl_state.WAIT 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+ctrl_state.GETCMD 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+ctrl_state.GETCMD_W 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+ctrl_state.PRE_CONV 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+ctrl_state.CONV 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+ctrl_state.CONV_DLY1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+ctrl_state.PUTRESP 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+ctrl_state.PUTRESP_DLY1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+ctrl_state.PUTRESP_DLY2 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+ctrl_state.PUTRESP_DLY3 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+ctrl_state.WAIT_PEND 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+ctrl_state.WAIT_PEND_DLY1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+ctrl_state.PUTRESP_PEND 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+ctrl_state.AVRG_CNT 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+ctrl_state.SYNC1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
