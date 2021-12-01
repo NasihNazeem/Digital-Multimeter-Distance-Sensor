@@ -28,6 +28,8 @@ Signal v2d_distance_output : std_logic_vector(12 downto 0);
 Signal flag : std_logic;
 Signal bcd_new : STD_LOGIC_VECTOR(15 downto 0);
 Signal bcd_original : STD_LOGIC_VECTOR(15 downto 0);
+Signal pwm_enable : std_logic;
+
 --Mux signals
 Signal mux_output: std_logic_vector(12 downto 0);
 
@@ -38,6 +40,17 @@ Component mux is
 			Selecter	 : in std_logic;
 			Y	 : out std_logic_vector(12 downto 0)
 		 );
+end Component;
+
+Component dis_voltage_downcounter is
+	port( clk      : in  STD_LOGIC; -- clock to be divided
+         reset    : in  STD_LOGIC; -- active-high reset
+         enable   : in  STD_LOGIC; -- active-high enable
+			dis_voltage : in std_logic_vector(12 downto 0); -- the voltage output from the distance sensor
+         pulse    : out STD_LOGIC -- creates a positive pulse every time current_count hits zero
+                                   -- useful to enable another device, like to slow down a counter
+         -- value  : out STD_LOGIC_VECTOR(integer(ceil(log2(real(period)))) - 1 downto 0) -- outputs the current_count value, if needed
+		  );
 end Component;
 
 Component flag_mux is
@@ -113,10 +126,17 @@ begin
    Num_Hex(5) <= "1111";  -- blank this display   
 	DP_in <= "001000" when Selecter = '1' else 
 				"000100";
+
 				
-	
-				
-				
+-- Instantiations
+distance_voltage_downcounter : dis_voltage_downcounter
+										 port map(
+													 clk => clk,
+													 reset => reset,
+													 enable => '1',
+													 dis_voltage => v2d_distance_output,
+													 pulse => pwm_enable
+													);
 -- Mux instantiation
 multiplexer: mux
 				 port map(
@@ -131,8 +151,6 @@ flag_multiplexer : flag_mux
 							bcd_orig => bcd_original,
 							flag_select => flag,
 							bcd_new => bcd_new
-							
-							
 							);
 							
 V2D : voltage2distance
