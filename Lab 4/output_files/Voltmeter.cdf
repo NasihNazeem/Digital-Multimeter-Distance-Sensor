@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(10M50DAF484) Path("H:/Github/NasihNazeem/ENEL-453-Labs/output_files/") File("Voltmeter.sof") MfrSpec(OpMask(1));
+		Device PartName(10M50DAF484) Path("H:/Github/NasihNazeem/ENEL-453-Labs/Lab 4/output_files/") File("Voltmeter.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Voltmeter
-Tue Nov 30 18:44:31 2021
+Tue Nov 30 18:56:09 2021
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -102,7 +102,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Nov 30 18:44:31 2021       ;
+; Analysis & Synthesis Status        ; Successful - Tue Nov 30 18:56:09 2021       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Voltmeter                                   ;
 ; Top-level Entity Name              ; Voltmeter                                   ;
@@ -1499,7 +1499,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue Nov 30 18:44:07 2021
+    Info: Processing started: Tue Nov 30 18:55:46 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab4 -c Voltmeter
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -1585,15 +1585,15 @@ Info (12021): Found 2 design units, including 1 entities, in source file mux_tb.
     Info (12023): Found entity 1: mux_tb File: H:/Github/NasihNazeem/ENEL-453-Labs/Lab 4/mux_tb.vhd Line: 6
 Info (12127): Elaborating entity "Voltmeter" for the top level hierarchy
 Warning (10036): Verilog HDL or VHDL warning at voltmeter.vhd(25): object "busy" assigned a value but never read File: H:/Github/NasihNazeem/ENEL-453-Labs/Lab 4/voltmeter.vhd Line: 25
-Info (12128): Elaborating entity "mux" for hierarchy "mux:multiplexer" File: H:/Github/NasihNazeem/ENEL-453-Labs/Lab 4/voltmeter.vhd Line: 179
-Info (12128): Elaborating entity "flag_mux" for hierarchy "flag_mux:flag_multiplexer" File: H:/Github/NasihNazeem/ENEL-453-Labs/Lab 4/voltmeter.vhd Line: 188
-Info (12128): Elaborating entity "voltage2distance" for hierarchy "voltage2distance:V2D" File: H:/Github/NasihNazeem/ENEL-453-Labs/Lab 4/voltmeter.vhd Line: 197
-Info (12128): Elaborating entity "averager" for hierarchy "averager:ave" File: H:/Github/NasihNazeem/ENEL-453-Labs/Lab 4/voltmeter.vhd Line: 206
-Info (12128): Elaborating entity "registers" for hierarchy "registers:sync1" File: H:/Github/NasihNazeem/ENEL-453-Labs/Lab 4/voltmeter.vhd Line: 215
-Info (12128): Elaborating entity "registers" for hierarchy "registers:sync3" File: H:/Github/NasihNazeem/ENEL-453-Labs/Lab 4/voltmeter.vhd Line: 235
-Info (12128): Elaborating entity "SevenSegment" for hierarchy "SevenSegment:SevenSegment_ins" File: H:/Github/NasihNazeem/ENEL-453-Labs/Lab 4/voltmeter.vhd Line: 255
+Info (12128): Elaborating entity "mux" for hierarchy "mux:multiplexer" File: H:/Github/NasihNazeem/ENEL-453-Labs/Lab 4/voltmeter.vhd Line: 152
+Info (12128): Elaborating entity "flag_mux" for hierarchy "flag_mux:flag_multiplexer" File: H:/Github/NasihNazeem/ENEL-453-Labs/Lab 4/voltmeter.vhd Line: 161
+Info (12128): Elaborating entity "voltage2distance" for hierarchy "voltage2distance:V2D" File: H:/Github/NasihNazeem/ENEL-453-Labs/Lab 4/voltmeter.vhd Line: 170
+Info (12128): Elaborating entity "averager" for hierarchy "averager:ave" File: H:/Github/NasihNazeem/ENEL-453-Labs/Lab 4/voltmeter.vhd Line: 179
+Info (12128): Elaborating entity "registers" for hierarchy "registers:sync1" File: H:/Github/NasihNazeem/ENEL-453-Labs/Lab 4/voltmeter.vhd Line: 188
+Info (12128): Elaborating entity "registers" for hierarchy "registers:sync3" File: H:/Github/NasihNazeem/ENEL-453-Labs/Lab 4/voltmeter.vhd Line: 208
+Info (12128): Elaborating entity "SevenSegment" for hierarchy "SevenSegment:SevenSegment_ins" File: H:/Github/NasihNazeem/ENEL-453-Labs/Lab 4/voltmeter.vhd Line: 228
 Info (12128): Elaborating entity "SevenSegment_decoder" for hierarchy "SevenSegment:SevenSegment_ins|SevenSegment_decoder:\Behavioral_Decoder:0:DECODERx" File: H:/Github/NasihNazeem/ENEL-453-Labs/Lab 4/SevenSegment.vhd Line: 36
-Info (12128): Elaborating entity "ADC_Conversion" for hierarchy "ADC_Conversion:ADC_Conversion_ins" File: H:/Github/NasihNazeem/ENEL-453-Labs/Lab 4/voltmeter.vhd Line: 261
+Info (12128): Elaborating entity "ADC_Conversion" for hierarchy "ADC_Conversion:ADC_Conversion_ins" File: H:/Github/NasihNazeem/ENEL-453-Labs/Lab 4/voltmeter.vhd Line: 234
 Warning (10036): Verilog HDL or VHDL warning at ADC_Conversion.v(98): object "cur_adc_ch" assigned a value but never read File: H:/Github/NasihNazeem/ENEL-453-Labs/Lab 4/ADC_Conversion.v Line: 98
 Warning (10036): Verilog HDL or VHDL warning at ADC_Conversion.v(99): object "adc_sample_data" assigned a value but never read File: H:/Github/NasihNazeem/ENEL-453-Labs/Lab 4/ADC_Conversion.v Line: 99
 Info (12128): Elaborating entity "adc_qsys" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0" File: H:/Github/NasihNazeem/ENEL-453-Labs/Lab 4/ADC_Conversion.v Line: 75
@@ -1648,11 +1648,11 @@ Info (12128): Elaborating entity "fiftyfivenm_adcblock_primitive_wrapper" for hi
 Info (12128): Elaborating entity "altera_reset_controller" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller" File: H:/Github/NasihNazeem/ENEL-453-Labs/Lab 4/adc_qsys/synthesis/adc_qsys.v Line: 134
 Info (12128): Elaborating entity "altera_reset_synchronizer" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1" File: H:/Github/NasihNazeem/ENEL-453-Labs/Lab 4/adc_qsys/synthesis/submodules/altera_reset_controller.v Line: 208
 Info (12128): Elaborating entity "altera_reset_synchronizer" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_req_sync_uq1" File: H:/Github/NasihNazeem/ENEL-453-Labs/Lab 4/adc_qsys/synthesis/submodules/altera_reset_controller.v Line: 220
-Info (12128): Elaborating entity "binary_bcd" for hierarchy "binary_bcd:binary_bcd_ins" File: H:/Github/NasihNazeem/ENEL-453-Labs/Lab 4/voltmeter.vhd Line: 273
+Info (12128): Elaborating entity "binary_bcd" for hierarchy "binary_bcd:binary_bcd_ins" File: H:/Github/NasihNazeem/ENEL-453-Labs/Lab 4/voltmeter.vhd Line: 246
 Warning (10036): Verilog HDL or VHDL warning at binary_bcd.vhd(22): object "counter" assigned a value but never read File: H:/Github/NasihNazeem/ENEL-453-Labs/Lab 4/binary_bcd.vhd Line: 22
 Warning (10631): VHDL Process Statement warning at binary_bcd.vhd(34): inferring latch(es) for signal or variable "busy", which holds its previous value in one or more paths through the process File: H:/Github/NasihNazeem/ENEL-453-Labs/Lab 4/binary_bcd.vhd Line: 34
 Info (10041): Inferred latch for "busy" at binary_bcd.vhd(34) File: H:/Github/NasihNazeem/ENEL-453-Labs/Lab 4/binary_bcd.vhd Line: 34
-Info (12128): Elaborating entity "freq_buzz_gen" for hierarchy "freq_buzz_gen:buzzer_frequency" File: H:/Github/NasihNazeem/ENEL-453-Labs/Lab 4/voltmeter.vhd Line: 300
+Info (12128): Elaborating entity "freq_buzz_gen" for hierarchy "freq_buzz_gen:buzzer_frequency" File: H:/Github/NasihNazeem/ENEL-453-Labs/Lab 4/voltmeter.vhd Line: 256
 Warning (10540): VHDL Signal Declaration warning at freq_buzz_gen.vhd(23): used explicit default value for signal "max_count" because signal was never assigned a value File: H:/Github/NasihNazeem/ENEL-453-Labs/Lab 4/freq_buzz_gen.vhd Line: 23
 Warning (10540): VHDL Signal Declaration warning at freq_buzz_gen.vhd(24): used explicit default value for signal "zero_count" because signal was never assigned a value File: H:/Github/NasihNazeem/ENEL-453-Labs/Lab 4/freq_buzz_gen.vhd Line: 24
 Warning (10492): VHDL Process Statement warning at freq_buzz_gen.vhd(52): signal "zero_count" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: H:/Github/NasihNazeem/ENEL-453-Labs/Lab 4/freq_buzz_gen.vhd Line: 52
@@ -1663,7 +1663,7 @@ Warning (10492): VHDL Process Statement warning at freq_buzz_gen.vhd(86): signal
 Warning (10492): VHDL Process Statement warning at freq_buzz_gen.vhd(88): signal "zero_count" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: H:/Github/NasihNazeem/ENEL-453-Labs/Lab 4/freq_buzz_gen.vhd Line: 88
 Warning (10492): VHDL Process Statement warning at freq_buzz_gen.vhd(95): signal "zero_count" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: H:/Github/NasihNazeem/ENEL-453-Labs/Lab 4/freq_buzz_gen.vhd Line: 95
 Info (12128): Elaborating entity "PWM_DAC" for hierarchy "freq_buzz_gen:buzzer_frequency|PWM_DAC:pwm" File: H:/Github/NasihNazeem/ENEL-453-Labs/Lab 4/freq_buzz_gen.vhd Line: 38
-Info (12128): Elaborating entity "clk_divider_buzz" for hierarchy "clk_divider_buzz:clk_div" File: H:/Github/NasihNazeem/ENEL-453-Labs/Lab 4/voltmeter.vhd Line: 317
+Info (12128): Elaborating entity "clk_divider_buzz" for hierarchy "clk_divider_buzz:clk_div" File: H:/Github/NasihNazeem/ENEL-453-Labs/Lab 4/voltmeter.vhd Line: 266
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following RAM node(s):
         Warning (14320): Synthesized away node "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[0]" File: H:/Github/NasihNazeem/ENEL-453-Labs/Lab 4/db/altsyncram_rqn1.tdf Line: 39
@@ -1887,8 +1887,8 @@ Info (21057): Implemented 2671 device resources after synthesis - the final reso
     Info (21065): Implemented 1 PLLs
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 201 warnings
     Info: Peak virtual memory: 4874 megabytes
-    Info: Processing ended: Tue Nov 30 18:44:31 2021
-    Info: Elapsed time: 00:00:24
+    Info: Processing ended: Tue Nov 30 18:56:09 2021
+    Info: Elapsed time: 00:00:23
     Info: Total CPU time (on all processors): 00:00:30
 
 

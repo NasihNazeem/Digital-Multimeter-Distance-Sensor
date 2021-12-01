@@ -90,26 +90,7 @@ Component binary_bcd IS
       bcd     : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)   --resulting BCD number
 		);           
 END Component;
-
-Component downcounter IS
-	PORT (
-			clk		: IN STD_LOGIC;
-			reset		: IN STD_LOGIC;
-			enable	: IN STD_LOGIC;
-			f_c		: IN natural;
-			zero		: OUT	STD_LOGIC
-			);
-end Component;
 			
-Component amp_buzzer is
-   Port    ( 
-				 clk							: in std_logic;
-				 clk_1kHz_pulse			: in std_logic;
-				 reset						: in std_logic;
-             amp_buzz					: in STD_LOGIC_VECTOR(12 downto 0);
-				 amp_wave					: out std_logic
-           );
-end Component;
 
 Component freq_buzz_gen is
    Port    ( 
@@ -131,14 +112,6 @@ Component clk_divider_buzz is
          );
 end Component;
 
-Component MUX_BUZZER IS
-	PORT (
-	in1     		:   in std_logic;
-	in2  		   :   in std_logic;
-	s    			:   in std_logic;
-	mux_out     :   out std_logic
-	);
-end Component;
 
 Component registers is
    generic(bits : integer);
@@ -169,7 +142,7 @@ begin
 					  "1111";
    Num_Hex(4) <= "1111";  -- blank this display
    Num_Hex(5) <= "1111";  -- blank this display   
-	DP_in <= "001000" when (Selecter = '1') else 
+	DP_in <= "001000" when Selecter = '1' else 
 				"000100";
 				
 	
@@ -279,24 +252,7 @@ binary_bcd_ins: binary_bcd
       busy     => busy,                         
       bcd      => bcd_original         
       );
-		
---down: downcounter      
---		port map (  clk		=>		clk,
---						reset		=>		reset,
---						enable	=>		'1',
---						zero		=>		pulse,
---						f_c		=>		5000
---         );
-
---buzzer_amplitude: amp_buzzer
---   port map  ( 
---				 clk							=>		clk,
---				 clk_1kHz_pulse			=>		pulse,
---				 reset						=>		reset,
---             amp_buzz					=>		v2d_distance_output,
---				 amp_wave					=>		amp_wa
---           );
---			  
+  
 buzzer_frequency: freq_buzz_gen
       port map (
 		clk 					=>		clk,
@@ -306,13 +262,6 @@ buzzer_frequency: freq_buzz_gen
 		);		
 		
 		
---buzzer_multiplexer: MUX_BUZZER
---      port map (
---		in1 		=>		freq_wa,
---		in2 		=> 	amp_wa,
---		s 			=> 	switch_buzzer,
---		mux_out  => 	buzzer
---		);		
 		
 clk_div: clk_divider_buzz
       port map (
