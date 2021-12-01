@@ -5,23 +5,23 @@ use ieee.numeric_std.all;
 
 entity freq_buzz_gen is
    Port    ( 
-				 clk							: in std_logic;		-- clock signal
-				 reset						: in std_logic;		-- reset signal
-				 freq_clk					: in std_logic;		-- enable bit for counter process
-				 freq_buzz					: out std_logic		-- output to buzzer
+				 clk							: in std_logic;
+				 reset						: in std_logic;
+				 freq_clk					: in std_logic;
+				 freq_buzz				: out std_logic
            );
 end freq_buzz_gen;
 
 architecture Behavioral of freq_buzz_gen is
-	constant up: 		std_logic := '1';							-- direction up
-	constant down: 	std_logic := '0';							-- direction down
-	constant width: 	integer := 4;								-- width of the duty cycle and counter
+	constant up: 		std_logic := '1';
+	constant down: 	std_logic := '0';
+	constant width: 	integer := 4;
 	type Statetype is (S0,S1,S2);
 	signal CurrentState, NextState:				Statetype;
 	signal freq_buzz_wave_i, count_direction:	std_logic;
 	signal duty_cycle, counter:					std_logic_vector(width-1 downto 0);
-	signal max_count:									std_logic_vector(width-1 downto 0) := (others => '1'); -- 1111
-	signal zero_count:								std_logic_vector(width-1 downto 0) := (others => '0'); -- 0000
+	signal max_count:									std_logic_vector(width-1 downto 0) := (others => '1');
+	signal zero_count:								std_logic_vector(width-1 downto 0) := (others => '0');
 	
 	
 Component PWM_DAC is
@@ -65,6 +65,43 @@ begin
 			end if;
 		end process;
 		
+--		
+--	modul:	process(clk, buttontop, buttonbottom)
+--		begin
+--			if (freqoramp = '0') then
+--				if (rising_edge(clk)) then
+--					if (buttontop = '1') then
+--						if (amp_max >= maxAmplitude - "0100000") then
+--							 amp_max <= maxAmplitude;
+--						else
+--							 amp_max <= amp_max + "0100000";
+--						end if;
+--					elsif (buttonbottom = '1') then
+--						if (amp_max - "0100000" <= minAmplitude) then
+--							 amp_max <= minAmplitude;
+--						else
+--							 amp_max <= amp_max - "0100000";
+--						end if;
+--					end if;
+--				end if;
+--		elsif (freqoramp = '1') then
+--				if (rising_edge(clk)) then
+--					if (buttontop = '1') then
+--						if (max_count >= maxAmplitude - "0100000") then
+--							 max_count <= maxAmplitude;
+--						else
+--							 max_count <= max_count + "0100000";
+--						end if;
+--					elsif (buttonbottom = '1') then
+--						if (max_count - "0100000" <= minAmplitude) then
+--							 max_count <= minAmplitude;
+--						else
+--							 max_count <= max_count - "0100000";
+--						end if;
+--				end if;
+--				end if;
+--		end if;
+--		end process;	
 
 
    comb:		process(CurrentState, counter)

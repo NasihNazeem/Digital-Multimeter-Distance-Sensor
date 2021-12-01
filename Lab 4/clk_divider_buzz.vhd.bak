@@ -10,29 +10,33 @@ entity clk_divider_buzz is
            enable 		: in  STD_LOGIC; -- active-high enable
 			  dis_freq		: in  STD_LOGIC_VECTOR(12 downto 0);
            clock_out   	: out STD_LOGIC -- creates a positive pulse every time current_count hits zero
-													 -- useful to enable another device, like to slow down a counter
+                                   -- useful to enable another device, like to slow down a counter
      --      value  : out STD_LOGIC_VECTOR(integer(ceil(log2(real(period)))) - 1 downto 0) -- outputs the current_count value, if needed
          );
 end clk_divider_buzz;
 
 architecture Behavioral of clk_divider_buzz is
+  signal n		  		  : natural;
 
-  signal current_count : natural;			
+  signal current_count : natural;
   
 BEGIN
 
+--	dis_freq_proc:	process(dis_freq) begin
+--		n <= (to_integer(unsigned(dis_freq))*1000);
+--		end process;
 		
    count: process(clk) begin
      if (rising_edge(clk)) then 
        if (reset = '1') then 
           current_count <= 0 ;
-          clock_out          <= '0';										 -- acts as an enable for the counter in freq_buz_gen
+          clock_out          <= '0';
        elsif (enable = '1') then 
           if (current_count = 0) then
-            current_count <= (to_integer(unsigned(dis_freq))) - 1; -- resets current count
-            clock_out          <= '1'; 									 -- pulses to high after dis_freq amount of clk cycles
+            current_count <= (to_integer(unsigned(dis_freq))) - 1;
+            clock_out          <= '1';
           else 
-            current_count <= current_count - 1;							 -- decrements current_count
+            current_count <= current_count - 1;
             clock_out          <= '0';
           end if;
        else 

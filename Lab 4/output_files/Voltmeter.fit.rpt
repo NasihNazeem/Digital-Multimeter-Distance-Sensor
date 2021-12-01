@@ -1,5 +1,5 @@
 Fitter report for Voltmeter
-Mon Nov 29 00:38:42 2021
+Tue Nov 30 18:42:34 2021
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -71,18 +71,18 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Mon Nov 29 00:38:42 2021       ;
+; Fitter Status                      ; Successful - Tue Nov 30 18:42:34 2021       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Voltmeter                                   ;
 ; Top-level Entity Name              ; Voltmeter                                   ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M50DAF484C7G                              ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 2,576 / 49,760 ( 5 % )                      ;
-;     Total combinational functions  ; 2,415 / 49,760 ( 5 % )                      ;
-;     Dedicated logic registers      ; 502 / 49,760 ( 1 % )                        ;
-; Total registers                    ; 502                                         ;
-; Total pins                         ; 63 / 360 ( 18 % )                           ;
+; Total logic elements               ; 2,443 / 49,760 ( 5 % )                      ;
+;     Total combinational functions  ; 2,282 / 49,760 ( 5 % )                      ;
+;     Dedicated logic registers      ; 433 / 49,760 ( < 1 % )                      ;
+; Total registers                    ; 433                                         ;
+; Total pins                         ; 62 / 360 ( 17 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 1,677,312 ( 0 % )                       ;
 ; Embedded Multiplier 9-bit elements ; 0 / 288 ( 0 % )                             ;
@@ -157,19 +157,19 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 12          ;
 ; Maximum allowed            ; 12          ;
 ;                            ;             ;
-; Average used               ; 1.46        ;
+; Average used               ; 1.54        ;
 ; Maximum used               ; 12          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   4.5%      ;
-;     Processor 3            ;   4.4%      ;
-;     Processor 4            ;   4.3%      ;
-;     Processor 5            ;   4.3%      ;
-;     Processor 6            ;   4.2%      ;
-;     Processor 7            ;   4.2%      ;
-;     Processor 8            ;   4.1%      ;
-;     Processors 9-12        ;   4.0%      ;
+;     Processor 2            ;   5.3%      ;
+;     Processor 3            ;   5.2%      ;
+;     Processor 4            ;   5.1%      ;
+;     Processor 5            ;   5.0%      ;
+;     Processor 6            ;   5.0%      ;
+;     Processor 7            ;   4.9%      ;
+;     Processor 8            ;   4.9%      ;
+;     Processors 9-12        ;   4.8%      ;
 +----------------------------+-------------+
 
 
@@ -264,6 +264,7 @@ refer to the applicable agreement for further details.
 ; Location ;                ;              ; VGA_R[2]        ; PIN_Y2        ; QSF Assignment ;
 ; Location ;                ;              ; VGA_R[3]        ; PIN_Y1        ; QSF Assignment ;
 ; Location ;                ;              ; VGA_VS          ; PIN_N1        ; QSF Assignment ;
+; Location ;                ;              ; switch_buzzer   ; PIN_D12       ; QSF Assignment ;
 +----------+----------------+--------------+-----------------+---------------+----------------+
 
 
@@ -273,8 +274,8 @@ refer to the applicable agreement for further details.
 ; Type                ; Total [A + B]       ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+---------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                     ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 3095 ) ; 0.00 % ( 0 / 3095 )        ; 0.00 % ( 0 / 3095 )      ;
-;     -- Achieved     ; 0.00 % ( 0 / 3095 ) ; 0.00 % ( 0 / 3095 )        ; 0.00 % ( 0 / 3095 )      ;
+;     -- Requested    ; 0.00 % ( 0 / 2891 ) ; 0.00 % ( 0 / 2891 )        ; 0.00 % ( 0 / 2891 )      ;
+;     -- Achieved     ; 0.00 % ( 0 / 2891 ) ; 0.00 % ( 0 / 2891 )        ; 0.00 % ( 0 / 2891 )      ;
 ;                     ;                     ;                            ;                          ;
 ; Routing (by net)    ;                     ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )    ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -297,7 +298,7 @@ refer to the applicable agreement for further details.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 3045 )   ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 2841 )   ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 50 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -313,28 +314,28 @@ The pin-out file can be found in H:/Github/NasihNazeem/ENEL-453-Labs/Lab 4/outpu
 +---------------------------------------------+------------------------+
 ; Resource                                    ; Usage                  ;
 +---------------------------------------------+------------------------+
-; Total logic elements                        ; 2,576 / 49,760 ( 5 % ) ;
-;     -- Combinational with no register       ; 2074                   ;
+; Total logic elements                        ; 2,443 / 49,760 ( 5 % ) ;
+;     -- Combinational with no register       ; 2010                   ;
 ;     -- Register only                        ; 161                    ;
-;     -- Combinational with a register        ; 341                    ;
+;     -- Combinational with a register        ; 272                    ;
 ;                                             ;                        ;
 ; Logic element usage by number of LUT inputs ;                        ;
-;     -- 4 input functions                    ; 1692                   ;
-;     -- 3 input functions                    ; 446                    ;
-;     -- <=2 input functions                  ; 277                    ;
+;     -- 4 input functions                    ; 1660                   ;
+;     -- 3 input functions                    ; 404                    ;
+;     -- <=2 input functions                  ; 218                    ;
 ;     -- Register only                        ; 161                    ;
 ;                                             ;                        ;
 ; Logic elements by mode                      ;                        ;
-;     -- normal mode                          ; 2016                   ;
-;     -- arithmetic mode                      ; 399                    ;
+;     -- normal mode                          ; 1948                   ;
+;     -- arithmetic mode                      ; 334                    ;
 ;                                             ;                        ;
-; Total registers*                            ; 502 / 51,509 ( < 1 % ) ;
-;     -- Dedicated logic registers            ; 502 / 49,760 ( 1 % )   ;
+; Total registers*                            ; 433 / 51,509 ( < 1 % ) ;
+;     -- Dedicated logic registers            ; 433 / 49,760 ( < 1 % ) ;
 ;     -- I/O registers                        ; 0 / 1,749 ( 0 % )      ;
 ;                                             ;                        ;
-; Total LABs:  partially or completely used   ; 176 / 3,110 ( 6 % )    ;
+; Total LABs:  partially or completely used   ; 181 / 3,110 ( 6 % )    ;
 ; Virtual pins                                ; 0                      ;
-; I/O pins                                    ; 63 / 360 ( 18 % )      ;
+; I/O pins                                    ; 62 / 360 ( 17 % )      ;
 ;     -- Clock pins                           ; 1 / 8 ( 13 % )         ;
 ;     -- Dedicated input pins                 ; 1 / 1 ( 100 % )        ;
 ;                                             ;                        ;
@@ -352,100 +353,99 @@ The pin-out file can be found in H:/Github/NasihNazeem/ENEL-453-Labs/Lab 4/outpu
 ; Remote update blocks                        ; 0 / 1 ( 0 % )          ;
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )          ;
 ; Impedance control blocks                    ; 0 / 1 ( 0 % )          ;
-; Average interconnect usage (total/H/V)      ; 1.1% / 0.9% / 1.2%     ;
-; Peak interconnect usage (total/H/V)         ; 9.7% / 8.2% / 11.8%    ;
-; Maximum fan-out                             ; 556                    ;
-; Highest non-global fan-out                  ; 555                    ;
-; Total fan-out                               ; 10750                  ;
+; Average interconnect usage (total/H/V)      ; 1.1% / 1.0% / 1.2%     ;
+; Peak interconnect usage (total/H/V)         ; 13.0% / 12.2% / 14.2%  ;
+; Maximum fan-out                             ; 558                    ;
+; Highest non-global fan-out                  ; 557                    ;
+; Total fan-out                               ; 10091                  ;
 ; Average fan-out                             ; 3.34                   ;
 +---------------------------------------------+------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
 
 
-+-----------------------------------------------------------------------------------------------------+
-; Fitter Partition Statistics                                                                         ;
-+---------------------------------------------+----------------------+--------------------------------+
-; Statistic                                   ; Top                  ; hard_block:auto_generated_inst ;
-+---------------------------------------------+----------------------+--------------------------------+
-; Difficulty Clustering Region                ; Low                  ; Low                            ;
-;                                             ;                      ;                                ;
-; Total logic elements                        ; 2576 / 49760 ( 5 % ) ; 0 / 49760 ( 0 % )              ;
-;     -- Combinational with no register       ; 2074                 ; 0                              ;
-;     -- Register only                        ; 161                  ; 0                              ;
-;     -- Combinational with a register        ; 341                  ; 0                              ;
-;                                             ;                      ;                                ;
-; Logic element usage by number of LUT inputs ;                      ;                                ;
-;     -- 4 input functions                    ; 1692                 ; 0                              ;
-;     -- 3 input functions                    ; 446                  ; 0                              ;
-;     -- <=2 input functions                  ; 277                  ; 0                              ;
-;     -- Register only                        ; 161                  ; 0                              ;
-;                                             ;                      ;                                ;
-; Logic elements by mode                      ;                      ;                                ;
-;     -- normal mode                          ; 2016                 ; 0                              ;
-;     -- arithmetic mode                      ; 399                  ; 0                              ;
-;                                             ;                      ;                                ;
-; Total registers                             ; 502                  ; 0                              ;
-;     -- Dedicated logic registers            ; 502 / 49760 ( 1 % )  ; 0 / 49760 ( 0 % )              ;
-;     -- I/O registers                        ; 0                    ; 0                              ;
-;                                             ;                      ;                                ;
-; Total LABs:  partially or completely used   ; 176 / 3110 ( 6 % )   ; 0 / 3110 ( 0 % )               ;
-;                                             ;                      ;                                ;
-; Virtual pins                                ; 0                    ; 0                              ;
-; I/O pins                                    ; 63                   ; 0                              ;
-; Embedded Multiplier 9-bit elements          ; 0 / 288 ( 0 % )      ; 0 / 288 ( 0 % )                ;
-; Total memory bits                           ; 0                    ; 0                              ;
-; Total RAM block bits                        ; 0                    ; 0                              ;
-; PLL                                         ; 0 / 4 ( 0 % )        ; 1 / 4 ( 25 % )                 ;
-; Clock control block                         ; 1 / 24 ( 4 % )       ; 1 / 24 ( 4 % )                 ;
-; User Flash Memory                           ; 1 / 1 ( 100 % )      ; 0 / 1 ( 0 % )                  ;
-; Analog-to-Digital Converter                 ; 2 / 2 ( 100 % )      ; 0 / 2 ( 0 % )                  ;
-;                                             ;                      ;                                ;
-; Connections                                 ;                      ;                                ;
-;     -- Input Connections                    ; 93                   ; 1                              ;
-;     -- Registered Input Connections         ; 73                   ; 0                              ;
-;     -- Output Connections                   ; 1                    ; 93                             ;
-;     -- Registered Output Connections        ; 0                    ; 0                              ;
-;                                             ;                      ;                                ;
-; Internal Connections                        ;                      ;                                ;
-;     -- Total Connections                    ; 10734                ; 120                            ;
-;     -- Registered Connections               ; 1607                 ; 0                              ;
-;                                             ;                      ;                                ;
-; External Connections                        ;                      ;                                ;
-;     -- Top                                  ; 0                    ; 94                             ;
-;     -- hard_block:auto_generated_inst       ; 94                   ; 0                              ;
-;                                             ;                      ;                                ;
-; Partition Interface                         ;                      ;                                ;
-;     -- Input Ports                          ; 4                    ; 1                              ;
-;     -- Output Ports                         ; 59                   ; 3                              ;
-;     -- Bidir Ports                          ; 0                    ; 0                              ;
-;                                             ;                      ;                                ;
-; Registered Ports                            ;                      ;                                ;
-;     -- Registered Input Ports               ; 0                    ; 0                              ;
-;     -- Registered Output Ports              ; 0                    ; 0                              ;
-;                                             ;                      ;                                ;
-; Port Connectivity                           ;                      ;                                ;
-;     -- Input Ports driven by GND            ; 0                    ; 0                              ;
-;     -- Output Ports driven by GND           ; 0                    ; 0                              ;
-;     -- Input Ports driven by VCC            ; 0                    ; 0                              ;
-;     -- Output Ports driven by VCC           ; 0                    ; 0                              ;
-;     -- Input Ports with no Source           ; 0                    ; 0                              ;
-;     -- Output Ports with no Source          ; 0                    ; 0                              ;
-;     -- Input Ports with no Fanout           ; 0                    ; 0                              ;
-;     -- Output Ports with no Fanout          ; 0                    ; 0                              ;
-+---------------------------------------------+----------------------+--------------------------------+
++------------------------------------------------------------------------------------------------------+
+; Fitter Partition Statistics                                                                          ;
++---------------------------------------------+-----------------------+--------------------------------+
+; Statistic                                   ; Top                   ; hard_block:auto_generated_inst ;
++---------------------------------------------+-----------------------+--------------------------------+
+; Difficulty Clustering Region                ; Low                   ; Low                            ;
+;                                             ;                       ;                                ;
+; Total logic elements                        ; 2443 / 49760 ( 5 % )  ; 0 / 49760 ( 0 % )              ;
+;     -- Combinational with no register       ; 2010                  ; 0                              ;
+;     -- Register only                        ; 161                   ; 0                              ;
+;     -- Combinational with a register        ; 272                   ; 0                              ;
+;                                             ;                       ;                                ;
+; Logic element usage by number of LUT inputs ;                       ;                                ;
+;     -- 4 input functions                    ; 1660                  ; 0                              ;
+;     -- 3 input functions                    ; 404                   ; 0                              ;
+;     -- <=2 input functions                  ; 218                   ; 0                              ;
+;     -- Register only                        ; 161                   ; 0                              ;
+;                                             ;                       ;                                ;
+; Logic elements by mode                      ;                       ;                                ;
+;     -- normal mode                          ; 1948                  ; 0                              ;
+;     -- arithmetic mode                      ; 334                   ; 0                              ;
+;                                             ;                       ;                                ;
+; Total registers                             ; 433                   ; 0                              ;
+;     -- Dedicated logic registers            ; 433 / 49760 ( < 1 % ) ; 0 / 49760 ( 0 % )              ;
+;     -- I/O registers                        ; 0                     ; 0                              ;
+;                                             ;                       ;                                ;
+; Total LABs:  partially or completely used   ; 181 / 3110 ( 6 % )    ; 0 / 3110 ( 0 % )               ;
+;                                             ;                       ;                                ;
+; Virtual pins                                ; 0                     ; 0                              ;
+; I/O pins                                    ; 62                    ; 0                              ;
+; Embedded Multiplier 9-bit elements          ; 0 / 288 ( 0 % )       ; 0 / 288 ( 0 % )                ;
+; Total memory bits                           ; 0                     ; 0                              ;
+; Total RAM block bits                        ; 0                     ; 0                              ;
+; PLL                                         ; 0 / 4 ( 0 % )         ; 1 / 4 ( 25 % )                 ;
+; Clock control block                         ; 1 / 24 ( 4 % )        ; 1 / 24 ( 4 % )                 ;
+; User Flash Memory                           ; 1 / 1 ( 100 % )       ; 0 / 1 ( 0 % )                  ;
+; Analog-to-Digital Converter                 ; 2 / 2 ( 100 % )       ; 0 / 2 ( 0 % )                  ;
+;                                             ;                       ;                                ;
+; Connections                                 ;                       ;                                ;
+;     -- Input Connections                    ; 93                    ; 1                              ;
+;     -- Registered Input Connections         ; 73                    ; 0                              ;
+;     -- Output Connections                   ; 1                     ; 93                             ;
+;     -- Registered Output Connections        ; 0                     ; 0                              ;
+;                                             ;                       ;                                ;
+; Internal Connections                        ;                       ;                                ;
+;     -- Total Connections                    ; 10075                 ; 120                            ;
+;     -- Registered Connections               ; 1395                  ; 0                              ;
+;                                             ;                       ;                                ;
+; External Connections                        ;                       ;                                ;
+;     -- Top                                  ; 0                     ; 94                             ;
+;     -- hard_block:auto_generated_inst       ; 94                    ; 0                              ;
+;                                             ;                       ;                                ;
+; Partition Interface                         ;                       ;                                ;
+;     -- Input Ports                          ; 3                     ; 1                              ;
+;     -- Output Ports                         ; 59                    ; 3                              ;
+;     -- Bidir Ports                          ; 0                     ; 0                              ;
+;                                             ;                       ;                                ;
+; Registered Ports                            ;                       ;                                ;
+;     -- Registered Input Ports               ; 0                     ; 0                              ;
+;     -- Registered Output Ports              ; 0                     ; 0                              ;
+;                                             ;                       ;                                ;
+; Port Connectivity                           ;                       ;                                ;
+;     -- Input Ports driven by GND            ; 0                     ; 0                              ;
+;     -- Output Ports driven by GND           ; 0                     ; 0                              ;
+;     -- Input Ports driven by VCC            ; 0                     ; 0                              ;
+;     -- Output Ports driven by VCC           ; 0                     ; 0                              ;
+;     -- Input Ports with no Source           ; 0                     ; 0                              ;
+;     -- Output Ports with no Source          ; 0                     ; 0                              ;
+;     -- Input Ports with no Fanout           ; 0                     ; 0                              ;
+;     -- Output Ports with no Fanout          ; 0                     ; 0                              ;
++---------------------------------------------+-----------------------+--------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Input Pins                                                                                                                                                                                                                                                                                     ;
-+---------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
-; Name          ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination Control Block ; Location assigned by ; Slew Rate ;
-+---------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
-; Selecter      ; C11   ; 7        ; 51           ; 54           ; 21           ; 15                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
-; clk           ; P11   ; 3        ; 34           ; 0            ; 28           ; 413                   ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
-; reset         ; C10   ; 7        ; 51           ; 54           ; 28           ; 383                   ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
-; switch_buzzer ; D12   ; 7        ; 51           ; 54           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
-+---------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Input Pins                                                                                                                                                                                                                                                                                ;
++----------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
+; Name     ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination Control Block ; Location assigned by ; Slew Rate ;
++----------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
+; Selecter ; C11   ; 7        ; 51           ; 54           ; 21           ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
+; clk      ; P11   ; 3        ; 34           ; 0            ; 28           ; 344                   ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
+; reset    ; C10   ; 7        ; 51           ; 54           ; 28           ; 343                   ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
++----------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -543,7 +543,7 @@ The pin-out file can be found in H:/Github/NasihNazeem/ENEL-453-Labs/Lab 4/outpu
 ; 4        ; 0 / 48 ( 0 % )    ; 2.5V          ; --           ;
 ; 5        ; 0 / 40 ( 0 % )    ; 2.5V          ; --           ;
 ; 6        ; 30 / 60 ( 50 % )  ; 2.5V          ; --           ;
-; 7        ; 31 / 52 ( 60 % )  ; 2.5V          ; --           ;
+; 7        ; 30 / 52 ( 58 % )  ; 2.5V          ; --           ;
 ; 8        ; 4 / 36 ( 11 % )   ; 2.5V          ; --           ;
 +----------+-------------------+---------------+--------------+
 
@@ -674,7 +674,7 @@ The pin-out file can be found in H:/Github/NasihNazeem/ENEL-453-Labs/Lab 4/outpu
 ; D9       ; 474        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; D10      ; 476        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; D11      ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
-; D12      ; 438        ; 7        ; switch_buzzer                                  ; input  ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
+; D12      ; 438        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; D13      ; 431        ; 7        ; LEDR[4]                                        ; output ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; D14      ; 428        ; 7        ; LEDR[7]                                        ; output ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; D15      ; 404        ; 7        ; HEX[0][7]                                      ; output ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
@@ -1092,75 +1092,74 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +-----------------------------------------------------------------------------------------------------------------------------------+--------------+------+-----+------------------+-------------+------------------+------------+---------+---------------+--------------+---------------+---------+---------+--------------------------------------------------+
 
 
-+-----------------------------------------------+
-; I/O Assignment Warnings                       ;
-+---------------+-------------------------------+
-; Pin Name      ; Reason                        ;
-+---------------+-------------------------------+
-; LEDR[0]       ; Incomplete set of assignments ;
-; LEDR[1]       ; Incomplete set of assignments ;
-; LEDR[2]       ; Incomplete set of assignments ;
-; LEDR[3]       ; Incomplete set of assignments ;
-; LEDR[4]       ; Incomplete set of assignments ;
-; LEDR[5]       ; Incomplete set of assignments ;
-; LEDR[6]       ; Incomplete set of assignments ;
-; LEDR[7]       ; Incomplete set of assignments ;
-; LEDR[8]       ; Incomplete set of assignments ;
-; LEDR[9]       ; Incomplete set of assignments ;
-; HEX[5][0]     ; Incomplete set of assignments ;
-; HEX[5][1]     ; Incomplete set of assignments ;
-; HEX[5][2]     ; Incomplete set of assignments ;
-; HEX[5][3]     ; Incomplete set of assignments ;
-; HEX[5][4]     ; Incomplete set of assignments ;
-; HEX[5][5]     ; Incomplete set of assignments ;
-; HEX[5][6]     ; Incomplete set of assignments ;
-; HEX[5][7]     ; Incomplete set of assignments ;
-; HEX[4][0]     ; Incomplete set of assignments ;
-; HEX[4][1]     ; Incomplete set of assignments ;
-; HEX[4][2]     ; Incomplete set of assignments ;
-; HEX[4][3]     ; Incomplete set of assignments ;
-; HEX[4][4]     ; Incomplete set of assignments ;
-; HEX[4][5]     ; Incomplete set of assignments ;
-; HEX[4][6]     ; Incomplete set of assignments ;
-; HEX[4][7]     ; Incomplete set of assignments ;
-; HEX[3][0]     ; Incomplete set of assignments ;
-; HEX[3][1]     ; Incomplete set of assignments ;
-; HEX[3][2]     ; Incomplete set of assignments ;
-; HEX[3][3]     ; Incomplete set of assignments ;
-; HEX[3][4]     ; Incomplete set of assignments ;
-; HEX[3][5]     ; Incomplete set of assignments ;
-; HEX[3][6]     ; Incomplete set of assignments ;
-; HEX[3][7]     ; Incomplete set of assignments ;
-; HEX[2][0]     ; Incomplete set of assignments ;
-; HEX[2][1]     ; Incomplete set of assignments ;
-; HEX[2][2]     ; Incomplete set of assignments ;
-; HEX[2][3]     ; Incomplete set of assignments ;
-; HEX[2][4]     ; Incomplete set of assignments ;
-; HEX[2][5]     ; Incomplete set of assignments ;
-; HEX[2][6]     ; Incomplete set of assignments ;
-; HEX[2][7]     ; Incomplete set of assignments ;
-; HEX[1][0]     ; Incomplete set of assignments ;
-; HEX[1][1]     ; Incomplete set of assignments ;
-; HEX[1][2]     ; Incomplete set of assignments ;
-; HEX[1][3]     ; Incomplete set of assignments ;
-; HEX[1][4]     ; Incomplete set of assignments ;
-; HEX[1][5]     ; Incomplete set of assignments ;
-; HEX[1][6]     ; Incomplete set of assignments ;
-; HEX[1][7]     ; Incomplete set of assignments ;
-; HEX[0][0]     ; Incomplete set of assignments ;
-; HEX[0][1]     ; Incomplete set of assignments ;
-; HEX[0][2]     ; Incomplete set of assignments ;
-; HEX[0][3]     ; Incomplete set of assignments ;
-; HEX[0][4]     ; Incomplete set of assignments ;
-; HEX[0][5]     ; Incomplete set of assignments ;
-; HEX[0][6]     ; Incomplete set of assignments ;
-; HEX[0][7]     ; Incomplete set of assignments ;
-; buzzer        ; Incomplete set of assignments ;
-; Selecter      ; Incomplete set of assignments ;
-; switch_buzzer ; Incomplete set of assignments ;
-; clk           ; Incomplete set of assignments ;
-; reset         ; Incomplete set of assignments ;
-+---------------+-------------------------------+
++-------------------------------------------+
+; I/O Assignment Warnings                   ;
++-----------+-------------------------------+
+; Pin Name  ; Reason                        ;
++-----------+-------------------------------+
+; LEDR[0]   ; Incomplete set of assignments ;
+; LEDR[1]   ; Incomplete set of assignments ;
+; LEDR[2]   ; Incomplete set of assignments ;
+; LEDR[3]   ; Incomplete set of assignments ;
+; LEDR[4]   ; Incomplete set of assignments ;
+; LEDR[5]   ; Incomplete set of assignments ;
+; LEDR[6]   ; Incomplete set of assignments ;
+; LEDR[7]   ; Incomplete set of assignments ;
+; LEDR[8]   ; Incomplete set of assignments ;
+; LEDR[9]   ; Incomplete set of assignments ;
+; HEX[5][0] ; Incomplete set of assignments ;
+; HEX[5][1] ; Incomplete set of assignments ;
+; HEX[5][2] ; Incomplete set of assignments ;
+; HEX[5][3] ; Incomplete set of assignments ;
+; HEX[5][4] ; Incomplete set of assignments ;
+; HEX[5][5] ; Incomplete set of assignments ;
+; HEX[5][6] ; Incomplete set of assignments ;
+; HEX[5][7] ; Incomplete set of assignments ;
+; HEX[4][0] ; Incomplete set of assignments ;
+; HEX[4][1] ; Incomplete set of assignments ;
+; HEX[4][2] ; Incomplete set of assignments ;
+; HEX[4][3] ; Incomplete set of assignments ;
+; HEX[4][4] ; Incomplete set of assignments ;
+; HEX[4][5] ; Incomplete set of assignments ;
+; HEX[4][6] ; Incomplete set of assignments ;
+; HEX[4][7] ; Incomplete set of assignments ;
+; HEX[3][0] ; Incomplete set of assignments ;
+; HEX[3][1] ; Incomplete set of assignments ;
+; HEX[3][2] ; Incomplete set of assignments ;
+; HEX[3][3] ; Incomplete set of assignments ;
+; HEX[3][4] ; Incomplete set of assignments ;
+; HEX[3][5] ; Incomplete set of assignments ;
+; HEX[3][6] ; Incomplete set of assignments ;
+; HEX[3][7] ; Incomplete set of assignments ;
+; HEX[2][0] ; Incomplete set of assignments ;
+; HEX[2][1] ; Incomplete set of assignments ;
+; HEX[2][2] ; Incomplete set of assignments ;
+; HEX[2][3] ; Incomplete set of assignments ;
+; HEX[2][4] ; Incomplete set of assignments ;
+; HEX[2][5] ; Incomplete set of assignments ;
+; HEX[2][6] ; Incomplete set of assignments ;
+; HEX[2][7] ; Incomplete set of assignments ;
+; HEX[1][0] ; Incomplete set of assignments ;
+; HEX[1][1] ; Incomplete set of assignments ;
+; HEX[1][2] ; Incomplete set of assignments ;
+; HEX[1][3] ; Incomplete set of assignments ;
+; HEX[1][4] ; Incomplete set of assignments ;
+; HEX[1][5] ; Incomplete set of assignments ;
+; HEX[1][6] ; Incomplete set of assignments ;
+; HEX[1][7] ; Incomplete set of assignments ;
+; HEX[0][0] ; Incomplete set of assignments ;
+; HEX[0][1] ; Incomplete set of assignments ;
+; HEX[0][2] ; Incomplete set of assignments ;
+; HEX[0][3] ; Incomplete set of assignments ;
+; HEX[0][4] ; Incomplete set of assignments ;
+; HEX[0][5] ; Incomplete set of assignments ;
+; HEX[0][6] ; Incomplete set of assignments ;
+; HEX[0][7] ; Incomplete set of assignments ;
+; buzzer    ; Incomplete set of assignments ;
+; Selecter  ; Incomplete set of assignments ;
+; clk       ; Incomplete set of assignments ;
+; reset     ; Incomplete set of assignments ;
++-----------+-------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1168,38 +1167,34 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +------------------------------------------------------------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------+--------------+
 ; Compilation Hierarchy Node                                                   ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; ADC blocks ; Full Hierarchy Name                                                                                                                                                                                                                          ; Entity Name                            ; Library Name ;
 +------------------------------------------------------------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------+--------------+
-; |Voltmeter                                                                   ; 2576 (2)    ; 502 (0)                   ; 0 (0)         ; 0           ; 0    ; 1          ; 0            ; 0       ; 0         ; 63   ; 0            ; 2074 (2)     ; 161 (0)           ; 341 (0)          ; 0          ; |Voltmeter                                                                                                                                                                                                                                   ; Voltmeter                              ; work         ;
-;    |ADC_Conversion:ADC_Conversion_ins|                                       ; 102 (30)    ; 90 (29)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 12 (1)       ; 46 (25)           ; 44 (4)           ; 0          ; |Voltmeter|ADC_Conversion:ADC_Conversion_ins                                                                                                                                                                                                 ; ADC_Conversion                         ; work         ;
-;       |adc_qsys:u0|                                                          ; 72 (0)      ; 61 (0)                    ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 11 (0)       ; 21 (0)            ; 40 (0)           ; 0          ; |Voltmeter|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0                                                                                                                                                                                     ; adc_qsys                               ; adc_qsys     ;
+; |Voltmeter                                                                   ; 2443 (1)    ; 433 (0)                   ; 0 (0)         ; 0           ; 0    ; 1          ; 0            ; 0       ; 0         ; 62   ; 0            ; 2010 (1)     ; 161 (0)           ; 272 (0)          ; 0          ; |Voltmeter                                                                                                                                                                                                                                   ; Voltmeter                              ; work         ;
+;    |ADC_Conversion:ADC_Conversion_ins|                                       ; 102 (30)    ; 90 (29)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 12 (1)       ; 46 (26)           ; 44 (4)           ; 0          ; |Voltmeter|ADC_Conversion:ADC_Conversion_ins                                                                                                                                                                                                 ; ADC_Conversion                         ; work         ;
+;       |adc_qsys:u0|                                                          ; 72 (0)      ; 61 (0)                    ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 11 (0)       ; 20 (0)            ; 41 (0)           ; 0          ; |Voltmeter|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0                                                                                                                                                                                     ; adc_qsys                               ; adc_qsys     ;
 ;          |adc_qsys_altpll_sys:altpll_sys|                                    ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0          ; |Voltmeter|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_altpll_sys:altpll_sys                                                                                                                                                      ; adc_qsys_altpll_sys                    ; adc_qsys     ;
 ;             |adc_qsys_altpll_sys_altpll_oc92:sd1|                            ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0          ; |Voltmeter|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_altpll_sys:altpll_sys|adc_qsys_altpll_sys_altpll_oc92:sd1                                                                                                                  ; adc_qsys_altpll_sys_altpll_oc92        ; adc_qsys     ;
-;          |adc_qsys_modular_adc_0:modular_adc_0|                              ; 69 (0)      ; 58 (0)                    ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 11 (0)       ; 19 (0)            ; 39 (0)           ; 0          ; |Voltmeter|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0                                                                                                                                                ; adc_qsys_modular_adc_0                 ; adc_qsys     ;
-;             |altera_modular_adc_control:control_internal|                    ; 69 (0)      ; 58 (0)                    ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 11 (0)       ; 19 (0)            ; 39 (0)           ; 0          ; |Voltmeter|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal                                                                                                    ; altera_modular_adc_control             ; adc_qsys     ;
-;                |altera_modular_adc_control_fsm:u_control_fsm|                ; 67 (63)     ; 58 (54)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 9 (9)        ; 19 (16)           ; 39 (39)          ; 0          ; |Voltmeter|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm                                                       ; altera_modular_adc_control_fsm         ; adc_qsys     ;
-;                   |altera_std_synchronizer:u_clk_dft_synchronizer|           ; 2 (2)       ; 2 (2)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 2 (2)             ; 0 (0)            ; 0          ; |Voltmeter|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_std_synchronizer:u_clk_dft_synchronizer        ; altera_std_synchronizer                ; work         ;
-;                   |altera_std_synchronizer:u_eoc_synchronizer|               ; 2 (2)       ; 2 (2)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 1 (1)            ; 0          ; |Voltmeter|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_std_synchronizer:u_eoc_synchronizer            ; altera_std_synchronizer                ; work         ;
+;          |adc_qsys_modular_adc_0:modular_adc_0|                              ; 69 (0)      ; 58 (0)                    ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 11 (0)       ; 18 (0)            ; 40 (0)           ; 0          ; |Voltmeter|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0                                                                                                                                                ; adc_qsys_modular_adc_0                 ; adc_qsys     ;
+;             |altera_modular_adc_control:control_internal|                    ; 69 (0)      ; 58 (0)                    ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 11 (0)       ; 18 (0)            ; 40 (0)           ; 0          ; |Voltmeter|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal                                                                                                    ; altera_modular_adc_control             ; adc_qsys     ;
+;                |altera_modular_adc_control_fsm:u_control_fsm|                ; 67 (64)     ; 58 (54)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 9 (9)        ; 18 (15)           ; 40 (40)          ; 0          ; |Voltmeter|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm                                                       ; altera_modular_adc_control_fsm         ; adc_qsys     ;
+;                   |altera_std_synchronizer:u_clk_dft_synchronizer|           ; 2 (2)       ; 2 (2)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 1 (1)            ; 0          ; |Voltmeter|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_std_synchronizer:u_clk_dft_synchronizer        ; altera_std_synchronizer                ; work         ;
+;                   |altera_std_synchronizer:u_eoc_synchronizer|               ; 2 (2)       ; 2 (2)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 2 (2)             ; 0 (0)            ; 0          ; |Voltmeter|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_std_synchronizer:u_eoc_synchronizer            ; altera_std_synchronizer                ; work         ;
 ;                |fiftyfivenm_adcblock_top_wrapper:adc_inst|                   ; 2 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0          ; |Voltmeter|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|fiftyfivenm_adcblock_top_wrapper:adc_inst                                                          ; fiftyfivenm_adcblock_top_wrapper       ; adc_qsys     ;
 ;                   |chsel_code_converter_sw_to_hw:decoder|                    ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0          ; |Voltmeter|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|fiftyfivenm_adcblock_top_wrapper:adc_inst|chsel_code_converter_sw_to_hw:decoder                    ; chsel_code_converter_sw_to_hw          ; adc_qsys     ;
 ;                   |fiftyfivenm_adcblock_primitive_wrapper:adcblock_instance| ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0          ; |Voltmeter|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|fiftyfivenm_adcblock_top_wrapper:adc_inst|fiftyfivenm_adcblock_primitive_wrapper:adcblock_instance ; fiftyfivenm_adcblock_primitive_wrapper ; adc_qsys     ;
 ;          |altera_reset_controller:rst_controller_001|                        ; 3 (0)       ; 3 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 2 (0)             ; 1 (0)            ; 0          ; |Voltmeter|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller_001                                                                                                                                          ; altera_reset_controller                ; adc_qsys     ;
 ;             |altera_reset_synchronizer:alt_rst_sync_uq1|                     ; 3 (3)       ; 3 (3)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 2 (2)             ; 1 (1)            ; 0          ; |Voltmeter|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller_001|altera_reset_synchronizer:alt_rst_sync_uq1                                                                                               ; altera_reset_synchronizer              ; adc_qsys     ;
-;    |MUX_BUZZER:buzzer_multiplexer|                                           ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0          ; |Voltmeter|MUX_BUZZER:buzzer_multiplexer                                                                                                                                                                                                     ; MUX_BUZZER                             ; work         ;
 ;    |SevenSegment:SevenSegment_ins|                                           ; 28 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 28 (0)       ; 0 (0)             ; 0 (0)            ; 0          ; |Voltmeter|SevenSegment:SevenSegment_ins                                                                                                                                                                                                     ; SevenSegment                           ; work         ;
 ;       |SevenSegment_decoder:\Behavioral_Decoder:0:DECODERx|                  ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0          ; |Voltmeter|SevenSegment:SevenSegment_ins|SevenSegment_decoder:\Behavioral_Decoder:0:DECODERx                                                                                                                                                 ; SevenSegment_decoder                   ; work         ;
 ;       |SevenSegment_decoder:\Behavioral_Decoder:1:DECODERx|                  ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0          ; |Voltmeter|SevenSegment:SevenSegment_ins|SevenSegment_decoder:\Behavioral_Decoder:1:DECODERx                                                                                                                                                 ; SevenSegment_decoder                   ; work         ;
 ;       |SevenSegment_decoder:\Behavioral_Decoder:2:DECODERx|                  ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0          ; |Voltmeter|SevenSegment:SevenSegment_ins|SevenSegment_decoder:\Behavioral_Decoder:2:DECODERx                                                                                                                                                 ; SevenSegment_decoder                   ; work         ;
 ;       |SevenSegment_decoder:\Behavioral_Decoder:3:DECODERx|                  ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0          ; |Voltmeter|SevenSegment:SevenSegment_ins|SevenSegment_decoder:\Behavioral_Decoder:3:DECODERx                                                                                                                                                 ; SevenSegment_decoder                   ; work         ;
-;    |amp_buzzer:buzzer_amplitude|                                             ; 59 (37)     ; 24 (15)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 35 (22)      ; 0 (0)             ; 24 (15)          ; 0          ; |Voltmeter|amp_buzzer:buzzer_amplitude                                                                                                                                                                                                       ; amp_buzzer                             ; work         ;
-;       |PWM_DAC:pwm|                                                          ; 22 (22)     ; 9 (9)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 13 (13)      ; 0 (0)             ; 9 (9)            ; 0          ; |Voltmeter|amp_buzzer:buzzer_amplitude|PWM_DAC:pwm                                                                                                                                                                                           ; PWM_DAC                                ; work         ;
-;    |averager:ave|                                                            ; 295 (295)   ; 204 (204)                 ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 91 (91)      ; 88 (88)           ; 116 (116)        ; 0          ; |Voltmeter|averager:ave                                                                                                                                                                                                                      ; averager                               ; work         ;
-;    |binary_bcd:binary_bcd_ins|                                               ; 167 (167)   ; 84 (84)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 82 (82)      ; 2 (2)             ; 83 (83)          ; 0          ; |Voltmeter|binary_bcd:binary_bcd_ins                                                                                                                                                                                                         ; binary_bcd                             ; work         ;
+;    |averager:ave|                                                            ; 294 (294)   ; 204 (204)                 ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 88 (88)      ; 88 (88)           ; 118 (118)        ; 0          ; |Voltmeter|averager:ave                                                                                                                                                                                                                      ; averager                               ; work         ;
+;    |binary_bcd:binary_bcd_ins|                                               ; 151 (151)   ; 71 (71)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 80 (80)      ; 3 (3)             ; 68 (68)          ; 0          ; |Voltmeter|binary_bcd:binary_bcd_ins                                                                                                                                                                                                         ; binary_bcd                             ; work         ;
 ;    |clk_divider_buzz:clk_div|                                                ; 87 (87)     ; 32 (32)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 55 (55)      ; 0 (0)             ; 32 (32)          ; 0          ; |Voltmeter|clk_divider_buzz:clk_div                                                                                                                                                                                                          ; clk_divider_buzz                       ; work         ;
-;    |downcounter:down|                                                        ; 43 (43)     ; 32 (32)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 11 (11)      ; 0 (0)             ; 32 (32)          ; 0          ; |Voltmeter|downcounter:down                                                                                                                                                                                                                  ; downcounter                            ; work         ;
 ;    |flag_mux:flag_multiplexer|                                               ; 16 (16)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 16 (16)          ; 0          ; |Voltmeter|flag_mux:flag_multiplexer                                                                                                                                                                                                         ; flag_mux                               ; work         ;
 ;    |freq_buzz_gen:buzzer_frequency|                                          ; 14 (8)      ; 10 (6)                    ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (2)        ; 0 (0)             ; 10 (6)           ; 0          ; |Voltmeter|freq_buzz_gen:buzzer_frequency                                                                                                                                                                                                    ; freq_buzz_gen                          ; work         ;
 ;       |PWM_DAC:pwm|                                                          ; 6 (6)       ; 4 (4)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 4 (4)            ; 0          ; |Voltmeter|freq_buzz_gen:buzzer_frequency|PWM_DAC:pwm                                                                                                                                                                                        ; PWM_DAC                                ; work         ;
-;    |lpm_mult:Mult0|                                                          ; 57 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 56 (0)       ; 0 (0)             ; 1 (0)            ; 0          ; |Voltmeter|lpm_mult:Mult0                                                                                                                                                                                                                    ; lpm_mult                               ; work         ;
-;       |multcore:mult_core|                                                   ; 57 (29)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 56 (28)      ; 0 (0)             ; 1 (1)            ; 0          ; |Voltmeter|lpm_mult:Mult0|multcore:mult_core                                                                                                                                                                                                 ; multcore                               ; work         ;
+;    |lpm_mult:Mult0|                                                          ; 57 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 57 (0)       ; 0 (0)             ; 0 (0)            ; 0          ; |Voltmeter|lpm_mult:Mult0                                                                                                                                                                                                                    ; lpm_mult                               ; work         ;
+;       |multcore:mult_core|                                                   ; 57 (29)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 57 (29)      ; 0 (0)             ; 0 (0)            ; 0          ; |Voltmeter|lpm_mult:Mult0|multcore:mult_core                                                                                                                                                                                                 ; multcore                               ; work         ;
 ;          |mpar_add:padder|                                                   ; 28 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 28 (0)       ; 0 (0)             ; 0 (0)            ; 0          ; |Voltmeter|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder                                                                                                                                                                                 ; mpar_add                               ; work         ;
 ;             |lpm_add_sub:adder[0]|                                           ; 14 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 14 (0)       ; 0 (0)             ; 0 (0)            ; 0          ; |Voltmeter|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]                                                                                                                                                            ; lpm_add_sub                            ; work         ;
 ;                |add_sub_frg:auto_generated|                                  ; 14 (14)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 14 (14)      ; 0 (0)             ; 0 (0)            ; 0          ; |Voltmeter|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_frg:auto_generated                                                                                                                                 ; add_sub_frg                            ; work         ;
@@ -1207,83 +1202,82 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ;                |lpm_add_sub:adder[0]|                                        ; 14 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 14 (0)       ; 0 (0)             ; 0 (0)            ; 0          ; |Voltmeter|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]                                                                                                                                       ; lpm_add_sub                            ; work         ;
 ;                   |add_sub_arg:auto_generated|                               ; 14 (14)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 14 (14)      ; 0 (0)             ; 0 (0)            ; 0          ; |Voltmeter|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_arg:auto_generated                                                                                                            ; add_sub_arg                            ; work         ;
 ;    |registers:sync1|                                                         ; 12 (12)     ; 12 (12)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 12 (12)           ; 0 (0)            ; 0          ; |Voltmeter|registers:sync1                                                                                                                                                                                                                   ; registers                              ; work         ;
-;    |registers:sync2|                                                         ; 12 (12)     ; 12 (12)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 11 (11)           ; 1 (1)            ; 0          ; |Voltmeter|registers:sync2                                                                                                                                                                                                                   ; registers                              ; work         ;
+;    |registers:sync2|                                                         ; 12 (12)     ; 12 (12)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 10 (10)           ; 2 (2)            ; 0          ; |Voltmeter|registers:sync2                                                                                                                                                                                                                   ; registers                              ; work         ;
 ;    |registers:sync3|                                                         ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0          ; |Voltmeter|registers:sync3                                                                                                                                                                                                                   ; registers                              ; work         ;
 ;    |registers:sync4|                                                         ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0          ; |Voltmeter|registers:sync4                                                                                                                                                                                                                   ; registers                              ; work         ;
-;    |voltage2distance:V2D|                                                    ; 1696 (1696) ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1696 (1696)  ; 0 (0)             ; 0 (0)            ; 0          ; |Voltmeter|voltage2distance:V2D                                                                                                                                                                                                              ; voltage2distance                       ; work         ;
+;    |voltage2distance:V2D|                                                    ; 1685 (1685) ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1685 (1685)  ; 0 (0)             ; 0 (0)            ; 0          ; |Voltmeter|voltage2distance:V2D                                                                                                                                                                                                              ; voltage2distance                       ; work         ;
 +------------------------------------------------------------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+-----------------------------------------------------------------------------------------------+
-; Delay Chain Summary                                                                           ;
-+---------------+----------+---------------+---------------+-----------------------+-----+------+
-; Name          ; Pin Type ; Pad to Core 0 ; Pad to Core 1 ; Pad to Input Register ; TCO ; TCOE ;
-+---------------+----------+---------------+---------------+-----------------------+-----+------+
-; LEDR[0]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; LEDR[1]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; LEDR[2]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; LEDR[3]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; LEDR[4]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; LEDR[5]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; LEDR[6]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; LEDR[7]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; LEDR[8]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; LEDR[9]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; HEX[5][0]     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; HEX[5][1]     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; HEX[5][2]     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; HEX[5][3]     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; HEX[5][4]     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; HEX[5][5]     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; HEX[5][6]     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; HEX[5][7]     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; HEX[4][0]     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; HEX[4][1]     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; HEX[4][2]     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; HEX[4][3]     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; HEX[4][4]     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; HEX[4][5]     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; HEX[4][6]     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; HEX[4][7]     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; HEX[3][0]     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; HEX[3][1]     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; HEX[3][2]     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; HEX[3][3]     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; HEX[3][4]     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; HEX[3][5]     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; HEX[3][6]     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; HEX[3][7]     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; HEX[2][0]     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; HEX[2][1]     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; HEX[2][2]     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; HEX[2][3]     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; HEX[2][4]     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; HEX[2][5]     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; HEX[2][6]     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; HEX[2][7]     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; HEX[1][0]     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; HEX[1][1]     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; HEX[1][2]     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; HEX[1][3]     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; HEX[1][4]     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; HEX[1][5]     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; HEX[1][6]     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; HEX[1][7]     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; HEX[0][0]     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; HEX[0][1]     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; HEX[0][2]     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; HEX[0][3]     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; HEX[0][4]     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; HEX[0][5]     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; HEX[0][6]     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; HEX[0][7]     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; buzzer        ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; Selecter      ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
-; switch_buzzer ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
-; clk           ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
-; reset         ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
-+---------------+----------+---------------+---------------+-----------------------+-----+------+
++-------------------------------------------------------------------------------------------+
+; Delay Chain Summary                                                                       ;
++-----------+----------+---------------+---------------+-----------------------+-----+------+
+; Name      ; Pin Type ; Pad to Core 0 ; Pad to Core 1 ; Pad to Input Register ; TCO ; TCOE ;
++-----------+----------+---------------+---------------+-----------------------+-----+------+
+; LEDR[0]   ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; LEDR[1]   ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; LEDR[2]   ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; LEDR[3]   ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; LEDR[4]   ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; LEDR[5]   ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; LEDR[6]   ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; LEDR[7]   ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; LEDR[8]   ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; LEDR[9]   ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX[5][0] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX[5][1] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX[5][2] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX[5][3] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX[5][4] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX[5][5] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX[5][6] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX[5][7] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX[4][0] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX[4][1] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX[4][2] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX[4][3] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX[4][4] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX[4][5] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX[4][6] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX[4][7] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX[3][0] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX[3][1] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX[3][2] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX[3][3] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX[3][4] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX[3][5] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX[3][6] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX[3][7] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX[2][0] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX[2][1] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX[2][2] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX[2][3] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX[2][4] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX[2][5] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX[2][6] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX[2][7] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX[1][0] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX[1][1] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX[1][2] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX[1][3] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX[1][4] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX[1][5] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX[1][6] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX[1][7] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX[0][0] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX[0][1] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX[0][2] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX[0][3] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX[0][4] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX[0][5] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX[0][6] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; HEX[0][7] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; buzzer    ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; Selecter  ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
+; clk       ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
+; reset     ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
++-----------+----------+---------------+---------------+-----------------------+-----+------+
 
 
 +--------------------------------------------------------------------------------------------+
@@ -1292,23 +1286,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Source Pin / Fanout                                          ; Pad To Core Index ; Setting ;
 +--------------------------------------------------------------+-------------------+---------+
 ; Selecter                                                     ;                   ;         ;
-;      - binary_bcd:binary_bcd_ins|bcd_signal[12]~4            ; 0                 ; 6       ;
-;      - binary_bcd:binary_bcd_ins|bcd_signal[11]~5            ; 0                 ; 6       ;
-;      - binary_bcd:binary_bcd_ins|bcd_signal[10]~6            ; 0                 ; 6       ;
-;      - binary_bcd:binary_bcd_ins|bcd_signal[9]~7             ; 0                 ; 6       ;
-;      - binary_bcd:binary_bcd_ins|bcd_signal[8]~8             ; 0                 ; 6       ;
-;      - binary_bcd:binary_bcd_ins|bcd_signal[7]~9             ; 0                 ; 6       ;
-;      - binary_bcd:binary_bcd_ins|bcd_signal[6]~10            ; 0                 ; 6       ;
-;      - binary_bcd:binary_bcd_ins|bcd_signal[5]~11            ; 0                 ; 6       ;
-;      - binary_bcd:binary_bcd_ins|bcd_signal[4]~12            ; 0                 ; 6       ;
-;      - binary_bcd:binary_bcd_ins|bcd_signal[3]~13            ; 0                 ; 6       ;
-;      - binary_bcd:binary_bcd_ins|bcd_signal[2]~14            ; 0                 ; 6       ;
-;      - binary_bcd:binary_bcd_ins|bcd_signal[1]~15            ; 0                 ; 6       ;
-;      - binary_bcd:binary_bcd_ins|Selector28~3                ; 0                 ; 6       ;
 ;      - HEX[2][7]~output                                      ; 0                 ; 6       ;
 ;      - HEX[3][7]~output                                      ; 0                 ; 6       ;
-; switch_buzzer                                                ;                   ;         ;
-;      - MUX_BUZZER:buzzer_multiplexer|mux_out~1               ; 1                 ; 6       ;
 ; clk                                                          ;                   ;         ;
 ; reset                                                        ;                   ;         ;
 ;      - averager:ave|reg16[0]                                 ; 0                 ; 6       ;
@@ -1440,6 +1419,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - binary_bcd:binary_bcd_ins|bcd[14]                     ; 0                 ; 6       ;
 ;      - binary_bcd:binary_bcd_ins|bcd[15]                     ; 0                 ; 6       ;
 ;      - freq_buzz_gen:buzzer_frequency|PWM_DAC:pwm|counter[0] ; 0                 ; 6       ;
+;      - freq_buzz_gen:buzzer_frequency|PWM_DAC:pwm|counter[1] ; 0                 ; 6       ;
 ;      - freq_buzz_gen:buzzer_frequency|PWM_DAC:pwm|counter[2] ; 0                 ; 6       ;
 ;      - freq_buzz_gen:buzzer_frequency|PWM_DAC:pwm|counter[3] ; 0                 ; 6       ;
 ;      - clk_divider_buzz:clk_div|current_count[0]             ; 0                 ; 6       ;
@@ -1456,12 +1436,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - clk_divider_buzz:clk_div|current_count[11]            ; 0                 ; 6       ;
 ;      - clk_divider_buzz:clk_div|current_count[12]            ; 0                 ; 6       ;
 ;      - freq_buzz_gen:buzzer_frequency|CurrentState.S1        ; 0                 ; 6       ;
-;      - amp_buzzer:buzzer_amplitude|CurrentState.S1           ; 0                 ; 6       ;
 ;      - binary_bcd:binary_bcd_ins|bcd_signal[21]              ; 0                 ; 6       ;
 ;      - binary_bcd:binary_bcd_ins|bcd_signal[22]              ; 0                 ; 6       ;
 ;      - binary_bcd:binary_bcd_ins|bcd_signal[23]              ; 0                 ; 6       ;
 ;      - binary_bcd:binary_bcd_ins|bcd_signal[24]              ; 0                 ; 6       ;
-;      - binary_bcd:binary_bcd_ins|bcd_signal[13]              ; 0                 ; 6       ;
 ;      - binary_bcd:binary_bcd_ins|bcd_signal[14]              ; 0                 ; 6       ;
 ;      - binary_bcd:binary_bcd_ins|bcd_signal[15]              ; 0                 ; 6       ;
 ;      - binary_bcd:binary_bcd_ins|bcd_signal[16]              ; 0                 ; 6       ;
@@ -1479,48 +1457,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - averager:ave|Q[11]                                    ; 0                 ; 6       ;
 ;      - averager:ave|Q[1]                                     ; 0                 ; 6       ;
 ;      - averager:ave|Q[0]                                     ; 0                 ; 6       ;
-;      - freq_buzz_gen:buzzer_frequency|PWM_DAC:pwm|counter[1] ; 0                 ; 6       ;
 ;      - freq_buzz_gen:buzzer_frequency|counter[1]             ; 0                 ; 6       ;
 ;      - freq_buzz_gen:buzzer_frequency|counter[2]             ; 0                 ; 6       ;
 ;      - freq_buzz_gen:buzzer_frequency|counter[3]             ; 0                 ; 6       ;
-;      - amp_buzzer:buzzer_amplitude|PWM_DAC:pwm|counter[12]   ; 0                 ; 6       ;
-;      - amp_buzzer:buzzer_amplitude|PWM_DAC:pwm|counter[11]   ; 0                 ; 6       ;
-;      - amp_buzzer:buzzer_amplitude|counter[0]                ; 0                 ; 6       ;
-;      - amp_buzzer:buzzer_amplitude|counter[1]                ; 0                 ; 6       ;
-;      - amp_buzzer:buzzer_amplitude|counter[2]                ; 0                 ; 6       ;
-;      - amp_buzzer:buzzer_amplitude|counter[3]                ; 0                 ; 6       ;
-;      - amp_buzzer:buzzer_amplitude|counter[4]                ; 0                 ; 6       ;
-;      - amp_buzzer:buzzer_amplitude|counter[5]                ; 0                 ; 6       ;
-;      - amp_buzzer:buzzer_amplitude|counter[6]                ; 0                 ; 6       ;
-;      - amp_buzzer:buzzer_amplitude|counter[7]                ; 0                 ; 6       ;
-;      - amp_buzzer:buzzer_amplitude|counter[8]                ; 0                 ; 6       ;
-;      - amp_buzzer:buzzer_amplitude|counter[9]                ; 0                 ; 6       ;
-;      - amp_buzzer:buzzer_amplitude|counter[10]               ; 0                 ; 6       ;
-;      - amp_buzzer:buzzer_amplitude|counter[11]               ; 0                 ; 6       ;
-;      - amp_buzzer:buzzer_amplitude|counter[12]               ; 0                 ; 6       ;
-;      - amp_buzzer:buzzer_amplitude|PWM_DAC:pwm|counter[10]   ; 0                 ; 6       ;
-;      - amp_buzzer:buzzer_amplitude|PWM_DAC:pwm|counter[9]    ; 0                 ; 6       ;
-;      - amp_buzzer:buzzer_amplitude|PWM_DAC:pwm|counter[8]    ; 0                 ; 6       ;
-;      - amp_buzzer:buzzer_amplitude|PWM_DAC:pwm|counter[7]    ; 0                 ; 6       ;
-;      - amp_buzzer:buzzer_amplitude|PWM_DAC:pwm|counter[6]    ; 0                 ; 6       ;
-;      - amp_buzzer:buzzer_amplitude|PWM_DAC:pwm|counter[5]    ; 0                 ; 6       ;
-;      - amp_buzzer:buzzer_amplitude|PWM_DAC:pwm|counter[4]    ; 0                 ; 6       ;
 ;      - binary_bcd:binary_bcd_ins|bcd_signal[17]              ; 0                 ; 6       ;
 ;      - binary_bcd:binary_bcd_ins|bcd_signal[18]              ; 0                 ; 6       ;
 ;      - binary_bcd:binary_bcd_ins|bcd_signal[19]              ; 0                 ; 6       ;
 ;      - binary_bcd:binary_bcd_ins|bcd_signal[20]              ; 0                 ; 6       ;
-;      - binary_bcd:binary_bcd_ins|bcd_signal[12]              ; 0                 ; 6       ;
-;      - binary_bcd:binary_bcd_ins|bcd_signal[11]              ; 0                 ; 6       ;
-;      - binary_bcd:binary_bcd_ins|bcd_signal[10]              ; 0                 ; 6       ;
-;      - binary_bcd:binary_bcd_ins|bcd_signal[9]               ; 0                 ; 6       ;
-;      - binary_bcd:binary_bcd_ins|bcd_signal[8]               ; 0                 ; 6       ;
-;      - binary_bcd:binary_bcd_ins|bcd_signal[7]               ; 0                 ; 6       ;
-;      - binary_bcd:binary_bcd_ins|bcd_signal[6]               ; 0                 ; 6       ;
-;      - binary_bcd:binary_bcd_ins|bcd_signal[5]               ; 0                 ; 6       ;
-;      - binary_bcd:binary_bcd_ins|bcd_signal[4]               ; 0                 ; 6       ;
-;      - binary_bcd:binary_bcd_ins|bcd_signal[3]               ; 0                 ; 6       ;
-;      - binary_bcd:binary_bcd_ins|bcd_signal[2]               ; 0                 ; 6       ;
-;      - binary_bcd:binary_bcd_ins|bcd_signal[1]               ; 0                 ; 6       ;
 ;      - registers:sync4|q_outputs[0]                          ; 0                 ; 6       ;
 ;      - averager:ave|reg16[7]                                 ; 0                 ; 6       ;
 ;      - averager:ave|reg15[7]                                 ; 0                 ; 6       ;
@@ -1620,26 +1563,26 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - binary_bcd:binary_bcd_ins|counter_2[18]               ; 0                 ; 6       ;
 ;      - binary_bcd:binary_bcd_ins|counter_2[17]               ; 0                 ; 6       ;
 ;      - binary_bcd:binary_bcd_ins|counter_2[16]               ; 0                 ; 6       ;
-;      - binary_bcd:binary_bcd_ins|counter_2[15]               ; 0                 ; 6       ;
-;      - binary_bcd:binary_bcd_ins|counter_2[14]               ; 0                 ; 6       ;
 ;      - binary_bcd:binary_bcd_ins|counter_2[13]               ; 0                 ; 6       ;
 ;      - binary_bcd:binary_bcd_ins|counter_2[12]               ; 0                 ; 6       ;
 ;      - binary_bcd:binary_bcd_ins|counter_2[11]               ; 0                 ; 6       ;
 ;      - binary_bcd:binary_bcd_ins|counter_2[10]               ; 0                 ; 6       ;
 ;      - binary_bcd:binary_bcd_ins|counter_2[9]                ; 0                 ; 6       ;
 ;      - binary_bcd:binary_bcd_ins|counter_2[8]                ; 0                 ; 6       ;
+;      - binary_bcd:binary_bcd_ins|counter_2[15]               ; 0                 ; 6       ;
+;      - binary_bcd:binary_bcd_ins|counter_2[14]               ; 0                 ; 6       ;
+;      - binary_bcd:binary_bcd_ins|counter_2[7]                ; 0                 ; 6       ;
+;      - binary_bcd:binary_bcd_ins|counter_2[6]                ; 0                 ; 6       ;
 ;      - binary_bcd:binary_bcd_ins|counter_2[5]                ; 0                 ; 6       ;
 ;      - binary_bcd:binary_bcd_ins|counter_2[4]                ; 0                 ; 6       ;
 ;      - binary_bcd:binary_bcd_ins|counter_2[3]                ; 0                 ; 6       ;
 ;      - binary_bcd:binary_bcd_ins|counter_2[2]                ; 0                 ; 6       ;
 ;      - binary_bcd:binary_bcd_ins|counter_2[1]                ; 0                 ; 6       ;
 ;      - binary_bcd:binary_bcd_ins|counter_2[0]                ; 0                 ; 6       ;
-;      - binary_bcd:binary_bcd_ins|counter_2[7]                ; 0                 ; 6       ;
-;      - binary_bcd:binary_bcd_ins|counter_2[6]                ; 0                 ; 6       ;
 ;      - binary_bcd:binary_bcd_ins|bcd_signal[27]              ; 0                 ; 6       ;
 ;      - binary_bcd:binary_bcd_ins|bcd_signal[26]              ; 0                 ; 6       ;
 ;      - binary_bcd:binary_bcd_ins|bcd_signal[25]              ; 0                 ; 6       ;
-;      - amp_buzzer:buzzer_amplitude|CurrentState.S2           ; 0                 ; 6       ;
+;      - binary_bcd:binary_bcd_ins|bcd_signal[13]              ; 0                 ; 6       ;
 ;      - freq_buzz_gen:buzzer_frequency|counter[0]             ; 0                 ; 6       ;
 ;      - freq_buzz_gen:buzzer_frequency|CurrentState.S2        ; 0                 ; 6       ;
 ;      - registers:sync2|q_outputs[6]                          ; 0                 ; 6       ;
@@ -1657,8 +1600,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - registers:sync2|q_outputs[11]                         ; 0                 ; 6       ;
 ;      - binary_bcd:binary_bcd_ins|CurrentState.S4             ; 0                 ; 6       ;
 ;      - binary_bcd:binary_bcd_ins|CurrentState.S5             ; 0                 ; 6       ;
-;      - binary_bcd:binary_bcd_ins|CurrentState.S2             ; 0                 ; 6       ;
 ;      - binary_bcd:binary_bcd_ins|CurrentState.S3             ; 0                 ; 6       ;
+;      - binary_bcd:binary_bcd_ins|CurrentState.S2             ; 0                 ; 6       ;
 ;      - binary_bcd:binary_bcd_ins|CurrentState.S1             ; 0                 ; 6       ;
 ;      - binary_bcd:binary_bcd_ins|CurrentState.S0             ; 0                 ; 6       ;
 ;      - registers:sync1|q_outputs[6]                          ; 0                 ; 6       ;
@@ -1673,9 +1616,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - registers:sync1|q_outputs[9]                          ; 0                 ; 6       ;
 ;      - registers:sync1|q_outputs[10]                         ; 0                 ; 6       ;
 ;      - registers:sync1|q_outputs[11]                         ; 0                 ; 6       ;
-;      - downcounter:down|zero~0                               ; 0                 ; 6       ;
 ;      - clk_divider_buzz:clk_div|clock_out~0                  ; 0                 ; 6       ;
-;      - downcounter:down|current_count[29]~33                 ; 0                 ; 6       ;
 ;      - clk_divider_buzz:clk_div|current_count~0              ; 0                 ; 6       ;
 ;      - clk_divider_buzz:clk_div|current_count~1              ; 0                 ; 6       ;
 ;      - clk_divider_buzz:clk_div|current_count~2              ; 0                 ; 6       ;
@@ -1692,8 +1633,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - clk_divider_buzz:clk_div|current_count~13             ; 0                 ; 6       ;
 ;      - clk_divider_buzz:clk_div|current_count~14             ; 0                 ; 6       ;
 ;      - clk_divider_buzz:clk_div|current_count~15             ; 0                 ; 6       ;
-;      - binary_bcd:binary_bcd_ins|bcd_signal[0]               ; 0                 ; 6       ;
-;      - reset~_wirecell                                       ; 0                 ; 6       ;
 +--------------------------------------------------------------+-------------------+---------+
 
 
@@ -1703,26 +1642,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                                                                                                                                                                                        ; Location           ; Fan-Out ; Usage                                   ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+---------+-----------------------------------------+--------+----------------------+------------------+---------------------------+
 ; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_altpll_sys:altpll_sys|adc_qsys_altpll_sys_altpll_oc92:sd1|wire_pll7_clk[0]                                                           ; PLL_1              ; 90      ; Clock                                   ; yes    ; Global Clock         ; GCLK19           ; --                        ;
-; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|arc_to_conv~0   ; LCCOMB_X45_Y46_N26 ; 8       ; Sync. clear                             ; no     ; --                   ; --               ; --                        ;
-; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|conv_dly1_s_flp ; FF_X46_Y47_N17     ; 16      ; Clock enable                            ; no     ; --                   ; --               ; --                        ;
-; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|int_timer[0]~24 ; LCCOMB_X45_Y46_N28 ; 8       ; Clock enable                            ; no     ; --                   ; --               ; --                        ;
-; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|load_dout~0     ; LCCOMB_X45_Y47_N4  ; 12      ; Clock enable                            ; no     ; --                   ; --               ; --                        ;
-; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller_001|altera_reset_synchronizer:alt_rst_sync_uq1|altera_reset_synchronizer_int_chain_out                 ; FF_X44_Y46_N21     ; 58      ; Async. clear                            ; no     ; --                   ; --               ; --                        ;
-; ADC_Conversion:ADC_Conversion_ins|response_valid                                                                                                                                            ; LCCOMB_X46_Y47_N12 ; 30      ; Clock enable                            ; no     ; --                   ; --               ; --                        ;
-; binary_bcd:binary_bcd_ins|CurrentState.S5                                                                                                                                                   ; FF_X45_Y31_N29     ; 27      ; Sync. load                              ; no     ; --                   ; --               ; --                        ;
-; binary_bcd:binary_bcd_ins|CurrentState.s6                                                                                                                                                   ; FF_X45_Y31_N31     ; 61      ; Clock enable, Sync. clear               ; no     ; --                   ; --               ; --                        ;
-; binary_bcd:binary_bcd_ins|Selector28~2                                                                                                                                                      ; LCCOMB_X45_Y31_N14 ; 12      ; Clock enable                            ; no     ; --                   ; --               ; --                        ;
-; binary_bcd:binary_bcd_ins|Selector29~0                                                                                                                                                      ; LCCOMB_X45_Y31_N16 ; 17      ; Clock enable                            ; no     ; --                   ; --               ; --                        ;
-; binary_bcd:binary_bcd_ins|bcd_signal[13]~45                                                                                                                                                 ; LCCOMB_X45_Y31_N0  ; 4       ; Clock enable                            ; no     ; --                   ; --               ; --                        ;
-; binary_bcd:binary_bcd_ins|bcd_signal[17]~44                                                                                                                                                 ; LCCOMB_X63_Y37_N30 ; 4       ; Clock enable                            ; no     ; --                   ; --               ; --                        ;
-; binary_bcd:binary_bcd_ins|bcd_signal[24]~43                                                                                                                                                 ; LCCOMB_X63_Y37_N20 ; 4       ; Clock enable                            ; no     ; --                   ; --               ; --                        ;
+; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|arc_to_conv~0   ; LCCOMB_X44_Y37_N4  ; 8       ; Sync. clear                             ; no     ; --                   ; --               ; --                        ;
+; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|conv_dly1_s_flp ; FF_X47_Y39_N23     ; 16      ; Clock enable                            ; no     ; --                   ; --               ; --                        ;
+; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|int_timer[5]~24 ; LCCOMB_X44_Y37_N2  ; 8       ; Clock enable                            ; no     ; --                   ; --               ; --                        ;
+; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|load_dout~0     ; LCCOMB_X50_Y41_N0  ; 12      ; Clock enable                            ; no     ; --                   ; --               ; --                        ;
+; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller_001|altera_reset_synchronizer:alt_rst_sync_uq1|altera_reset_synchronizer_int_chain_out                 ; FF_X47_Y39_N1      ; 58      ; Async. clear                            ; no     ; --                   ; --               ; --                        ;
+; ADC_Conversion:ADC_Conversion_ins|response_valid                                                                                                                                            ; LCCOMB_X47_Y39_N24 ; 30      ; Clock enable                            ; no     ; --                   ; --               ; --                        ;
+; binary_bcd:binary_bcd_ins|CurrentState.S5                                                                                                                                                   ; FF_X60_Y43_N17     ; 15      ; Sync. load                              ; no     ; --                   ; --               ; --                        ;
+; binary_bcd:binary_bcd_ins|CurrentState.s6                                                                                                                                                   ; FF_X63_Y43_N13     ; 46      ; Clock enable, Sync. clear               ; no     ; --                   ; --               ; --                        ;
+; binary_bcd:binary_bcd_ins|Selector29~0                                                                                                                                                      ; LCCOMB_X63_Y43_N24 ; 17      ; Clock enable                            ; no     ; --                   ; --               ; --                        ;
+; binary_bcd:binary_bcd_ins|bcd_signal[15]~32                                                                                                                                                 ; LCCOMB_X58_Y41_N24 ; 4       ; Clock enable                            ; no     ; --                   ; --               ; --                        ;
+; binary_bcd:binary_bcd_ins|bcd_signal[20]~31                                                                                                                                                 ; LCCOMB_X58_Y41_N30 ; 4       ; Clock enable                            ; no     ; --                   ; --               ; --                        ;
+; binary_bcd:binary_bcd_ins|bcd_signal[22]~30                                                                                                                                                 ; LCCOMB_X57_Y39_N16 ; 4       ; Clock enable                            ; no     ; --                   ; --               ; --                        ;
 ; clk                                                                                                                                                                                         ; PIN_P11            ; 2       ; Clock                                   ; no     ; --                   ; --               ; --                        ;
-; clk                                                                                                                                                                                         ; PIN_P11            ; 412     ; Clock                                   ; yes    ; Global Clock         ; GCLK18           ; --                        ;
-; clk_divider_buzz:clk_div|clock_out                                                                                                                                                          ; FF_X45_Y26_N11     ; 4       ; Clock enable                            ; no     ; --                   ; --               ; --                        ;
-; downcounter:down|current_count[29]~33                                                                                                                                                       ; LCCOMB_X54_Y47_N0  ; 31      ; Sync. load                              ; no     ; --                   ; --               ; --                        ;
-; downcounter:down|zero                                                                                                                                                                       ; FF_X54_Y47_N17     ; 13      ; Clock enable                            ; no     ; --                   ; --               ; --                        ;
-; registers:sync4|q_outputs[0]                                                                                                                                                                ; FF_X46_Y33_N13     ; 204     ; Clock enable                            ; no     ; --                   ; --               ; --                        ;
-; reset                                                                                                                                                                                       ; PIN_C10            ; 383     ; Async. clear, Clock enable, Sync. clear ; no     ; --                   ; --               ; --                        ;
+; clk                                                                                                                                                                                         ; PIN_P11            ; 343     ; Clock                                   ; yes    ; Global Clock         ; GCLK18           ; --                        ;
+; clk_divider_buzz:clk_div|clock_out                                                                                                                                                          ; FF_X41_Y30_N21     ; 4       ; Clock enable                            ; no     ; --                   ; --               ; --                        ;
+; registers:sync4|q_outputs[0]                                                                                                                                                                ; FF_X43_Y19_N31     ; 204     ; Clock enable                            ; no     ; --                   ; --               ; --                        ;
+; reset                                                                                                                                                                                       ; PIN_C10            ; 343     ; Async. clear, Clock enable, Sync. clear ; no     ; --                   ; --               ; --                        ;
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+---------+-----------------------------------------+--------+----------------------+------------------+---------------------------+
 
 
@@ -1732,7 +1668,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                                                                                                                              ; Location ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +-----------------------------------------------------------------------------------------------------------------------------------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 ; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_altpll_sys:altpll_sys|adc_qsys_altpll_sys_altpll_oc92:sd1|wire_pll7_clk[0] ; PLL_1    ; 90      ; 2                                    ; Global Clock         ; GCLK19           ; --                        ;
-; clk                                                                                                                               ; PIN_P11  ; 412     ; 0                                    ; Global Clock         ; GCLK18           ; --                        ;
+; clk                                                                                                                               ; PIN_P11  ; 343     ; 0                                    ; Global Clock         ; GCLK18           ; --                        ;
 +-----------------------------------------------------------------------------------------------------------------------------------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
@@ -1741,8 +1677,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------------------------------------------------------------------------------------------------+---------+
 ; Name                                                                                                                           ; Fan-Out ;
 +--------------------------------------------------------------------------------------------------------------------------------+---------+
-; lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_arg:auto_generated|op_1~16 ; 555     ;
-; lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_arg:auto_generated|op_1~2  ; 523     ;
+; lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_arg:auto_generated|op_1~16 ; 557     ;
+; lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_arg:auto_generated|op_1~2  ; 518     ;
 +--------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
@@ -1751,169 +1687,176 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+---------------------------+
 ; Routing Resource Type ; Usage                     ;
 +-----------------------+---------------------------+
-; Block interconnects   ; 2,540 / 148,641 ( 2 % )   ;
+; Block interconnects   ; 2,480 / 148,641 ( 2 % )   ;
 ; C16 interconnects     ; 54 / 5,382 ( 1 % )        ;
-; C4 interconnects      ; 1,272 / 106,704 ( 1 % )   ;
-; Direct links          ; 409 / 148,641 ( < 1 % )   ;
+; C4 interconnects      ; 1,211 / 106,704 ( 1 % )   ;
+; Direct links          ; 287 / 148,641 ( < 1 % )   ;
 ; Global clocks         ; 2 / 20 ( 10 % )           ;
-; Local interconnects   ; 1,729 / 49,760 ( 3 % )    ;
+; Local interconnects   ; 1,642 / 49,760 ( 3 % )    ;
 ; NSLEEPs               ; 0 / 500 ( 0 % )           ;
-; R24 interconnects     ; 63 / 5,406 ( 1 % )        ;
-; R4 interconnects      ; 1,236 / 147,764 ( < 1 % ) ;
+; R24 interconnects     ; 55 / 5,406 ( 1 % )        ;
+; R4 interconnects      ; 1,375 / 147,764 ( < 1 % ) ;
 +-----------------------+---------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Logic Elements                                                          ;
 +---------------------------------------------+-------------------------------+
-; Number of Logic Elements  (Average = 14.64) ; Number of LABs  (Total = 176) ;
+; Number of Logic Elements  (Average = 13.50) ; Number of LABs  (Total = 181) ;
 +---------------------------------------------+-------------------------------+
-; 1                                           ; 5                             ;
+; 1                                           ; 8                             ;
 ; 2                                           ; 1                             ;
-; 3                                           ; 4                             ;
-; 4                                           ; 0                             ;
-; 5                                           ; 1                             ;
-; 6                                           ; 0                             ;
-; 7                                           ; 0                             ;
-; 8                                           ; 2                             ;
+; 3                                           ; 7                             ;
+; 4                                           ; 2                             ;
+; 5                                           ; 3                             ;
+; 6                                           ; 4                             ;
+; 7                                           ; 2                             ;
+; 8                                           ; 4                             ;
 ; 9                                           ; 1                             ;
-; 10                                          ; 0                             ;
-; 11                                          ; 1                             ;
-; 12                                          ; 4                             ;
-; 13                                          ; 3                             ;
-; 14                                          ; 9                             ;
-; 15                                          ; 17                            ;
-; 16                                          ; 128                           ;
+; 10                                          ; 2                             ;
+; 11                                          ; 5                             ;
+; 12                                          ; 1                             ;
+; 13                                          ; 2                             ;
+; 14                                          ; 6                             ;
+; 15                                          ; 15                            ;
+; 16                                          ; 118                           ;
 +---------------------------------------------+-------------------------------+
 
 
 +--------------------------------------------------------------------+
 ; LAB-wide Signals                                                   ;
 +------------------------------------+-------------------------------+
-; LAB-wide Signals  (Average = 0.72) ; Number of LABs  (Total = 176) ;
+; LAB-wide Signals  (Average = 0.80) ; Number of LABs  (Total = 181) ;
 +------------------------------------+-------------------------------+
-; 1 Async. clear                     ; 38                            ;
-; 1 Clock                            ; 47                            ;
-; 1 Clock enable                     ; 32                            ;
-; 1 Sync. clear                      ; 6                             ;
-; 1 Sync. load                       ; 4                             ;
+; 1 Async. clear                     ; 46                            ;
+; 1 Clock                            ; 56                            ;
+; 1 Clock enable                     ; 37                            ;
+; 1 Sync. clear                      ; 4                             ;
+; 1 Sync. load                       ; 1                             ;
 +------------------------------------+-------------------------------+
 
 
 +------------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                          ;
 +----------------------------------------------+-------------------------------+
-; Number of Signals Sourced  (Average = 17.01) ; Number of LABs  (Total = 176) ;
+; Number of Signals Sourced  (Average = 15.55) ; Number of LABs  (Total = 181) ;
 +----------------------------------------------+-------------------------------+
 ; 0                                            ; 0                             ;
-; 1                                            ; 4                             ;
-; 2                                            ; 1                             ;
-; 3                                            ; 4                             ;
+; 1                                            ; 5                             ;
+; 2                                            ; 5                             ;
+; 3                                            ; 0                             ;
 ; 4                                            ; 1                             ;
-; 5                                            ; 0                             ;
-; 6                                            ; 1                             ;
-; 7                                            ; 0                             ;
-; 8                                            ; 0                             ;
+; 5                                            ; 1                             ;
+; 6                                            ; 6                             ;
+; 7                                            ; 2                             ;
+; 8                                            ; 3                             ;
 ; 9                                            ; 3                             ;
-; 10                                           ; 1                             ;
-; 11                                           ; 0                             ;
-; 12                                           ; 3                             ;
-; 13                                           ; 3                             ;
-; 14                                           ; 8                             ;
-; 15                                           ; 13                            ;
-; 16                                           ; 94                            ;
-; 17                                           ; 2                             ;
-; 18                                           ; 1                             ;
-; 19                                           ; 1                             ;
-; 20                                           ; 3                             ;
-; 21                                           ; 1                             ;
-; 22                                           ; 1                             ;
-; 23                                           ; 4                             ;
-; 24                                           ; 1                             ;
-; 25                                           ; 3                             ;
-; 26                                           ; 2                             ;
-; 27                                           ; 4                             ;
-; 28                                           ; 1                             ;
-; 29                                           ; 3                             ;
-; 30                                           ; 3                             ;
-; 31                                           ; 7                             ;
-; 32                                           ; 3                             ;
+; 10                                           ; 4                             ;
+; 11                                           ; 3                             ;
+; 12                                           ; 2                             ;
+; 13                                           ; 2                             ;
+; 14                                           ; 6                             ;
+; 15                                           ; 14                            ;
+; 16                                           ; 93                            ;
+; 17                                           ; 1                             ;
+; 18                                           ; 3                             ;
+; 19                                           ; 3                             ;
+; 20                                           ; 4                             ;
+; 21                                           ; 0                             ;
+; 22                                           ; 0                             ;
+; 23                                           ; 1                             ;
+; 24                                           ; 3                             ;
+; 25                                           ; 1                             ;
+; 26                                           ; 0                             ;
+; 27                                           ; 0                             ;
+; 28                                           ; 2                             ;
+; 29                                           ; 2                             ;
+; 30                                           ; 2                             ;
+; 31                                           ; 5                             ;
+; 32                                           ; 4                             ;
 +----------------------------------------------+-------------------------------+
 
 
 +---------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                         ;
 +-------------------------------------------------+-------------------------------+
-; Number of Signals Sourced Out  (Average = 6.44) ; Number of LABs  (Total = 176) ;
+; Number of Signals Sourced Out  (Average = 5.93) ; Number of LABs  (Total = 181) ;
 +-------------------------------------------------+-------------------------------+
 ; 0                                               ; 0                             ;
 ; 1                                               ; 26                            ;
-; 2                                               ; 19                            ;
-; 3                                               ; 31                            ;
-; 4                                               ; 18                            ;
+; 2                                               ; 21                            ;
+; 3                                               ; 34                            ;
+; 4                                               ; 28                            ;
 ; 5                                               ; 17                            ;
-; 6                                               ; 10                            ;
-; 7                                               ; 4                             ;
+; 6                                               ; 11                            ;
+; 7                                               ; 6                             ;
 ; 8                                               ; 3                             ;
-; 9                                               ; 4                             ;
+; 9                                               ; 3                             ;
 ; 10                                              ; 1                             ;
-; 11                                              ; 4                             ;
-; 12                                              ; 8                             ;
-; 13                                              ; 5                             ;
-; 14                                              ; 7                             ;
-; 15                                              ; 4                             ;
-; 16                                              ; 8                             ;
-; 17                                              ; 0                             ;
+; 11                                              ; 1                             ;
+; 12                                              ; 2                             ;
+; 13                                              ; 6                             ;
+; 14                                              ; 3                             ;
+; 15                                              ; 5                             ;
+; 16                                              ; 4                             ;
+; 17                                              ; 1                             ;
 ; 18                                              ; 0                             ;
 ; 19                                              ; 0                             ;
 ; 20                                              ; 0                             ;
-; 21                                              ; 0                             ;
+; 21                                              ; 1                             ;
 ; 22                                              ; 0                             ;
-; 23                                              ; 1                             ;
-; 24                                              ; 3                             ;
-; 25                                              ; 3                             ;
+; 23                                              ; 0                             ;
+; 24                                              ; 2                             ;
+; 25                                              ; 2                             ;
+; 26                                              ; 2                             ;
+; 27                                              ; 1                             ;
+; 28                                              ; 1                             ;
 +-------------------------------------------------+-------------------------------+
 
 
 +------------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                          ;
 +----------------------------------------------+-------------------------------+
-; Number of Distinct Inputs  (Average = 13.08) ; Number of LABs  (Total = 176) ;
+; Number of Distinct Inputs  (Average = 12.67) ; Number of LABs  (Total = 181) ;
 +----------------------------------------------+-------------------------------+
 ; 0                                            ; 0                             ;
-; 1                                            ; 1                             ;
+; 1                                            ; 0                             ;
 ; 2                                            ; 2                             ;
-; 3                                            ; 1                             ;
-; 4                                            ; 7                             ;
-; 5                                            ; 2                             ;
-; 6                                            ; 5                             ;
-; 7                                            ; 12                            ;
-; 8                                            ; 22                            ;
-; 9                                            ; 18                            ;
-; 10                                           ; 12                            ;
-; 11                                           ; 21                            ;
-; 12                                           ; 6                             ;
-; 13                                           ; 5                             ;
-; 14                                           ; 4                             ;
-; 15                                           ; 5                             ;
-; 16                                           ; 5                             ;
-; 17                                           ; 6                             ;
-; 18                                           ; 4                             ;
-; 19                                           ; 7                             ;
-; 20                                           ; 1                             ;
-; 21                                           ; 0                             ;
-; 22                                           ; 5                             ;
+; 3                                            ; 3                             ;
+; 4                                            ; 8                             ;
+; 5                                            ; 5                             ;
+; 6                                            ; 9                             ;
+; 7                                            ; 11                            ;
+; 8                                            ; 21                            ;
+; 9                                            ; 15                            ;
+; 10                                           ; 11                            ;
+; 11                                           ; 16                            ;
+; 12                                           ; 9                             ;
+; 13                                           ; 10                            ;
+; 14                                           ; 7                             ;
+; 15                                           ; 6                             ;
+; 16                                           ; 7                             ;
+; 17                                           ; 4                             ;
+; 18                                           ; 6                             ;
+; 19                                           ; 2                             ;
+; 20                                           ; 2                             ;
+; 21                                           ; 4                             ;
+; 22                                           ; 2                             ;
 ; 23                                           ; 2                             ;
-; 24                                           ; 1                             ;
-; 25                                           ; 2                             ;
-; 26                                           ; 4                             ;
-; 27                                           ; 2                             ;
-; 28                                           ; 4                             ;
-; 29                                           ; 2                             ;
+; 24                                           ; 0                             ;
+; 25                                           ; 0                             ;
+; 26                                           ; 3                             ;
+; 27                                           ; 3                             ;
+; 28                                           ; 3                             ;
+; 29                                           ; 1                             ;
 ; 30                                           ; 2                             ;
-; 31                                           ; 2                             ;
-; 32                                           ; 1                             ;
-; 33                                           ; 2                             ;
+; 31                                           ; 0                             ;
+; 32                                           ; 2                             ;
+; 33                                           ; 1                             ;
+; 34                                           ; 0                             ;
+; 35                                           ; 1                             ;
+; 36                                           ; 1                             ;
+; 37                                           ; 1                             ;
 +----------------------------------------------+-------------------------------+
 
 
@@ -1974,9 +1917,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
 ; Pin/Rules          ; IO_000001 ; IO_000002    ; IO_000003 ; IO_000004    ; IO_000005    ; IO_000006 ; IO_000007 ; IO_000008    ; IO_000009 ; IO_000010 ; IO_000011    ; IO_000012    ; IO_000013    ; IO_000014    ; IO_000015    ; IO_000018    ; IO_000019    ; IO_000020    ; IO_000021    ; IO_000022    ; IO_000023    ; IO_000024    ; IO_000026    ; IO_000027    ; IO_000045    ; IO_000046    ; IO_000047    ; IO_000033 ; IO_000034    ; IO_000042    ;
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
-; Total Pass         ; 63        ; 0            ; 63        ; 0            ; 0            ; 63        ; 63        ; 0            ; 63        ; 63        ; 0            ; 59           ; 0            ; 0            ; 4            ; 0            ; 59           ; 4            ; 0            ; 0            ; 0            ; 59           ; 0            ; 0            ; 0            ; 0            ; 0            ; 63        ; 0            ; 0            ;
+; Total Pass         ; 62        ; 0            ; 62        ; 0            ; 0            ; 62        ; 62        ; 0            ; 62        ; 62        ; 0            ; 59           ; 0            ; 0            ; 3            ; 0            ; 59           ; 3            ; 0            ; 0            ; 0            ; 59           ; 0            ; 0            ; 0            ; 0            ; 0            ; 62        ; 0            ; 0            ;
 ; Total Unchecked    ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
-; Total Inapplicable ; 0         ; 63           ; 0         ; 63           ; 63           ; 0         ; 0         ; 63           ; 0         ; 0         ; 63           ; 4            ; 63           ; 63           ; 59           ; 63           ; 4            ; 59           ; 63           ; 63           ; 63           ; 4            ; 63           ; 63           ; 63           ; 63           ; 63           ; 0         ; 63           ; 63           ;
+; Total Inapplicable ; 0         ; 62           ; 0         ; 62           ; 62           ; 0         ; 0         ; 62           ; 0         ; 0         ; 62           ; 3            ; 62           ; 62           ; 59           ; 62           ; 3            ; 59           ; 62           ; 62           ; 62           ; 3            ; 62           ; 62           ; 62           ; 62           ; 62           ; 0         ; 62           ; 62           ;
 ; Total Fail         ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
 ; LEDR[0]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; LEDR[1]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
@@ -2038,7 +1981,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; HEX[0][7]          ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; buzzer             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; Selecter           ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; switch_buzzer      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; clk                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; reset              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
@@ -2086,9 +2028,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------------------+------------------------------------------------------+-------------------+
 ; Source Clock(s)                                  ; Destination Clock(s)                                 ; Delay Added in ns ;
 +--------------------------------------------------+------------------------------------------------------+-------------------+
-; ADC_Conversion_ins|u0|altpll_sys|sd1|pll7|clk[0] ; clk                                                  ; 83.5              ;
-; ADC_Conversion_ins|u0|altpll_sys|sd1|pll7|clk[0] ; clk,ADC_Conversion_ins|u0|altpll_sys|sd1|pll7|clk[0] ; 3.8               ;
-; ADC_Conversion_ins|u0|altpll_sys|sd1|pll7|clk[0] ; ADC_Conversion_ins|u0|altpll_sys|sd1|pll7|clk[0]     ; 2.1               ;
+; ADC_Conversion_ins|u0|altpll_sys|sd1|pll7|clk[0] ; clk                                                  ; 77.8              ;
+; ADC_Conversion_ins|u0|altpll_sys|sd1|pll7|clk[0] ; clk,ADC_Conversion_ins|u0|altpll_sys|sd1|pll7|clk[0] ; 3.6               ;
 +--------------------------------------------------+------------------------------------------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
@@ -2099,33 +2040,30 @@ This will disable optimization of problematic paths and expose them for further 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
 ; Source Register                                                                                                                                                                                                                    ; Destination Register                                                                                                                                                                               ; Delay Added in ns ;
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
-; ADC_Conversion:ADC_Conversion_ins|vol[9]                                                                                                                                                                                           ; registers:sync1|q_outputs[9]                                                                                                                                                                       ; 7.024             ;
-; ADC_Conversion:ADC_Conversion_ins|vol[11]                                                                                                                                                                                          ; registers:sync1|q_outputs[11]                                                                                                                                                                      ; 6.999             ;
-; ADC_Conversion:ADC_Conversion_ins|vol[7]                                                                                                                                                                                           ; registers:sync1|q_outputs[7]                                                                                                                                                                       ; 6.821             ;
-; ADC_Conversion:ADC_Conversion_ins|vol[8]                                                                                                                                                                                           ; registers:sync1|q_outputs[8]                                                                                                                                                                       ; 6.746             ;
-; ADC_Conversion:ADC_Conversion_ins|vol[6]                                                                                                                                                                                           ; registers:sync1|q_outputs[6]                                                                                                                                                                       ; 6.704             ;
-; ADC_Conversion:ADC_Conversion_ins|vol[5]                                                                                                                                                                                           ; registers:sync1|q_outputs[5]                                                                                                                                                                       ; 6.683             ;
-; ADC_Conversion:ADC_Conversion_ins|vol[4]                                                                                                                                                                                           ; registers:sync1|q_outputs[4]                                                                                                                                                                       ; 6.679             ;
-; ADC_Conversion:ADC_Conversion_ins|vol[3]                                                                                                                                                                                           ; registers:sync1|q_outputs[3]                                                                                                                                                                       ; 6.673             ;
-; ADC_Conversion:ADC_Conversion_ins|vol[1]                                                                                                                                                                                           ; registers:sync1|q_outputs[1]                                                                                                                                                                       ; 6.673             ;
-; ADC_Conversion:ADC_Conversion_ins|vol[10]                                                                                                                                                                                          ; registers:sync1|q_outputs[10]                                                                                                                                                                      ; 6.628             ;
-; ADC_Conversion:ADC_Conversion_ins|vol[2]                                                                                                                                                                                           ; registers:sync1|q_outputs[2]                                                                                                                                                                       ; 6.609             ;
-; ADC_Conversion:ADC_Conversion_ins|vol[0]                                                                                                                                                                                           ; registers:sync1|q_outputs[0]                                                                                                                                                                       ; 6.609             ;
-; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|rsp_valid                                              ; registers:sync3|q_outputs[0]                                                                                                                                                                       ; 6.436             ;
+; ADC_Conversion:ADC_Conversion_ins|vol[9]                                                                                                                                                                                           ; registers:sync1|q_outputs[9]                                                                                                                                                                       ; 7.140             ;
+; ADC_Conversion:ADC_Conversion_ins|vol[6]                                                                                                                                                                                           ; registers:sync1|q_outputs[6]                                                                                                                                                                       ; 7.140             ;
+; ADC_Conversion:ADC_Conversion_ins|vol[2]                                                                                                                                                                                           ; registers:sync1|q_outputs[2]                                                                                                                                                                       ; 7.140             ;
+; ADC_Conversion:ADC_Conversion_ins|vol[7]                                                                                                                                                                                           ; registers:sync1|q_outputs[7]                                                                                                                                                                       ; 6.147             ;
+; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|rsp_valid                                              ; registers:sync3|q_outputs[0]                                                                                                                                                                       ; 6.146             ;
+; ADC_Conversion:ADC_Conversion_ins|vol[10]                                                                                                                                                                                          ; registers:sync1|q_outputs[10]                                                                                                                                                                      ; 6.135             ;
+; ADC_Conversion:ADC_Conversion_ins|vol[8]                                                                                                                                                                                           ; registers:sync1|q_outputs[8]                                                                                                                                                                       ; 6.135             ;
+; ADC_Conversion:ADC_Conversion_ins|vol[0]                                                                                                                                                                                           ; registers:sync1|q_outputs[0]                                                                                                                                                                       ; 6.123             ;
+; ADC_Conversion:ADC_Conversion_ins|vol[1]                                                                                                                                                                                           ; registers:sync1|q_outputs[1]                                                                                                                                                                       ; 6.012             ;
+; ADC_Conversion:ADC_Conversion_ins|vol[4]                                                                                                                                                                                           ; registers:sync1|q_outputs[4]                                                                                                                                                                       ; 5.962             ;
+; ADC_Conversion:ADC_Conversion_ins|vol[11]                                                                                                                                                                                          ; registers:sync1|q_outputs[11]                                                                                                                                                                      ; 5.862             ;
+; ADC_Conversion:ADC_Conversion_ins|vol[5]                                                                                                                                                                                           ; registers:sync1|q_outputs[5]                                                                                                                                                                       ; 5.757             ;
+; ADC_Conversion:ADC_Conversion_ins|vol[3]                                                                                                                                                                                           ; registers:sync1|q_outputs[3]                                                                                                                                                                       ; 5.687             ;
 ; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|pend                                                   ; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|rsp_channel[0]         ; 0.204             ;
-; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|dout_flp[10]                                           ; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|rsp_data[10]           ; 0.096             ;
-; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|dout_flp[5]                                            ; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|rsp_data[5]            ; 0.096             ;
-; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|dout_flp[2]                                            ; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|rsp_data[2]            ; 0.096             ;
-; freq_buzz_gen:buzzer_frequency|CurrentState.S2                                                                                                                                                                                     ; freq_buzz_gen:buzzer_frequency|counter[3]                                                                                                                                                          ; 0.067             ;
-; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|int_timer[6]                                           ; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|ctrl_state.PWRDWN_TSEN ; 0.055             ;
-; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_std_synchronizer:u_clk_dft_synchronizer|dreg[0] ; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|chsel[0]               ; 0.054             ;
-; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|ctrl_state.GETCMD                                      ; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|ctrl_state.CONV        ; 0.047             ;
-; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|ctrl_state.PWRDWN                                      ; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|ctrl_state.PWRDWN_TSEN ; 0.046             ;
-; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|int_timer[7]                                           ; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|int_timer[7]           ; 0.046             ;
-; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|conv_dly1_s_flp                                        ; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|rsp_channel[0]         ; 0.046             ;
-; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|ctrl_state.CONV                                        ; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|chsel[0]               ; 0.031             ;
+; freq_buzz_gen:buzzer_frequency|CurrentState.S2                                                                                                                                                                                     ; freq_buzz_gen:buzzer_frequency|counter[3]                                                                                                                                                          ; 0.062             ;
+; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_std_synchronizer:u_clk_dft_synchronizer|dreg[0] ; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|chsel[0]               ; 0.056             ;
+; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|ctrl_state.PWRDWN                                      ; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|ctrl_state.PWRDWN_TSEN ; 0.048             ;
+; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|int_timer[7]                                           ; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|int_timer[7]           ; 0.048             ;
+; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|ctrl_state.GETCMD                                      ; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|ctrl_state.CONV        ; 0.048             ;
+; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|conv_dly1_s_flp                                        ; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|rsp_channel[0]         ; 0.048             ;
+; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|ctrl_state.PUTRESP_DLY3                                ; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|chsel[0]               ; 0.047             ;
+; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|ctrl_state.CONV                                        ; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|chsel[0]               ; 0.033             ;
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
-Note: This table only shows the top 25 path(s) that have the largest delay added for hold.
+Note: This table only shows the top 22 path(s) that have the largest delay added for hold.
 
 
 +-----------------+
@@ -2304,21 +2242,22 @@ Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "VGA_R[2]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "VGA_R[3]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "VGA_VS" is assigned to location or region, but does not exist in design
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:02
+    Warning (15706): Node "switch_buzzer" is assigned to location or region, but does not exist in design
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:04
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:02
 Info (170193): Fitter routing operations beginning
-Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 9% of the available device resources in the region that extends from location X33_Y22 to location X44_Y32
+Info (170195): Router estimated average interconnect usage is 1% of the available device resources
+    Info (170196): Router estimated peak interconnect usage is 12% of the available device resources in the region that extends from location X33_Y22 to location X44_Y32
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
-Info (11888): Total time spent on timing analysis during the Fitter is 0.69 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.62 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -2326,11 +2265,11 @@ Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:02
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Info (144001): Generated suppressed messages file H:/Github/NasihNazeem/ENEL-453-Labs/Lab 4/output_files/Voltmeter.fit.smsg
-Info: Quartus Prime Fitter was successful. 0 errors, 95 warnings
-    Info: Peak virtual memory: 6261 megabytes
-    Info: Processing ended: Mon Nov 29 00:38:43 2021
-    Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:32
+Info: Quartus Prime Fitter was successful. 0 errors, 96 warnings
+    Info: Peak virtual memory: 6258 megabytes
+    Info: Processing ended: Tue Nov 30 18:42:35 2021
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:28
 
 
 +----------------------------+

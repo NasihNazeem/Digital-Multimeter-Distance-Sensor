@@ -5,12 +5,6 @@ CurrentState.S0 0 0 0
 CurrentState.S1 0 1 1 
 CurrentState.S2 1 0 1 
 
-State Machine - |Voltmeter|amp_buzzer:buzzer_amplitude|CurrentState
-Name CurrentState.S2 CurrentState.S1 CurrentState.S0 
-CurrentState.S0 0 0 0 
-CurrentState.S1 0 1 1 
-CurrentState.S2 1 0 1 
-
 State Machine - |Voltmeter|binary_bcd:binary_bcd_ins|CurrentState
 Name CurrentState.s7 CurrentState.s6 CurrentState.S5 CurrentState.S4 CurrentState.S3 CurrentState.S2 CurrentState.S1 CurrentState.S0 
 CurrentState.S0 0 0 0 0 0 0 0 0 

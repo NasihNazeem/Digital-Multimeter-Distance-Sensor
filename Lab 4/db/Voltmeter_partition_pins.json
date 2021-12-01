@@ -172,10 +172,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "switch_buzzer",
-					"strict" : false
-				},
-				{
 					"name" : "clk",
 					"strict" : false
 				},

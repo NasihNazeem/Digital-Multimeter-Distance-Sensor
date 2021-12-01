@@ -1,5 +1,5 @@
 Flow report for Voltmeter
-Mon Nov 29 00:38:52 2021
+Tue Nov 30 18:44:31 2021
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,24 +40,24 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Mon Nov 29 00:38:47 2021       ;
+; Flow Status                        ; Successful - Tue Nov 30 18:44:31 2021       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Voltmeter                                   ;
 ; Top-level Entity Name              ; Voltmeter                                   ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M50DAF484C7G                              ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 2,576 / 49,760 ( 5 % )                      ;
-;     Total combinational functions  ; 2,415 / 49,760 ( 5 % )                      ;
-;     Dedicated logic registers      ; 502 / 49,760 ( 1 % )                        ;
-; Total registers                    ; 502                                         ;
-; Total pins                         ; 63 / 360 ( 18 % )                           ;
+; Total logic elements               ; 2,599                                       ;
+;     Total combinational functions  ; 2,309                                       ;
+;     Dedicated logic registers      ; 459                                         ;
+; Total registers                    ; 459                                         ;
+; Total pins                         ; 62                                          ;
 ; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0 / 1,677,312 ( 0 % )                       ;
-; Embedded Multiplier 9-bit elements ; 0 / 288 ( 0 % )                             ;
-; Total PLLs                         ; 1 / 4 ( 25 % )                              ;
-; UFM blocks                         ; 0 / 1 ( 0 % )                               ;
-; ADC blocks                         ; 1 / 2 ( 50 % )                              ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 1                                           ;
+; UFM blocks                         ; 0                                           ;
+; ADC blocks                         ; 1                                           ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -66,7 +66,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/29/2021 00:38:04 ;
+; Start date & time ; 11/30/2021 18:44:09 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Voltmeter           ;
 +-------------------+---------------------+
@@ -77,7 +77,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+------------------------------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                                      ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+------------------------------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 49410866640184.163817148416836                             ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 49410866640184.163832304812264                             ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                                         ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                                          ; --            ; --          ; --         ;
 ; MISC_FILE                           ; adc_qsys/synthesis/../adc_qsys.cmp                         ; --            ; --          ; --         ;
@@ -100,11 +100,8 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:22     ; 1.0                     ; 4873 MB             ; 00:00:30                           ;
-; Fitter               ; 00:00:15     ; 1.5                     ; 6261 MB             ; 00:00:31                           ;
-; Assembler            ; 00:00:03     ; 1.0                     ; 4689 MB             ; 00:00:02                           ;
-; Timing Analyzer      ; 00:00:04     ; 2.1                     ; 4962 MB             ; 00:00:06                           ;
-; Total                ; 00:00:44     ; --                      ; --                  ; 00:01:09                           ;
+; Analysis & Synthesis ; 00:00:23     ; 1.0                     ; 4874 MB             ; 00:00:29                           ;
+; Total                ; 00:00:23     ; --                      ; --                  ; 00:00:29                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -114,9 +111,6 @@ refer to the applicable agreement for further details.
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
 ; Analysis & Synthesis ; DESKTOP-808TLKQ  ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; DESKTOP-808TLKQ  ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; DESKTOP-808TLKQ  ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; DESKTOP-808TLKQ  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -124,9 +118,6 @@ refer to the applicable agreement for further details.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off Lab4 -c Voltmeter
-quartus_fit --read_settings_files=off --write_settings_files=off Lab4 -c Voltmeter
-quartus_asm --read_settings_files=off --write_settings_files=off Lab4 -c Voltmeter
-quartus_sta Lab4 -c Voltmeter
 
 
 

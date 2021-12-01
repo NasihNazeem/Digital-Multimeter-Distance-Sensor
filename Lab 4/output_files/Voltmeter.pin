@@ -190,7 +190,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : D8        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : D9        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D10       :        :                   :         : 8         :                
 GND                          : D11       : gnd    :                   :         :           :                
-switch_buzzer                : D12       : input  : 2.5 V             :         : 7         : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D12       :        :                   :         : 7         :                
 LEDR[4]                      : D13       : output : 2.5 V             :         : 7         : Y              
 LEDR[7]                      : D14       : output : 2.5 V             :         : 7         : Y              
 HEX[0][7]                    : D15       : output : 2.5 V             :         : 7         : Y              

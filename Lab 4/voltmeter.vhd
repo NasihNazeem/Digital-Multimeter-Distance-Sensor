@@ -9,8 +9,8 @@ entity Voltmeter is
            LEDR                          : out STD_LOGIC_VECTOR (9 downto 0);
            HEX 								  : out HexType;
 			  buzzer								  : out STD_LOGIC;
-			  Selecter							  : in STD_LOGIC; -- Added this
-			  switch_buzzer					  : in  STD_LOGIC
+			  Selecter							  : in STD_LOGIC -- Added this
+--			  switch_buzzer					  : in  STD_LOGIC
           );
            
 end Voltmeter;
@@ -41,7 +41,8 @@ Signal mux_output: std_logic_vector(12 downto 0);
 
 -- Mux component
 Component mux is
-	port( mux_voltage : in std_logic_vector(12 downto 0);
+	port( clk			: in std_logic;
+			mux_voltage : in std_logic_vector(12 downto 0);
 			mux_distance : in std_logic_vector(12 downto 0);
 			Selecter	 : in std_logic;
 			Y	 : out std_logic_vector(12 downto 0)
@@ -168,7 +169,7 @@ begin
 					  "1111";
    Num_Hex(4) <= "1111";  -- blank this display
    Num_Hex(5) <= "1111";  -- blank this display   
-	DP_in <= "001000" when Selecter = '1' else 
+	DP_in <= "001000" when (Selecter = '1') else 
 				"000100";
 				
 	
@@ -177,6 +178,7 @@ begin
 -- Mux instantiation
 multiplexer: mux
 				 port map(
+							 clk => clk,
 							 mux_voltage => mult_output,
 							 mux_distance => v2d_distance_output,
 							 Selecter   => Selecter,
@@ -278,39 +280,39 @@ binary_bcd_ins: binary_bcd
       bcd      => bcd_original         
       );
 		
-down: downcounter      
-		port map (  clk		=>		clk,
-						reset		=>		reset,
-						enable	=>		'1',
-						zero		=>		pulse,
-						f_c		=>		5000
-         );
+--down: downcounter      
+--		port map (  clk		=>		clk,
+--						reset		=>		reset,
+--						enable	=>		'1',
+--						zero		=>		pulse,
+--						f_c		=>		5000
+--         );
 
-buzzer_amplitude: amp_buzzer
-   port map  ( 
-				 clk							=>		clk,
-				 clk_1kHz_pulse			=>		pulse,
-				 reset						=>		reset,
-             amp_buzz					=>		v2d_distance_output,
-				 amp_wave					=>		amp_wa
-           );
-			  
+--buzzer_amplitude: amp_buzzer
+--   port map  ( 
+--				 clk							=>		clk,
+--				 clk_1kHz_pulse			=>		pulse,
+--				 reset						=>		reset,
+--             amp_buzz					=>		v2d_distance_output,
+--				 amp_wave					=>		amp_wa
+--           );
+--			  
 buzzer_frequency: freq_buzz_gen
       port map (
 		clk 					=>		clk,
 		reset 				=> 	reset,
 		freq_clk				=> 	freq_clk,
-		freq_buzz			=> 	freq_wa
+		freq_buzz			=> 	buzzer
 		);		
 		
 		
-buzzer_multiplexer: MUX_BUZZER
-      port map (
-		in1 		=>		freq_wa,
-		in2 		=> 	amp_wa,
-		s 			=> 	switch_buzzer,
-		mux_out  => 	buzzer
-		);		
+--buzzer_multiplexer: MUX_BUZZER
+--      port map (
+--		in1 		=>		freq_wa,
+--		in2 		=> 	amp_wa,
+--		s 			=> 	switch_buzzer,
+--		mux_out  => 	buzzer
+--		);		
 		
 clk_div: clk_divider_buzz
       port map (
