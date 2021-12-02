@@ -12,21 +12,21 @@ entity PWM_DAC is
 end PWM_DAC;
 
 architecture Behavioral of PWM_DAC is
-   signal pwm_counter : unsigned (width-1 downto 0);
+   signal counter : unsigned (width-1 downto 0);
        
 begin
    count : process(clk,reset)
    begin
        if( reset = '1') then
-           pwm_counter <= (others => '0');
+           counter <= (others => '0');
        elsif (rising_edge(clk)) then 
-           pwm_counter <= pwm_counter + 1;
+           counter <= counter + 1;
        end if;
    end process;
  
-   compare : process(pwm_counter, duty_cycle)
+   compare : process(counter, duty_cycle)
    begin    
-       if (pwm_counter < unsigned(duty_cycle)) then
+       if (counter < unsigned(duty_cycle)) then
            pwm_out <= '1';
        else 
            pwm_out <= '0';
@@ -34,3 +34,4 @@ begin
    end process;
   
 end Behavioral;
+

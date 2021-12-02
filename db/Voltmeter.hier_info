@@ -104,14 +104,14 @@ output_wave <= PWM_DAC:pwm.pwm_out
 
 
 |Voltmeter|buzz_freq_modifier:buzzer_frequency_generator|PWM_DAC:pwm
-reset => counter[0].ACLR
-reset => counter[1].ACLR
-reset => counter[2].ACLR
-reset => counter[3].ACLR
-clk => counter[0].CLK
-clk => counter[1].CLK
-clk => counter[2].CLK
-clk => counter[3].CLK
+reset => pwm_counter[0].ACLR
+reset => pwm_counter[1].ACLR
+reset => pwm_counter[2].ACLR
+reset => pwm_counter[3].ACLR
+clk => pwm_counter[0].CLK
+clk => pwm_counter[1].CLK
+clk => pwm_counter[2].CLK
+clk => pwm_counter[3].CLK
 duty_cycle[0] => LessThan0.IN4
 duty_cycle[1] => LessThan0.IN3
 duty_cycle[2] => LessThan0.IN2

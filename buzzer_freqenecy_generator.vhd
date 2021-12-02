@@ -49,7 +49,7 @@ begin
 				duty_counter  <= zero_count;
 				
 			elsif	(rising_edge(clk)) then
-				if (pwm_enable = '1') then
+				if (pwm_enable = '1') then -- only increment the count every time the enable pulses high
 				
 					if (count_direction = '1') then
 						duty_counter  <= duty_counter  + '1';
@@ -61,7 +61,8 @@ begin
 				end if;
 			end if;
 		end process;
-		
+	
+	-- setting the states
 	seq_proc: process(clk, reset)
 		begin
 			if (reset = '1') then
@@ -74,27 +75,27 @@ begin
 	comb_proc: process(CurrentState, duty_counter)
 		begin
 			case CurrentState is
-				when S0 =>
+				when S0 => -- the initial state
 					NextState 			<= S1;
 					duty_cycle 			<= zero_count;
 					count_direction 	<= '1';
-				when S1 =>
+				when S1 => -- when we're counting up
 					duty_cycle 			<= max_count;
 					count_direction 	<= '1';
-					if (duty_counter = max_count) then
+					if (duty_counter = max_count) then -- if we reach 1111 move to the counting down state
 						NextState 		<= S2;
 					else
 						NextState 		<= S1;
 					end if;
-				when S2 =>
+				when S2 => -- when we're counting down
 					duty_cycle 			<= zero_count;
 					count_direction 	<= '0';
-					if (duty_counter = zero_count) then
+					if (duty_counter = zero_count) then -- if we reach 0000 move to the counting up state
 						NextState 		<= S1;
 					else
 						NextState 		<= S2;
 					end if;
-				when others =>
+				when others => -- set it to the initial state otherwise
 					NextState 			<= S0;
 					duty_cycle 			<= zero_count;
 					count_direction 	<= '1';

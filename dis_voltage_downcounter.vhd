@@ -24,14 +24,15 @@ BEGIN
      if (rising_edge(clk)) then 
        if (reset = '1') then 
           current_count <= 0 ;
-          downcounter_pulse          <= '0';
+          downcounter_pulse <= '0';
        elsif (enable = '1') then 
           if (current_count = 0) then
+			 -- Making the output voltage from the distance the frequency the new frequency is clk_frequency/dis_voltage
             current_count <= to_integer(unsigned(dis_voltage)) - 1;
-            downcounter_pulse          <= '1';
+            downcounter_pulse <= '1';
           else 
             current_count <= current_count - 1;
-            downcounter_pulse          <= '0';
+            downcounter_pulse <= '0';
           end if;
        else 
           downcounter_pulse <= '0';
