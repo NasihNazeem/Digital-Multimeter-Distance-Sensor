@@ -9,7 +9,7 @@ entity dis_voltage_downcounter is
            reset    : in  STD_LOGIC; -- active-high reset
            enable   : in  STD_LOGIC; -- active-high enable
 			  dis_voltage : in std_logic_vector(12 downto 0); -- the voltage output from the distance sensor
-           pulse    : out STD_LOGIC -- creates a positive pulse every time current_count hits zero
+           downcounter_pulse    : out STD_LOGIC -- creates a positive pulse every time current_count hits zero
                                    -- useful to enable another device, like to slow down a counter
            -- value  : out STD_LOGIC_VECTOR(integer(ceil(log2(real(period)))) - 1 downto 0) -- outputs the current_count value, if needed
          );
@@ -24,17 +24,17 @@ BEGIN
      if (rising_edge(clk)) then 
        if (reset = '1') then 
           current_count <= 0 ;
-          pulse          <= '0';
+          downcounter_pulse          <= '0';
        elsif (enable = '1') then 
           if (current_count = 0) then
             current_count <= to_integer(unsigned(dis_voltage)) - 1;
-            pulse          <= '1';
+            downcounter_pulse          <= '1';
           else 
             current_count <= current_count - 1;
-            pulse          <= '0';
+            downcounter_pulse          <= '0';
           end if;
        else 
-          pulse <= '0';
+          downcounter_pulse <= '0';
        end if;
      end if;
    end process;

@@ -169,7 +169,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : C8        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : C9        :        :                   :         : 7         :                
 reset                        : C10       : input  : 2.5 V             :         : 7         : Y              
 Selecter                     : C11       : input  : 2.5 V             :         : 7         : Y              
-RESERVED_INPUT_WITH_WEAK_PULLUP : C12       :        :                   :         : 7         :                
+buzzer_waveform              : C12       : output : 2.5 V             :         : 7         : N              
 LEDR[5]                      : C13       : output : 2.5 V             :         : 7         : Y              
 HEX[0][0]                    : C14       : output : 2.5 V             :         : 7         : Y              
 HEX[0][2]                    : C15       : output : 2.5 V             :         : 7         : Y              

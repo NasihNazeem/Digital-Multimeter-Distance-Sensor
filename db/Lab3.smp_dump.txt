@@ -44,3 +44,9 @@ ctrl_state.WAIT_PEND_DLY1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
 ctrl_state.PUTRESP_PEND 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
 ctrl_state.AVRG_CNT 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
 ctrl_state.SYNC1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |Voltmeter|buzz_freq_modifier:buzzer_frequency_generator|CurrentState
+Name CurrentState.S2 CurrentState.S1 CurrentState.S0 
+CurrentState.S0 0 0 0 
+CurrentState.S1 0 1 1 
+CurrentState.S2 1 0 1 

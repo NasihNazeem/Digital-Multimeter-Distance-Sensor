@@ -8,7 +8,8 @@ entity Voltmeter is
            reset                         : in  STD_LOGIC;
            LEDR                          : out STD_LOGIC_VECTOR (9 downto 0);
            HEX 								  : out HexType;
-			  Selecter							  : in STD_LOGIC -- Added this
+			  Selecter							  : in STD_LOGIC; -- Added this
+			  buzzer_waveform					  : out STD_LOGIC
           );
            
 end Voltmeter;
@@ -42,12 +43,21 @@ Component mux is
 		 );
 end Component;
 
+component buzz_freq_modifier is
+		 port( 
+				 clk			 		: in std_logic;
+				 reset		 		: in std_logic;
+				 pwm_enable		 		: in std_logic;
+				 output_wave : out std_logic -- the pwm output
+           );
+end component;
+
 Component dis_voltage_downcounter is
 	port( clk      : in  STD_LOGIC; -- clock to be divided
          reset    : in  STD_LOGIC; -- active-high reset
          enable   : in  STD_LOGIC; -- active-high enable
 			dis_voltage : in std_logic_vector(12 downto 0); -- the voltage output from the distance sensor
-         pulse    : out STD_LOGIC -- creates a positive pulse every time current_count hits zero
+         downcounter_pulse    : out STD_LOGIC -- creates a positive pulse every time current_count hits zero
                                    -- useful to enable another device, like to slow down a counter
          -- value  : out STD_LOGIC_VECTOR(integer(ceil(log2(real(period)))) - 1 downto 0) -- outputs the current_count value, if needed
 		  );
@@ -129,13 +139,21 @@ begin
 
 				
 -- Instantiations
+buzzer_frequency_generator : buzz_freq_modifier
+	port map(
+				 clk => clk,
+				 reset => reset,
+				 pwm_enable => pwm_enable,
+				 output_wave => buzzer_waveform
+			  );
+			  
 distance_voltage_downcounter : dis_voltage_downcounter
 										 port map(
 													 clk => clk,
 													 reset => reset,
 													 enable => '1',
 													 dis_voltage => v2d_distance_output,
-													 pulse => pwm_enable
+													 downcounter_pulse => pwm_enable
 													);
 -- Mux instantiation
 multiplexer: mux

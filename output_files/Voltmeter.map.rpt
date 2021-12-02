@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Voltmeter
-Wed Dec 01 15:06:32 2021
+Wed Dec 01 23:44:34 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -17,64 +17,66 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   9. State Machine - |Voltmeter|binary_bcd:binary_bcd_ins|CurrentState
  10. State Machine - |Voltmeter|binary_bcd:binary_bcd_ins|\bcd_process:nextstate
  11. State Machine - |Voltmeter|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|ctrl_state
- 12. Registers Protected by Synthesis
- 13. Registers Removed During Synthesis
- 14. Removed Registers Triggering Further Register Optimizations
- 15. General Register Statistics
- 16. Inverted Register Statistics
- 17. Multiplexer Restructuring Statistics (Restructuring Performed)
- 18. Source assignments for ADC_Conversion:ADC_Conversion_ins
- 19. Source assignments for ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_altpll_sys:altpll_sys
- 20. Source assignments for ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_altpll_sys:altpll_sys|adc_qsys_altpll_sys_stdsync_sv6:stdsync2|adc_qsys_altpll_sys_dffpipe_l2c:dffpipe3
- 21. Source assignments for ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_std_synchronizer:u_clk_dft_synchronizer
- 22. Source assignments for ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_std_synchronizer:u_eoc_synchronizer
- 23. Source assignments for ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram
- 24. Source assignments for ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1
- 25. Source assignments for ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_req_sync_uq1
- 26. Source assignments for ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller_001|altera_reset_synchronizer:alt_rst_sync_uq1
- 27. Source assignments for ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller_001|altera_reset_synchronizer:alt_rst_req_sync_uq1
- 28. Parameter Settings for User Entity Instance: registers:sync1
- 29. Parameter Settings for User Entity Instance: registers:sync2
- 30. Parameter Settings for User Entity Instance: registers:sync3
- 31. Parameter Settings for User Entity Instance: registers:sync4
- 32. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0
- 33. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal
- 34. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm
- 35. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_std_synchronizer:u_clk_dft_synchronizer
- 36. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_std_synchronizer:u_eoc_synchronizer
- 37. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component
- 38. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|fiftyfivenm_adcblock_top_wrapper:adc_inst
- 39. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|fiftyfivenm_adcblock_top_wrapper:adc_inst|chsel_code_converter_sw_to_hw:decoder
- 40. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|fiftyfivenm_adcblock_top_wrapper:adc_inst|fiftyfivenm_adcblock_primitive_wrapper:adcblock_instance
- 41. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller
- 42. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1
- 43. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_req_sync_uq1
- 44. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller_001
- 45. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller_001|altera_reset_synchronizer:alt_rst_sync_uq1
- 46. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller_001|altera_reset_synchronizer:alt_rst_req_sync_uq1
- 47. Parameter Settings for Inferred Entity Instance: lpm_mult:Mult0
- 48. scfifo Parameter Settings by Entity Instance
- 49. lpm_mult Parameter Settings by Entity Instance
- 50. Port Connectivity Checks: "binary_bcd:binary_bcd_ins"
- 51. Port Connectivity Checks: "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller_001"
- 52. Port Connectivity Checks: "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_req_sync_uq1"
- 53. Port Connectivity Checks: "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller"
- 54. Port Connectivity Checks: "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo"
- 55. Port Connectivity Checks: "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal"
- 56. Port Connectivity Checks: "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_altpll_sys:altpll_sys|adc_qsys_altpll_sys_altpll_oc92:sd1"
- 57. Port Connectivity Checks: "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_altpll_sys:altpll_sys"
- 58. Port Connectivity Checks: "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0"
- 59. Port Connectivity Checks: "ADC_Conversion:ADC_Conversion_ins"
- 60. Port Connectivity Checks: "SevenSegment:SevenSegment_ins"
- 61. Port Connectivity Checks: "registers:sync4"
- 62. Port Connectivity Checks: "registers:sync3"
- 63. Port Connectivity Checks: "registers:sync2"
- 64. Port Connectivity Checks: "registers:sync1"
- 65. Port Connectivity Checks: "dis_voltage_downcounter:distance_voltage_downcounter"
- 66. Post-Synthesis Netlist Statistics for Top Partition
- 67. Elapsed Time Per Partition
- 68. Analysis & Synthesis Messages
- 69. Analysis & Synthesis Suppressed Messages
+ 12. State Machine - |Voltmeter|buzz_freq_modifier:buzzer_frequency_generator|CurrentState
+ 13. Registers Protected by Synthesis
+ 14. Registers Removed During Synthesis
+ 15. Removed Registers Triggering Further Register Optimizations
+ 16. General Register Statistics
+ 17. Inverted Register Statistics
+ 18. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 19. Source assignments for ADC_Conversion:ADC_Conversion_ins
+ 20. Source assignments for ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_altpll_sys:altpll_sys
+ 21. Source assignments for ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_altpll_sys:altpll_sys|adc_qsys_altpll_sys_stdsync_sv6:stdsync2|adc_qsys_altpll_sys_dffpipe_l2c:dffpipe3
+ 22. Source assignments for ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_std_synchronizer:u_clk_dft_synchronizer
+ 23. Source assignments for ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_std_synchronizer:u_eoc_synchronizer
+ 24. Source assignments for ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram
+ 25. Source assignments for ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1
+ 26. Source assignments for ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_req_sync_uq1
+ 27. Source assignments for ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller_001|altera_reset_synchronizer:alt_rst_sync_uq1
+ 28. Source assignments for ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller_001|altera_reset_synchronizer:alt_rst_req_sync_uq1
+ 29. Parameter Settings for User Entity Instance: buzz_freq_modifier:buzzer_frequency_generator|PWM_DAC:pwm
+ 30. Parameter Settings for User Entity Instance: registers:sync1
+ 31. Parameter Settings for User Entity Instance: registers:sync2
+ 32. Parameter Settings for User Entity Instance: registers:sync3
+ 33. Parameter Settings for User Entity Instance: registers:sync4
+ 34. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0
+ 35. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal
+ 36. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm
+ 37. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_std_synchronizer:u_clk_dft_synchronizer
+ 38. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_std_synchronizer:u_eoc_synchronizer
+ 39. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component
+ 40. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|fiftyfivenm_adcblock_top_wrapper:adc_inst
+ 41. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|fiftyfivenm_adcblock_top_wrapper:adc_inst|chsel_code_converter_sw_to_hw:decoder
+ 42. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|fiftyfivenm_adcblock_top_wrapper:adc_inst|fiftyfivenm_adcblock_primitive_wrapper:adcblock_instance
+ 43. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller
+ 44. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1
+ 45. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_req_sync_uq1
+ 46. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller_001
+ 47. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller_001|altera_reset_synchronizer:alt_rst_sync_uq1
+ 48. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller_001|altera_reset_synchronizer:alt_rst_req_sync_uq1
+ 49. Parameter Settings for Inferred Entity Instance: lpm_mult:Mult0
+ 50. scfifo Parameter Settings by Entity Instance
+ 51. lpm_mult Parameter Settings by Entity Instance
+ 52. Port Connectivity Checks: "binary_bcd:binary_bcd_ins"
+ 53. Port Connectivity Checks: "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller_001"
+ 54. Port Connectivity Checks: "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_req_sync_uq1"
+ 55. Port Connectivity Checks: "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller"
+ 56. Port Connectivity Checks: "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo"
+ 57. Port Connectivity Checks: "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal"
+ 58. Port Connectivity Checks: "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_altpll_sys:altpll_sys|adc_qsys_altpll_sys_altpll_oc92:sd1"
+ 59. Port Connectivity Checks: "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_altpll_sys:altpll_sys"
+ 60. Port Connectivity Checks: "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0"
+ 61. Port Connectivity Checks: "ADC_Conversion:ADC_Conversion_ins"
+ 62. Port Connectivity Checks: "SevenSegment:SevenSegment_ins"
+ 63. Port Connectivity Checks: "registers:sync4"
+ 64. Port Connectivity Checks: "registers:sync3"
+ 65. Port Connectivity Checks: "registers:sync2"
+ 66. Port Connectivity Checks: "registers:sync1"
+ 67. Port Connectivity Checks: "dis_voltage_downcounter:distance_voltage_downcounter"
+ 68. Post-Synthesis Netlist Statistics for Top Partition
+ 69. Elapsed Time Per Partition
+ 70. Analysis & Synthesis Messages
+ 71. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -101,16 +103,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Dec 01 15:06:32 2021       ;
+; Analysis & Synthesis Status        ; Successful - Wed Dec 01 23:44:34 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; Voltmeter                                   ;
 ; Top-level Entity Name              ; Voltmeter                                   ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 2,504                                       ;
-;     Total combinational functions  ; 2,214                                       ;
-;     Dedicated logic registers      ; 404                                         ;
-; Total registers                    ; 404                                         ;
-; Total pins                         ; 61                                          ;
+; Total logic elements               ; 2,590                                       ;
+;     Total combinational functions  ; 2,300                                       ;
+;     Dedicated logic registers      ; 446                                         ;
+; Total registers                    ; 446                                         ;
+; Total pins                         ; 62                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -230,6 +232,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------------------------------------+----------+
 ; File Name with User-Entered Path                                       ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                                    ; Library  ;
 +------------------------------------------------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------------------------------------+----------+
+; PWM_DAC.vhd                                                            ; yes             ; User VHDL File               ; D:/Documents/School/University/Third Year/ENEL 453/Lab 3/PWM_DAC.vhd                                                            ;          ;
 ; flag_mux.vhd                                                           ; yes             ; User VHDL File               ; D:/Documents/School/University/Third Year/ENEL 453/Lab 3/flag_mux.vhd                                                           ;          ;
 ; voltage2distance.vhd                                                   ; yes             ; User VHDL File               ; D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltage2distance.vhd                                                   ;          ;
 ; SevenSegment_decoder.vhd                                               ; yes             ; User VHDL File               ; D:/Documents/School/University/Third Year/ENEL 453/Lab 3/SevenSegment_decoder.vhd                                               ;          ;
@@ -251,6 +254,7 @@ https://fpgasoftware.intel.com/eula.
 ; adc_qsys/synthesis/submodules/adc_qsys_altpll_sys.v                    ; yes             ; User Verilog HDL File        ; D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/adc_qsys_altpll_sys.v                    ; adc_qsys ;
 ; voltmeter.vhd                                                          ; yes             ; User VHDL File               ; D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd                                                          ;          ;
 ; mux.vhd                                                                ; yes             ; User VHDL File               ; D:/Documents/School/University/Third Year/ENEL 453/Lab 3/mux.vhd                                                                ;          ;
+; buzzer_freqenecy_generator.vhd                                         ; yes             ; User VHDL File               ; D:/Documents/School/University/Third Year/ENEL 453/Lab 3/buzzer_freqenecy_generator.vhd                                         ;          ;
 ; dis_voltage_downcounter.vhd                                            ; yes             ; Auto-Found VHDL File         ; D:/Documents/School/University/Third Year/ENEL 453/Lab 3/dis_voltage_downcounter.vhd                                            ;          ;
 ; altera_std_synchronizer.v                                              ; yes             ; Megafunction                 ; d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altera_std_synchronizer.v                                                ;          ;
 ; scfifo.tdf                                                             ; yes             ; Megafunction                 ; d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/scfifo.tdf                                                               ;          ;
@@ -296,23 +300,23 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                                                                          ;
 +---------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
-; Estimated Total logic elements              ; 2,504                                                                                                                          ;
+; Estimated Total logic elements              ; 2,590                                                                                                                          ;
 ;                                             ;                                                                                                                                ;
-; Total combinational functions               ; 2214                                                                                                                           ;
+; Total combinational functions               ; 2300                                                                                                                           ;
 ; Logic element usage by number of LUT inputs ;                                                                                                                                ;
-;     -- 4 input functions                    ; 1668                                                                                                                           ;
-;     -- 3 input functions                    ; 393                                                                                                                            ;
-;     -- <=2 input functions                  ; 153                                                                                                                            ;
+;     -- 4 input functions                    ; 1663                                                                                                                           ;
+;     -- 3 input functions                    ; 419                                                                                                                            ;
+;     -- <=2 input functions                  ; 218                                                                                                                            ;
 ;                                             ;                                                                                                                                ;
 ; Logic elements by mode                      ;                                                                                                                                ;
-;     -- normal mode                          ; 1926                                                                                                                           ;
-;     -- arithmetic mode                      ; 288                                                                                                                            ;
+;     -- normal mode                          ; 1966                                                                                                                           ;
+;     -- arithmetic mode                      ; 334                                                                                                                            ;
 ;                                             ;                                                                                                                                ;
-; Total registers                             ; 404                                                                                                                            ;
-;     -- Dedicated logic registers            ; 404                                                                                                                            ;
+; Total registers                             ; 446                                                                                                                            ;
+;     -- Dedicated logic registers            ; 446                                                                                                                            ;
 ;     -- I/O registers                        ; 0                                                                                                                              ;
 ;                                             ;                                                                                                                                ;
-; I/O pins                                    ; 61                                                                                                                             ;
+; I/O pins                                    ; 62                                                                                                                             ;
 ;                                             ;                                                                                                                                ;
 ; Embedded Multiplier 9-bit elements          ; 0                                                                                                                              ;
 ;                                             ;                                                                                                                                ;
@@ -320,9 +324,9 @@ https://fpgasoftware.intel.com/eula.
 ;     -- PLLs                                 ; 1                                                                                                                              ;
 ;                                             ;                                                                                                                                ;
 ; Maximum fan-out node                        ; lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_arg:auto_generated|op_1~16 ;
-; Maximum fan-out                             ; 561                                                                                                                            ;
-; Total fan-out                               ; 9786                                                                                                                           ;
-; Average fan-out                             ; 3.57                                                                                                                           ;
+; Maximum fan-out                             ; 558                                                                                                                            ;
+; Total fan-out                               ; 10083                                                                                                                          ;
+; Average fan-out                             ; 3.51                                                                                                                           ;
 +---------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -331,7 +335,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------+--------------+
 ; Compilation Hierarchy Node                                                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                                                                                                                                                                          ; Entity Name                            ; Library Name ;
 +------------------------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------+--------------+
-; |Voltmeter                                                                   ; 2214 (1)            ; 404 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 61   ; 0            ; 0          ; |Voltmeter                                                                                                                                                                                                                                   ; Voltmeter                              ; work         ;
+; |Voltmeter                                                                   ; 2300 (1)            ; 446 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 62   ; 0            ; 0          ; |Voltmeter                                                                                                                                                                                                                                   ; Voltmeter                              ; work         ;
 ;    |ADC_Conversion:ADC_Conversion_ins|                                       ; 54 (5)              ; 90 (29)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|ADC_Conversion:ADC_Conversion_ins                                                                                                                                                                                                 ; ADC_Conversion                         ; work         ;
 ;       |adc_qsys:u0|                                                          ; 49 (0)              ; 61 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0                                                                                                                                                                                     ; adc_qsys                               ; adc_qsys     ;
 ;          |adc_qsys_altpll_sys:altpll_sys|                                    ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_altpll_sys:altpll_sys                                                                                                                                                      ; adc_qsys_altpll_sys                    ; adc_qsys     ;
@@ -352,7 +356,10 @@ https://fpgasoftware.intel.com/eula.
 ;       |SevenSegment_decoder:\Behavioral_Decoder:2:DECODERx|                  ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|SevenSegment:SevenSegment_ins|SevenSegment_decoder:\Behavioral_Decoder:2:DECODERx                                                                                                                                                 ; SevenSegment_decoder                   ; work         ;
 ;       |SevenSegment_decoder:\Behavioral_Decoder:3:DECODERx|                  ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|SevenSegment:SevenSegment_ins|SevenSegment_decoder:\Behavioral_Decoder:3:DECODERx                                                                                                                                                 ; SevenSegment_decoder                   ; work         ;
 ;    |averager:ave|                                                            ; 206 (206)           ; 204 (204)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|averager:ave                                                                                                                                                                                                                      ; averager                               ; work         ;
-;    |binary_bcd:binary_bcd_ins|                                               ; 171 (171)           ; 84 (84)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|binary_bcd:binary_bcd_ins                                                                                                                                                                                                         ; binary_bcd                             ; work         ;
+;    |binary_bcd:binary_bcd_ins|                                               ; 149 (149)           ; 84 (84)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|binary_bcd:binary_bcd_ins                                                                                                                                                                                                         ; binary_bcd                             ; work         ;
+;    |buzz_freq_modifier:buzzer_frequency_generator|                           ; 14 (8)              ; 10 (6)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|buzz_freq_modifier:buzzer_frequency_generator                                                                                                                                                                                     ; buzz_freq_modifier                     ; work         ;
+;       |PWM_DAC:pwm|                                                          ; 6 (6)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|buzz_freq_modifier:buzzer_frequency_generator|PWM_DAC:pwm                                                                                                                                                                         ; PWM_DAC                                ; work         ;
+;    |dis_voltage_downcounter:distance_voltage_downcounter|                    ; 87 (87)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|dis_voltage_downcounter:distance_voltage_downcounter                                                                                                                                                                              ; dis_voltage_downcounter                ; work         ;
 ;    |flag_mux:flag_multiplexer|                                               ; 16 (16)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|flag_mux:flag_multiplexer                                                                                                                                                                                                         ; flag_mux                               ; work         ;
 ;    |lpm_mult:Mult0|                                                          ; 57 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|lpm_mult:Mult0                                                                                                                                                                                                                    ; lpm_mult                               ; work         ;
 ;       |multcore:mult_core|                                                   ; 57 (29)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|lpm_mult:Mult0|multcore:mult_core                                                                                                                                                                                                 ; multcore                               ; work         ;
@@ -366,7 +373,7 @@ https://fpgasoftware.intel.com/eula.
 ;    |registers:sync2|                                                         ; 0 (0)               ; 12 (12)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|registers:sync2                                                                                                                                                                                                                   ; registers                              ; work         ;
 ;    |registers:sync3|                                                         ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|registers:sync3                                                                                                                                                                                                                   ; registers                              ; work         ;
 ;    |registers:sync4|                                                         ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|registers:sync4                                                                                                                                                                                                                   ; registers                              ; work         ;
-;    |voltage2distance:V2D|                                                    ; 1681 (1681)         ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|voltage2distance:V2D                                                                                                                                                                                                              ; voltage2distance                       ; work         ;
+;    |voltage2distance:V2D|                                                    ; 1688 (1688)         ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|voltage2distance:V2D                                                                                                                                                                                                              ; voltage2distance                       ; work         ;
 +------------------------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -449,6 +456,18 @@ Encoding Type:  One-Hot
 +---------------------------+------------------+---------------------+-------------------------+---------------------------+----------------------+-------------------------+-------------------------+-------------------------+--------------------+----------------------+-----------------+---------------------+---------------------+-------------------+-----------------+----------------------+---------------------+------------------------+------------------------+-------------------+-----------------+
 
 
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------+
+; State Machine - |Voltmeter|buzz_freq_modifier:buzzer_frequency_generator|CurrentState ;
++-----------------+-----------------+-----------------+---------------------------------+
+; Name            ; CurrentState.S2 ; CurrentState.S1 ; CurrentState.S0                 ;
++-----------------+-----------------+-----------------+---------------------------------+
+; CurrentState.S0 ; 0               ; 0               ; 0                               ;
+; CurrentState.S1 ; 0               ; 1               ; 1                               ;
+; CurrentState.S2 ; 1               ; 0               ; 1                               ;
++-----------------+-----------------+-----------------+---------------------------------+
+
+
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Registers Protected by Synthesis                                                                                                                                                                                                                                                                                                                   ;
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------+
@@ -523,8 +542,9 @@ Encoding Type:  One-Hot
 ; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|ctrl_state.WAIT_PEND_DLY1                                                                                                                                                                    ; Stuck at GND due to stuck port data_in                                                                                                                                                                      ;
 ; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|ctrl_state.PUTRESP_PEND                                                                                                                                                                      ; Stuck at GND due to stuck port data_in                                                                                                                                                                      ;
 ; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|chsel[4]                                                                                                                                                                                     ; Merged with ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|chsel[1]            ;
+; buzz_freq_modifier:buzzer_frequency_generator|CurrentState.S0                                                                                                                                                                                                                                                                                                            ; Lost fanout                                                                                                                                                                                                 ;
 ; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|cmd_channel_dly[0]                                                                                                                                                                           ; Merged with ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|pend                ;
-; Total Number of Removed Registers = 83                                                                                                                                                                                                                                                                                                                                   ;                                                                                                                                                                                                             ;
+; Total Number of Removed Registers = 84                                                                                                                                                                                                                                                                                                                                   ;                                                                                                                                                                                                             ;
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -560,12 +580,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 404   ;
-; Number of registers using Synchronous Clear  ; 32    ;
+; Total registers                              ; 446   ;
+; Number of registers using Synchronous Clear  ; 47    ;
 ; Number of registers using Synchronous Load   ; 16    ;
-; Number of registers using Asynchronous Clear ; 365   ;
+; Number of registers using Asynchronous Clear ; 375   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 333   ;
+; Number of registers using Clock Enable       ; 336   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -589,12 +609,14 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                                                                                          ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Voltmeter|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|int_timer[5] ;
-; 7:1                ; 4 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Voltmeter|binary_bcd:binary_bcd_ins|bcd_signal[13]                                                                                                                                                 ;
-; 7:1                ; 12 bits   ; 48 LEs        ; 24 LEs               ; 24 LEs                 ; Yes        ; |Voltmeter|binary_bcd:binary_bcd_ins|bcd_signal[7]                                                                                                                                                  ;
-; 9:1                ; 4 bits    ; 24 LEs        ; 8 LEs                ; 16 LEs                 ; Yes        ; |Voltmeter|binary_bcd:binary_bcd_ins|bcd_signal[17]                                                                                                                                                 ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Voltmeter|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|int_timer[6] ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |Voltmeter|dis_voltage_downcounter:distance_voltage_downcounter|current_count[19]                                                                                                                   ;
+; 3:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; Yes        ; |Voltmeter|dis_voltage_downcounter:distance_voltage_downcounter|current_count[11]                                                                                                                   ;
+; 7:1                ; 4 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Voltmeter|binary_bcd:binary_bcd_ins|bcd_signal[15]                                                                                                                                                 ;
+; 7:1                ; 12 bits   ; 48 LEs        ; 24 LEs               ; 24 LEs                 ; Yes        ; |Voltmeter|binary_bcd:binary_bcd_ins|bcd_signal[11]                                                                                                                                                 ;
+; 9:1                ; 4 bits    ; 24 LEs        ; 8 LEs                ; 16 LEs                 ; Yes        ; |Voltmeter|binary_bcd:binary_bcd_ins|bcd_signal[20]                                                                                                                                                 ;
 ; 11:1               ; 4 bits    ; 28 LEs        ; 12 LEs               ; 16 LEs                 ; Yes        ; |Voltmeter|binary_bcd:binary_bcd_ins|bcd_signal[24]                                                                                                                                                 ;
-; 13:1               ; 4 bits    ; 32 LEs        ; 20 LEs               ; 12 LEs                 ; Yes        ; |Voltmeter|binary_bcd:binary_bcd_ins|bcd_signal[26]                                                                                                                                                 ;
+; 13:1               ; 4 bits    ; 32 LEs        ; 20 LEs               ; 12 LEs                 ; Yes        ; |Voltmeter|binary_bcd:binary_bcd_ins|bcd_signal[28]                                                                                                                                                 ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -763,6 +785,16 @@ Encoding Type:  One-Hot
 ; PRESERVE_REGISTER ; on    ; -    ; altera_reset_synchronizer_int_chain[0]                                                                                      ;
 ; PRESERVE_REGISTER ; on    ; -    ; altera_reset_synchronizer_int_chain[1]                                                                                      ;
 +-------------------+-------+------+-----------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: buzz_freq_modifier:buzzer_frequency_generator|PWM_DAC:pwm ;
++----------------+-------+-------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                          ;
++----------------+-------+-------------------------------------------------------------------------------+
+; width          ; 4     ; Signed Integer                                                                ;
++----------------+-------+-------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +--------------------------------------------------------------+
@@ -1406,14 +1438,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------+-------+----------+-----------------+
 
 
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "dis_voltage_downcounter:distance_voltage_downcounter"                                 ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; enable ; Input  ; Info     ; Stuck at VCC                                                                        ;
-; pulse  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------+
+; Port Connectivity Checks: "dis_voltage_downcounter:distance_voltage_downcounter" ;
++--------+-------+----------+------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                              ;
++--------+-------+----------+------------------------------------------------------+
+; enable ; Input ; Info     ; Stuck at VCC                                         ;
++--------+-------+----------+------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -1421,29 +1452,30 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 61                          ;
-; cycloneiii_ff         ; 404                         ;
-;     CLR               ; 68                          ;
+; boundary_port         ; 62                          ;
+; cycloneiii_ff         ; 446                         ;
+;     CLR               ; 75                          ;
 ;     ENA               ; 36                          ;
-;     ENA CLR           ; 265                         ;
+;     ENA CLR           ; 268                         ;
 ;     ENA CLR SCLR      ; 16                          ;
 ;     ENA CLR SCLR SLD  ; 16                          ;
-;     plain             ; 3                           ;
-; cycloneiii_lcell_comb ; 2219                        ;
-;     arith             ; 288                         ;
-;         2 data inputs ; 77                          ;
-;         3 data inputs ; 211                         ;
-;     normal            ; 1931                        ;
-;         0 data inputs ; 21                          ;
-;         1 data inputs ; 13                          ;
-;         2 data inputs ; 47                          ;
-;         3 data inputs ; 182                         ;
-;         4 data inputs ; 1668                        ;
+;     SCLR              ; 15                          ;
+;     plain             ; 20                          ;
+; cycloneiii_lcell_comb ; 2305                        ;
+;     arith             ; 334                         ;
+;         2 data inputs ; 118                         ;
+;         3 data inputs ; 216                         ;
+;     normal            ; 1971                        ;
+;         0 data inputs ; 22                          ;
+;         1 data inputs ; 16                          ;
+;         2 data inputs ; 67                          ;
+;         3 data inputs ; 203                         ;
+;         4 data inputs ; 1663                        ;
 ; cycloneiii_pll        ; 1                           ;
 ; fiftyfivenm_adcblock  ; 1                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 15.30                       ;
-; Average LUT depth     ; 9.52                        ;
+; Max LUT depth         ; 17.20                       ;
+; Average LUT depth     ; 10.49                       ;
 +-----------------------+-----------------------------+
 
 
@@ -1452,7 +1484,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:19     ;
+; Top            ; 00:00:44     ;
 +----------------+--------------+
 
 
@@ -1462,10 +1494,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Wed Dec 01 15:06:02 2021
+    Info: Processing started: Wed Dec 01 23:43:29 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab3 -c Voltmeter
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file pwm_dac.vhd
+    Info (12022): Found design unit 1: PWM_DAC-Behavioral File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/PWM_DAC.vhd Line: 14
+    Info (12023): Found entity 1: PWM_DAC File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/PWM_DAC.vhd Line: 5
 Warning (12019): Can't analyze file -- file downcounter.vhd is missing
 Info (12021): Found 2 design units, including 1 entities, in source file flag_mux.vhd
     Info (12022): Found design unit 1: flag_mux-Behavioral File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/flag_mux.vhd Line: 12
@@ -1517,7 +1552,7 @@ Info (12021): Found 4 design units, including 4 entities, in source file adc_qsy
     Info (12023): Found entity 3: adc_qsys_altpll_sys_altpll_oc92 File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/adc_qsys_altpll_sys.v Line: 130
     Info (12023): Found entity 4: adc_qsys_altpll_sys File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/adc_qsys_altpll_sys.v Line: 217
 Info (12021): Found 2 design units, including 1 entities, in source file voltmeter.vhd
-    Info (12022): Found design unit 1: Voltmeter-Behavioral File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 16
+    Info (12022): Found design unit 1: Voltmeter-Behavioral File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 17
     Info (12023): Found entity 1: Voltmeter File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file voltmeter_tb.vhd
     Info (12022): Found design unit 1: Voltmeter_tb-tb File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter_tb.vhd Line: 11
@@ -1529,22 +1564,35 @@ Info (12021): Found 2 design units, including 1 entities, in source file mux.vhd
 Info (12021): Found 2 design units, including 1 entities, in source file mux_tb.vhd
     Info (12022): Found design unit 1: mux_tb-tb File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/mux_tb.vhd Line: 10
     Info (12023): Found entity 1: mux_tb File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/mux_tb.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file buzzer_freqenecy_generator.vhd
+    Info (12022): Found design unit 1: buzz_freq_modifier-Behavioral File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/buzzer_freqenecy_generator.vhd Line: 15
+    Info (12023): Found entity 1: buzz_freq_modifier File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/buzzer_freqenecy_generator.vhd Line: 6
 Info (12127): Elaborating entity "Voltmeter" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at voltmeter.vhd(23): object "busy" assigned a value but never read File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 23
-Warning (10036): Verilog HDL or VHDL warning at voltmeter.vhd(31): object "pwm_enable" assigned a value but never read File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 31
+Warning (10036): Verilog HDL or VHDL warning at voltmeter.vhd(24): object "busy" assigned a value but never read File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 24
+Info (12128): Elaborating entity "buzz_freq_modifier" for hierarchy "buzz_freq_modifier:buzzer_frequency_generator" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 142
+Warning (10540): VHDL Signal Declaration warning at buzzer_freqenecy_generator.vhd(23): used explicit default value for signal "max_count" because signal was never assigned a value File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/buzzer_freqenecy_generator.vhd Line: 23
+Warning (10540): VHDL Signal Declaration warning at buzzer_freqenecy_generator.vhd(24): used explicit default value for signal "zero_count" because signal was never assigned a value File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/buzzer_freqenecy_generator.vhd Line: 24
+Warning (10492): VHDL Process Statement warning at buzzer_freqenecy_generator.vhd(49): signal "zero_count" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/buzzer_freqenecy_generator.vhd Line: 49
+Warning (10492): VHDL Process Statement warning at buzzer_freqenecy_generator.vhd(79): signal "zero_count" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/buzzer_freqenecy_generator.vhd Line: 79
+Warning (10492): VHDL Process Statement warning at buzzer_freqenecy_generator.vhd(82): signal "max_count" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/buzzer_freqenecy_generator.vhd Line: 82
+Warning (10492): VHDL Process Statement warning at buzzer_freqenecy_generator.vhd(84): signal "max_count" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/buzzer_freqenecy_generator.vhd Line: 84
+Warning (10492): VHDL Process Statement warning at buzzer_freqenecy_generator.vhd(90): signal "zero_count" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/buzzer_freqenecy_generator.vhd Line: 90
+Warning (10492): VHDL Process Statement warning at buzzer_freqenecy_generator.vhd(92): signal "zero_count" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/buzzer_freqenecy_generator.vhd Line: 92
+Warning (10492): VHDL Process Statement warning at buzzer_freqenecy_generator.vhd(99): signal "zero_count" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/buzzer_freqenecy_generator.vhd Line: 99
+Info (12128): Elaborating entity "PWM_DAC" for hierarchy "buzz_freq_modifier:buzzer_frequency_generator|PWM_DAC:pwm" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/buzzer_freqenecy_generator.vhd Line: 37
 Warning (12125): Using design file dis_voltage_downcounter.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: dis_voltage_downcounter-Behavioral File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/dis_voltage_downcounter.vhd Line: 18
     Info (12023): Found entity 1: dis_voltage_downcounter File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/dis_voltage_downcounter.vhd Line: 7
-Info (12128): Elaborating entity "dis_voltage_downcounter" for hierarchy "dis_voltage_downcounter:distance_voltage_downcounter" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 132
-Info (12128): Elaborating entity "mux" for hierarchy "mux:multiplexer" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 141
-Info (12128): Elaborating entity "flag_mux" for hierarchy "flag_mux:flag_multiplexer" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 149
-Info (12128): Elaborating entity "voltage2distance" for hierarchy "voltage2distance:V2D" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 156
-Info (12128): Elaborating entity "averager" for hierarchy "averager:ave" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 165
-Info (12128): Elaborating entity "registers" for hierarchy "registers:sync1" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 174
-Info (12128): Elaborating entity "registers" for hierarchy "registers:sync3" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 194
-Info (12128): Elaborating entity "SevenSegment" for hierarchy "SevenSegment:SevenSegment_ins" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 214
+Info (12128): Elaborating entity "dis_voltage_downcounter" for hierarchy "dis_voltage_downcounter:distance_voltage_downcounter" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 150
+Info (12128): Elaborating entity "mux" for hierarchy "mux:multiplexer" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 159
+Info (12128): Elaborating entity "flag_mux" for hierarchy "flag_mux:flag_multiplexer" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 167
+Info (12128): Elaborating entity "voltage2distance" for hierarchy "voltage2distance:V2D" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 174
+Info (12128): Elaborating entity "averager" for hierarchy "averager:ave" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 183
+Info (12128): Elaborating entity "registers" for hierarchy "registers:sync1" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 192
+Info (12128): Elaborating entity "registers" for hierarchy "registers:sync3" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 212
+Info (12128): Elaborating entity "SevenSegment" for hierarchy "SevenSegment:SevenSegment_ins" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 232
 Info (12128): Elaborating entity "SevenSegment_decoder" for hierarchy "SevenSegment:SevenSegment_ins|SevenSegment_decoder:\Behavioral_Decoder:0:DECODERx" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/SevenSegment.vhd Line: 36
-Info (12128): Elaborating entity "ADC_Conversion" for hierarchy "ADC_Conversion:ADC_Conversion_ins" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 220
+Info (12128): Elaborating entity "ADC_Conversion" for hierarchy "ADC_Conversion:ADC_Conversion_ins" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 238
 Warning (10036): Verilog HDL or VHDL warning at ADC_Conversion.v(98): object "cur_adc_ch" assigned a value but never read File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/ADC_Conversion.v Line: 98
 Warning (10036): Verilog HDL or VHDL warning at ADC_Conversion.v(99): object "adc_sample_data" assigned a value but never read File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/ADC_Conversion.v Line: 99
 Info (12128): Elaborating entity "adc_qsys" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/ADC_Conversion.v Line: 75
@@ -1599,7 +1647,7 @@ Info (12128): Elaborating entity "fiftyfivenm_adcblock_primitive_wrapper" for hi
 Info (12128): Elaborating entity "altera_reset_controller" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/adc_qsys.v Line: 134
 Info (12128): Elaborating entity "altera_reset_synchronizer" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/altera_reset_controller.v Line: 208
 Info (12128): Elaborating entity "altera_reset_synchronizer" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_req_sync_uq1" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/altera_reset_controller.v Line: 220
-Info (12128): Elaborating entity "binary_bcd" for hierarchy "binary_bcd:binary_bcd_ins" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 232
+Info (12128): Elaborating entity "binary_bcd" for hierarchy "binary_bcd:binary_bcd_ins" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 250
 Warning (10036): Verilog HDL or VHDL warning at binary_bcd.vhd(22): object "counter" assigned a value but never read File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 22
 Warning (10631): VHDL Process Statement warning at binary_bcd.vhd(34): inferring latch(es) for signal or variable "busy", which holds its previous value in one or more paths through the process File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 34
 Info (10041): Inferred latch for "busy" at binary_bcd.vhd(34) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 34
@@ -1663,7 +1711,7 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "HEX[1][7]" is stuck at VCC File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 10
     Warning (13410): Pin "HEX[0][7]" is stuck at VCC File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 10
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 60 registers lost all their fanouts during netlist optimizations.
+Info (17049): 61 registers lost all their fanouts during netlist optimizations.
 Info (17016): Found the following redundant logic cells in design
     Info (17048): Logic cell "ADC_Conversion:ADC_Conversion_ins|response_valid" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/ADC_Conversion.v Line: 94
 Warning (20013): Ignored 149 assignments for entity "DE10_LITE" -- entity does not exist in design
@@ -1819,16 +1867,16 @@ Warning (20013): Ignored 149 assignments for entity "DE10_LITE" -- entity does n
 Info (144001): Generated suppressed messages file D:/Documents/School/University/Third Year/ENEL 453/Lab 3/output_files/Voltmeter.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 2574 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 2662 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
-    Info (21059): Implemented 58 output pins
-    Info (21061): Implemented 2511 logic cells
+    Info (21059): Implemented 59 output pins
+    Info (21061): Implemented 2598 logic cells
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 195 warnings
-    Info: Peak virtual memory: 4817 megabytes
-    Info: Processing ended: Wed Dec 01 15:06:33 2021
-    Info: Elapsed time: 00:00:31
-    Info: Total CPU time (on all processors): 00:00:45
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 203 warnings
+    Info: Peak virtual memory: 4822 megabytes
+    Info: Processing ended: Wed Dec 01 23:44:34 2021
+    Info: Elapsed time: 00:01:05
+    Info: Total CPU time (on all processors): 00:01:29
 
 
 +------------------------------------------+
