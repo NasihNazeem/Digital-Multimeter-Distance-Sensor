@@ -36,10 +36,11 @@ Signal mux_output: std_logic_vector(12 downto 0);
 
 -- Mux component
 Component mux is
-	port( mux_voltage : in std_logic_vector(12 downto 0);
-			mux_distance : in std_logic_vector(12 downto 0);
-			Selecter	 : in std_logic;
-			Y	 : out std_logic_vector(12 downto 0)
+	port( clk				: in std_logic;
+			mux_voltage 	: in std_logic_vector(12 downto 0);
+			mux_distance 	: in std_logic_vector(12 downto 0);
+			Selecter	 		: in std_logic;
+			Y	 				: out std_logic_vector(12 downto 0)
 		 );
 end Component;
 
@@ -47,16 +48,16 @@ component buzz_freq_modifier is
 		 port( 
 				 clk			 		: in std_logic;
 				 reset		 		: in std_logic;
-				 pwm_enable		 		: in std_logic;
-				 output_wave : out std_logic -- the pwm output
+				pwm_enable		 	: in std_logic;
+				 output_wave 		: out std_logic -- the pwm output
            );
 end component;
 
 Component dis_voltage_downcounter is
-	port( clk      : in  STD_LOGIC; -- clock to be divided
-         reset    : in  STD_LOGIC; -- active-high reset
-         enable   : in  STD_LOGIC; -- active-high enable
-			dis_voltage : in std_logic_vector(12 downto 0); -- the voltage output from the distance sensor
+	port( clk      				: in  STD_LOGIC; -- clock to be divided
+         reset    				: in  STD_LOGIC; -- active-high reset
+         enable   				: in  STD_LOGIC; -- active-high enable
+			dis_voltage 			: in std_logic_vector(12 downto 0); -- the voltage output from the distance sensor
          downcounter_pulse    : out STD_LOGIC -- creates a positive pulse every time current_count hits zero
                                    -- useful to enable another device, like to slow down a counter
          -- value  : out STD_LOGIC_VECTOR(integer(ceil(log2(real(period)))) - 1 downto 0) -- outputs the current_count value, if needed
@@ -64,9 +65,9 @@ Component dis_voltage_downcounter is
 end Component;
 
 Component flag_mux is
-	port( bcd_orig : in std_logic_vector(15 downto 0);
-			flag_select	 : in std_logic;
-			bcd_new	 : out std_logic_vector(15 downto 0)
+	port( bcd_orig 		: in std_logic_vector(15 downto 0);
+		flag_select		 	: in std_logic;
+			bcd_new	 		: out std_logic_vector(15 downto 0)
 		 );
 end Component;
 
@@ -81,9 +82,9 @@ Component voltage2distance is
 end Component;
 
 Component SevenSegment is
-    Port( Num_Hex																 : in  NumHexType;
-          Hex  								                         : out HexType;
-          DP_in                                                 : in  STD_LOGIC_VECTOR (5 downto 0)
+    Port( Num_Hex						: in  NumHexType;
+          Hex  						: out HexType;
+          DP_in                  : in  STD_LOGIC_VECTOR (5 downto 0)
 			);
 End Component ;
 
@@ -120,9 +121,9 @@ END Component;
 Component averager is
   port(
     clk, reset : in std_logic;
-    Din : in  std_logic_vector(11 downto 0);
-    EN  : in  std_logic; -- response_valid_out
-    Q   : out std_logic_vector(11 downto 0)
+    Din 			: in  std_logic_vector(11 downto 0);
+    EN  			: in  std_logic; -- response_valid_out
+    Q   			: out std_logic_vector(11 downto 0)
     );
   end Component;
 
@@ -140,24 +141,25 @@ begin
 				
 -- Instantiations
 buzzer_frequency_generator : buzz_freq_modifier
-	port map(
-				 clk => clk,
-				 reset => reset,
-				 pwm_enable => pwm_enable,
-				 output_wave => buzzer_waveform
-			  );
+				 port map(
+							 clk => clk,
+							 reset => reset,
+							 pwm_enable => pwm_enable,
+							 output_wave => buzzer_waveform
+						  );
 			  
 distance_voltage_downcounter : dis_voltage_downcounter
-										 port map(
-													 clk => clk,
-													 reset => reset,
-													 enable => '1',
-													 dis_voltage => v2d_distance_output,
-													 downcounter_pulse => pwm_enable
-													);
+				 port map(
+							 clk => clk,
+							 reset => reset,
+							 enable => '1',
+							 dis_voltage => v2d_distance_output,
+							 downcounter_pulse => pwm_enable
+							);
 -- Mux instantiation
 multiplexer: mux
 				 port map(
+							 clk => clk,
 							 mux_voltage => mult_output,
 							 mux_distance => v2d_distance_output,
 							 Selecter   => Selecter,

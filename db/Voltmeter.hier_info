@@ -1,6 +1,7 @@
 |Voltmeter
 clk => buzz_freq_modifier:buzzer_frequency_generator.clk
 clk => dis_voltage_downcounter:distance_voltage_downcounter.clk
+clk => mux:multiplexer.clk
 clk => voltage2distance:V2D.clk
 clk => averager:ave.clk
 clk => registers:sync1.clk
@@ -232,6 +233,19 @@ downcounter_pulse <= downcounter_pulse~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Voltmeter|mux:multiplexer
+clk => Y[0]~reg0.CLK
+clk => Y[1]~reg0.CLK
+clk => Y[2]~reg0.CLK
+clk => Y[3]~reg0.CLK
+clk => Y[4]~reg0.CLK
+clk => Y[5]~reg0.CLK
+clk => Y[6]~reg0.CLK
+clk => Y[7]~reg0.CLK
+clk => Y[8]~reg0.CLK
+clk => Y[9]~reg0.CLK
+clk => Y[10]~reg0.CLK
+clk => Y[11]~reg0.CLK
+clk => Y[12]~reg0.CLK
 mux_voltage[0] => Y.DATAA
 mux_voltage[1] => Y.DATAA
 mux_voltage[2] => Y.DATAA
@@ -271,19 +285,19 @@ Selecter => Y.OUTPUTSELECT
 Selecter => Y.OUTPUTSELECT
 Selecter => Y.OUTPUTSELECT
 Selecter => Y.OUTPUTSELECT
-Y[0] <= Y.DB_MAX_OUTPUT_PORT_TYPE
-Y[1] <= Y.DB_MAX_OUTPUT_PORT_TYPE
-Y[2] <= Y.DB_MAX_OUTPUT_PORT_TYPE
-Y[3] <= Y.DB_MAX_OUTPUT_PORT_TYPE
-Y[4] <= Y.DB_MAX_OUTPUT_PORT_TYPE
-Y[5] <= Y.DB_MAX_OUTPUT_PORT_TYPE
-Y[6] <= Y.DB_MAX_OUTPUT_PORT_TYPE
-Y[7] <= Y.DB_MAX_OUTPUT_PORT_TYPE
-Y[8] <= Y.DB_MAX_OUTPUT_PORT_TYPE
-Y[9] <= Y.DB_MAX_OUTPUT_PORT_TYPE
-Y[10] <= Y.DB_MAX_OUTPUT_PORT_TYPE
-Y[11] <= Y.DB_MAX_OUTPUT_PORT_TYPE
-Y[12] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[0] <= Y[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Y[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= Y[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= Y[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Y[4] <= Y[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Y[5] <= Y[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Y[6] <= Y[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Y[7] <= Y[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Y[8] <= Y[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Y[9] <= Y[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Y[10] <= Y[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Y[11] <= Y[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Y[12] <= Y[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Voltmeter|flag_mux:flag_multiplexer
