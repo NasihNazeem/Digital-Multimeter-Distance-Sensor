@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Thu Dec 02 03:06:00 2021
-Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Analysis & Synthesis Status : Successful - Thu Dec 02 18:19:42 2021
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : Voltmeter
 Top-level Entity Name : Voltmeter
 Family : MAX 10
-Total logic elements : 2,599
-    Total combinational functions : 2,309
-    Dedicated logic registers : 459
-Total registers : 459
+Total logic elements : 4,073
+    Total combinational functions : 3,783
+    Dedicated logic registers : 462
+Total registers : 462
 Total pins : 62
 Total virtual pins : 0
 Total memory bits : 0

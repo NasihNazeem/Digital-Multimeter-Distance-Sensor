@@ -1,6 +1,6 @@
 Analysis & Synthesis report for Voltmeter
-Thu Dec 02 03:06:00 2021
-Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Thu Dec 02 18:19:42 2021
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
 ---------------------
@@ -17,75 +17,73 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   9. State Machine - |Voltmeter|binary_bcd:binary_bcd_ins|CurrentState
  10. State Machine - |Voltmeter|binary_bcd:binary_bcd_ins|\bcd_process:nextstate
  11. State Machine - |Voltmeter|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|ctrl_state
- 12. State Machine - |Voltmeter|buzz_freq_modifier:buzzer_frequency_generator|CurrentState
- 13. Registers Protected by Synthesis
- 14. Registers Removed During Synthesis
- 15. Removed Registers Triggering Further Register Optimizations
- 16. General Register Statistics
- 17. Inverted Register Statistics
- 18. Multiplexer Restructuring Statistics (Restructuring Performed)
- 19. Source assignments for ADC_Conversion:ADC_Conversion_ins
- 20. Source assignments for ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_altpll_sys:altpll_sys
- 21. Source assignments for ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_altpll_sys:altpll_sys|adc_qsys_altpll_sys_stdsync_sv6:stdsync2|adc_qsys_altpll_sys_dffpipe_l2c:dffpipe3
- 22. Source assignments for ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_std_synchronizer:u_clk_dft_synchronizer
- 23. Source assignments for ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_std_synchronizer:u_eoc_synchronizer
- 24. Source assignments for ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram
- 25. Source assignments for ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1
- 26. Source assignments for ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_req_sync_uq1
- 27. Source assignments for ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller_001|altera_reset_synchronizer:alt_rst_sync_uq1
- 28. Source assignments for ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller_001|altera_reset_synchronizer:alt_rst_req_sync_uq1
- 29. Parameter Settings for User Entity Instance: buzz_freq_modifier:buzzer_frequency_generator|PWM_DAC:pwm
- 30. Parameter Settings for User Entity Instance: registers:sync1
- 31. Parameter Settings for User Entity Instance: registers:sync2
- 32. Parameter Settings for User Entity Instance: registers:sync3
- 33. Parameter Settings for User Entity Instance: registers:sync4
- 34. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0
- 35. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal
- 36. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm
- 37. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_std_synchronizer:u_clk_dft_synchronizer
- 38. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_std_synchronizer:u_eoc_synchronizer
- 39. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component
- 40. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|fiftyfivenm_adcblock_top_wrapper:adc_inst
- 41. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|fiftyfivenm_adcblock_top_wrapper:adc_inst|chsel_code_converter_sw_to_hw:decoder
- 42. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|fiftyfivenm_adcblock_top_wrapper:adc_inst|fiftyfivenm_adcblock_primitive_wrapper:adcblock_instance
- 43. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller
- 44. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1
- 45. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_req_sync_uq1
- 46. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller_001
- 47. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller_001|altera_reset_synchronizer:alt_rst_sync_uq1
- 48. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller_001|altera_reset_synchronizer:alt_rst_req_sync_uq1
- 49. Parameter Settings for Inferred Entity Instance: lpm_mult:Mult0
- 50. scfifo Parameter Settings by Entity Instance
- 51. lpm_mult Parameter Settings by Entity Instance
- 52. Port Connectivity Checks: "binary_bcd:binary_bcd_ins"
- 53. Port Connectivity Checks: "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller_001"
- 54. Port Connectivity Checks: "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_req_sync_uq1"
- 55. Port Connectivity Checks: "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller"
- 56. Port Connectivity Checks: "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo"
- 57. Port Connectivity Checks: "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal"
- 58. Port Connectivity Checks: "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_altpll_sys:altpll_sys|adc_qsys_altpll_sys_altpll_oc92:sd1"
- 59. Port Connectivity Checks: "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_altpll_sys:altpll_sys"
- 60. Port Connectivity Checks: "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0"
- 61. Port Connectivity Checks: "ADC_Conversion:ADC_Conversion_ins"
- 62. Port Connectivity Checks: "SevenSegment:SevenSegment_ins"
- 63. Port Connectivity Checks: "registers:sync4"
- 64. Port Connectivity Checks: "registers:sync3"
- 65. Port Connectivity Checks: "registers:sync2"
- 66. Port Connectivity Checks: "registers:sync1"
- 67. Port Connectivity Checks: "dis_voltage_downcounter:distance_voltage_downcounter"
- 68. Post-Synthesis Netlist Statistics for Top Partition
- 69. Elapsed Time Per Partition
- 70. Analysis & Synthesis Messages
- 71. Analysis & Synthesis Suppressed Messages
+ 12. Registers Protected by Synthesis
+ 13. Registers Removed During Synthesis
+ 14. Removed Registers Triggering Further Register Optimizations
+ 15. General Register Statistics
+ 16. Inverted Register Statistics
+ 17. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 18. Source assignments for ADC_Conversion:ADC_Conversion_ins
+ 19. Source assignments for ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_altpll_sys:altpll_sys
+ 20. Source assignments for ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_altpll_sys:altpll_sys|adc_qsys_altpll_sys_stdsync_sv6:stdsync2|adc_qsys_altpll_sys_dffpipe_l2c:dffpipe3
+ 21. Source assignments for ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_std_synchronizer:u_clk_dft_synchronizer
+ 22. Source assignments for ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_std_synchronizer:u_eoc_synchronizer
+ 23. Source assignments for ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram
+ 24. Source assignments for ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1
+ 25. Source assignments for ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_req_sync_uq1
+ 26. Source assignments for ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller_001|altera_reset_synchronizer:alt_rst_sync_uq1
+ 27. Source assignments for ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller_001|altera_reset_synchronizer:alt_rst_req_sync_uq1
+ 28. Parameter Settings for User Entity Instance: PWM_DAC:pwm
+ 29. Parameter Settings for User Entity Instance: registers:sync1
+ 30. Parameter Settings for User Entity Instance: registers:sync2
+ 31. Parameter Settings for User Entity Instance: registers:sync3
+ 32. Parameter Settings for User Entity Instance: registers:sync4
+ 33. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0
+ 34. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal
+ 35. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm
+ 36. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_std_synchronizer:u_clk_dft_synchronizer
+ 37. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_std_synchronizer:u_eoc_synchronizer
+ 38. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component
+ 39. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|fiftyfivenm_adcblock_top_wrapper:adc_inst
+ 40. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|fiftyfivenm_adcblock_top_wrapper:adc_inst|chsel_code_converter_sw_to_hw:decoder
+ 41. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|fiftyfivenm_adcblock_top_wrapper:adc_inst|fiftyfivenm_adcblock_primitive_wrapper:adcblock_instance
+ 42. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller
+ 43. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1
+ 44. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_req_sync_uq1
+ 45. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller_001
+ 46. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller_001|altera_reset_synchronizer:alt_rst_sync_uq1
+ 47. Parameter Settings for User Entity Instance: ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller_001|altera_reset_synchronizer:alt_rst_req_sync_uq1
+ 48. Parameter Settings for Inferred Entity Instance: lpm_mult:Mult0
+ 49. scfifo Parameter Settings by Entity Instance
+ 50. lpm_mult Parameter Settings by Entity Instance
+ 51. Port Connectivity Checks: "binary_bcd:binary_bcd_ins"
+ 52. Port Connectivity Checks: "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller_001"
+ 53. Port Connectivity Checks: "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_req_sync_uq1"
+ 54. Port Connectivity Checks: "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller"
+ 55. Port Connectivity Checks: "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo"
+ 56. Port Connectivity Checks: "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal"
+ 57. Port Connectivity Checks: "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_altpll_sys:altpll_sys|adc_qsys_altpll_sys_altpll_oc92:sd1"
+ 58. Port Connectivity Checks: "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_altpll_sys:altpll_sys"
+ 59. Port Connectivity Checks: "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0"
+ 60. Port Connectivity Checks: "ADC_Conversion:ADC_Conversion_ins"
+ 61. Port Connectivity Checks: "SevenSegment:SevenSegment_ins"
+ 62. Port Connectivity Checks: "registers:sync4"
+ 63. Port Connectivity Checks: "registers:sync3"
+ 64. Port Connectivity Checks: "registers:sync2"
+ 65. Port Connectivity Checks: "registers:sync1"
+ 66. Post-Synthesis Netlist Statistics for Top Partition
+ 67. Elapsed Time Per Partition
+ 68. Analysis & Synthesis Messages
+ 69. Analysis & Synthesis Suppressed Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2020  Intel Corporation. All rights reserved.
+Copyright (C) 2018  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and any partner logic 
+and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
@@ -95,23 +93,22 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details, at
-https://fpgasoftware.intel.com/eula.
+refer to the applicable agreement for further details.
 
 
 
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Dec 02 03:06:00 2021       ;
-; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Analysis & Synthesis Status        ; Successful - Thu Dec 02 18:19:42 2021       ;
+; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Voltmeter                                   ;
 ; Top-level Entity Name              ; Voltmeter                                   ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 2,599                                       ;
-;     Total combinational functions  ; 2,309                                       ;
-;     Dedicated logic registers      ; 459                                         ;
-; Total registers                    ; 459                                         ;
+; Total logic elements               ; 4,073                                       ;
+;     Total combinational functions  ; 3,783                                       ;
+;     Dedicated logic registers      ; 462                                         ;
+; Total registers                    ; 462                                         ;
 ; Total pins                         ; 62                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -227,72 +224,71 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                               ;
-+------------------------------------------------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------------------------------------+----------+
-; File Name with User-Entered Path                                       ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                                    ; Library  ;
-+------------------------------------------------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------------------------------------+----------+
-; PWM_DAC.vhd                                                            ; yes             ; User VHDL File               ; D:/Documents/School/University/Third Year/ENEL 453/Lab 3/PWM_DAC.vhd                                                            ;          ;
-; flag_mux.vhd                                                           ; yes             ; User VHDL File               ; D:/Documents/School/University/Third Year/ENEL 453/Lab 3/flag_mux.vhd                                                           ;          ;
-; voltage2distance.vhd                                                   ; yes             ; User VHDL File               ; D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltage2distance.vhd                                                   ;          ;
-; SevenSegment_decoder.vhd                                               ; yes             ; User VHDL File               ; D:/Documents/School/University/Third Year/ENEL 453/Lab 3/SevenSegment_decoder.vhd                                               ;          ;
-; registers.vhd                                                          ; yes             ; User VHDL File               ; D:/Documents/School/University/Third Year/ENEL 453/Lab 3/registers.vhd                                                          ;          ;
-; binary_bcd.vhd                                                         ; yes             ; User VHDL File               ; D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd                                                         ;          ;
-; averager.vhd                                                           ; yes             ; User VHDL File               ; D:/Documents/School/University/Third Year/ENEL 453/Lab 3/averager.vhd                                                           ;          ;
-; SevenSegment.vhd                                                       ; yes             ; User VHDL File               ; D:/Documents/School/University/Third Year/ENEL 453/Lab 3/SevenSegment.vhd                                                       ;          ;
-; ADC_Conversion.v                                                       ; yes             ; User Verilog HDL File        ; D:/Documents/School/University/Third Year/ENEL 453/Lab 3/ADC_Conversion.v                                                       ;          ;
-; adc_qsys/synthesis/adc_qsys.v                                          ; yes             ; User Verilog HDL File        ; D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/adc_qsys.v                                          ; adc_qsys ;
-; adc_qsys/synthesis/submodules/altera_reset_controller.v                ; yes             ; User Verilog HDL File        ; D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/altera_reset_controller.v                ; adc_qsys ;
-; adc_qsys/synthesis/submodules/altera_reset_synchronizer.v              ; yes             ; User Verilog HDL File        ; D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/altera_reset_synchronizer.v              ; adc_qsys ;
-; adc_qsys/synthesis/submodules/adc_qsys_modular_adc_0.v                 ; yes             ; User Verilog HDL File        ; D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/adc_qsys_modular_adc_0.v                 ; adc_qsys ;
-; adc_qsys/synthesis/submodules/altera_modular_adc_control.v             ; yes             ; User Verilog HDL File        ; D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/altera_modular_adc_control.v             ; adc_qsys ;
-; adc_qsys/synthesis/submodules/altera_modular_adc_control_avrg_fifo.v   ; yes             ; User Verilog HDL File        ; D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/altera_modular_adc_control_avrg_fifo.v   ; adc_qsys ;
-; adc_qsys/synthesis/submodules/altera_modular_adc_control_fsm.v         ; yes             ; User Verilog HDL File        ; D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/altera_modular_adc_control_fsm.v         ; adc_qsys ;
-; adc_qsys/synthesis/submodules/chsel_code_converter_sw_to_hw.v          ; yes             ; User Verilog HDL File        ; D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/chsel_code_converter_sw_to_hw.v          ; adc_qsys ;
-; adc_qsys/synthesis/submodules/fiftyfivenm_adcblock_primitive_wrapper.v ; yes             ; User Verilog HDL File        ; D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/fiftyfivenm_adcblock_primitive_wrapper.v ; adc_qsys ;
-; adc_qsys/synthesis/submodules/fiftyfivenm_adcblock_top_wrapper.v       ; yes             ; User Verilog HDL File        ; D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/fiftyfivenm_adcblock_top_wrapper.v       ; adc_qsys ;
-; adc_qsys/synthesis/submodules/adc_qsys_altpll_sys.v                    ; yes             ; User Verilog HDL File        ; D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/adc_qsys_altpll_sys.v                    ; adc_qsys ;
-; voltmeter.vhd                                                          ; yes             ; User VHDL File               ; D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd                                                          ;          ;
-; mux.vhd                                                                ; yes             ; User VHDL File               ; D:/Documents/School/University/Third Year/ENEL 453/Lab 3/mux.vhd                                                                ;          ;
-; buzzer_freqenecy_generator.vhd                                         ; yes             ; User VHDL File               ; D:/Documents/School/University/Third Year/ENEL 453/Lab 3/buzzer_freqenecy_generator.vhd                                         ;          ;
-; dis_voltage_downcounter.vhd                                            ; yes             ; Auto-Found VHDL File         ; D:/Documents/School/University/Third Year/ENEL 453/Lab 3/dis_voltage_downcounter.vhd                                            ;          ;
-; altera_std_synchronizer.v                                              ; yes             ; Megafunction                 ; d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altera_std_synchronizer.v                                                ;          ;
-; scfifo.tdf                                                             ; yes             ; Megafunction                 ; d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/scfifo.tdf                                                               ;          ;
-; a_regfifo.inc                                                          ; yes             ; Megafunction                 ; d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_regfifo.inc                                                            ;          ;
-; a_dpfifo.inc                                                           ; yes             ; Megafunction                 ; d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_dpfifo.inc                                                             ;          ;
-; a_i2fifo.inc                                                           ; yes             ; Megafunction                 ; d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_i2fifo.inc                                                             ;          ;
-; a_fffifo.inc                                                           ; yes             ; Megafunction                 ; d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_fffifo.inc                                                             ;          ;
-; a_f2fifo.inc                                                           ; yes             ; Megafunction                 ; d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_f2fifo.inc                                                             ;          ;
-; aglobal201.inc                                                         ; yes             ; Megafunction                 ; d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc                                                           ;          ;
-; db/scfifo_ds61.tdf                                                     ; yes             ; Auto-Generated Megafunction  ; D:/Documents/School/University/Third Year/ENEL 453/Lab 3/db/scfifo_ds61.tdf                                                     ;          ;
-; db/a_dpfifo_3o41.tdf                                                   ; yes             ; Auto-Generated Megafunction  ; D:/Documents/School/University/Third Year/ENEL 453/Lab 3/db/a_dpfifo_3o41.tdf                                                   ;          ;
-; db/a_fefifo_c6e.tdf                                                    ; yes             ; Auto-Generated Megafunction  ; D:/Documents/School/University/Third Year/ENEL 453/Lab 3/db/a_fefifo_c6e.tdf                                                    ;          ;
-; db/cntr_337.tdf                                                        ; yes             ; Auto-Generated Megafunction  ; D:/Documents/School/University/Third Year/ENEL 453/Lab 3/db/cntr_337.tdf                                                        ;          ;
-; db/altsyncram_rqn1.tdf                                                 ; yes             ; Auto-Generated Megafunction  ; D:/Documents/School/University/Third Year/ENEL 453/Lab 3/db/altsyncram_rqn1.tdf                                                 ;          ;
-; db/cntr_n2b.tdf                                                        ; yes             ; Auto-Generated Megafunction  ; D:/Documents/School/University/Third Year/ENEL 453/Lab 3/db/cntr_n2b.tdf                                                        ;          ;
-; lpm_mult.tdf                                                           ; yes             ; Megafunction                 ; d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mult.tdf                                                             ;          ;
-; lpm_add_sub.inc                                                        ; yes             ; Megafunction                 ; d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_add_sub.inc                                                          ;          ;
-; multcore.inc                                                           ; yes             ; Megafunction                 ; d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/multcore.inc                                                             ;          ;
-; bypassff.inc                                                           ; yes             ; Megafunction                 ; d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/bypassff.inc                                                             ;          ;
-; altshift.inc                                                           ; yes             ; Megafunction                 ; d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altshift.inc                                                             ;          ;
-; multcore.tdf                                                           ; yes             ; Megafunction                 ; d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/multcore.tdf                                                             ;          ;
-; csa_add.inc                                                            ; yes             ; Megafunction                 ; d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/csa_add.inc                                                              ;          ;
-; mpar_add.inc                                                           ; yes             ; Megafunction                 ; d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/mpar_add.inc                                                             ;          ;
-; muleabz.inc                                                            ; yes             ; Megafunction                 ; d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/muleabz.inc                                                              ;          ;
-; mul_lfrg.inc                                                           ; yes             ; Megafunction                 ; d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/mul_lfrg.inc                                                             ;          ;
-; mul_boothc.inc                                                         ; yes             ; Megafunction                 ; d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/mul_boothc.inc                                                           ;          ;
-; alt_ded_mult.inc                                                       ; yes             ; Megafunction                 ; d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/alt_ded_mult.inc                                                         ;          ;
-; alt_ded_mult_y.inc                                                     ; yes             ; Megafunction                 ; d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/alt_ded_mult_y.inc                                                       ;          ;
-; dffpipe.inc                                                            ; yes             ; Megafunction                 ; d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/dffpipe.inc                                                              ;          ;
-; mpar_add.tdf                                                           ; yes             ; Megafunction                 ; d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/mpar_add.tdf                                                             ;          ;
-; lpm_add_sub.tdf                                                        ; yes             ; Megafunction                 ; d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_add_sub.tdf                                                          ;          ;
-; addcore.inc                                                            ; yes             ; Megafunction                 ; d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/addcore.inc                                                              ;          ;
-; look_add.inc                                                           ; yes             ; Megafunction                 ; d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/look_add.inc                                                             ;          ;
-; alt_stratix_add_sub.inc                                                ; yes             ; Megafunction                 ; d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/alt_stratix_add_sub.inc                                                  ;          ;
-; db/add_sub_frg.tdf                                                     ; yes             ; Auto-Generated Megafunction  ; D:/Documents/School/University/Third Year/ENEL 453/Lab 3/db/add_sub_frg.tdf                                                     ;          ;
-; db/add_sub_arg.tdf                                                     ; yes             ; Auto-Generated Megafunction  ; D:/Documents/School/University/Third Year/ENEL 453/Lab 3/db/add_sub_arg.tdf                                                     ;          ;
-; altshift.tdf                                                           ; yes             ; Megafunction                 ; d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altshift.tdf                                                             ;          ;
-+------------------------------------------------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------------------------------------+----------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                   ;
++------------------------------------------------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+----------+
+; File Name with User-Entered Path                                       ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                                        ; Library  ;
++------------------------------------------------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+----------+
+; voltage2frequency.vhd                                                  ; yes             ; User VHDL File               ; C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/voltage2frequency.vhd                                                  ;          ;
+; PWM_DAC.vhd                                                            ; yes             ; User VHDL File               ; C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/PWM_DAC.vhd                                                            ;          ;
+; flag_mux.vhd                                                           ; yes             ; User VHDL File               ; C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/flag_mux.vhd                                                           ;          ;
+; voltage2distance.vhd                                                   ; yes             ; User VHDL File               ; C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/voltage2distance.vhd                                                   ;          ;
+; SevenSegment_decoder.vhd                                               ; yes             ; User VHDL File               ; C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/SevenSegment_decoder.vhd                                               ;          ;
+; registers.vhd                                                          ; yes             ; User VHDL File               ; C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/registers.vhd                                                          ;          ;
+; binary_bcd.vhd                                                         ; yes             ; User VHDL File               ; C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/binary_bcd.vhd                                                         ;          ;
+; averager.vhd                                                           ; yes             ; User VHDL File               ; C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/averager.vhd                                                           ;          ;
+; SevenSegment.vhd                                                       ; yes             ; User VHDL File               ; C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/SevenSegment.vhd                                                       ;          ;
+; ADC_Conversion.v                                                       ; yes             ; User Verilog HDL File        ; C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/ADC_Conversion.v                                                       ;          ;
+; adc_qsys/synthesis/adc_qsys.v                                          ; yes             ; User Verilog HDL File        ; C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/adc_qsys/synthesis/adc_qsys.v                                          ; adc_qsys ;
+; adc_qsys/synthesis/submodules/altera_reset_controller.v                ; yes             ; User Verilog HDL File        ; C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/altera_reset_controller.v                ; adc_qsys ;
+; adc_qsys/synthesis/submodules/altera_reset_synchronizer.v              ; yes             ; User Verilog HDL File        ; C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/altera_reset_synchronizer.v              ; adc_qsys ;
+; adc_qsys/synthesis/submodules/adc_qsys_modular_adc_0.v                 ; yes             ; User Verilog HDL File        ; C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/adc_qsys_modular_adc_0.v                 ; adc_qsys ;
+; adc_qsys/synthesis/submodules/altera_modular_adc_control.v             ; yes             ; User Verilog HDL File        ; C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/altera_modular_adc_control.v             ; adc_qsys ;
+; adc_qsys/synthesis/submodules/altera_modular_adc_control_avrg_fifo.v   ; yes             ; User Verilog HDL File        ; C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/altera_modular_adc_control_avrg_fifo.v   ; adc_qsys ;
+; adc_qsys/synthesis/submodules/altera_modular_adc_control_fsm.v         ; yes             ; User Verilog HDL File        ; C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/altera_modular_adc_control_fsm.v         ; adc_qsys ;
+; adc_qsys/synthesis/submodules/chsel_code_converter_sw_to_hw.v          ; yes             ; User Verilog HDL File        ; C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/chsel_code_converter_sw_to_hw.v          ; adc_qsys ;
+; adc_qsys/synthesis/submodules/fiftyfivenm_adcblock_primitive_wrapper.v ; yes             ; User Verilog HDL File        ; C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/fiftyfivenm_adcblock_primitive_wrapper.v ; adc_qsys ;
+; adc_qsys/synthesis/submodules/fiftyfivenm_adcblock_top_wrapper.v       ; yes             ; User Verilog HDL File        ; C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/fiftyfivenm_adcblock_top_wrapper.v       ; adc_qsys ;
+; adc_qsys/synthesis/submodules/adc_qsys_altpll_sys.v                    ; yes             ; User Verilog HDL File        ; C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/adc_qsys_altpll_sys.v                    ; adc_qsys ;
+; voltmeter.vhd                                                          ; yes             ; User VHDL File               ; C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/voltmeter.vhd                                                          ;          ;
+; mux.vhd                                                                ; yes             ; User VHDL File               ; C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/mux.vhd                                                                ;          ;
+; altera_std_synchronizer.v                                              ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altera_std_synchronizer.v                                                    ;          ;
+; scfifo.tdf                                                             ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/scfifo.tdf                                                                   ;          ;
+; a_regfifo.inc                                                          ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_regfifo.inc                                                                ;          ;
+; a_dpfifo.inc                                                           ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_dpfifo.inc                                                                 ;          ;
+; a_i2fifo.inc                                                           ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_i2fifo.inc                                                                 ;          ;
+; a_fffifo.inc                                                           ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_fffifo.inc                                                                 ;          ;
+; a_f2fifo.inc                                                           ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_f2fifo.inc                                                                 ;          ;
+; aglobal181.inc                                                         ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc                                                               ;          ;
+; db/scfifo_ds61.tdf                                                     ; yes             ; Auto-Generated Megafunction  ; C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/db/scfifo_ds61.tdf                                                     ;          ;
+; db/a_dpfifo_3o41.tdf                                                   ; yes             ; Auto-Generated Megafunction  ; C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/db/a_dpfifo_3o41.tdf                                                   ;          ;
+; db/a_fefifo_c6e.tdf                                                    ; yes             ; Auto-Generated Megafunction  ; C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/db/a_fefifo_c6e.tdf                                                    ;          ;
+; db/cntr_337.tdf                                                        ; yes             ; Auto-Generated Megafunction  ; C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/db/cntr_337.tdf                                                        ;          ;
+; db/altsyncram_rqn1.tdf                                                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/db/altsyncram_rqn1.tdf                                                 ;          ;
+; db/cntr_n2b.tdf                                                        ; yes             ; Auto-Generated Megafunction  ; C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/db/cntr_n2b.tdf                                                        ;          ;
+; lpm_mult.tdf                                                           ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mult.tdf                                                                 ;          ;
+; lpm_add_sub.inc                                                        ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_add_sub.inc                                                              ;          ;
+; multcore.inc                                                           ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/multcore.inc                                                                 ;          ;
+; bypassff.inc                                                           ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/bypassff.inc                                                                 ;          ;
+; altshift.inc                                                           ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altshift.inc                                                                 ;          ;
+; multcore.tdf                                                           ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/multcore.tdf                                                                 ;          ;
+; csa_add.inc                                                            ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/csa_add.inc                                                                  ;          ;
+; mpar_add.inc                                                           ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/mpar_add.inc                                                                 ;          ;
+; muleabz.inc                                                            ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/muleabz.inc                                                                  ;          ;
+; mul_lfrg.inc                                                           ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/mul_lfrg.inc                                                                 ;          ;
+; mul_boothc.inc                                                         ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/mul_boothc.inc                                                               ;          ;
+; alt_ded_mult.inc                                                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/alt_ded_mult.inc                                                             ;          ;
+; alt_ded_mult_y.inc                                                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/alt_ded_mult_y.inc                                                           ;          ;
+; dffpipe.inc                                                            ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/dffpipe.inc                                                                  ;          ;
+; mpar_add.tdf                                                           ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/mpar_add.tdf                                                                 ;          ;
+; lpm_add_sub.tdf                                                        ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_add_sub.tdf                                                              ;          ;
+; addcore.inc                                                            ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/addcore.inc                                                                  ;          ;
+; look_add.inc                                                           ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/look_add.inc                                                                 ;          ;
+; alt_stratix_add_sub.inc                                                ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/alt_stratix_add_sub.inc                                                      ;          ;
+; db/add_sub_frg.tdf                                                     ; yes             ; Auto-Generated Megafunction  ; C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/db/add_sub_frg.tdf                                                     ;          ;
+; db/add_sub_arg.tdf                                                     ; yes             ; Auto-Generated Megafunction  ; C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/db/add_sub_arg.tdf                                                     ;          ;
+; altshift.tdf                                                           ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altshift.tdf                                                                 ;          ;
++------------------------------------------------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+----------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -300,20 +296,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                                                                          ;
 +---------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
-; Estimated Total logic elements              ; 2,599                                                                                                                          ;
+; Estimated Total logic elements              ; 4,073                                                                                                                          ;
 ;                                             ;                                                                                                                                ;
-; Total combinational functions               ; 2309                                                                                                                           ;
+; Total combinational functions               ; 3783                                                                                                                           ;
 ; Logic element usage by number of LUT inputs ;                                                                                                                                ;
-;     -- 4 input functions                    ; 1663                                                                                                                           ;
-;     -- 3 input functions                    ; 430                                                                                                                            ;
-;     -- <=2 input functions                  ; 216                                                                                                                            ;
+;     -- 4 input functions                    ; 2985                                                                                                                           ;
+;     -- 3 input functions                    ; 535                                                                                                                            ;
+;     -- <=2 input functions                  ; 263                                                                                                                            ;
 ;                                             ;                                                                                                                                ;
 ; Logic elements by mode                      ;                                                                                                                                ;
-;     -- normal mode                          ; 1975                                                                                                                           ;
-;     -- arithmetic mode                      ; 334                                                                                                                            ;
+;     -- normal mode                          ; 3440                                                                                                                           ;
+;     -- arithmetic mode                      ; 343                                                                                                                            ;
 ;                                             ;                                                                                                                                ;
-; Total registers                             ; 459                                                                                                                            ;
-;     -- Dedicated logic registers            ; 459                                                                                                                            ;
+; Total registers                             ; 462                                                                                                                            ;
+;     -- Dedicated logic registers            ; 462                                                                                                                            ;
 ;     -- I/O registers                        ; 0                                                                                                                              ;
 ;                                             ;                                                                                                                                ;
 ; I/O pins                                    ; 62                                                                                                                             ;
@@ -323,10 +319,10 @@ https://fpgasoftware.intel.com/eula.
 ; Total PLLs                                  ; 1                                                                                                                              ;
 ;     -- PLLs                                 ; 1                                                                                                                              ;
 ;                                             ;                                                                                                                                ;
-; Maximum fan-out node                        ; lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_arg:auto_generated|op_1~16 ;
-; Maximum fan-out                             ; 556                                                                                                                            ;
-; Total fan-out                               ; 10114                                                                                                                          ;
-; Average fan-out                             ; 3.49                                                                                                                           ;
+; Maximum fan-out node                        ; lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_arg:auto_generated|op_1~18 ;
+; Maximum fan-out                             ; 858                                                                                                                            ;
+; Total fan-out                               ; 15831                                                                                                                          ;
+; Average fan-out                             ; 3.62                                                                                                                           ;
 +---------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -335,7 +331,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------+--------------+
 ; Compilation Hierarchy Node                                                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                                                                                                                                                                          ; Entity Name                            ; Library Name ;
 +------------------------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------+--------------+
-; |Voltmeter                                                                   ; 2309 (1)            ; 459 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 62   ; 0            ; 0          ; |Voltmeter                                                                                                                                                                                                                                   ; Voltmeter                              ; work         ;
+; |Voltmeter                                                                   ; 3783 (1)            ; 462 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 62   ; 0            ; 0          ; |Voltmeter                                                                                                                                                                                                                                   ; Voltmeter                              ; work         ;
 ;    |ADC_Conversion:ADC_Conversion_ins|                                       ; 54 (5)              ; 90 (29)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|ADC_Conversion:ADC_Conversion_ins                                                                                                                                                                                                 ; ADC_Conversion                         ; work         ;
 ;       |adc_qsys:u0|                                                          ; 49 (0)              ; 61 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0                                                                                                                                                                                     ; adc_qsys                               ; adc_qsys     ;
 ;          |adc_qsys_altpll_sys:altpll_sys|                                    ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_altpll_sys:altpll_sys                                                                                                                                                      ; adc_qsys_altpll_sys                    ; adc_qsys     ;
@@ -350,16 +346,14 @@ https://fpgasoftware.intel.com/eula.
 ;                   |fiftyfivenm_adcblock_primitive_wrapper:adcblock_instance| ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|fiftyfivenm_adcblock_top_wrapper:adc_inst|fiftyfivenm_adcblock_primitive_wrapper:adcblock_instance ; fiftyfivenm_adcblock_primitive_wrapper ; adc_qsys     ;
 ;          |altera_reset_controller:rst_controller_001|                        ; 0 (0)               ; 3 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller_001                                                                                                                                          ; altera_reset_controller                ; adc_qsys     ;
 ;             |altera_reset_synchronizer:alt_rst_sync_uq1|                     ; 0 (0)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller_001|altera_reset_synchronizer:alt_rst_sync_uq1                                                                                               ; altera_reset_synchronizer              ; adc_qsys     ;
+;    |PWM_DAC:pwm|                                                             ; 66 (66)             ; 31 (31)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|PWM_DAC:pwm                                                                                                                                                                                                                       ; PWM_DAC                                ; work         ;
 ;    |SevenSegment:SevenSegment_ins|                                           ; 28 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|SevenSegment:SevenSegment_ins                                                                                                                                                                                                     ; SevenSegment                           ; work         ;
 ;       |SevenSegment_decoder:\Behavioral_Decoder:0:DECODERx|                  ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|SevenSegment:SevenSegment_ins|SevenSegment_decoder:\Behavioral_Decoder:0:DECODERx                                                                                                                                                 ; SevenSegment_decoder                   ; work         ;
 ;       |SevenSegment_decoder:\Behavioral_Decoder:1:DECODERx|                  ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|SevenSegment:SevenSegment_ins|SevenSegment_decoder:\Behavioral_Decoder:1:DECODERx                                                                                                                                                 ; SevenSegment_decoder                   ; work         ;
 ;       |SevenSegment_decoder:\Behavioral_Decoder:2:DECODERx|                  ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|SevenSegment:SevenSegment_ins|SevenSegment_decoder:\Behavioral_Decoder:2:DECODERx                                                                                                                                                 ; SevenSegment_decoder                   ; work         ;
 ;       |SevenSegment_decoder:\Behavioral_Decoder:3:DECODERx|                  ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|SevenSegment:SevenSegment_ins|SevenSegment_decoder:\Behavioral_Decoder:3:DECODERx                                                                                                                                                 ; SevenSegment_decoder                   ; work         ;
 ;    |averager:ave|                                                            ; 206 (206)           ; 204 (204)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|averager:ave                                                                                                                                                                                                                      ; averager                               ; work         ;
-;    |binary_bcd:binary_bcd_ins|                                               ; 148 (148)           ; 84 (84)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|binary_bcd:binary_bcd_ins                                                                                                                                                                                                         ; binary_bcd                             ; work         ;
-;    |buzz_freq_modifier:buzzer_frequency_generator|                           ; 14 (8)              ; 10 (6)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|buzz_freq_modifier:buzzer_frequency_generator                                                                                                                                                                                     ; buzz_freq_modifier                     ; work         ;
-;       |PWM_DAC:pwm|                                                          ; 6 (6)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|buzz_freq_modifier:buzzer_frequency_generator|PWM_DAC:pwm                                                                                                                                                                         ; PWM_DAC                                ; work         ;
-;    |dis_voltage_downcounter:distance_voltage_downcounter|                    ; 87 (87)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|dis_voltage_downcounter:distance_voltage_downcounter                                                                                                                                                                              ; dis_voltage_downcounter                ; work         ;
+;    |binary_bcd:binary_bcd_ins|                                               ; 173 (173)           ; 84 (84)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|binary_bcd:binary_bcd_ins                                                                                                                                                                                                         ; binary_bcd                             ; work         ;
 ;    |flag_mux:flag_multiplexer|                                               ; 16 (16)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|flag_mux:flag_multiplexer                                                                                                                                                                                                         ; flag_mux                               ; work         ;
 ;    |lpm_mult:Mult0|                                                          ; 57 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|lpm_mult:Mult0                                                                                                                                                                                                                    ; lpm_mult                               ; work         ;
 ;       |multcore:mult_core|                                                   ; 57 (29)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|lpm_mult:Mult0|multcore:mult_core                                                                                                                                                                                                 ; multcore                               ; work         ;
@@ -369,12 +363,13 @@ https://fpgasoftware.intel.com/eula.
 ;             |mpar_add:sub_par_add|                                           ; 14 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add                                                                                                                                                            ; mpar_add                               ; work         ;
 ;                |lpm_add_sub:adder[0]|                                        ; 14 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]                                                                                                                                       ; lpm_add_sub                            ; work         ;
 ;                   |add_sub_arg:auto_generated|                               ; 14 (14)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_arg:auto_generated                                                                                                            ; add_sub_arg                            ; work         ;
-;    |mux:multiplexer|                                                         ; 13 (13)             ; 13 (13)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|mux:multiplexer                                                                                                                                                                                                                   ; mux                                    ; work         ;
+;    |mux:multiplexer|                                                         ; 1 (1)               ; 27 (27)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|mux:multiplexer                                                                                                                                                                                                                   ; mux                                    ; work         ;
 ;    |registers:sync1|                                                         ; 0 (0)               ; 12 (12)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|registers:sync1                                                                                                                                                                                                                   ; registers                              ; work         ;
 ;    |registers:sync2|                                                         ; 0 (0)               ; 12 (12)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|registers:sync2                                                                                                                                                                                                                   ; registers                              ; work         ;
 ;    |registers:sync3|                                                         ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|registers:sync3                                                                                                                                                                                                                   ; registers                              ; work         ;
 ;    |registers:sync4|                                                         ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|registers:sync4                                                                                                                                                                                                                   ; registers                              ; work         ;
-;    |voltage2distance:V2D|                                                    ; 1685 (1685)         ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|voltage2distance:V2D                                                                                                                                                                                                              ; voltage2distance                       ; work         ;
+;    |voltage2distance:V2D|                                                    ; 1665 (1665)         ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|voltage2distance:V2D                                                                                                                                                                                                              ; voltage2distance                       ; work         ;
+;    |voltage2frequency:V2F|                                                   ; 1516 (1516)         ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|voltage2frequency:V2F                                                                                                                                                                                                             ; voltage2frequency                      ; work         ;
 +------------------------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -457,18 +452,6 @@ Encoding Type:  One-Hot
 +---------------------------+------------------+---------------------+-------------------------+---------------------------+----------------------+-------------------------+-------------------------+-------------------------+--------------------+----------------------+-----------------+---------------------+---------------------+-------------------+-----------------+----------------------+---------------------+------------------------+------------------------+-------------------+-----------------+
 
 
-Encoding Type:  One-Hot
-+---------------------------------------------------------------------------------------+
-; State Machine - |Voltmeter|buzz_freq_modifier:buzzer_frequency_generator|CurrentState ;
-+-----------------+-----------------+-----------------+---------------------------------+
-; Name            ; CurrentState.S2 ; CurrentState.S1 ; CurrentState.S0                 ;
-+-----------------+-----------------+-----------------+---------------------------------+
-; CurrentState.S0 ; 0               ; 0               ; 0                               ;
-; CurrentState.S1 ; 0               ; 1               ; 1                               ;
-; CurrentState.S2 ; 1               ; 0               ; 1                               ;
-+-----------------+-----------------+-----------------+---------------------------------+
-
-
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Registers Protected by Synthesis                                                                                                                                                                                                                                                                                                                   ;
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------+
@@ -518,7 +501,20 @@ Encoding Type:  One-Hot
 ; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|a_fefifo_c6e:fifo_state|cntr_337:count_usedw|counter_reg_bit[0..5] ; Lost fanout                                                                                                                                                                                                 ;
 ; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|chsel[2,3]                                                                                                                                                                                   ; Merged with ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|chsel[1]            ;
 ; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|tsen                                                                                                                                                                                         ; Stuck at GND due to stuck port data_in                                                                                                                                                                      ;
+; mux:multiplexer|Y[0..12]                                                                                                                                                                                                                                                                                                                                                 ; Lost fanout                                                                                                                                                                                                 ;
 ; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|cmd_fetched                                                                                                                                                                                  ; Stuck at GND due to stuck port data_in                                                                                                                                                                      ;
+; mux:multiplexer|Y[11]~5                                                                                                                                                                                                                                                                                                                                                  ; Merged with mux:multiplexer|Y[12]~2                                                                                                                                                                         ;
+; mux:multiplexer|Y[10]~8                                                                                                                                                                                                                                                                                                                                                  ; Merged with mux:multiplexer|Y[12]~2                                                                                                                                                                         ;
+; mux:multiplexer|Y[9]~11                                                                                                                                                                                                                                                                                                                                                  ; Merged with mux:multiplexer|Y[12]~2                                                                                                                                                                         ;
+; mux:multiplexer|Y[8]~14                                                                                                                                                                                                                                                                                                                                                  ; Merged with mux:multiplexer|Y[12]~2                                                                                                                                                                         ;
+; mux:multiplexer|Y[7]~17                                                                                                                                                                                                                                                                                                                                                  ; Merged with mux:multiplexer|Y[12]~2                                                                                                                                                                         ;
+; mux:multiplexer|Y[6]~20                                                                                                                                                                                                                                                                                                                                                  ; Merged with mux:multiplexer|Y[12]~2                                                                                                                                                                         ;
+; mux:multiplexer|Y[5]~23                                                                                                                                                                                                                                                                                                                                                  ; Merged with mux:multiplexer|Y[12]~2                                                                                                                                                                         ;
+; mux:multiplexer|Y[4]~26                                                                                                                                                                                                                                                                                                                                                  ; Merged with mux:multiplexer|Y[12]~2                                                                                                                                                                         ;
+; mux:multiplexer|Y[3]~29                                                                                                                                                                                                                                                                                                                                                  ; Merged with mux:multiplexer|Y[12]~2                                                                                                                                                                         ;
+; mux:multiplexer|Y[2]~32                                                                                                                                                                                                                                                                                                                                                  ; Merged with mux:multiplexer|Y[12]~2                                                                                                                                                                         ;
+; mux:multiplexer|Y[1]~35                                                                                                                                                                                                                                                                                                                                                  ; Merged with mux:multiplexer|Y[12]~2                                                                                                                                                                         ;
+; mux:multiplexer|Y[0]~38                                                                                                                                                                                                                                                                                                                                                  ; Merged with mux:multiplexer|Y[12]~2                                                                                                                                                                         ;
 ; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|ctrl_state.WAIT                                                                                                                                                                              ; Lost fanout                                                                                                                                                                                                 ;
 ; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|ctrl_state.GETCMD_W                                                                                                                                                                          ; Lost fanout                                                                                                                                                                                                 ;
 ; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|ctrl_state.AVRG_CNT                                                                                                                                                                          ; Lost fanout                                                                                                                                                                                                 ;
@@ -543,9 +539,8 @@ Encoding Type:  One-Hot
 ; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|ctrl_state.WAIT_PEND_DLY1                                                                                                                                                                    ; Stuck at GND due to stuck port data_in                                                                                                                                                                      ;
 ; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|ctrl_state.PUTRESP_PEND                                                                                                                                                                      ; Stuck at GND due to stuck port data_in                                                                                                                                                                      ;
 ; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|chsel[4]                                                                                                                                                                                     ; Merged with ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|chsel[1]            ;
-; buzz_freq_modifier:buzzer_frequency_generator|CurrentState.S0                                                                                                                                                                                                                                                                                                            ; Lost fanout                                                                                                                                                                                                 ;
 ; ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|cmd_channel_dly[0]                                                                                                                                                                           ; Merged with ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|pend                ;
-; Total Number of Removed Registers = 84                                                                                                                                                                                                                                                                                                                                   ;                                                                                                                                                                                                             ;
+; Total Number of Removed Registers = 108                                                                                                                                                                                                                                                                                                                                  ;                                                                                                                                                                                                             ;
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -581,12 +576,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 459   ;
-; Number of registers using Synchronous Clear  ; 47    ;
+; Total registers                              ; 462   ;
+; Number of registers using Synchronous Clear  ; 52    ;
 ; Number of registers using Synchronous Load   ; 4     ;
-; Number of registers using Asynchronous Clear ; 375   ;
+; Number of registers using Asynchronous Clear ; 396   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 336   ;
+; Number of registers using Clock Enable       ; 321   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -610,13 +605,10 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                                                                                          ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Voltmeter|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|int_timer[3] ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |Voltmeter|dis_voltage_downcounter:distance_voltage_downcounter|current_count[26]                                                                                                                   ;
-; 3:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; Yes        ; |Voltmeter|dis_voltage_downcounter:distance_voltage_downcounter|current_count[4]                                                                                                                    ;
-; 6:1                ; 12 bits   ; 48 LEs        ; 24 LEs               ; 24 LEs                 ; Yes        ; |Voltmeter|binary_bcd:binary_bcd_ins|bcd_signal[9]                                                                                                                                                  ;
-; 7:1                ; 4 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Voltmeter|binary_bcd:binary_bcd_ins|bcd_signal[14]                                                                                                                                                 ;
-; 9:1                ; 4 bits    ; 24 LEs        ; 8 LEs                ; 16 LEs                 ; Yes        ; |Voltmeter|binary_bcd:binary_bcd_ins|bcd_signal[17]                                                                                                                                                 ;
-; 11:1               ; 4 bits    ; 28 LEs        ; 12 LEs               ; 16 LEs                 ; Yes        ; |Voltmeter|binary_bcd:binary_bcd_ins|bcd_signal[21]                                                                                                                                                 ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Voltmeter|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|int_timer[0] ;
+; 7:1                ; 4 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Voltmeter|binary_bcd:binary_bcd_ins|bcd_signal[13]                                                                                                                                                 ;
+; 9:1                ; 4 bits    ; 24 LEs        ; 8 LEs                ; 16 LEs                 ; Yes        ; |Voltmeter|binary_bcd:binary_bcd_ins|bcd_signal[20]                                                                                                                                                 ;
+; 11:1               ; 4 bits    ; 28 LEs        ; 12 LEs               ; 16 LEs                 ; Yes        ; |Voltmeter|binary_bcd:binary_bcd_ins|bcd_signal[23]                                                                                                                                                 ;
 ; 13:1               ; 4 bits    ; 32 LEs        ; 20 LEs               ; 12 LEs                 ; Yes        ; |Voltmeter|binary_bcd:binary_bcd_ins|bcd_signal[28]                                                                                                                                                 ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
@@ -788,13 +780,13 @@ Encoding Type:  One-Hot
 +-------------------+-------+------+-----------------------------------------------------------------------------------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: buzz_freq_modifier:buzzer_frequency_generator|PWM_DAC:pwm ;
-+----------------+-------+-------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                          ;
-+----------------+-------+-------------------------------------------------------------------------------+
-; width          ; 4     ; Signed Integer                                                                ;
-+----------------+-------+-------------------------------------------------------------------------------+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: PWM_DAC:pwm ;
++----------------+-------+---------------------------------+
+; Parameter Name ; Value ; Type                            ;
++----------------+-------+---------------------------------+
+; width          ; 4     ; Signed Integer                  ;
++----------------+-------+---------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1439,44 +1431,36 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------+-------+----------+-----------------+
 
 
-+----------------------------------------------------------------------------------+
-; Port Connectivity Checks: "dis_voltage_downcounter:distance_voltage_downcounter" ;
-+--------+-------+----------+------------------------------------------------------+
-; Port   ; Type  ; Severity ; Details                                              ;
-+--------+-------+----------+------------------------------------------------------+
-; enable ; Input ; Info     ; Stuck at VCC                                         ;
-+--------+-------+----------+------------------------------------------------------+
-
-
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 62                          ;
-; cycloneiii_ff         ; 459                         ;
-;     CLR               ; 75                          ;
+; cycloneiii_ff         ; 462                         ;
+;     CLR               ; 80                          ;
+;     CLR SCLR          ; 31                          ;
 ;     ENA               ; 36                          ;
-;     ENA CLR           ; 268                         ;
-;     ENA CLR SCLR      ; 28                          ;
+;     ENA CLR           ; 265                         ;
+;     ENA CLR SCLR      ; 16                          ;
 ;     ENA CLR SCLR SLD  ; 4                           ;
-;     SCLR              ; 15                          ;
-;     plain             ; 33                          ;
-; cycloneiii_lcell_comb ; 2314                        ;
-;     arith             ; 334                         ;
-;         2 data inputs ; 118                         ;
-;         3 data inputs ; 216                         ;
-;     normal            ; 1980                        ;
-;         0 data inputs ; 22                          ;
-;         1 data inputs ; 16                          ;
-;         2 data inputs ; 65                          ;
-;         3 data inputs ; 214                         ;
-;         4 data inputs ; 1663                        ;
+;     SCLR              ; 1                           ;
+;     plain             ; 29                          ;
+; cycloneiii_lcell_comb ; 3788                        ;
+;     arith             ; 343                         ;
+;         2 data inputs ; 107                         ;
+;         3 data inputs ; 236                         ;
+;     normal            ; 3445                        ;
+;         0 data inputs ; 21                          ;
+;         1 data inputs ; 15                          ;
+;         2 data inputs ; 125                         ;
+;         3 data inputs ; 299                         ;
+;         4 data inputs ; 2985                        ;
 ; cycloneiii_pll        ; 1                           ;
 ; fiftyfivenm_adcblock  ; 1                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 17.50                       ;
-; Average LUT depth     ; 10.42                       ;
+; Max LUT depth         ; 17.80                       ;
+; Average LUT depth     ; 10.66                       ;
 +-----------------------+-----------------------------+
 
 
@@ -1485,7 +1469,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:24     ;
+; Top            ; 00:01:03     ;
 +----------------+--------------+
 
 
@@ -1494,127 +1478,112 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Thu Dec 02 03:05:19 2021
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Thu Dec 02 18:18:14 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab3 -c Voltmeter
-Info (125069): Default assignment values were changed in the current version of the Quartus Prime software -- changes to default assignments values are contained in file d:/intelfpga_lite/20.1/quartus/bin64/assignment_defaults.qdf
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file voltage2frequency.vhd
+    Info (12022): Found design unit 1: voltage2frequency-behavior File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/voltage2frequency.vhd Line: 14
+    Info (12023): Found entity 1: voltage2frequency File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/voltage2frequency.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file pwm_dac.vhd
-    Info (12022): Found design unit 1: PWM_DAC-Behavioral File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/PWM_DAC.vhd Line: 14
-    Info (12023): Found entity 1: PWM_DAC File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/PWM_DAC.vhd Line: 5
-Warning (12019): Can't analyze file -- file downcounter.vhd is missing
+    Info (12022): Found design unit 1: PWM_DAC-Behavioral File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/PWM_DAC.vhd Line: 14
+    Info (12023): Found entity 1: PWM_DAC File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/PWM_DAC.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file flag_mux.vhd
-    Info (12022): Found design unit 1: flag_mux-Behavioral File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/flag_mux.vhd Line: 12
-    Info (12023): Found entity 1: flag_mux File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/flag_mux.vhd Line: 4
+    Info (12022): Found design unit 1: flag_mux-Behavioral File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/flag_mux.vhd Line: 12
+    Info (12023): Found entity 1: flag_mux File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/flag_mux.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file voltage2distance.vhd
-    Info (12022): Found design unit 1: voltage2distance-behavior File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltage2distance.vhd Line: 34
-    Info (12023): Found entity 1: voltage2distance File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltage2distance.vhd Line: 24
+    Info (12022): Found design unit 1: voltage2distance-behavior File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/voltage2distance.vhd Line: 34
+    Info (12023): Found entity 1: voltage2distance File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/voltage2distance.vhd Line: 24
 Info (12021): Found 2 design units, including 1 entities, in source file sevensegment_decoder.vhd
-    Info (12022): Found design unit 1: SevenSegment_decoder-Behavioral File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/SevenSegment_decoder.vhd Line: 13
-    Info (12023): Found entity 1: SevenSegment_decoder File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/SevenSegment_decoder.vhd Line: 5
+    Info (12022): Found design unit 1: SevenSegment_decoder-Behavioral File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/SevenSegment_decoder.vhd Line: 13
+    Info (12023): Found entity 1: SevenSegment_decoder File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/SevenSegment_decoder.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file registers.vhd
-    Info (12022): Found design unit 1: registers-rtl File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/registers.vhd Line: 17
-    Info (12023): Found entity 1: registers File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/registers.vhd Line: 4
+    Info (12022): Found design unit 1: registers-rtl File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/registers.vhd Line: 17
+    Info (12023): Found entity 1: registers File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/registers.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file binary_bcd.vhd
-    Info (12022): Found design unit 1: binary_bcd-behavior File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 19
-    Info (12023): Found entity 1: binary_bcd File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 8
+    Info (12022): Found design unit 1: binary_bcd-behavior File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/binary_bcd.vhd Line: 19
+    Info (12023): Found entity 1: binary_bcd File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/binary_bcd.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file averager.vhd
-    Info (12022): Found design unit 1: averager-rtl File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/averager.vhd Line: 15
-    Info (12023): Found entity 1: averager File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/averager.vhd Line: 6
+    Info (12022): Found design unit 1: averager-rtl File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/averager.vhd Line: 15
+    Info (12023): Found entity 1: averager File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/averager.vhd Line: 6
 Info (12021): Found 3 design units, including 1 entities, in source file sevensegment.vhd
-    Info (12022): Found design unit 1: HexArrays File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/SevenSegment.vhd Line: 5
-    Info (12022): Found design unit 2: SevenSegment-Behavioral File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/SevenSegment.vhd Line: 21
-    Info (12023): Found entity 1: SevenSegment File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/SevenSegment.vhd Line: 15
+    Info (12022): Found design unit 1: HexArrays File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/SevenSegment.vhd Line: 5
+    Info (12022): Found design unit 2: SevenSegment-Behavioral File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/SevenSegment.vhd Line: 21
+    Info (12023): Found entity 1: SevenSegment File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/SevenSegment.vhd Line: 15
 Info (12021): Found 1 design units, including 1 entities, in source file adc_conversion.v
-    Info (12023): Found entity 1: ADC_Conversion File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/ADC_Conversion.v Line: 34
+    Info (12023): Found entity 1: ADC_Conversion File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/ADC_Conversion.v Line: 34
 Info (12021): Found 1 design units, including 1 entities, in source file adc_qsys/synthesis/adc_qsys.v
-    Info (12023): Found entity 1: adc_qsys File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/adc_qsys.v Line: 6
+    Info (12023): Found entity 1: adc_qsys File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/adc_qsys/synthesis/adc_qsys.v Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file adc_qsys/synthesis/submodules/altera_reset_controller.v
-    Info (12023): Found entity 1: altera_reset_controller File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/altera_reset_controller.v Line: 42
+    Info (12023): Found entity 1: altera_reset_controller File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/altera_reset_controller.v Line: 42
 Info (12021): Found 1 design units, including 1 entities, in source file adc_qsys/synthesis/submodules/altera_reset_synchronizer.v
-    Info (12023): Found entity 1: altera_reset_synchronizer File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/altera_reset_synchronizer.v Line: 24
+    Info (12023): Found entity 1: altera_reset_synchronizer File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/altera_reset_synchronizer.v Line: 24
 Info (12021): Found 1 design units, including 1 entities, in source file adc_qsys/synthesis/submodules/adc_qsys_modular_adc_0.v
-    Info (12023): Found entity 1: adc_qsys_modular_adc_0 File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/adc_qsys_modular_adc_0.v Line: 9
+    Info (12023): Found entity 1: adc_qsys_modular_adc_0 File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/adc_qsys_modular_adc_0.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file adc_qsys/synthesis/submodules/altera_modular_adc_control.v
-    Info (12023): Found entity 1: altera_modular_adc_control File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/altera_modular_adc_control.v Line: 18
+    Info (12023): Found entity 1: altera_modular_adc_control File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/altera_modular_adc_control.v Line: 18
 Info (12021): Found 1 design units, including 1 entities, in source file adc_qsys/synthesis/submodules/altera_modular_adc_control_avrg_fifo.v
-    Info (12023): Found entity 1: altera_modular_adc_control_avrg_fifo File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/altera_modular_adc_control_avrg_fifo.v Line: 53
+    Info (12023): Found entity 1: altera_modular_adc_control_avrg_fifo File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/altera_modular_adc_control_avrg_fifo.v Line: 53
 Info (12021): Found 1 design units, including 1 entities, in source file adc_qsys/synthesis/submodules/altera_modular_adc_control_fsm.v
-    Info (12023): Found entity 1: altera_modular_adc_control_fsm File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/altera_modular_adc_control_fsm.v Line: 18
+    Info (12023): Found entity 1: altera_modular_adc_control_fsm File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/altera_modular_adc_control_fsm.v Line: 18
 Info (12021): Found 1 design units, including 1 entities, in source file adc_qsys/synthesis/submodules/chsel_code_converter_sw_to_hw.v
-    Info (12023): Found entity 1: chsel_code_converter_sw_to_hw File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/chsel_code_converter_sw_to_hw.v Line: 32
+    Info (12023): Found entity 1: chsel_code_converter_sw_to_hw File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/chsel_code_converter_sw_to_hw.v Line: 32
 Info (12021): Found 1 design units, including 1 entities, in source file adc_qsys/synthesis/submodules/fiftyfivenm_adcblock_primitive_wrapper.v
-    Info (12023): Found entity 1: fiftyfivenm_adcblock_primitive_wrapper File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/fiftyfivenm_adcblock_primitive_wrapper.v Line: 37
+    Info (12023): Found entity 1: fiftyfivenm_adcblock_primitive_wrapper File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/fiftyfivenm_adcblock_primitive_wrapper.v Line: 37
 Info (12021): Found 1 design units, including 1 entities, in source file adc_qsys/synthesis/submodules/fiftyfivenm_adcblock_top_wrapper.v
-    Info (12023): Found entity 1: fiftyfivenm_adcblock_top_wrapper File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/fiftyfivenm_adcblock_top_wrapper.v Line: 31
+    Info (12023): Found entity 1: fiftyfivenm_adcblock_top_wrapper File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/fiftyfivenm_adcblock_top_wrapper.v Line: 31
 Info (12021): Found 4 design units, including 4 entities, in source file adc_qsys/synthesis/submodules/adc_qsys_altpll_sys.v
-    Info (12023): Found entity 1: adc_qsys_altpll_sys_dffpipe_l2c File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/adc_qsys_altpll_sys.v Line: 37
-    Info (12023): Found entity 2: adc_qsys_altpll_sys_stdsync_sv6 File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/adc_qsys_altpll_sys.v Line: 98
-    Info (12023): Found entity 3: adc_qsys_altpll_sys_altpll_oc92 File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/adc_qsys_altpll_sys.v Line: 130
-    Info (12023): Found entity 4: adc_qsys_altpll_sys File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/adc_qsys_altpll_sys.v Line: 217
+    Info (12023): Found entity 1: adc_qsys_altpll_sys_dffpipe_l2c File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/adc_qsys_altpll_sys.v Line: 37
+    Info (12023): Found entity 2: adc_qsys_altpll_sys_stdsync_sv6 File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/adc_qsys_altpll_sys.v Line: 98
+    Info (12023): Found entity 3: adc_qsys_altpll_sys_altpll_oc92 File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/adc_qsys_altpll_sys.v Line: 130
+    Info (12023): Found entity 4: adc_qsys_altpll_sys File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/adc_qsys_altpll_sys.v Line: 217
 Info (12021): Found 2 design units, including 1 entities, in source file voltmeter.vhd
-    Info (12022): Found design unit 1: Voltmeter-Behavioral File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 17
-    Info (12023): Found entity 1: Voltmeter File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 6
+    Info (12022): Found design unit 1: Voltmeter-Behavioral File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/voltmeter.vhd Line: 17
+    Info (12023): Found entity 1: Voltmeter File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/voltmeter.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file voltmeter_tb.vhd
-    Info (12022): Found design unit 1: Voltmeter_tb-tb File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter_tb.vhd Line: 11
-    Info (12023): Found entity 1: Voltmeter_tb File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter_tb.vhd Line: 7
-Warning (12090): Entity "mux" obtained from "mux.vhd" instead of from Quartus Prime megafunction library File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/mux.vhd Line: 4
+    Info (12022): Found design unit 1: Voltmeter_tb-tb File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/voltmeter_tb.vhd Line: 11
+    Info (12023): Found entity 1: Voltmeter_tb File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/voltmeter_tb.vhd Line: 7
+Warning (12090): Entity "mux" obtained from "mux.vhd" instead of from Quartus Prime megafunction library File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/mux.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file mux.vhd
-    Info (12022): Found design unit 1: mux-Behavioral File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/mux.vhd Line: 14
-    Info (12023): Found entity 1: mux File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/mux.vhd Line: 4
+    Info (12022): Found design unit 1: mux-Behavioral File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/mux.vhd Line: 14
+    Info (12023): Found entity 1: mux File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/mux.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file mux_tb.vhd
-    Info (12022): Found design unit 1: mux_tb-tb File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/mux_tb.vhd Line: 10
-    Info (12023): Found entity 1: mux_tb File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/mux_tb.vhd Line: 6
-Info (12021): Found 2 design units, including 1 entities, in source file buzzer_freqenecy_generator.vhd
-    Info (12022): Found design unit 1: buzz_freq_modifier-Behavioral File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/buzzer_freqenecy_generator.vhd Line: 15
-    Info (12023): Found entity 1: buzz_freq_modifier File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/buzzer_freqenecy_generator.vhd Line: 6
+    Info (12022): Found design unit 1: mux_tb-tb File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/mux_tb.vhd Line: 10
+    Info (12023): Found entity 1: mux_tb File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/mux_tb.vhd Line: 6
 Info (12127): Elaborating entity "Voltmeter" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at voltmeter.vhd(24): object "busy" assigned a value but never read File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 24
-Info (12128): Elaborating entity "buzz_freq_modifier" for hierarchy "buzz_freq_modifier:buzzer_frequency_generator" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 143
-Warning (10540): VHDL Signal Declaration warning at buzzer_freqenecy_generator.vhd(23): used explicit default value for signal "max_count" because signal was never assigned a value File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/buzzer_freqenecy_generator.vhd Line: 23
-Warning (10540): VHDL Signal Declaration warning at buzzer_freqenecy_generator.vhd(24): used explicit default value for signal "zero_count" because signal was never assigned a value File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/buzzer_freqenecy_generator.vhd Line: 24
-Warning (10492): VHDL Process Statement warning at buzzer_freqenecy_generator.vhd(49): signal "zero_count" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/buzzer_freqenecy_generator.vhd Line: 49
-Warning (10492): VHDL Process Statement warning at buzzer_freqenecy_generator.vhd(80): signal "zero_count" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/buzzer_freqenecy_generator.vhd Line: 80
-Warning (10492): VHDL Process Statement warning at buzzer_freqenecy_generator.vhd(83): signal "max_count" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/buzzer_freqenecy_generator.vhd Line: 83
-Warning (10492): VHDL Process Statement warning at buzzer_freqenecy_generator.vhd(85): signal "max_count" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/buzzer_freqenecy_generator.vhd Line: 85
-Warning (10492): VHDL Process Statement warning at buzzer_freqenecy_generator.vhd(91): signal "zero_count" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/buzzer_freqenecy_generator.vhd Line: 91
-Warning (10492): VHDL Process Statement warning at buzzer_freqenecy_generator.vhd(93): signal "zero_count" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/buzzer_freqenecy_generator.vhd Line: 93
-Warning (10492): VHDL Process Statement warning at buzzer_freqenecy_generator.vhd(100): signal "zero_count" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/buzzer_freqenecy_generator.vhd Line: 100
-Info (12128): Elaborating entity "PWM_DAC" for hierarchy "buzz_freq_modifier:buzzer_frequency_generator|PWM_DAC:pwm" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/buzzer_freqenecy_generator.vhd Line: 37
-Warning (12125): Using design file dis_voltage_downcounter.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: dis_voltage_downcounter-Behavioral File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/dis_voltage_downcounter.vhd Line: 18
-    Info (12023): Found entity 1: dis_voltage_downcounter File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/dis_voltage_downcounter.vhd Line: 7
-Info (12128): Elaborating entity "dis_voltage_downcounter" for hierarchy "dis_voltage_downcounter:distance_voltage_downcounter" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 151
-Info (12128): Elaborating entity "mux" for hierarchy "mux:multiplexer" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 160
-Warning (10492): VHDL Process Statement warning at mux.vhd(19): signal "clk" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/mux.vhd Line: 19
-Info (12128): Elaborating entity "flag_mux" for hierarchy "flag_mux:flag_multiplexer" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 169
-Info (12128): Elaborating entity "voltage2distance" for hierarchy "voltage2distance:V2D" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 176
-Info (12128): Elaborating entity "averager" for hierarchy "averager:ave" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 185
-Info (12128): Elaborating entity "registers" for hierarchy "registers:sync1" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 194
-Info (12128): Elaborating entity "registers" for hierarchy "registers:sync3" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 214
-Info (12128): Elaborating entity "SevenSegment" for hierarchy "SevenSegment:SevenSegment_ins" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 234
-Info (12128): Elaborating entity "SevenSegment_decoder" for hierarchy "SevenSegment:SevenSegment_ins|SevenSegment_decoder:\Behavioral_Decoder:0:DECODERx" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/SevenSegment.vhd Line: 36
-Info (12128): Elaborating entity "ADC_Conversion" for hierarchy "ADC_Conversion:ADC_Conversion_ins" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 240
-Warning (10036): Verilog HDL or VHDL warning at ADC_Conversion.v(98): object "cur_adc_ch" assigned a value but never read File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/ADC_Conversion.v Line: 98
-Warning (10036): Verilog HDL or VHDL warning at ADC_Conversion.v(99): object "adc_sample_data" assigned a value but never read File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/ADC_Conversion.v Line: 99
-Info (12128): Elaborating entity "adc_qsys" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/ADC_Conversion.v Line: 75
-Info (12128): Elaborating entity "adc_qsys_altpll_sys" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_altpll_sys:altpll_sys" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/adc_qsys.v Line: 52
-Info (12128): Elaborating entity "adc_qsys_altpll_sys_stdsync_sv6" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_altpll_sys:altpll_sys|adc_qsys_altpll_sys_stdsync_sv6:stdsync2" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/adc_qsys_altpll_sys.v Line: 288
-Info (12128): Elaborating entity "adc_qsys_altpll_sys_dffpipe_l2c" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_altpll_sys:altpll_sys|adc_qsys_altpll_sys_stdsync_sv6:stdsync2|adc_qsys_altpll_sys_dffpipe_l2c:dffpipe3" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/adc_qsys_altpll_sys.v Line: 116
-Info (12128): Elaborating entity "adc_qsys_altpll_sys_altpll_oc92" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_altpll_sys:altpll_sys|adc_qsys_altpll_sys_altpll_oc92:sd1" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/adc_qsys_altpll_sys.v Line: 294
-Info (12128): Elaborating entity "adc_qsys_modular_adc_0" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/adc_qsys.v Line: 71
-Info (12128): Elaborating entity "altera_modular_adc_control" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/adc_qsys_modular_adc_0.v Line: 92
-Info (12128): Elaborating entity "altera_modular_adc_control_fsm" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/altera_modular_adc_control.v Line: 108
-Warning (10036): Verilog HDL or VHDL warning at altera_modular_adc_control_fsm.v(70): object "sync_ctrl_state_nxt" assigned a value but never read File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/altera_modular_adc_control_fsm.v Line: 70
-Info (12128): Elaborating entity "altera_std_synchronizer" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_std_synchronizer:u_clk_dft_synchronizer" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/altera_modular_adc_control_fsm.v Line: 156
-Info (12130): Elaborated megafunction instantiation "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_std_synchronizer:u_clk_dft_synchronizer" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/altera_modular_adc_control_fsm.v Line: 156
-Info (12133): Instantiated megafunction "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_std_synchronizer:u_clk_dft_synchronizer" with the following parameter: File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/altera_modular_adc_control_fsm.v Line: 156
+Warning (10036): Verilog HDL or VHDL warning at voltmeter.vhd(24): object "busy" assigned a value but never read File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/voltmeter.vhd Line: 24
+Info (12128): Elaborating entity "voltage2frequency" for hierarchy "voltage2frequency:V2F" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/voltmeter.vhd Line: 143
+Info (12128): Elaborating entity "PWM_DAC" for hierarchy "PWM_DAC:pwm" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/voltmeter.vhd Line: 150
+Info (12128): Elaborating entity "mux" for hierarchy "mux:multiplexer" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/voltmeter.vhd Line: 160
+Warning (10492): VHDL Process Statement warning at mux.vhd(19): signal "clk" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/mux.vhd Line: 19
+Info (12128): Elaborating entity "flag_mux" for hierarchy "flag_mux:flag_multiplexer" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/voltmeter.vhd Line: 169
+Info (12128): Elaborating entity "voltage2distance" for hierarchy "voltage2distance:V2D" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/voltmeter.vhd Line: 176
+Info (12128): Elaborating entity "averager" for hierarchy "averager:ave" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/voltmeter.vhd Line: 185
+Info (12128): Elaborating entity "registers" for hierarchy "registers:sync1" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/voltmeter.vhd Line: 194
+Info (12128): Elaborating entity "registers" for hierarchy "registers:sync3" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/voltmeter.vhd Line: 214
+Info (12128): Elaborating entity "SevenSegment" for hierarchy "SevenSegment:SevenSegment_ins" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/voltmeter.vhd Line: 234
+Info (12128): Elaborating entity "SevenSegment_decoder" for hierarchy "SevenSegment:SevenSegment_ins|SevenSegment_decoder:\Behavioral_Decoder:0:DECODERx" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/SevenSegment.vhd Line: 36
+Info (12128): Elaborating entity "ADC_Conversion" for hierarchy "ADC_Conversion:ADC_Conversion_ins" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/voltmeter.vhd Line: 240
+Warning (10036): Verilog HDL or VHDL warning at ADC_Conversion.v(98): object "cur_adc_ch" assigned a value but never read File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/ADC_Conversion.v Line: 98
+Warning (10036): Verilog HDL or VHDL warning at ADC_Conversion.v(99): object "adc_sample_data" assigned a value but never read File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/ADC_Conversion.v Line: 99
+Info (12128): Elaborating entity "adc_qsys" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/ADC_Conversion.v Line: 75
+Info (12128): Elaborating entity "adc_qsys_altpll_sys" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_altpll_sys:altpll_sys" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/adc_qsys/synthesis/adc_qsys.v Line: 52
+Info (12128): Elaborating entity "adc_qsys_altpll_sys_stdsync_sv6" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_altpll_sys:altpll_sys|adc_qsys_altpll_sys_stdsync_sv6:stdsync2" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/adc_qsys_altpll_sys.v Line: 288
+Info (12128): Elaborating entity "adc_qsys_altpll_sys_dffpipe_l2c" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_altpll_sys:altpll_sys|adc_qsys_altpll_sys_stdsync_sv6:stdsync2|adc_qsys_altpll_sys_dffpipe_l2c:dffpipe3" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/adc_qsys_altpll_sys.v Line: 116
+Info (12128): Elaborating entity "adc_qsys_altpll_sys_altpll_oc92" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_altpll_sys:altpll_sys|adc_qsys_altpll_sys_altpll_oc92:sd1" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/adc_qsys_altpll_sys.v Line: 294
+Info (12128): Elaborating entity "adc_qsys_modular_adc_0" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/adc_qsys/synthesis/adc_qsys.v Line: 71
+Info (12128): Elaborating entity "altera_modular_adc_control" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/adc_qsys_modular_adc_0.v Line: 92
+Info (12128): Elaborating entity "altera_modular_adc_control_fsm" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/altera_modular_adc_control.v Line: 108
+Warning (10036): Verilog HDL or VHDL warning at altera_modular_adc_control_fsm.v(70): object "sync_ctrl_state_nxt" assigned a value but never read File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/altera_modular_adc_control_fsm.v Line: 70
+Info (12128): Elaborating entity "altera_std_synchronizer" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_std_synchronizer:u_clk_dft_synchronizer" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/altera_modular_adc_control_fsm.v Line: 156
+Info (12130): Elaborated megafunction instantiation "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_std_synchronizer:u_clk_dft_synchronizer" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/altera_modular_adc_control_fsm.v Line: 156
+Info (12133): Instantiated megafunction "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_std_synchronizer:u_clk_dft_synchronizer" with the following parameter: File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/altera_modular_adc_control_fsm.v Line: 156
     Info (12134): Parameter "depth" = "2"
-Info (12128): Elaborating entity "altera_modular_adc_control_avrg_fifo" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/altera_modular_adc_control_fsm.v Line: 955
-Info (12128): Elaborating entity "scfifo" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/altera_modular_adc_control_avrg_fifo.v Line: 91
-Info (12130): Elaborated megafunction instantiation "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/altera_modular_adc_control_avrg_fifo.v Line: 91
-Info (12133): Instantiated megafunction "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component" with the following parameter: File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/altera_modular_adc_control_avrg_fifo.v Line: 91
+Info (12128): Elaborating entity "altera_modular_adc_control_avrg_fifo" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/altera_modular_adc_control_fsm.v Line: 955
+Info (12128): Elaborating entity "scfifo" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/altera_modular_adc_control_avrg_fifo.v Line: 91
+Info (12130): Elaborated megafunction instantiation "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/altera_modular_adc_control_avrg_fifo.v Line: 91
+Info (12133): Instantiated megafunction "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component" with the following parameter: File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/altera_modular_adc_control_avrg_fifo.v Line: 91
     Info (12134): Parameter "add_ram_output_register" = "OFF"
     Info (12134): Parameter "intended_device_family" = "MAX 10"
     Info (12134): Parameter "lpm_hint" = "RAM_BLOCK_TYPE=M9K"
@@ -1627,51 +1596,51 @@ Info (12133): Instantiated megafunction "ADC_Conversion:ADC_Conversion_ins|adc_q
     Info (12134): Parameter "underflow_checking" = "ON"
     Info (12134): Parameter "use_eab" = "ON"
 Info (12021): Found 1 design units, including 1 entities, in source file db/scfifo_ds61.tdf
-    Info (12023): Found entity 1: scfifo_ds61 File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/db/scfifo_ds61.tdf Line: 25
-Info (12128): Elaborating entity "scfifo_ds61" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated" File: d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/scfifo.tdf Line: 300
+    Info (12023): Found entity 1: scfifo_ds61 File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/db/scfifo_ds61.tdf Line: 24
+Info (12128): Elaborating entity "scfifo_ds61" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/scfifo.tdf Line: 299
 Info (12021): Found 1 design units, including 1 entities, in source file db/a_dpfifo_3o41.tdf
-    Info (12023): Found entity 1: a_dpfifo_3o41 File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/db/a_dpfifo_3o41.tdf Line: 29
-Info (12128): Elaborating entity "a_dpfifo_3o41" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/db/scfifo_ds61.tdf Line: 37
+    Info (12023): Found entity 1: a_dpfifo_3o41 File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/db/a_dpfifo_3o41.tdf Line: 28
+Info (12128): Elaborating entity "a_dpfifo_3o41" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/db/scfifo_ds61.tdf Line: 36
 Info (12021): Found 1 design units, including 1 entities, in source file db/a_fefifo_c6e.tdf
-    Info (12023): Found entity 1: a_fefifo_c6e File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/db/a_fefifo_c6e.tdf Line: 25
-Info (12128): Elaborating entity "a_fefifo_c6e" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|a_fefifo_c6e:fifo_state" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/db/a_dpfifo_3o41.tdf Line: 41
+    Info (12023): Found entity 1: a_fefifo_c6e File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/db/a_fefifo_c6e.tdf Line: 24
+Info (12128): Elaborating entity "a_fefifo_c6e" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|a_fefifo_c6e:fifo_state" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/db/a_dpfifo_3o41.tdf Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_337.tdf
-    Info (12023): Found entity 1: cntr_337 File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/db/cntr_337.tdf Line: 26
-Info (12128): Elaborating entity "cntr_337" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|a_fefifo_c6e:fifo_state|cntr_337:count_usedw" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/db/a_fefifo_c6e.tdf Line: 38
+    Info (12023): Found entity 1: cntr_337 File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/db/cntr_337.tdf Line: 25
+Info (12128): Elaborating entity "cntr_337" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|a_fefifo_c6e:fifo_state|cntr_337:count_usedw" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/db/a_fefifo_c6e.tdf Line: 37
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_rqn1.tdf
-    Info (12023): Found entity 1: altsyncram_rqn1 File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/db/altsyncram_rqn1.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_rqn1" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/db/a_dpfifo_3o41.tdf Line: 42
+    Info (12023): Found entity 1: altsyncram_rqn1 File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/db/altsyncram_rqn1.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_rqn1" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/db/a_dpfifo_3o41.tdf Line: 41
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_n2b.tdf
-    Info (12023): Found entity 1: cntr_n2b File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/db/cntr_n2b.tdf Line: 26
-Info (12128): Elaborating entity "cntr_n2b" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|cntr_n2b:rd_ptr_count" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/db/a_dpfifo_3o41.tdf Line: 43
-Info (12128): Elaborating entity "fiftyfivenm_adcblock_top_wrapper" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|fiftyfivenm_adcblock_top_wrapper:adc_inst" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/altera_modular_adc_control.v Line: 152
-Info (12128): Elaborating entity "chsel_code_converter_sw_to_hw" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|fiftyfivenm_adcblock_top_wrapper:adc_inst|chsel_code_converter_sw_to_hw:decoder" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/fiftyfivenm_adcblock_top_wrapper.v Line: 173
-Info (12128): Elaborating entity "fiftyfivenm_adcblock_primitive_wrapper" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|fiftyfivenm_adcblock_top_wrapper:adc_inst|fiftyfivenm_adcblock_primitive_wrapper:adcblock_instance" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/fiftyfivenm_adcblock_top_wrapper.v Line: 191
-Info (12128): Elaborating entity "altera_reset_controller" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/adc_qsys.v Line: 134
-Info (12128): Elaborating entity "altera_reset_synchronizer" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/altera_reset_controller.v Line: 208
-Info (12128): Elaborating entity "altera_reset_synchronizer" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_req_sync_uq1" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/altera_reset_controller.v Line: 220
-Info (12128): Elaborating entity "binary_bcd" for hierarchy "binary_bcd:binary_bcd_ins" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 252
-Warning (10036): Verilog HDL or VHDL warning at binary_bcd.vhd(22): object "counter" assigned a value but never read File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 22
-Warning (10631): VHDL Process Statement warning at binary_bcd.vhd(34): inferring latch(es) for signal or variable "busy", which holds its previous value in one or more paths through the process File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 34
-Info (10041): Inferred latch for "busy" at binary_bcd.vhd(34) File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/binary_bcd.vhd Line: 34
+    Info (12023): Found entity 1: cntr_n2b File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/db/cntr_n2b.tdf Line: 25
+Info (12128): Elaborating entity "cntr_n2b" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|cntr_n2b:rd_ptr_count" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/db/a_dpfifo_3o41.tdf Line: 42
+Info (12128): Elaborating entity "fiftyfivenm_adcblock_top_wrapper" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|fiftyfivenm_adcblock_top_wrapper:adc_inst" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/altera_modular_adc_control.v Line: 152
+Info (12128): Elaborating entity "chsel_code_converter_sw_to_hw" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|fiftyfivenm_adcblock_top_wrapper:adc_inst|chsel_code_converter_sw_to_hw:decoder" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/fiftyfivenm_adcblock_top_wrapper.v Line: 173
+Info (12128): Elaborating entity "fiftyfivenm_adcblock_primitive_wrapper" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|fiftyfivenm_adcblock_top_wrapper:adc_inst|fiftyfivenm_adcblock_primitive_wrapper:adcblock_instance" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/fiftyfivenm_adcblock_top_wrapper.v Line: 191
+Info (12128): Elaborating entity "altera_reset_controller" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/adc_qsys/synthesis/adc_qsys.v Line: 134
+Info (12128): Elaborating entity "altera_reset_synchronizer" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/altera_reset_controller.v Line: 208
+Info (12128): Elaborating entity "altera_reset_synchronizer" for hierarchy "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_req_sync_uq1" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/altera_reset_controller.v Line: 220
+Info (12128): Elaborating entity "binary_bcd" for hierarchy "binary_bcd:binary_bcd_ins" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/voltmeter.vhd Line: 252
+Warning (10036): Verilog HDL or VHDL warning at binary_bcd.vhd(22): object "counter" assigned a value but never read File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/binary_bcd.vhd Line: 22
+Warning (10631): VHDL Process Statement warning at binary_bcd.vhd(34): inferring latch(es) for signal or variable "busy", which holds its previous value in one or more paths through the process File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/binary_bcd.vhd Line: 34
+Info (10041): Inferred latch for "busy" at binary_bcd.vhd(34) File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/binary_bcd.vhd Line: 34
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following RAM node(s):
-        Warning (14320): Synthesized away node "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[0]" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/db/altsyncram_rqn1.tdf Line: 40
-        Warning (14320): Synthesized away node "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[1]" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/db/altsyncram_rqn1.tdf Line: 70
-        Warning (14320): Synthesized away node "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[2]" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/db/altsyncram_rqn1.tdf Line: 100
-        Warning (14320): Synthesized away node "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[3]" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/db/altsyncram_rqn1.tdf Line: 130
-        Warning (14320): Synthesized away node "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[4]" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/db/altsyncram_rqn1.tdf Line: 160
-        Warning (14320): Synthesized away node "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[5]" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/db/altsyncram_rqn1.tdf Line: 190
-        Warning (14320): Synthesized away node "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[6]" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/db/altsyncram_rqn1.tdf Line: 220
-        Warning (14320): Synthesized away node "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[7]" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/db/altsyncram_rqn1.tdf Line: 250
-        Warning (14320): Synthesized away node "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[8]" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/db/altsyncram_rqn1.tdf Line: 280
-        Warning (14320): Synthesized away node "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[9]" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/db/altsyncram_rqn1.tdf Line: 310
-        Warning (14320): Synthesized away node "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[10]" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/db/altsyncram_rqn1.tdf Line: 340
-        Warning (14320): Synthesized away node "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[11]" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/db/altsyncram_rqn1.tdf Line: 370
+        Warning (14320): Synthesized away node "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[0]" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/db/altsyncram_rqn1.tdf Line: 39
+        Warning (14320): Synthesized away node "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[1]" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/db/altsyncram_rqn1.tdf Line: 69
+        Warning (14320): Synthesized away node "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[2]" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/db/altsyncram_rqn1.tdf Line: 99
+        Warning (14320): Synthesized away node "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[3]" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/db/altsyncram_rqn1.tdf Line: 129
+        Warning (14320): Synthesized away node "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[4]" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/db/altsyncram_rqn1.tdf Line: 159
+        Warning (14320): Synthesized away node "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[5]" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/db/altsyncram_rqn1.tdf Line: 189
+        Warning (14320): Synthesized away node "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[6]" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/db/altsyncram_rqn1.tdf Line: 219
+        Warning (14320): Synthesized away node "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[7]" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/db/altsyncram_rqn1.tdf Line: 249
+        Warning (14320): Synthesized away node "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[8]" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/db/altsyncram_rqn1.tdf Line: 279
+        Warning (14320): Synthesized away node "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[9]" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/db/altsyncram_rqn1.tdf Line: 309
+        Warning (14320): Synthesized away node "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[10]" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/db/altsyncram_rqn1.tdf Line: 339
+        Warning (14320): Synthesized away node "ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[11]" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/db/altsyncram_rqn1.tdf Line: 369
 Info (278001): Inferred 1 megafunctions from design logic
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Mult0" File: d:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/1993/numeric_std_vhdl1993.vhd Line: 1402
-Info (12130): Elaborated megafunction instantiation "lpm_mult:Mult0" File: d:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/1993/numeric_std_vhdl1993.vhd Line: 1402
-Info (12133): Instantiated megafunction "lpm_mult:Mult0" with the following parameter: File: d:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/1993/numeric_std_vhdl1993.vhd Line: 1402
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Mult0" File: c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/1993/numeric_std_vhdl1993.vhd Line: 1402
+Info (12130): Elaborated megafunction instantiation "lpm_mult:Mult0" File: c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/1993/numeric_std_vhdl1993.vhd Line: 1402
+Info (12133): Instantiated megafunction "lpm_mult:Mult0" with the following parameter: File: c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/1993/numeric_std_vhdl1993.vhd Line: 1402
     Info (12134): Parameter "LPM_WIDTHA" = "12"
     Info (12134): Parameter "LPM_WIDTHB" = "12"
     Info (12134): Parameter "LPM_WIDTHP" = "24"
@@ -1681,42 +1650,42 @@ Info (12133): Instantiated megafunction "lpm_mult:Mult0" with the following para
     Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
     Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "YES"
     Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
-Info (12131): Elaborated megafunction instantiation "lpm_mult:Mult0|multcore:mult_core", which is child of megafunction instantiation "lpm_mult:Mult0" File: d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mult.tdf Line: 309
-Info (12131): Elaborated megafunction instantiation "lpm_mult:Mult0|multcore:mult_core|mpar_add:padder", which is child of megafunction instantiation "lpm_mult:Mult0" File: d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/multcore.tdf Line: 229
-Info (12131): Elaborated megafunction instantiation "lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]", which is child of megafunction instantiation "lpm_mult:Mult0" File: d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/mpar_add.tdf Line: 78
+Info (12131): Elaborated megafunction instantiation "lpm_mult:Mult0|multcore:mult_core", which is child of megafunction instantiation "lpm_mult:Mult0" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mult.tdf Line: 308
+Info (12131): Elaborated megafunction instantiation "lpm_mult:Mult0|multcore:mult_core|mpar_add:padder", which is child of megafunction instantiation "lpm_mult:Mult0" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/multcore.tdf Line: 228
+Info (12131): Elaborated megafunction instantiation "lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]", which is child of megafunction instantiation "lpm_mult:Mult0" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/mpar_add.tdf Line: 78
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_frg.tdf
-    Info (12023): Found entity 1: add_sub_frg File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/db/add_sub_frg.tdf Line: 23
-Info (12131): Elaborated megafunction instantiation "lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add", which is child of megafunction instantiation "lpm_mult:Mult0" File: d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/mpar_add.tdf Line: 138
-Info (12131): Elaborated megafunction instantiation "lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]", which is child of megafunction instantiation "lpm_mult:Mult0" File: d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/mpar_add.tdf Line: 78
+    Info (12023): Found entity 1: add_sub_frg File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/db/add_sub_frg.tdf Line: 22
+Info (12131): Elaborated megafunction instantiation "lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add", which is child of megafunction instantiation "lpm_mult:Mult0" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/mpar_add.tdf Line: 138
+Info (12131): Elaborated megafunction instantiation "lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]", which is child of megafunction instantiation "lpm_mult:Mult0" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/mpar_add.tdf Line: 78
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_arg.tdf
-    Info (12023): Found entity 1: add_sub_arg File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/db/add_sub_arg.tdf Line: 23
-Info (12131): Elaborated megafunction instantiation "lpm_mult:Mult0|altshift:external_latency_ffs", which is child of megafunction instantiation "lpm_mult:Mult0" File: d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mult.tdf Line: 352
+    Info (12023): Found entity 1: add_sub_arg File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/db/add_sub_arg.tdf Line: 22
+Info (12131): Elaborated megafunction instantiation "lpm_mult:Mult0|altshift:external_latency_ffs", which is child of megafunction instantiation "lpm_mult:Mult0" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mult.tdf Line: 351
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info (13000): Registers with preset signals will power-up high File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/adc_qsys/synthesis/submodules/altera_modular_adc_control_fsm.v Line: 42
+Info (13000): Registers with preset signals will power-up high File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/altera_modular_adc_control_fsm.v Line: 42
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "HEX[5][0]" is stuck at VCC File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 10
-    Warning (13410): Pin "HEX[5][1]" is stuck at VCC File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 10
-    Warning (13410): Pin "HEX[5][2]" is stuck at VCC File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 10
-    Warning (13410): Pin "HEX[5][3]" is stuck at VCC File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 10
-    Warning (13410): Pin "HEX[5][4]" is stuck at VCC File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 10
-    Warning (13410): Pin "HEX[5][5]" is stuck at VCC File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 10
-    Warning (13410): Pin "HEX[5][6]" is stuck at VCC File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 10
-    Warning (13410): Pin "HEX[5][7]" is stuck at VCC File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 10
-    Warning (13410): Pin "HEX[4][0]" is stuck at VCC File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 10
-    Warning (13410): Pin "HEX[4][1]" is stuck at VCC File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 10
-    Warning (13410): Pin "HEX[4][2]" is stuck at VCC File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 10
-    Warning (13410): Pin "HEX[4][3]" is stuck at VCC File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 10
-    Warning (13410): Pin "HEX[4][4]" is stuck at VCC File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 10
-    Warning (13410): Pin "HEX[4][5]" is stuck at VCC File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 10
-    Warning (13410): Pin "HEX[4][6]" is stuck at VCC File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 10
-    Warning (13410): Pin "HEX[4][7]" is stuck at VCC File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 10
-    Warning (13410): Pin "HEX[1][7]" is stuck at VCC File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 10
-    Warning (13410): Pin "HEX[0][7]" is stuck at VCC File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/voltmeter.vhd Line: 10
+    Warning (13410): Pin "HEX[5][0]" is stuck at VCC File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/voltmeter.vhd Line: 10
+    Warning (13410): Pin "HEX[5][1]" is stuck at VCC File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/voltmeter.vhd Line: 10
+    Warning (13410): Pin "HEX[5][2]" is stuck at VCC File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/voltmeter.vhd Line: 10
+    Warning (13410): Pin "HEX[5][3]" is stuck at VCC File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/voltmeter.vhd Line: 10
+    Warning (13410): Pin "HEX[5][4]" is stuck at VCC File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/voltmeter.vhd Line: 10
+    Warning (13410): Pin "HEX[5][5]" is stuck at VCC File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/voltmeter.vhd Line: 10
+    Warning (13410): Pin "HEX[5][6]" is stuck at VCC File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/voltmeter.vhd Line: 10
+    Warning (13410): Pin "HEX[5][7]" is stuck at VCC File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/voltmeter.vhd Line: 10
+    Warning (13410): Pin "HEX[4][0]" is stuck at VCC File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/voltmeter.vhd Line: 10
+    Warning (13410): Pin "HEX[4][1]" is stuck at VCC File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/voltmeter.vhd Line: 10
+    Warning (13410): Pin "HEX[4][2]" is stuck at VCC File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/voltmeter.vhd Line: 10
+    Warning (13410): Pin "HEX[4][3]" is stuck at VCC File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/voltmeter.vhd Line: 10
+    Warning (13410): Pin "HEX[4][4]" is stuck at VCC File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/voltmeter.vhd Line: 10
+    Warning (13410): Pin "HEX[4][5]" is stuck at VCC File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/voltmeter.vhd Line: 10
+    Warning (13410): Pin "HEX[4][6]" is stuck at VCC File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/voltmeter.vhd Line: 10
+    Warning (13410): Pin "HEX[4][7]" is stuck at VCC File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/voltmeter.vhd Line: 10
+    Warning (13410): Pin "HEX[1][7]" is stuck at VCC File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/voltmeter.vhd Line: 10
+    Warning (13410): Pin "HEX[0][7]" is stuck at VCC File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/voltmeter.vhd Line: 10
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 61 registers lost all their fanouts during netlist optimizations.
+Info (17049): 73 registers lost all their fanouts during netlist optimizations.
 Info (17016): Found the following redundant logic cells in design
-    Info (17048): Logic cell "ADC_Conversion:ADC_Conversion_ins|response_valid" File: D:/Documents/School/University/Third Year/ENEL 453/Lab 3/ADC_Conversion.v Line: 94
+    Info (17048): Logic cell "ADC_Conversion:ADC_Conversion_ins|response_valid" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/ADC_Conversion.v Line: 94
 Warning (20013): Ignored 149 assignments for entity "DE10_LITE" -- entity does not exist in design
     Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ADC_CLK_10 -entity DE10_LITE was ignored
     Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ARDUINO_IO[0] -entity DE10_LITE was ignored
@@ -1867,24 +1836,24 @@ Warning (20013): Ignored 149 assignments for entity "DE10_LITE" -- entity does n
     Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_VS -entity DE10_LITE was ignored
     Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to clk -entity DE10_LITE was ignored
     Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to reset -entity DE10_LITE was ignored
-Info (144001): Generated suppressed messages file D:/Documents/School/University/Third Year/ENEL 453/Lab 3/output_files/Voltmeter.map.smsg
+Info (144001): Generated suppressed messages file C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/output_files/Voltmeter.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 2671 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 4157 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 59 output pins
-    Info (21061): Implemented 2607 logic cells
+    Info (21061): Implemented 4093 logic cells
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 204 warnings
-    Info: Peak virtual memory: 4821 megabytes
-    Info: Processing ended: Thu Dec 02 03:06:00 2021
-    Info: Elapsed time: 00:00:41
-    Info: Total CPU time (on all processors): 00:00:55
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 193 warnings
+    Info: Peak virtual memory: 4842 megabytes
+    Info: Processing ended: Thu Dec 02 18:19:42 2021
+    Info: Elapsed time: 00:01:28
+    Info: Total CPU time (on all processors): 00:01:55
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in D:/Documents/School/University/Third Year/ENEL 453/Lab 3/output_files/Voltmeter.map.smsg.
+The suppressed messages can be found in C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/output_files/Voltmeter.map.smsg.
 
 

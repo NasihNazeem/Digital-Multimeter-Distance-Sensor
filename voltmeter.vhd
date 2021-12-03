@@ -17,7 +17,7 @@ end Voltmeter;
 architecture Behavioral of Voltmeter is
 
 Signal A :   STD_LOGIC_VECTOR (3 downto 0):= (others=>'0');
-Signal Num_Hex : NumHexType := (others => (others => '0'));   
+Signal Num_Hex : NumHexType := (others => (others => '0'));
 Signal DP_in:   STD_LOGIC_VECTOR (5 downto 0);
 Signal ADC_read,rsp_data,q_outputs_1,q_outputs_2 : STD_LOGIC_VECTOR (11 downto 0);
 Signal mult_output: STD_LOGIC_VECTOR (12 downto 0);
@@ -26,13 +26,33 @@ signal response_valid_out_i1,response_valid_out_i2,response_valid_out_i3 : STD_L
 Signal bcd: STD_LOGIC_VECTOR(15 DOWNTO 0);
 Signal Q_temp1 : std_logic_vector(11 downto 0);
 Signal v2d_distance_output : std_logic_vector(12 downto 0);
+Signal v2f_freq_output : natural;
 Signal flag : std_logic;
 Signal bcd_new : STD_LOGIC_VECTOR(15 downto 0);
 Signal bcd_original : STD_LOGIC_VECTOR(15 downto 0);
 Signal pwm_enable : std_logic;
+signal duty_cycle : natural;
 
 --Mux signals
 Signal mux_output: std_logic_vector(12 downto 0);
+
+component PWM_DAC is
+   Generic ( width : integer := 9);
+   Port    ( reset      : in STD_LOGIC;
+             clk        : in STD_LOGIC;
+             frequency  : in natural;
+             pwm_out    : out STD_LOGIC
+           );
+end component;
+
+Component voltage2frequency IS
+   PORT(
+      clk            :  IN    STD_LOGIC;                                
+      reset          :  IN    STD_LOGIC;                                
+      voltage        :  IN    STD_LOGIC_VECTOR(12 DOWNTO 0);                           
+      frequency      :  OUT   natural
+		);		
+END component;
 
 -- Mux component
 Component mux is
@@ -44,25 +64,6 @@ Component mux is
 		 );
 end Component;
 
-component buzz_freq_modifier is
-		 port( 
-				 clk			 		: in std_logic;
-				 reset		 		: in std_logic;
-				pwm_enable		 	: in std_logic;
-				 output_wave 		: out std_logic -- the pwm output
-           );
-end component;
-
-Component dis_voltage_downcounter is
-	port( clk      				: in  STD_LOGIC; -- clock to be divided
-         reset    				: in  STD_LOGIC; -- active-high reset
-         enable   				: in  STD_LOGIC; -- active-high enable
-			dis_voltage 			: in std_logic_vector(12 downto 0); -- the voltage output from the distance sensor
-         downcounter_pulse    : out STD_LOGIC -- creates a positive pulse every time current_count hits zero
-                                   -- useful to enable another device, like to slow down a counter
-         -- value  : out STD_LOGIC_VECTOR(integer(ceil(log2(real(period)))) - 1 downto 0) -- outputs the current_count value, if needed
-		  );
-end Component;
 
 Component flag_mux is
 	port( bcd_orig 		: in std_logic_vector(15 downto 0);
@@ -139,23 +140,22 @@ begin
 				"000100";
 
 				
--- Instantiations
-buzzer_frequency_generator : buzz_freq_modifier
+V2F : voltage2frequency
 				 port map(
 							 clk => clk,
-							 reset => reset,
-							 pwm_enable => pwm_enable,
-							 output_wave => buzzer_waveform
-						  );
-			  
-distance_voltage_downcounter : dis_voltage_downcounter
+							 reset => reset,                                
+							 voltage =>  mult_output,
+							 frequency => v2f_freq_output
+							);		
+pwm: PWM_DAC
+				 generic map(width => 4)
 				 port map(
-							 clk => clk,
-							 reset => reset,
-							 enable => '1',
-							 dis_voltage => v2d_distance_output,
-							 downcounter_pulse => pwm_enable
+							reset => reset,
+							clk => clk,
+							frequency => v2f_freq_output,
+							pwm_out => buzzer_waveform
 							);
+
 -- Mux instantiation
 multiplexer: mux
 				 port map(
