@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Voltmeter
-Thu Dec 02 18:19:42 2021
+Thu Dec 02 18:31:46 2021
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -100,13 +100,13 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Dec 02 18:19:42 2021       ;
+; Analysis & Synthesis Status        ; Successful - Thu Dec 02 18:31:45 2021       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Voltmeter                                   ;
 ; Top-level Entity Name              ; Voltmeter                                   ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 4,073                                       ;
-;     Total combinational functions  ; 3,783                                       ;
+; Total logic elements               ; 4,124                                       ;
+;     Total combinational functions  ; 3,834                                       ;
 ;     Dedicated logic registers      ; 462                                         ;
 ; Total registers                    ; 462                                         ;
 ; Total pins                         ; 62                                          ;
@@ -218,9 +218,9 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.1%      ;
-;     Processor 3            ;   0.1%      ;
-;     Processor 4            ;   0.1%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processor 3            ;   0.0%      ;
+;     Processor 4            ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -296,16 +296,16 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                                                                          ;
 +---------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
-; Estimated Total logic elements              ; 4,073                                                                                                                          ;
+; Estimated Total logic elements              ; 4,124                                                                                                                          ;
 ;                                             ;                                                                                                                                ;
-; Total combinational functions               ; 3783                                                                                                                           ;
+; Total combinational functions               ; 3834                                                                                                                           ;
 ; Logic element usage by number of LUT inputs ;                                                                                                                                ;
-;     -- 4 input functions                    ; 2985                                                                                                                           ;
-;     -- 3 input functions                    ; 535                                                                                                                            ;
-;     -- <=2 input functions                  ; 263                                                                                                                            ;
+;     -- 4 input functions                    ; 2997                                                                                                                           ;
+;     -- 3 input functions                    ; 575                                                                                                                            ;
+;     -- <=2 input functions                  ; 262                                                                                                                            ;
 ;                                             ;                                                                                                                                ;
 ; Logic elements by mode                      ;                                                                                                                                ;
-;     -- normal mode                          ; 3440                                                                                                                           ;
+;     -- normal mode                          ; 3491                                                                                                                           ;
 ;     -- arithmetic mode                      ; 343                                                                                                                            ;
 ;                                             ;                                                                                                                                ;
 ; Total registers                             ; 462                                                                                                                            ;
@@ -319,10 +319,10 @@ refer to the applicable agreement for further details.
 ; Total PLLs                                  ; 1                                                                                                                              ;
 ;     -- PLLs                                 ; 1                                                                                                                              ;
 ;                                             ;                                                                                                                                ;
-; Maximum fan-out node                        ; lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_arg:auto_generated|op_1~18 ;
-; Maximum fan-out                             ; 858                                                                                                                            ;
-; Total fan-out                               ; 15831                                                                                                                          ;
-; Average fan-out                             ; 3.62                                                                                                                           ;
+; Maximum fan-out node                        ; lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_arg:auto_generated|op_1~16 ;
+; Maximum fan-out                             ; 857                                                                                                                            ;
+; Total fan-out                               ; 15966                                                                                                                          ;
+; Average fan-out                             ; 3.61                                                                                                                           ;
 +---------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -331,7 +331,7 @@ refer to the applicable agreement for further details.
 +------------------------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------+--------------+
 ; Compilation Hierarchy Node                                                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                                                                                                                                                                          ; Entity Name                            ; Library Name ;
 +------------------------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------+--------------+
-; |Voltmeter                                                                   ; 3783 (1)            ; 462 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 62   ; 0            ; 0          ; |Voltmeter                                                                                                                                                                                                                                   ; Voltmeter                              ; work         ;
+; |Voltmeter                                                                   ; 3834 (1)            ; 462 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 62   ; 0            ; 0          ; |Voltmeter                                                                                                                                                                                                                                   ; Voltmeter                              ; work         ;
 ;    |ADC_Conversion:ADC_Conversion_ins|                                       ; 54 (5)              ; 90 (29)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|ADC_Conversion:ADC_Conversion_ins                                                                                                                                                                                                 ; ADC_Conversion                         ; work         ;
 ;       |adc_qsys:u0|                                                          ; 49 (0)              ; 61 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0                                                                                                                                                                                     ; adc_qsys                               ; adc_qsys     ;
 ;          |adc_qsys_altpll_sys:altpll_sys|                                    ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_altpll_sys:altpll_sys                                                                                                                                                      ; adc_qsys_altpll_sys                    ; adc_qsys     ;
@@ -346,7 +346,7 @@ refer to the applicable agreement for further details.
 ;                   |fiftyfivenm_adcblock_primitive_wrapper:adcblock_instance| ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|fiftyfivenm_adcblock_top_wrapper:adc_inst|fiftyfivenm_adcblock_primitive_wrapper:adcblock_instance ; fiftyfivenm_adcblock_primitive_wrapper ; adc_qsys     ;
 ;          |altera_reset_controller:rst_controller_001|                        ; 0 (0)               ; 3 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller_001                                                                                                                                          ; altera_reset_controller                ; adc_qsys     ;
 ;             |altera_reset_synchronizer:alt_rst_sync_uq1|                     ; 0 (0)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller_001|altera_reset_synchronizer:alt_rst_sync_uq1                                                                                               ; altera_reset_synchronizer              ; adc_qsys     ;
-;    |PWM_DAC:pwm|                                                             ; 66 (66)             ; 31 (31)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|PWM_DAC:pwm                                                                                                                                                                                                                       ; PWM_DAC                                ; work         ;
+;    |PWM_DAC:pwm|                                                             ; 122 (122)           ; 31 (31)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|PWM_DAC:pwm                                                                                                                                                                                                                       ; PWM_DAC                                ; work         ;
 ;    |SevenSegment:SevenSegment_ins|                                           ; 28 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|SevenSegment:SevenSegment_ins                                                                                                                                                                                                     ; SevenSegment                           ; work         ;
 ;       |SevenSegment_decoder:\Behavioral_Decoder:0:DECODERx|                  ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|SevenSegment:SevenSegment_ins|SevenSegment_decoder:\Behavioral_Decoder:0:DECODERx                                                                                                                                                 ; SevenSegment_decoder                   ; work         ;
 ;       |SevenSegment_decoder:\Behavioral_Decoder:1:DECODERx|                  ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|SevenSegment:SevenSegment_ins|SevenSegment_decoder:\Behavioral_Decoder:1:DECODERx                                                                                                                                                 ; SevenSegment_decoder                   ; work         ;
@@ -368,8 +368,8 @@ refer to the applicable agreement for further details.
 ;    |registers:sync2|                                                         ; 0 (0)               ; 12 (12)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|registers:sync2                                                                                                                                                                                                                   ; registers                              ; work         ;
 ;    |registers:sync3|                                                         ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|registers:sync3                                                                                                                                                                                                                   ; registers                              ; work         ;
 ;    |registers:sync4|                                                         ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|registers:sync4                                                                                                                                                                                                                   ; registers                              ; work         ;
-;    |voltage2distance:V2D|                                                    ; 1665 (1665)         ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|voltage2distance:V2D                                                                                                                                                                                                              ; voltage2distance                       ; work         ;
-;    |voltage2frequency:V2F|                                                   ; 1516 (1516)         ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|voltage2frequency:V2F                                                                                                                                                                                                             ; voltage2frequency                      ; work         ;
+;    |voltage2distance:V2D|                                                    ; 1659 (1659)         ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|voltage2distance:V2D                                                                                                                                                                                                              ; voltage2distance                       ; work         ;
+;    |voltage2frequency:V2F|                                                   ; 1517 (1517)         ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Voltmeter|voltage2frequency:V2F                                                                                                                                                                                                             ; voltage2frequency                      ; work         ;
 +------------------------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -577,7 +577,7 @@ Encoding Type:  One-Hot
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
 ; Total registers                              ; 462   ;
-; Number of registers using Synchronous Clear  ; 52    ;
+; Number of registers using Synchronous Clear  ; 21    ;
 ; Number of registers using Synchronous Load   ; 4     ;
 ; Number of registers using Asynchronous Clear ; 396   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
@@ -605,10 +605,10 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                                                                                          ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Voltmeter|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|int_timer[0] ;
-; 7:1                ; 4 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Voltmeter|binary_bcd:binary_bcd_ins|bcd_signal[13]                                                                                                                                                 ;
-; 9:1                ; 4 bits    ; 24 LEs        ; 8 LEs                ; 16 LEs                 ; Yes        ; |Voltmeter|binary_bcd:binary_bcd_ins|bcd_signal[20]                                                                                                                                                 ;
-; 11:1               ; 4 bits    ; 28 LEs        ; 12 LEs               ; 16 LEs                 ; Yes        ; |Voltmeter|binary_bcd:binary_bcd_ins|bcd_signal[23]                                                                                                                                                 ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Voltmeter|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|int_timer[5] ;
+; 7:1                ; 4 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Voltmeter|binary_bcd:binary_bcd_ins|bcd_signal[16]                                                                                                                                                 ;
+; 9:1                ; 4 bits    ; 24 LEs        ; 8 LEs                ; 16 LEs                 ; Yes        ; |Voltmeter|binary_bcd:binary_bcd_ins|bcd_signal[17]                                                                                                                                                 ;
+; 11:1               ; 4 bits    ; 28 LEs        ; 12 LEs               ; 16 LEs                 ; Yes        ; |Voltmeter|binary_bcd:binary_bcd_ins|bcd_signal[24]                                                                                                                                                 ;
 ; 13:1               ; 4 bits    ; 32 LEs        ; 20 LEs               ; 12 LEs                 ; Yes        ; |Voltmeter|binary_bcd:binary_bcd_ins|bcd_signal[28]                                                                                                                                                 ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
@@ -1438,29 +1438,28 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; boundary_port         ; 62                          ;
 ; cycloneiii_ff         ; 462                         ;
-;     CLR               ; 80                          ;
-;     CLR SCLR          ; 31                          ;
+;     CLR               ; 111                         ;
 ;     ENA               ; 36                          ;
 ;     ENA CLR           ; 265                         ;
 ;     ENA CLR SCLR      ; 16                          ;
 ;     ENA CLR SCLR SLD  ; 4                           ;
 ;     SCLR              ; 1                           ;
 ;     plain             ; 29                          ;
-; cycloneiii_lcell_comb ; 3788                        ;
+; cycloneiii_lcell_comb ; 3839                        ;
 ;     arith             ; 343                         ;
 ;         2 data inputs ; 107                         ;
 ;         3 data inputs ; 236                         ;
-;     normal            ; 3445                        ;
+;     normal            ; 3496                        ;
 ;         0 data inputs ; 21                          ;
 ;         1 data inputs ; 15                          ;
-;         2 data inputs ; 125                         ;
-;         3 data inputs ; 299                         ;
-;         4 data inputs ; 2985                        ;
+;         2 data inputs ; 124                         ;
+;         3 data inputs ; 339                         ;
+;         4 data inputs ; 2997                        ;
 ; cycloneiii_pll        ; 1                           ;
 ; fiftyfivenm_adcblock  ; 1                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 17.80                       ;
-; Average LUT depth     ; 10.66                       ;
+; Max LUT depth         ; 19.40                       ;
+; Average LUT depth     ; 11.78                       ;
 +-----------------------+-----------------------------+
 
 
@@ -1469,7 +1468,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:01:03     ;
+; Top            ; 00:00:42     ;
 +----------------+--------------+
 
 
@@ -1479,7 +1478,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu Dec 02 18:18:14 2021
+    Info: Processing started: Thu Dec 02 18:30:39 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab3 -c Voltmeter
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -1555,6 +1554,7 @@ Info (12127): Elaborating entity "Voltmeter" for the top level hierarchy
 Warning (10036): Verilog HDL or VHDL warning at voltmeter.vhd(24): object "busy" assigned a value but never read File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/voltmeter.vhd Line: 24
 Info (12128): Elaborating entity "voltage2frequency" for hierarchy "voltage2frequency:V2F" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/voltmeter.vhd Line: 143
 Info (12128): Elaborating entity "PWM_DAC" for hierarchy "PWM_DAC:pwm" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/voltmeter.vhd Line: 150
+Warning (10492): VHDL Process Statement warning at PWM_DAC.vhd(24): signal "duty_cycle" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/PWM_DAC.vhd Line: 24
 Info (12128): Elaborating entity "mux" for hierarchy "mux:multiplexer" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/voltmeter.vhd Line: 160
 Warning (10492): VHDL Process Statement warning at mux.vhd(19): signal "clk" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/mux.vhd Line: 19
 Info (12128): Elaborating entity "flag_mux" for hierarchy "flag_mux:flag_multiplexer" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/voltmeter.vhd Line: 169
@@ -1663,6 +1663,20 @@ Info (12131): Elaborated megafunction instantiation "lpm_mult:Mult0|altshift:ext
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (13000): Registers with preset signals will power-up high File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/adc_qsys/synthesis/submodules/altera_modular_adc_control_fsm.v Line: 42
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
+    Warning (13310): Register "PWM_DAC:pwm|pwm_counter[12]" is converted into an equivalent circuit using register "PWM_DAC:pwm|pwm_counter[12]~_emulated" and latch "PWM_DAC:pwm|pwm_counter[12]~1" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/PWM_DAC.vhd Line: 23
+    Warning (13310): Register "PWM_DAC:pwm|pwm_counter[11]" is converted into an equivalent circuit using register "PWM_DAC:pwm|pwm_counter[11]~_emulated" and latch "PWM_DAC:pwm|pwm_counter[11]~5" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/PWM_DAC.vhd Line: 23
+    Warning (13310): Register "PWM_DAC:pwm|pwm_counter[10]" is converted into an equivalent circuit using register "PWM_DAC:pwm|pwm_counter[10]~_emulated" and latch "PWM_DAC:pwm|pwm_counter[10]~9" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/PWM_DAC.vhd Line: 23
+    Warning (13310): Register "PWM_DAC:pwm|pwm_counter[9]" is converted into an equivalent circuit using register "PWM_DAC:pwm|pwm_counter[9]~_emulated" and latch "PWM_DAC:pwm|pwm_counter[9]~13" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/PWM_DAC.vhd Line: 23
+    Warning (13310): Register "PWM_DAC:pwm|pwm_counter[8]" is converted into an equivalent circuit using register "PWM_DAC:pwm|pwm_counter[8]~_emulated" and latch "PWM_DAC:pwm|pwm_counter[8]~17" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/PWM_DAC.vhd Line: 23
+    Warning (13310): Register "PWM_DAC:pwm|pwm_counter[7]" is converted into an equivalent circuit using register "PWM_DAC:pwm|pwm_counter[7]~_emulated" and latch "PWM_DAC:pwm|pwm_counter[7]~21" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/PWM_DAC.vhd Line: 23
+    Warning (13310): Register "PWM_DAC:pwm|pwm_counter[6]" is converted into an equivalent circuit using register "PWM_DAC:pwm|pwm_counter[6]~_emulated" and latch "PWM_DAC:pwm|pwm_counter[6]~25" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/PWM_DAC.vhd Line: 23
+    Warning (13310): Register "PWM_DAC:pwm|pwm_counter[5]" is converted into an equivalent circuit using register "PWM_DAC:pwm|pwm_counter[5]~_emulated" and latch "PWM_DAC:pwm|pwm_counter[5]~29" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/PWM_DAC.vhd Line: 23
+    Warning (13310): Register "PWM_DAC:pwm|pwm_counter[4]" is converted into an equivalent circuit using register "PWM_DAC:pwm|pwm_counter[4]~_emulated" and latch "PWM_DAC:pwm|pwm_counter[4]~33" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/PWM_DAC.vhd Line: 23
+    Warning (13310): Register "PWM_DAC:pwm|pwm_counter[3]" is converted into an equivalent circuit using register "PWM_DAC:pwm|pwm_counter[3]~_emulated" and latch "PWM_DAC:pwm|pwm_counter[3]~37" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/PWM_DAC.vhd Line: 23
+    Warning (13310): Register "PWM_DAC:pwm|pwm_counter[2]" is converted into an equivalent circuit using register "PWM_DAC:pwm|pwm_counter[2]~_emulated" and latch "PWM_DAC:pwm|pwm_counter[2]~41" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/PWM_DAC.vhd Line: 23
+    Warning (13310): Register "PWM_DAC:pwm|pwm_counter[1]" is converted into an equivalent circuit using register "PWM_DAC:pwm|pwm_counter[1]~_emulated" and latch "PWM_DAC:pwm|pwm_counter[1]~45" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/PWM_DAC.vhd Line: 23
+    Warning (13310): Register "PWM_DAC:pwm|pwm_counter[0]" is converted into an equivalent circuit using register "PWM_DAC:pwm|pwm_counter[0]~_emulated" and latch "PWM_DAC:pwm|pwm_counter[0]~49" File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/PWM_DAC.vhd Line: 23
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "HEX[5][0]" is stuck at VCC File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/voltmeter.vhd Line: 10
     Warning (13410): Pin "HEX[5][1]" is stuck at VCC File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/voltmeter.vhd Line: 10
@@ -1839,16 +1853,16 @@ Warning (20013): Ignored 149 assignments for entity "DE10_LITE" -- entity does n
 Info (144001): Generated suppressed messages file C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/output_files/Voltmeter.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 4157 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 4208 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 59 output pins
-    Info (21061): Implemented 4093 logic cells
+    Info (21061): Implemented 4144 logic cells
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 193 warnings
-    Info: Peak virtual memory: 4842 megabytes
-    Info: Processing ended: Thu Dec 02 18:19:42 2021
-    Info: Elapsed time: 00:01:28
-    Info: Total CPU time (on all processors): 00:01:55
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 208 warnings
+    Info: Peak virtual memory: 4839 megabytes
+    Info: Processing ended: Thu Dec 02 18:31:46 2021
+    Info: Elapsed time: 00:01:07
+    Info: Total CPU time (on all processors): 00:01:33
 
 
 +------------------------------------------+

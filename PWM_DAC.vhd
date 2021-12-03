@@ -21,7 +21,7 @@ begin
    count : process(clk,reset)
    begin
        if( reset = '1') then
-           pwm_counter <= 0;
+           pwm_counter <= duty_cycle;
        elsif (rising_edge(clk)) then 
 			 if (pwm_counter < frequency) then
 				  pwm_counter <= pwm_counter + 1;
