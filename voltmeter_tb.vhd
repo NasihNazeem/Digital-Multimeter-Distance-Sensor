@@ -22,6 +22,8 @@ signal S_i 	 : std_logic;
 constant clk_period : time := 10 ns;
 constant reset_period : time := 30 ns;
 
+--signal duty_cycle : natural := frequency/2;
+
 -- Component declarations, the ports should be the same as the entity ports in the main vhd file
 component Voltmeter is
 	port( clk 									: in STD_LOGIC;
@@ -85,6 +87,7 @@ begin
 			wait for 100 ns;
 			
 		end process;
+
 		
 end tb;
 

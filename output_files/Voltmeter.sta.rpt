@@ -1,5 +1,5 @@
 Timing Analyzer report for Voltmeter
-Thu Dec 02 18:33:04 2021
+Fri Dec 03 18:57:47 2021
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -91,17 +91,17 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 12          ;
 ;                            ;             ;
-; Average used               ; 1.59        ;
-; Maximum used               ; 4           ;
+; Average used               ; 2.29        ;
+; Maximum used               ; 12          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  21.1%      ;
-;     Processor 3            ;  19.3%      ;
-;     Processor 4            ;  18.9%      ;
+;     Processor 2            ;  13.1%      ;
+;     Processor 3            ;  11.8%      ;
+;     Processors 4-12        ;  11.5%      ;
 +----------------------------+-------------+
 
 
@@ -110,9 +110,9 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------+--------+--------------------------+
 ; SDC File Path                                                ; Status ; Read at                  ;
 +--------------------------------------------------------------+--------+--------------------------+
-; DE10_LITE.sdc                                                ; OK     ; Thu Dec 02 18:32:54 2021 ;
-; adc_qsys/synthesis/submodules/altera_reset_controller.sdc    ; OK     ; Thu Dec 02 18:32:54 2021 ;
-; adc_qsys/synthesis/submodules/altera_modular_adc_control.sdc ; OK     ; Thu Dec 02 18:32:54 2021 ;
+; DE10_LITE.sdc                                                ; OK     ; Fri Dec 03 18:57:44 2021 ;
+; adc_qsys/synthesis/submodules/altera_reset_controller.sdc    ; OK     ; Fri Dec 03 18:57:44 2021 ;
+; adc_qsys/synthesis/submodules/altera_modular_adc_control.sdc ; OK     ; Fri Dec 03 18:57:44 2021 ;
 +--------------------------------------------------------------+--------+--------------------------+
 
 
@@ -882,7 +882,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu Dec 02 18:32:51 2021
+    Info: Processing started: Fri Dec 03 18:57:42 2021
 Info: Command: quartus_sta Lab3 -c Voltmeter
 Info: qsta_default_script.tcl version: #1
 Warning (20013): Ignored 149 assignments for entity "DE10_LITE" -- entity does not exist in design
@@ -1036,7 +1036,7 @@ Warning (20013): Ignored 149 assignments for entity "DE10_LITE" -- entity does n
     Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to clk -entity DE10_LITE was ignored
     Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to reset -entity DE10_LITE was ignored
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
 Warning (335093): The Timing Analyzer is analyzing 13 combinational loops as latches. For more details, run the Check Timing command in the Timing Analyzer or view the "User-Specified and Inferred Latches" table in the Analysis & Synthesis report.
@@ -1044,12 +1044,12 @@ Info (332164): Evaluating HDL-embedded SDC commands
     Info (332165): Entity altera_std_synchronizer
         Info (332166): set_false_path -to [get_keepers {*altera_std_synchronizer:*|din_s1}]
 Info (332104): Reading SDC File: 'DE10_LITE.sdc'
-Warning (332174): Ignored filter at DE10_LITE.sdc(9): ADC_CLK_10 could not be matched with a port File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/DE10_LITE.sdc Line: 9
-Warning (332049): Ignored create_clock at DE10_LITE.sdc(9): Argument <targets> is an empty collection File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/DE10_LITE.sdc Line: 9
-    Info (332050): create_clock -period "10.0 MHz" [get_ports ADC_CLK_10] File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/DE10_LITE.sdc Line: 9
-Warning (332174): Ignored filter at DE10_LITE.sdc(11): MAX10_CLK2_50 could not be matched with a port File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/DE10_LITE.sdc Line: 11
-Warning (332049): Ignored create_clock at DE10_LITE.sdc(11): Argument <targets> is an empty collection File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/DE10_LITE.sdc Line: 11
-    Info (332050): create_clock -period "50.0 MHz" [get_ports MAX10_CLK2_50] File: C:/Users/Nasih Nazeem/Documents/GitHub/M-zaeem/ENEL-453-Labs/DE10_LITE.sdc Line: 11
+Warning (332174): Ignored filter at DE10_LITE.sdc(9): ADC_CLK_10 could not be matched with a port File: H:/Github/NasihNazeem/ENEL-453-Labs/DE10_LITE.sdc Line: 9
+Warning (332049): Ignored create_clock at DE10_LITE.sdc(9): Argument <targets> is an empty collection File: H:/Github/NasihNazeem/ENEL-453-Labs/DE10_LITE.sdc Line: 9
+    Info (332050): create_clock -period "10.0 MHz" [get_ports ADC_CLK_10] File: H:/Github/NasihNazeem/ENEL-453-Labs/DE10_LITE.sdc Line: 9
+Warning (332174): Ignored filter at DE10_LITE.sdc(11): MAX10_CLK2_50 could not be matched with a port File: H:/Github/NasihNazeem/ENEL-453-Labs/DE10_LITE.sdc Line: 11
+Warning (332049): Ignored create_clock at DE10_LITE.sdc(11): Argument <targets> is an empty collection File: H:/Github/NasihNazeem/ENEL-453-Labs/DE10_LITE.sdc Line: 11
+    Info (332050): create_clock -period "50.0 MHz" [get_ports MAX10_CLK2_50] File: H:/Github/NasihNazeem/ENEL-453-Labs/DE10_LITE.sdc Line: 11
 Info (332110): Deriving PLL clocks
     Info (332110): create_generated_clock -source {ADC_Conversion_ins|u0|altpll_sys|sd1|pll7|inclk[0]} -divide_by 2 -duty_cycle 50.00 -name {ADC_Conversion_ins|u0|altpll_sys|sd1|pll7|clk[0]} {ADC_Conversion_ins|u0|altpll_sys|sd1|pll7|clk[0]}
     Info (332110): create_generated_clock -source {ADC_Conversion_ins|u0|altpll_sys|sd1|pll7|inclk[0]} -divide_by 25 -duty_cycle 50.00 -name {ADC_Conversion_ins|u0|altpll_sys|sd1|pll7|clk[1]} {ADC_Conversion_ins|u0|altpll_sys|sd1|pll7|clk[1]}
@@ -1192,9 +1192,9 @@ Info (332114): Report Metastability: Found 2 synchronizer chains.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 159 warnings
-    Info: Peak virtual memory: 4886 megabytes
-    Info: Processing ended: Thu Dec 02 18:33:04 2021
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:18
+    Info: Peak virtual memory: 4981 megabytes
+    Info: Processing ended: Fri Dec 03 18:57:47 2021
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:08
 
 

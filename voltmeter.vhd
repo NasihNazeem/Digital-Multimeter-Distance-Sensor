@@ -30,7 +30,6 @@ Signal v2f_freq_output : natural;
 Signal flag : std_logic;
 Signal bcd_new : STD_LOGIC_VECTOR(15 downto 0);
 Signal bcd_original : STD_LOGIC_VECTOR(15 downto 0);
-Signal pwm_enable : std_logic;
 signal duty_cycle : natural;
 
 --Mux signals
@@ -89,7 +88,7 @@ Component SevenSegment is
 			);
 End Component ;
 
-Component ADC_Conversion is
+Component test_DE10_Lite is
     Port( MAX10_CLK1_50      : in STD_LOGIC;
           response_valid_out : out STD_LOGIC;
           ADC_out            : out STD_LOGIC_VECTOR (11 downto 0)
@@ -237,7 +236,7 @@ SevenSegment_ins: SevenSegment
                             DP_in   => DP_in
                           );
                                      
-ADC_Conversion_ins:  ADC_Conversion  PORT MAP(      
+ADC_Conversion_ins:  test_DE10_Lite  PORT MAP(      
                                      MAX10_CLK1_50       => clk,
                                      response_valid_out  => response_valid_out_i1(0),
                                      ADC_out             => ADC_read);

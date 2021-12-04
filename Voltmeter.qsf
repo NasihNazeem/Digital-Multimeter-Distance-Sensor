@@ -352,6 +352,7 @@ set_location_assignment PIN_N19 -to HEX[5][5]
 set_location_assignment PIN_N20 -to HEX[5][6]
 set_location_assignment PIN_L19 -to HEX[5][7]
 set_location_assignment PIN_AB9 -to buzzer_waveform
+set_global_assignment -name VHDL_FILE tb_PWM_DAC.vhd
 set_global_assignment -name VHDL_FILE voltage2frequency.vhd
 set_global_assignment -name VHDL_FILE PWM_DAC.vhd
 set_global_assignment -name VHDL_FILE flag_mux.vhd
